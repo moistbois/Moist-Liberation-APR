@@ -2,7 +2,7 @@
 <!--
     File: stringtable.xml
     Author: KP Liberation Dev Team - https://github.com/KillahPotatoes
-    Date: 2023-03-18
+    Date: 2023-10-15
     License: MIT License - http://www.opensource.org/licenses/MIT
 
     Localization contributors:
@@ -49,7 +49,7 @@
 <Project name="Liberation">
     <Package name="Liberation">
         <Key ID="STR_MISSION_TITLE">
-            <Original>CTI 34 KP Liberation v0.96.8apr</Original>
+            <Original>Liberation</Original>
         </Key>
         <Key ID="STR_MISSION_VERSION">
             <Original>v0.96.8apr</Original>
@@ -4159,7 +4159,7 @@
         </Key>
         <!-- Added or changed in v0.95 -->
         <Key ID="STR_INDIV_FLAG">
-            <Original>Killah Potatoes flag</Original>
+            <Original>Moistbois flag</Original>
             <German>Killah Potatoes Flagge</German>
             <Spanish>Bandera de Killah Potatoes</Spanish>
             <Russian>Флаг Killah Potatoes</Russian>
