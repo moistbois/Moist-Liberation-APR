@@ -42,6 +42,14 @@ export class MissionPaths {
     }
 
     /**
+     * Get path to folder with specific mission files
+     */
+    public getMissionFilesPath() : string {
+        return path.resolve(this.folderStructure.missionsFolder,
+            this.preset.sourceFolder); 
+    }
+
+    /**
      * Get path to folder with mission framework files.
      */
     public getFrameworkPath(): string {

@@ -48,29 +48,34 @@ for (let preset of presets) {
 
         /** Copy mission.sqm to output dir */
         function missionSqmCopy () {
-            return gulp.src(mission.getMissionSqmPath())
+            return gulp.src(mission.getMissionFilesPath().concat('/**/*'))
                 .pipe(gulp.dest(mission.getOutputDir()));
         },
 
         /** Replace variables values in configuration file */
-        function configReplace () {
-            let src = gulp.src(mission.getMissionConfigFilePath());
+        function configReplace() {
+            if (!!preset.configFile) {
+                let src = gulp.src(mission.getMissionConfigFilePath());
 
-            const variables = Object.getOwnPropertyNames(preset.variables);
-            for (let variable of variables) {
-                // https://regex101.com/r/YknC8r/1
-                const regex = new RegExp(`(${variable} += +)(?:\\d+|".+")`, 'ig');
-                const value = JSON.stringify(preset.variables[variable]);
+                const variables = Object.getOwnPropertyNames(preset.variables);
+                for (let variable of variables) {
+                    // https://regex101.com/r/YknC8r/1
+                    const regex = new RegExp(`(${variable} += +)(?:\\d*[,.]?\\d+|".+")`, 'ig');
+                    const value = JSON.stringify(preset.variables[variable]);
 
-                // replace variable value
-                src = src.pipe(gulpReplace(regex, `$1${value}`));
+                    // replace variable value
+                    src = src.pipe(gulpReplace(regex, `$1${value}`));
+                }
+                return src.pipe(gulp.dest(mission.getOutputDir()));
             }
-
-            return src.pipe(gulp.dest(mission.getOutputDir()));
+            else
+            {
+                return Promise.resolve('NOP');
+            }
         },
 
         /** Replace values in stringtable */
-        function stringTableReplace () {
+        function stringTableReplace() {
             // I know, replacing XML with regex... :|
             // https://regex101.com/r/TSfish/2
             const versionRegex = /(<Key ID="STR_MISSION_VERSION">\s*<Original>)(?<version>.+)(<\/Original>)/;
@@ -168,7 +173,10 @@ gulp.task('pbo', gulp.series(taskNamesPbo));
 
 gulp.task('zip', gulp.series(taskNamesZip));
 
-gulp.task('workshop', gulp.series(taskNamesWorkshop));
+if (taskNamesWorkshop.length)
+{
+    gulp.task('workshop', gulp.series(taskNamesWorkshop));
+}
 
 gulp.task('default',
     gulp.series(
