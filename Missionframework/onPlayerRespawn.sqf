@@ -28,6 +28,8 @@ if (isNil "KPLIB_respawn_loadout") then {
 
 [] call KPLIB_fnc_addActionsPlayer;
 
+enableEngineArtillery false; 
+
 // Support Module handling
 if ([
     false,
