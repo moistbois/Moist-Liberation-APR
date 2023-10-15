@@ -6160,7 +6160,7 @@
             <Japanese>市民の家財が %1 個所破壊されました。</Japanese>
         </Key>
         <Key ID="STR_CR_HEALMSG">
-            <Original>Civilian named %1 is thankful for your help.</Original>
+            <Original>Civilians are thankful for your help.</Original>
             <German>Der Zivilist %1 ist dankbar für die Hilfe.</German>
             <Spanish>El civil %1 se siente agradecido por tu ayuda.</Spanish>
             <Russian>Гражданский %1 благодарен за вашу помощь.</Russian>
