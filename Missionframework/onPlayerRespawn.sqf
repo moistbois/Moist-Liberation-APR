@@ -20,7 +20,7 @@ if (isNil "KPLIB_respawn_loadout") then {
     player linkItem "ItemMap";
     player linkItem "ItemCompass";
     player linkItem "ItemWatch";
-    player linkItem "ItemRadio";
+    //player linkItem "ItemRadio";
 } else {
     sleep 4;
     [player, KPLIB_respawn_loadout] call KPLIB_fnc_setLoadout;
