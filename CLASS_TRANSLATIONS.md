@@ -215,6 +215,8 @@ NEW FORMAT = OLD FORMAT
 - KPLIB_large_storage_positions = KP_liberation_large_storage_positions
 - KPLIB_small_storage_positions = KP_liberation_small_storage_positions
 - KPLIB_endgame = GRLIB_endgame
-
 - KPLIB_param_playerMenu = KP_liberation_playermenu
 - KPLIB_civrep_debug = KP_liberation_civrep_debug
+- KPLIB_sectors_active = active_sectors
+- KPLIB_sectors_all = sectors_allSectors
+- KPLIB_respawn_marker = GRLIB_respawn_marker
