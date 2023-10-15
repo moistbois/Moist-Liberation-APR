@@ -1,4 +1,4 @@
-OLD FORMAT = NEW FORMAT
+NEW FORMAT = OLD FORMAT
 - KPLIB_aiResupplySources = KPLIB_aiResupplySources
 - KPLIB_airSlots = KPLIB_airSlots
 - KPLIB_allLandVeh_classes = KPLIB_allLandVeh_classes
