@@ -1,5 +1,4 @@
 NEW FORMAT = OLD FORMAT
-- KPLIB_aiResupplySources = KPLIB_aiResupplySources
 - KPLIB_airSlots = KPLIB_airSlots
 - KPLIB_allLandVeh_classes = KPLIB_allLandVeh_classes
 - KPLIB_b_air_classes = KPLIB_b_air_classes
@@ -147,3 +146,72 @@ NEW FORMAT = OLD FORMAT
 - KPLIB_r_headgear_2 = KP_liberation_guerilla_headgear_2
 - KPLIB_r_headgear_3 = KP_liberation_guerilla_headgear_3
 - KPLIB_r_facegear = KP_liberation_guerilla_facegear
+
+## KPLIB_classnameLists
+// These were moved from `KP_Liberation_Config` to `KPLIB_classnameLists`
+- KPLIB_medical_vehicles = KP_liberation_medical_vehicles
+- KPLIB_medical_facilities = KP_liberation_medical_facilities
+- KPLIB_ace_crates = KP_liberation_ace_crates
+- KPLIB_aiResupplySources = KP_liberation_ace_crates??
+- KPLIB_radioTowerClassnames = KPLIB_radioTowerClassnames
+- KPLIB_collisionIgnoreObjects = GRLIB_ignore_colisions_when_building
+
+# KPLIB_config
+// Renamed version of `KP_Liberation_Config`
+- KPLIB_presetEnemy = KPLIB_preset_opfor
+- KPLIB_presetResistance = KPLIB_preset_resistance
+- KPLIB_presetCivilians = KPLIB_preset_civilians
+- KPLIB_presetArsenal = KPLIB_arsenal
+- KPLIB_fuel_neutral = KP_liberation_fuel_neutral
+- KPLIB_fuel_normal = KP_liberation_fuel_normal
+- KPLIB_fuel_max = KP_liberation_fuel_max
+- KPLIB_save_key = GRLIB_save_key
+- KPLIB_save_interval = KP_liberation_save_interval
+- KPLIB_side_player = GRLIB_side_friendly
+- KPLIB_side_enemy = GRLIB_side_enemy
+- KPLIB_side_resistance = GRLIB_side_resistance
+- KPLIB_side_civilian = GRLIB_side_civilian
+- KPLIB_color_player = GRLIB_color_friendly
+- KPLIB_color_enemy = GRLIB_color_enemy
+- **KPLIB_color_enemyActive = GRLIB_color_enemy_bright**
+// I'm not gonna type that reminder again lmao
+- KPLIB_height_halo = KPLIB_range_fob
+- **KPLIB_secondary_missions_costs = GRLIB_secondary_missions_costs**
+// APR fork has additional values in the array due to more tasks added
+- KPLIB_secondary_objective_impact = GRLIB_secondary_objective_impact
+- KPLIB_recycling_percentage = GRLIB_recycling_percentage
+- KPLIB_range_sectorActivation = GRLIB_sector_size
+- KPLIB_range_sectorCapture = GRLIB_capture_size
+- KPLIB_battlegroup_size = GRLIB_battlegroup_size
+- KPLIB_vulnerability_timer = GRLIB_vulnerability_timer
+- KPLIB_range_radioTowerScan = GRLIB_radiotower_size
+- **KPLIB_civilians_amount = GRLIB_KPLIB_c_units_amount**
+// This might be a Civilian rename error
+- **= GRLIB_cleanup_delay**
+//Missing
+- KPLIB_cap_playerSide = GRLIB_blufor_cap
+- KPLIB_cap_enemySide = GRLIB_sector_cap
+- KPLIB_cap_battlegroup = GRLIB_battlegroup_cap
+- KPLIB_cap_patrol = GRLIB_patrol_cap
+- KPLIB_cr_kill_penalty = KP_liberation_cr_kill_penalty
+- KPLIB_cr_sector_gain = KP_liberation_cr_sector_gain
+- KPLIB_civinfo_min = KP_liberation_civinfo_min
+- KPLIB_civinfo_max = KP_liberation_civinfo_max
+- KPLIB_civinfo_chance = KP_liberation_civinfo_chance
+- KPLIB_civinfo_intel = KP_liberation_civinfo_intel
+- KPLIB_civinfo_duration = KP_liberation_civinfo_duration
+- KPLIB_civinfo_task_chance = KP_liberation_civinfo_task_chance
+- KPLIB_civinfo_task_duration = KP_liberation_civinfo_task_duration
+- KPLIB_convoy_ambush_chance = KP_liberation_convoy_ambush_chance
+- KPLIB_convoy_ambush_duration = KP_liberation_convoy_ambush_duration
+- KPLIB_resistance_tier2 = KP_liberation_resistance_tier2
+- KPLIB_resistance_tier3 = KP_liberation_resistance_tier3
+- KPLIB_resistance_at_chance = KP_liberation_resistance_at_chance
+- KPLIB_resistance_sector_chance = KP_liberation_resistance_sector_chance
+- KPLIB_resistance_ambush_chance = KP_liberation_resistance_ambush_chance
+**KPLIB_arsenalBlacklist = blacklisted_from_arsenal**
+// Whitelist is more performance friendly according to old documentation
+- KPLIB_arsenalAllowedExtension = KP_liberation_allowed_items_extension
+- KPLIB_large_storage_positions = KP_liberation_large_storage_positions
+- KPLIB_small_storage_positions = KP_liberation_small_storage_positions
+- KPLIB_endgame = GRLIB_endgame
