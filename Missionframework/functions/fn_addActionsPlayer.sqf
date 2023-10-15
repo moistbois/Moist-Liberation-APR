@@ -81,23 +81,23 @@ _player addAction [
 ];
 
 // Squad management
-_player addAction [
-    ["<t color='#80FF80'>", localize "STR_SQUAD_MANAGEMENT_ACTION", "</t><img size='2' image='\a3\Ui_F_Curator\Data\Displays\RscDisplayCurator\modeGroups_ca.paa'/>"] joinString "",
-    "scripts\client\ui\squad_management.sqf",
-    nil,
-    -730,
-    false,
-    true,
-    "",
-    "
-        isNull (objectParent _originalTarget)
-        && {alive _originalTarget}
-        && {!((units group _originalTarget) isEqualTo [_originalTarget])}
-        && {(leader group _originalTarget) isEqualTo _originalTarget}
-        && {build_confirmed isEqualTo 0}
-    "
-];
-
+//_player addAction [
+//    ["<t color='#80FF80'>", localize "STR_SQUAD_MANAGEMENT_ACTION", "</t><img size='2' image='\a3\Ui_F_Curator\Data\Displays\RscDisplayCurator\modeGroups_ca.paa'/>"] joinString "",
+//    "scripts\client\ui\squad_management.sqf",
+//    nil,
+//    -730,
+//    false,
+//    true,
+//    "",
+//    "
+//        isNull (objectParent _originalTarget)
+//        && {alive _originalTarget}
+//        && {!((units group _originalTarget) isEqualTo [_originalTarget])}
+//        && {(leader group _originalTarget) isEqualTo _originalTarget}
+//        && {build_confirmed isEqualTo 0}
+//    "
+//];
+//
 // Arsenal
 _player addAction [
     ["<t color='#FFFF00'>", localize "STR_ARSENAL_ACTION", "</t><img size='2' image='res\ui_arsenal.paa'/>"] joinString "",
