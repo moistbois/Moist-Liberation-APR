@@ -21,11 +21,11 @@
 class Header {
     gameType = "CTI";
     minPlayers = 1;
-    maxPlayers = 37;
+    maxPlayers = 34;
 };
 
 // Name of Mission author(s) and contributors. Obviously you can only add and not (!) remove someone.
-author = "[GREUH] Zbug & McKeewa, KP Liberation Dev Team";
+author = "[GREUH], [KP], Apricot-ale, Doxus, CarlMylo, Pantteri";
 
 
 /*
@@ -40,7 +40,7 @@ briefingName = $STR_MISSION_TITLE;
 overviewPicture = "res\lib.paa";
 
 // Text to be displayed below the overviewPicture on the mission selection screen
-overviewText = "github.com/KillahPotatoes";
+overviewText = "";
 
 
 /*
@@ -56,7 +56,7 @@ onLoadName = $STR_MISSION_TITLE;
 loadScreen = "res\lib.paa";
 
 // Displays a message while the mission is loading below the loadScreen picture.
-onLoadMission = "github.com/KillahPotatoes";
+onLoadMission = "";
 
 
 /*
@@ -64,7 +64,7 @@ onLoadMission = "github.com/KillahPotatoes";
 */
 
 // Enable or disable the respawn button in the menu for INSTANT and BASE respawn types.
-respawnButton = 1;
+respawnButton = 0;
 
 // Templates are pre-defined scripts called when player dies and respawns. They are defined in an array and can be combined together.
 // List of pre-defined variants: https://community.bistudio.com/wiki/Arma_3_Respawn#Official_Templates
@@ -87,7 +87,7 @@ respawnTemplates[] = {};
 respawn = 3;
 
 // Set respawn delay in seconds.
-respawndelay = 5;
+respawndelay = 10;
 
 // Show the scoreboard and respawn countdown timer for a player if he is killed with respawn type BASE.
 respawnDialog = 0;
