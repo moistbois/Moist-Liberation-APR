@@ -215,3 +215,5 @@ NEW FORMAT = OLD FORMAT
 - KPLIB_large_storage_positions = KP_liberation_large_storage_positions
 - KPLIB_small_storage_positions = KP_liberation_small_storage_positions
 - KPLIB_endgame = GRLIB_endgame
+
+- KPLIB_param_playerMenu = KP_liberation_playermenu
