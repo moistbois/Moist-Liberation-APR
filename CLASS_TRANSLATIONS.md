@@ -217,3 +217,4 @@ NEW FORMAT = OLD FORMAT
 - KPLIB_endgame = GRLIB_endgame
 
 - KPLIB_param_playerMenu = KP_liberation_playermenu
+- KPLIB_civrep_debug = KP_liberation_civrep_debug
