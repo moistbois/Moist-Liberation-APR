@@ -72,7 +72,7 @@ if (_classname in KPLIB_o_helicopters) then {
 
 // Clear cargo, if enabled
 [_newvehicle] call KPLIB_fnc_clearCargo;
-
+_newvehicle addItemCargoGlobal ["toolkit", 1];
 // Process KP object init
 [_newvehicle] call KPLIB_fnc_addObjectInit;
 
