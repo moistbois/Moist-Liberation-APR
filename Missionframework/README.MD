@@ -1,9 +1,29 @@
 ## TODO:
-- [ ] Added members into Whitelist
+- [x] Added members into Whitelist
+- [x] WHERE `GRLIB_ignore_colisions_when_building`
+	- It was `KPLIB_collisionIgnoreObjects`
 - `fn_addActionsPlayer.sqf`
 	- [ ] FOB clearance split into Big and Small
-- [ ] Remove isTouchingGround and surfaceIsWater restrictions from `fn_getMobileRespawns.sqf`
+- [ ] L24 in `_presets.json` in `_tools\_presets` is missing `GRLIB_cleanup_delay`. Where is this?
+	- Was removed by Wyqer in commit [3c3307e05feb827d138f6e0eb9153f9eb9a8e81e](https://github.com/moistbois/Moist-Liberation-APR/commit/3c3307e05feb827d138f6e0eb9153f9eb9a8e81e)
+		- Why?
 - [ ] Add FFE into `init.sqf`
+	- [ ] Consider `class addArtyToSupport` L7 in `Missionframework\CfgFunctions.hpp`
+- [ ] Change flags in `Missionframework\res\flag_kp_co.paa`
+- [ ] Is it worth re-implementing persistent storage in `Missionframework/functions/fn_getSaveData.sqf`?
+- [ ] Are we still doing toolkits on every vehicle spawn? Couldn't it be done via the objectInit script?
+	- [ ] `Missionframework\functions\fn_spawnVehicle.sqf` L75-76
+
+#### Presets:
+- [ ] Add presets to:
+	- [ ] `Missionframework/KPLIB_config.sqf`
+	- [ ] `Missionframework/scripts/client/init_client.sqf` - This is where server initializes all of the presets to pick via KPLIB Config
+- [ ] All `case` instances will have to be updated.
+	- L77 in `Missionframework\scripts\server\init_server.sqf` to L110 use the Opfor loadout case defined in "Missionframework\KPLIB_config.sqf"
+- [ ] Move things from old player presets to new format.
+
+#### Multiple MSP Stuff:
+- [ ] Remove isTouchingGround and surfaceIsWater restrictions from `fn_getMobileRespawns.sqf`
 - [ ] Add multiple types of mobile respawns. Intended to be truck, boat, then helicopter in `KPLIB_b_mobileRespawn`
 	- [ ] Affected files will be
 		- [ ] `Missionframework\presets\init_presets.sqf`
@@ -11,31 +31,14 @@
 		- [ ] `Missionframework\scripts\client\misc\playerNamespace.sqf`
 		- [ ] Every preset file
 - [ ] Change `Missionframework\scripts\client\markers\fob_markers.sqf`, `Missionframework\scripts\client\spawn\redeploy_manager.sqf`, to use new multiple types of mobile respawns
-- [ ] Change flags in `Missionframework\res\flag_kp_co.paa`
-
-Older:
-
-- [ ] Consider `class addArtyToSupport` L7 in `Missionframework\CfgFunctions.hpp`
-- [ ] L24 in `_presets.json` in `_tools\_presets` is missing `GRLIB_cleanup_delay`. Where is this?
-	- Was removed by Wyqer in commit [3c3307e05feb827d138f6e0eb9153f9eb9a8e81e](https://github.com/moistbois/Moist-Liberation-APR/commit/3c3307e05feb827d138f6e0eb9153f9eb9a8e81e)
-		- Why?
-- [ ] All `case` instances will have to be updated.
-	- L77 in `Missionframework\scripts\server\init_server.sqf` to L110 use the Opfor loadout case defined in "Missionframework\KPLIB_config.sqf"
-- [ ] Is it worth re-implementing persistent storage in `Missionframework/functions/fn_getSaveData.sqf`?
-- [ ] Add presets to:
-	- [ ] `Missionframework/KPLIB_config.sqf`
-	- [ ] `Missionframework/scripts/client/init_client.sqf` - This is where server initializes all of the presets to pick via KPLIB Config
 - [ ] `KPLIB_b_mobileRespawn` in `presets/players` arsenals needs to be updated for the Multiple MSP types system.
 	- [ ] Previous implementation used `Respawn_truck_typename`
 		- Example: `Respawn_truck_typename = ["B_LINGOR_Unimog_Transport", "rhsgref_hidf_rhib", "B_LINGOR_CH_34D"];                           // This is the mobile respawn (and medical) truck.`
 	- [ ] Implement case system as well. Previous implementation had extra cases in `support_vehicles = [` (L251 in old build presets)
 		- This is now `KPLIB_b_vehSupport` in the player presets SQF.
 	- [ ] Double check local files as they may have a newer implementation.
-- [ ] Move things from old player presets to new format.
-- WHERE `GRLIB_ignore_colisions_when_building`
-	- It was `KPLIB_collisionIgnoreObjects`
-- [ ] Are we still doing toolkits on every vehicle spawn? Couldn't it be done via the objectInit script?
-	- [ ] `Missionframework\functions\fn_spawnVehicle.sqf` L75-76
+
+
 
 CHANGELOG:
 - [x] Implement Doxus build system
