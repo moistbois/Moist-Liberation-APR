@@ -374,7 +374,7 @@ _player addAction [
 // Create big FOB clearance
 _player addAction [
     ["<t color='#FFFF00'>", localize "STR_BIG_CLEARANCE_ACTION", "</t>"] joinString "",
-    {[player getVariable ["KPLIB_fobPos", [0, 0, 0]], KPLIB_range_fob * 0.4, true] call KPLIB_fnc_createClearanceConfirm;},
+    {[player getVariable ["KPLIB_fobPos", [0, 0, 0]], KPLIB_range_fob * 0.8, true] call KPLIB_fnc_createClearanceConfirm;},
     nil,
     -850,
     false,
