@@ -37,6 +37,7 @@ switch (KPLIB_presetPlayer) do {
     case 28: {[] call compile preprocessFileLineNumbers "presets\players\sfp_wdl.sqf";};
     case 29: {[] call compile preprocessFileLineNumbers "presets\players\sfp_des.sqf";};
     case 30: {[] call compile preprocessFileLineNumbers "presets\players\enoch.sqf";};
+	case 31: {[] call compile preprocessFileLineNumbers "presets\players\african_militia.sqf";};
     default  {[] call compile preprocessFileLineNumbers "presets\players\custom.sqf";};
 };
 
@@ -61,6 +62,7 @@ switch (KPLIB_presetEnemy) do {
     case 18: {[] call compile preprocessFileLineNumbers "presets\enemies\cup_cdf.sqf";};
     case 19: {[] call compile preprocessFileLineNumbers "presets\enemies\cup_baf_desert.sqf";};
     case 20: {[] call compile preprocessFileLineNumbers "presets\enemies\cup_baf_woodland.sqf";};
+	case 21: {[] call compile preprocessFileLineNumbers "presets\enemies\african_militia.sqf";};
     default  {[] call compile preprocessFileLineNumbers "presets\enemies\custom.sqf";};
 };
 
