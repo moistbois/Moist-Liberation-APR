@@ -12,7 +12,12 @@
 
 // Vehicle classnames which should be ignored on kp_fuel_consumption.
 kp_fuel_ignore_vehicles = [
-    "gm_ge_army_bicycle_01_oli"
+    "gm_ge_army_bicycle_01_oli",
+	"RDS_MMT_Civ_01",
+	"vn_c_bicycle_01",
+	"vn_c_bicycle_02",
+	"RDS_Old_bike_Civ_01",
+	"vn_b_air_f4b_navy_hcas"
 ];
 
 // Vehicle classnames which also function as ACE medical vehicles.
@@ -38,8 +43,10 @@ KPLIB_medical_vehicles = [
     "CUP_O_BMP2_AMB_sla",
     "CUP_O_LR_Ambulance_TKA",
     "CUP_O_M113_Med_TKA",
+	"gm_gc_airforce_mi2sr",
     "gm_gc_army_ural375d_medic_win",
     "gm_gc_army_ural375d_medic",
+	"gm_ge_airforce_do28d2_medevac",
     "gm_ge_army_u1300l_medic_win_rc",
     "gm_ge_army_u1300l_medic",
     "I_E_Truck_02_Medical_F",
@@ -47,6 +54,7 @@ KPLIB_medical_vehicles = [
     "O_T_Truck_03_medical_ghex_F",
     "O_Truck_03_medical_F",
     "RHS_UH60M_MEV_d",
+	"rhs_gaz66_ap2_vmf",
     "RHS_UH60M_MEV",
     "RHS_UH60M_MEV2_d",
     "RHS_UH60M_MEV2",
@@ -61,15 +69,28 @@ KPLIB_medical_vehicles = [
     "uns_ch47a_medevac",
     "uns_H13_medevac_CAV",
     "uns_M577_amb",
-    "uns_uh1D_med"
+    "uns_uh1D_med",
+    "vn_b_air_uh1d_01_01",
+    "vn_b_wheeled_m54_repair_airport"
 ];
 
 // Building classnames which also function as ACE medical facilities.
 KPLIB_medical_facilities = [
     "Land_Medevac_house_V1_F",
     "Land_Medevac_HQ_V1_F",
+	"Land_MedicalTent_01_tropic_closed_F",
+	"Land_PartyTent_01_F",
     "LAND_uns_army_med",
     "LAND_uns_tent3mash",
+    "Land_vn_tent_mash_01_01",
+    "Land_vn_tent_mash_01_02",
+    "Land_vn_tent_mash_01_03",
+    "Land_vn_tent_mash_01_04",
+    "Land_vn_tent_mash_01",
+    "Land_vn_tent_mash_02_01",
+    "Land_vn_tent_mash_02_02",
+    "Land_vn_tent_mash_02_03",
+    "Land_vn_tent_mash_02_04",
     "uns_mash_main",
     "uns_mash",
     "US_Tent_2",
@@ -91,6 +112,7 @@ KPLIB_aiResupplySources = [
     "B_Slingload_01_Ammo_F",
     "B_T_APC_Tracked_01_CRV_F",
     "B_T_Truck_01_ammo_F",
+	"Misc_Cargo1B_military",
     "B_Truck_01_ammo_F",
     "BW_LKW15T_Ammo_F",
     "CUP_B_Kamaz_Reammo_CDF",
@@ -125,16 +147,19 @@ KPLIB_aiResupplySources = [
     "sfp_tgb40_ammo",
     "uns_M113_ENG",
     "uns_M35A2_ammo",
-    "uns_motorpool1_repair"
+    "uns_motorpool1_repair",
+	"vn_b_wheeled_m54_ammo"
 ];
 
 // Everything that can repair other vehicles.
 vehicle_repair_sources = [
     "B_APC_Tracked_01_CRV_F",
+	"rhs_gaz66_repair_vmf",
     "B_Slingload_01_Repair_F",
     "B_T_APC_Tracked_01_CRV_F",
     "B_T_Truck_01_Repair_F",
     "B_Truck_01_Repair_F",
+	"RHS_Ural_Repair_MSV_01",
     "BW_LKW15T_Repair_F",
     "C_Offroad_01_repair_F",
     "CUP_B_Kamaz_Repair_CDF",
@@ -154,6 +179,7 @@ vehicle_repair_sources = [
     "O_Heli_Transport_04_repair_F",
     "O_T_Truck_03_repair_ghex_F",
     "O_Truck_03_repair_F",
+	"Land_Workbench_01_F",
     "RHS_Ural_Repair_VDV_01",
     "rhsusf_M1078A1R_SOV_M2_D_fmtv_socom",
     "rhsusf_M1239_M2_Deploy_socom_d",
@@ -168,16 +194,20 @@ vehicle_repair_sources = [
     "UNS_Hanger_repair",
     "uns_M113_ENG",
     "uns_M35A2_repair",
-    "uns_motorpool1_repair"
+    "uns_motorpool1_repair",
+	"vn_b_wheeled_m54_repair"
 ];
 
 // Everything that can rearm other vehicles.
 vehicle_rearm_sources = [
-    "B_APC_Tracked_01_CRV_F",
+	"B_APC_Tracked_01_CRV_F",
+	"rhs_gaz66_ammo_vmf",
+	"Misc_Cargo1B_military",
     "B_Slingload_01_Ammo_F",
     "B_T_APC_Tracked_01_CRV_F",
     "B_T_Truck_01_ammo_F",
     "B_Truck_01_ammo_F",
+	"RHS_Ural_Ammo_MSV_01",
     "BW_LKW15T_Ammo_F",
     "CUP_B_Kamaz_Reammo_CDF",
     "CUP_B_MTVR_Ammo_USA",
@@ -210,14 +240,17 @@ vehicle_rearm_sources = [
     "rhsusf_M977A4_AMMO_usarmy_wd",
     "sfp_tgb40_ammo",
     "uns_M113_ENG",
-    "uns_M35A2_ammo"
+    "uns_M35A2_ammo",
+	"vn_b_wheeled_m54_ammo"
 ];
 
 // Everything that can refuel other vehicles.
 vehicle_refuel_sources = [
     "B_APC_Tracked_01_CRV_F",
     "B_Slingload_01_Fuel_F",
+	"RHS_Ural_Fuel_MSV_01",
     "B_T_APC_Tracked_01_CRV_F",
+	"Land_Ind_TankSmall2",
     "B_T_Truck_01_fuel_F",
     "B_Truck_01_fuel_F",
     "BW_LKW15T_Fuel_F",
@@ -253,21 +286,27 @@ vehicle_refuel_sources = [
     "sfp_tgb40_fuel",
     "uns_M113_ENG",
     "uns_M35A2_fuel",
-    "uns_M35A2_fueltanker"
+    "uns_M35A2_fueltanker",
+	"vn_b_wheeled_m54_fuel"
 ];
 
 // Classnames of boats, so they can be built on water.
 boats_names = [
     "B_Boat_Armed_01_minigun_F",
+	"C_Scooter_Transport_01_F",
     "B_Boat_Transport_01_F",
     "B_SDV_01_F",
+	"rhsgref_hidf_canoe",
     "B_T_Boat_Armed_01_minigun_F",
     "B_T_Boat_Transport_01_F",
     "CUP_B_LCU1600_USMC",
     "CUP_B_MK10_GB",
     "CUP_B_RHIB_USMC",
     "CUP_B_RHIB2Turret_USMC",
+	"I_C_Boat_Transport_02_F",
+	"rhs_bmk_t",
     "CUP_O_LCVP_SLA",
+	"rhsgref_hidf_rhib",
     "CUP_O_LCVP_VIV_SLA",
     "CUP_O_PBX_SLA",
     "O_Boat_Armed_01_hmg_F",
@@ -282,7 +321,8 @@ boats_names = [
     "uns_PBR_M10",
     "uns_pbr_mk18",
     "uns_pbr",
-    "UNS_Zodiac_W"
+    "UNS_Zodiac_W",
+	"vn_b_boat_05_01"
 ];
 
 // Classnames of artillery vehicles, which should be added to the support module
@@ -404,13 +444,21 @@ KPLIB_param_supportModule_artyVeh = [
     "uns_M2_60mm_mortar_pvp",
     "uns_M2_60mm_mortar",
     "uns_M30_107mm_mortar",
-    "uns_Type55_mortar"
+    "uns_Type55_mortar",
+	"vn_b_army_static_mortar_m2",
+    "vn_b_army_static_mortar_m29"
 ];
 
 // Objects which are spawned as intel objects for pickup
 KPLIB_intelObjectClasses = [
-    "Land_Document_01_F",
-    "Land_File_research_F"
+    "Land_File_research_F",
+	"Land_File1_F",
+	"Land_FilePhotos_F",
+	"Land_File2_F",
+	"UMI_Item_Weed_Bale",
+	"UMI_Item_Cocaine_Brick",
+	"UMI_Item_Land_Camera_F",
+    "Land_Document_01_F"
 ];
 
 // Classnames of buildings inside military sectors, which are valid to hold intel items
@@ -430,12 +478,34 @@ KPLIB_intelBuildingClasses = [
     "Land_MilOffices_V1_F",
     "Land_Research_house_V1_F",
     "Land_Research_HQ_F",
+	"Land_Ind_Workshop01_03",
+	"Land_Army_hut3_long_int",
+	"Land_Ind_Workshop01_L",
+	"Land_Offices_01_V1_F",
+	"Land_Cargo_Tower_V1_No1_F",
+	"Land_Cargo_Tower_V1_No2_F",
+	"Land_Cargo_Tower_V1_No3_F",
+	"Land_Cargo_Tower_V1_No4_F",
+	"Land_Airport_02_controlTower_F",
+	"Land_Mil_Barracks_i",
+	"Land_Mil_Barracks",
+	"Land_Mil_ControlTower",
+	"Land_Army_hut_int",
+	"Land_Army_hut2_int",
+	"Land_A_Office01",
+	"Land_Bunker_01_tall_F",
+	"Land_Bunker_01_HQ_F",
+	"Land_GuardHouse_01_F",
+	"Land_tent_east",
+	"Land_A_Stationhouse_ep1",
+	"Land_HouseV2_02_Interier",
+	"Land_Ind_Workshop01_01",
     "Land_u_Barracks_V2_F"
 ];
 
 // Array of radio tower classnames to place at radio tower sectors. If more than one is added, it'll be selected random for each sector on campaign start.
 KPLIB_radioTowerClassnames = [
-    "Land_Communication_F"
+    "TFAR_Land_Communication_F"
 ];
 
 // Classnames of objects which should be ignored when building
