@@ -92,6 +92,20 @@ switch (KPLIB_presetEnemy) do {
             "fobhunt_templates\unsung\template4.sqf",
             "fobhunt_templates\unsung\template5.sqf"
         ];
+	};
+	case 21: {
+        KPLIB_fob_templates = [
+            "fobhunt_templates\africa\template1.sqf",
+            "fobhunt_templates\africa\template2.sqf",
+            "fobhunt_templates\africa\template3.sqf",
+            "fobhunt_templates\africa\template4.sqf",
+			"fobhunt_templates\africa\template5.sqf",
+			"fobhunt_templates\africa\template6.sqf",
+			"fobhunt_templates\africa\template7.sqf",
+			"fobhunt_templates\africa\template8.sqf",
+			"fobhunt_templates\africa\template9.sqf",
+            "fobhunt_templates\africa\template10.sqf"
+        ];
     };
     default {
         KPLIB_fob_templates = [
