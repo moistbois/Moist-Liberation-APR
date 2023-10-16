@@ -24,7 +24,7 @@
 */
 
 KPLIB_objectInits = [
-    // Set KP logo on white flag
+    // Set logo on white flag
     [
         ["Flag_White_F"],
         {_this setFlagTexture "res\flag_kp_co.paa";}
@@ -131,6 +131,14 @@ KPLIB_objectInits = [
                     [_arty] remoteExecCall ["KPLIB_fnc_addArtyToSupport", 0, _arty];
                 };
             };
+        }
+    ],
+	
+	// Add Workbench compat in case it doesn't work the other way
+    [
+        ["Land_Workbench_01_F"], 
+        {
+            _this setVariable ["ace_isRepairFacility", 1, true];
         }
     ],
 
