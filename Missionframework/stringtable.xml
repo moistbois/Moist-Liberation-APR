@@ -7402,7 +7402,17 @@
             <Japanese>ESCキーを押して終了</Japanese>
         </Key>
         <Key ID="STR_CLEARANCE_ACTION">
-            <Original>-- Clear FOB area</Original>
+            <Original>-- Clear small FOB area</Original>
+            <Spanish>-- Limpiar área de FOB</Spanish>
+            <Russian>-- Очистить зону FOB</Russian>
+            <Italian>-- Pulisci area FOB</Italian>
+            <German>-- FOB Gebiet räumen</German>
+            <Korean>-- 전초기지 주변 정리</Korean>
+            <Czech>-- Vymazat zónu FOB</Czech>
+            <Japanese>-- FOB周辺を一掃</Japanese>
+        </Key>
+        <Key ID="STR_BIG_CLEARANCE_ACTION">
+            <Original>-- Clear large FOB area</Original>
             <Spanish>-- Limpiar área de FOB</Spanish>
             <Russian>-- Очистить зону FOB</Russian>
             <Italian>-- Pulisci area FOB</Italian>
