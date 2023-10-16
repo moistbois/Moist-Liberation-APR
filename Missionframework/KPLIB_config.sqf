@@ -52,6 +52,7 @@
     28 = SFP (Woodland)
     29 = SFP (Desert)
     30 = LDF (Contact DLC)
+	31 = Project OPFOR African Militia ("better equipped")
 */
 KPLIB_presetPlayer = 0;
 
@@ -78,6 +79,7 @@ KPLIB_presetPlayer = 0;
     18 = CUP Chernarus Defense Force
     19 = CUP British Armed Forces (Desert)
     20 = CUP British Armed Forces (Woodland)
+	21 = Project OPFOR African Militia ("better equipped")
 */
 KPLIB_presetEnemy = 0;
 
@@ -120,6 +122,14 @@ KPLIB_presetCivilians = 0;
     7  = Unsung US arsenal preset
     8  = SFP arsenal preset
     9  = BWMod arsenal preset
+	10 = NATO MTP arsenal preset
+	11 = NATO Tropic arsenal preset
+	12 = NATO Woodland arsenal preset
+	13 = CSAT Hex arsenal preset
+	14 = CSAT Green Hex arsenal preset
+	15 = AAF arsenal preset
+	16 = LDF arsenal preset 
+	17 = Central africa (para) military
 */
 KPLIB_presetArsenal = 0;
 
@@ -368,6 +378,8 @@ KPLIB_surrender_chance = 80;
 // When playing on this map, it'll create a clearance (remove terrain objects) in a 15m radius around the battlegroup/reinforcements spawnpoint.
 KPLIB_battlegroup_clearance = [
     "song_bin_tanh",
+	"khe_sanh",
+	"lingor3",
     "Cam_Lao_Nam"
 ];
 
