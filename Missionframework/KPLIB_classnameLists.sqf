@@ -305,6 +305,7 @@ boats_names = [
     "CUP_B_RHIB2Turret_USMC",
 	"I_C_Boat_Transport_02_F",
 	"rhs_bmk_t",
+	"walker_A3_boat_f",
     "CUP_O_LCVP_SLA",
 	"rhsgref_hidf_rhib",
     "CUP_O_LCVP_VIV_SLA",
