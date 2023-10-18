@@ -53,6 +53,7 @@
     29 = SFP (Desert)
     30 = LDF (Contact DLC)
 	31 = Project OPFOR African Militia ("better equipped")
+	32 = Lingor Resistencia
 */
 KPLIB_presetPlayer = 0;
 
@@ -80,6 +81,7 @@ KPLIB_presetPlayer = 0;
     19 = CUP British Armed Forces (Desert)
     20 = CUP British Armed Forces (Woodland)
 	21 = Project OPFOR African Militia ("better equipped")
+	22 = Lingor Revolución
 */
 KPLIB_presetEnemy = 0;
 
@@ -94,6 +96,7 @@ KPLIB_presetEnemy = 0;
     6  = Unsung
     7  = CUP Takistani Locals
     8  = CUP National Party of Chernarus
+	9  = Lingor
 */
 KPLIB_presetResistance = 0;
 
@@ -107,6 +110,7 @@ KPLIB_presetResistance = 0;
     5  = Unsung
     6  = CUP Takistani Civilians
     7  = CUP Chernarussian Civilians
+	8  = Lingor Civilians
 */
 KPLIB_presetCivilians = 0;
 
@@ -130,6 +134,7 @@ KPLIB_presetCivilians = 0;
 	15 = AAF arsenal preset
 	16 = LDF arsenal preset 
 	17 = Central africa (para) military
+	18 = Lingor
 */
 KPLIB_presetArsenal = 0;
 
