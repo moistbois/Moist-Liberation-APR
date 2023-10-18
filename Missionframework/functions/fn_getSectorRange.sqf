@@ -18,7 +18,7 @@
 
 params [
     ["_unitCount", 0, [0]],
-    ["_sector"]
+    "_sector"
 ];
 
  private _activationRange = KPLIB_range_sectorActivation;;
