@@ -104,7 +104,7 @@ KPLIB_o_battleGrpVehicles = [
 	"O_Lingor_PT_76B",                                                  // PT-76B
     "O_Lingor_M151A1_TOW",                                                // M151A1 TOW
 	"O_Lingor_M41",                                                			// M41A3
-	"O_Lingor_Type_63_Tank",                                                // Type 63 (Tank)
+	"O_Lingor_Type_63_Tank"                                                // Type 63 (Tank)
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
