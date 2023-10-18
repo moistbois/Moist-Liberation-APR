@@ -21,7 +21,7 @@ params [
     ["_sector"]
 ];
 
-private _activationRange = 0;
+ private _activationRange = KPLIB_range_sectorActivation;;
 
 switch (true) do {
     case (_sector in KPLIB_sectors_spawn):    { _activationRange = KPLIB_range_pointActivation; };

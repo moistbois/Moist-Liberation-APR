@@ -207,7 +207,7 @@ KPLIB_range_cityActivation     = 500;
 KPLIB_range_factoryActivation  = 150;
 KPLIB_range_militaryActivation = 1200;
 KPLIB_range_towerActivation    = 250;
-KPLIB_range_airspawnActivation = 500;
+KPLIB_range_airSpawnActivation = 500;
 KPLIB_range_pointActivation    = 300;
 
 // Range to capture a sector.
