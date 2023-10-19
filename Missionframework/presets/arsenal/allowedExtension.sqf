@@ -32,6 +32,7 @@ KPLIB_arsenalAllowedExtension = [
 	"murshun_cigs_cigpack",
 	"immersion_cigs_cigar0",
 	"murshun_cigs_cig0",
+	"immersion_pops_poppack",
     //"ACE_launch_NLAW_Used_F",
     "ACE_PreloadedMissileDummy_CUP",
     "ACE_PreloadedMissileDummy_Igla_CUP",
