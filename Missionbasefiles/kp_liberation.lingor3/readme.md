@@ -1,0 +1,243 @@
+# Lingor: Glowing in the Jungle
+
+### About:
+The year is 1987. The country is Lingor and opportunity is ripe to a bit of political meddling. The CIA may have supplied some weapons to your group to help quell the local dissidents that subscribe to an ideology of a rival country. Use any and all resources to succeed at your mission.
+
+### Requirements:
+- [ARMA 3] (Size: 40.61 GBs)
+- A microphone
+- Teamspeak (TS3)
+- Task Force Arrowhead Radio (TS3 Plugin)
+- Pantrh Lingor Liberation Mod Preset
+- Joining Pantrh’s Discord for server info
+
+### Rules:
+- Don’t be a dick.
+- Don’t relog to skip unconsciousness. This is not a KOTH server.
+- This is a cooperative server. Teamwork is essential.
+- Keep game related chatter in-game. (i.e. don’t use text chat, Twitch, Discord, etc.)
+- Do not waste assets (vehicles, static weapons, etc.)
+- No cheating (includes exploits and metagaming.)
+
+### Modlist:
+- 3den Enhanced
+- [ace] Improved Arsenal Category
+- ace
+- Advanced Sling Loading
+- Advanced Towing
+- Better Inventory
+- Blastcore Edited (standalone version)
+- Bullet Casings
+- cb_blood
+- CBA_A3
+- CH View Distance
+- CUP Terrains - Core
+- Colombian Armed Forces RHS
+- DHI Uniforms and Equipment
+- DUI - Squad Radar
+- Enhanced Movement
+- Extra RHS Uniform Re-textures
+- GSTAVOs  M16A2
+- Global Mobilization - Demo Vehicle
+- Gruppe Adler Trenches
+- Immerse
+- Immersion Cigs
+- Interiors for CUP
+- JSRS SOUNDMOD
+- JSRS SOUNDMOD - RHS  AFRF Mod Pack Sound Support
+- JSRS SOUNDMOD - RHS GREF Mod Pack Sound Support
+- JSRS SOUNDMOD - RHS SAF Mod Pack Support
+- JSRS SOUNDMOD - RHS USAF Mod Pack Sound Support
+- KLPQ Music Radio
+- LAMBS_Danger.fsm (DEV)
+- LAMBS_RPG_RHS
+- LAMBS_Suppression
+- LAMBS_Turrets
+- Lingor/Dingor Island
+- Moistbois Factions - Lingor 1980s
+- Moistbois Radio - Lingor 1980s
+- NIArms Core
+- NIArms Core - RHS Compatibility
+- NIArms FAL Rifles
+- NIArms G3 Rifles
+- NIArms M1903 Springfield Rifles
+- Project OPFOR
+- RDS Civilian Pack
+- RHSAFRF
+- RHSGREF
+- RHSSAF
+- RHSUSAF
+- S.O.G. Prairie Fire
+- SSD Death Screams 2.1
+- Spanish Voice-Overs and Radio Protocol
+- TAC VESTS
+- Task Force Arrowhead Radio (BETA!!!)
+- Uriki's Mission Items
+- VET_Unflipping
+- Walkers A2 Vehicles
+- Window Breaker
+- Zeus Enhanced
+- Zeus Enhanced - ACE3 Compatibility
+
+### Soundtrack:
+- ABBA - Gimme! Gimme! Gimme! (A Man After Midnight)
+- Accept - Lady Lou
+- Adolfo Echeverria Y Su Orquesta - Amanciendo
+- Armando Hernandez Y Su Conjunto - La Zenaida
+- Arthur Verocai - Presente Grego
+- Azymuth  - Melô Dos Dois Bicudos
+- Azymuth - Faça de Conta
+- Billy Idol - Rebel Yell
+- Black Sabbath - Sweet Leaf
+- Bon Jovi - Livin' On A Prayer
+- Caifanes - Viento
+- Celia Cruz - A Papa
+- Celina y Reutilio - Alborada Guajira
+- Charly García - No Bombardeen Buenos Aires
+- Charly García - Nos Siguen Pegando Abajo
+- Corey Hart - Sunglasses At Night
+- Cortijo y Kako y Sus Tambores - Qué Le Pasó
+- Danza Invisible - Sin aliento
+- Daryl Hall & John Oates - Out Of Touch
+- David Bowie - Rebel Rebel
+- Def Leppard - Photograph
+- Depeche Mode - Everything Counts
+- DIO - Holy Diver
+- Diomedes Diaz - Recuerdos de la Montaña
+- Dire Straits - Walk Of Life
+- Doogy Degli Armonium - Wanted
+- Duncan Dhu - En algún lugar
+- Duran Duran - Rio
+- Eagles - Life in the Fast Lane
+- El Combo de los Galleros - Soledad
+- El Gran Combo - Un Verano En Nueva York
+- Elia y Elizabeth - Todo en la Vida
+- Enanitos Verdes - Guitarras Blancas
+- Enanitos Verdes - La Muralla Verde
+- Eric Clapton - Cocaine
+- Fito Olivares Y Su Grupo - Juana La Cubana
+- Fleetwood Mac - The Chain
+- Focus - Hocus Pocus
+- Gabriel Romero Y Su Orquesta - La Piragua
+- Gabriel Romero Y Su Orquesta - La Subienda
+- Gary Low - I Want You (Edit)
+- Gilberto Gil - Palco
+- Git - Viento Loco
+- Grupo Los Yoyi - El Fino
+- Grupo Pegasso - La Despedida
+- Guns N' Roses - Paradise City
+- Harold Faltermeyer - Axel F
+- Heaven 17 - (We Don't Need This) Fascist Groove Thang
+- Héctor Lavoe - El Todopoderoso
+- Hermanos - Cantaré Cantarás
+- Héroes del Silencio - Mar adentro
+- Hombres G - Devuélveme a mi chica
+- Hombres G - El ataque de las chicas cocodrilo
+- Human League - Don't You Want Me
+- Irakere - Bacalao Con Pan
+- Irakere - Gira Gira
+- Iron Maiden - The Trooper
+- Jeanette - ¿Porqué te vas?
+- Joe Arroyo - Rebelión
+- Joy Division - Transmission
+- Judas Priest - Breaking the Law
+- Kenny y los Eléctricos - No Huyas de Mi
+- La Sonora Del Caribe - Noche de Estrellas
+- La Sonora Dinamita - Cumbia Soleada
+- La Sonora Dinamita - Se Me Perdio la Cadenita
+- La Sonora Santanera - El Botones
+- La Unión - Lobo-hombre en París
+- Las Grecas - Orgullo
+- Las Grecas - Te Estoy Amando Locamente
+- Laura Branigan - Self Control
+- Lito Barrientos Y Su Orquesta - Caracol
+- Los Angeles Azules - Cumbia Enamorada
+- Los Barón De Apodaca - Hoja Seca
+- Los Corraleros De Majagual - Cumbia Campesina
+- Los Corraleros De Majagual - Llora Acordeon
+- Los Cumbiamberos de Pacheco - Santo Domingo
+- Los Electrodomesticos - El Frio Misterio
+- Los Gavilanes De La Costa - Los Gavilanes
+- Los Guacharacos - Esperma y Ron
+- Los Guaracheros de Oriente - El Tira Y Jala
+- Los Immortales - La Pollera Colorá
+- Los Plebeyos - Que Calor, Que Calor
+- Los Prisioneros - Nunca Quedas Mal Con Nadie
+- Los Prisioneros - Quieren Dinero
+- Los Reyes '73 - Adeoy
+- Los Satelies - Ocaso Marino
+- Los Tigres del Norte - La Puerta Negra
+- Los Warahuaco - El Pescador de Baru
+- Los Yetis - Llegaron los Peluqueros
+- Los Yorks - Solo Pido Amor
+- Luis Miguel - Ahora Te Puedes Marchar
+- Marcos Valle - Estrelar
+- Marcos Valle - Paz E Futebol
+- Men At Work - Be Good Johnny
+- Men Without Hats - The Safety Dance
+- Menudo - Subete a Mi Moto
+- Michael Jackson - Beat It
+- Miguel Mateos & Zas - Cuando Seas Grande
+- Miguel Mateos & Zas - Donde Arde la Ciudad
+- Ministry - Over The Shoulder
+- Modern Talking - Cheri Cheri Lady
+- Montería Swing - La Samaria
+- Mötley Crüe - Live Wire
+- Mr. Mister - Broken Wings
+- Musical Youth - Pass The Dutchie
+- Nacha Pop - Persiguiendo Sombras
+- New Order - Blue Monday (12' Version)
+- Octavio Mesa y Su Conjunto - La Pelea Con el Diablo
+- Orquesta Ritmo de Sabanas - Porro Bonito
+- Patrick Cowley - Do You Wanna Funk (feat. Sylvester)
+- Patxi Andion - Si Yo Fuera Mujer
+- Paul Engemann - Scarface (Push it to the Limit)
+- Pedro Laza Y Sus Pelayeros - Cumbia del Monte
+- Pet Shop Boys - West End Girls
+- Pink Floyd - Money (Edit)
+- Propaganda - p_Machinery
+- Q Lazzarus - Goodbye Horses
+- Radio Futura - A Cara o Cruz
+- Radio Futura - Escuela de Calor
+- Ramones - Havana Affair
+- Ratt - Round and Round
+- Red Rider - Lunatic Fringe
+- Ric Ocasek - Keep On Laughin'
+- Rodolfo Aicardi - La Colegiala
+- Rodolfo Y Su Tipica - Tabaco y Ron
+- Santa Esmeralda - Don't Let Me Be Misunderstood
+- Santana - Oye Como Va
+- Santana - Tales of Kilimanjaro
+- Scorpions - Still Loving You
+- Sintesis - Con la Luz de la Mañana
+- Soda Stereo - El Cuerpo Del Delito
+- Soda Stereo - Persiana Americana
+- Soda Stereo - Sin Sobresaltos
+- Sonora Dinamita - Ritmo De Tambo
+- Styx - Renegade
+- Suicidal Tendencies - I Shot the Devil
+- Talking Heads - Life During Wartime
+- Ted Nugent - Stranglehold
+- The Alan Parsons Project - I Wouldn't Want To Be Like You
+- The Cars - Heartbeat City
+- The Cure - A Forest
+- The Latin Brothers - Las Caleсas Son Como Las Flores
+- The Police - Message In A Bottle
+- Thompson Twins - Love On Your Side
+- Trans-X - Living On Video
+- Van Halen - Jump
+- Veni Vidi Vici - Viviendo de Noche
+- Vicente Fernández - El Rey
+- Village People - Can't Stop the Music
+- Virus - Pronta Entrega
+- Vivien Vee - Remember
+- Xavier Cugat & His Orchestra - Cuban Mambo
+- Yaz - Situation (US 12" Mix)
+
+### Credits:
+- GreuhZbug (original Liberation developer)
+- Killah Potatoes (developer of KP Liberation)
+- Apricot-ale (fork maintainer/developer for KP Liberation APR)
+- Doxus (Bespoke features developer)
+- Carl Mylo (Mission design and QOL fixes)
+- Pantrh (Mission design)
