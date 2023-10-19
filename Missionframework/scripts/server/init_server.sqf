@@ -106,6 +106,14 @@ switch (KPLIB_presetEnemy) do {
 			"fobhunt_templates\africa\template9.sqf",
             "fobhunt_templates\africa\template10.sqf"
         ];
+	};
+	case 22: {
+        KPLIB_fob_templates = [
+            "fobhunt_templates\lingor\template1.sqf",
+            "fobhunt_templates\lingor\template2.sqf",
+            "fobhunt_templates\lingor\template3.sqf",
+            "fobhunt_templates\lingor\template4.sqf"
+        ];
     };
     default {
         KPLIB_fob_templates = [
