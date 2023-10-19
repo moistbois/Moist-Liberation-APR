@@ -43,11 +43,11 @@ KPLIB_b_crateFuel = "CargoNet_01_barrels_F";                     // This defines
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 KPLIB_b_infantry = [
-    ["B_LINGOR_Driver_01",10,0,0]                                     				// Driver 01
-	["B_LINGOR_Driver_02",10,0,0]                                     				// Driver 02
-	["B_LINGOR_Pilot_01",10,0,0]                                  				   // Pilot 01
-	["B_LINGOR_Pilot_02",10,0,0]                                  				   // Pilot 02
-	["B_LINGOR_Naval",10,0,0]                                  					   // Naval Crewman
+    ["B_LINGOR_Driver_01",10,0,0],                                     				// Driver 01
+	["B_LINGOR_Driver_02",10,0,0],                                     				// Driver 02
+	["B_LINGOR_Pilot_01",10,0,0],                                  				   // Pilot 01
+	["B_LINGOR_Pilot_02",10,0,0],                                  				   // Pilot 02
+	["B_LINGOR_Naval",10,0,0],                                  					   // Naval Crewman
 	["B_LINGOR_Shotgun",15,0,0],                             				  	 // Shotgun
 	["B_LINGOR_Medic",30,0,0],                                        			   // Medic
 	["B_LINGOR_Tank_Commander",30,0,0],                               			    // Tank Commander
@@ -66,7 +66,7 @@ KPLIB_b_infantry = [
 	["B_LINGOR_Machinegunner_03",60,0,0],                             		      // Machinegunner M60
 	["B_LINGOR_Anti_Tank_01",70,10,0],                                             // Anti-Tank
 	["B_LINGOR_Anti_Air_01",70,10,0],                                             // Anti-Air 01
-	["B_LINGOR_Anti_Air_02",70,10,0],                                             // Anti-Air 02
+	["B_LINGOR_Anti_Air_02",70,10,0]                                             // Anti-Air 02
 
 ];
 
@@ -97,7 +97,7 @@ KPLIB_b_vehLight = [
 	["rhsgref_hidf_canoe",0,0,0],                                 // Canoe
 	["B_Boat_Transport_01_F",25,0,2],                                 // Dinghy
 	["C_Scooter_Transport_01_F",10,0,5],                                 // Jetski
-	["rhs_bmk_t",15,0,15]                           			      // BMK Tug
+	["rhs_bmk_t",15,0,15],                           			      // BMK Tug
 	["I_C_Boat_Transport_02_F",45,0,40],                                 // RHIB
 	["vn_b_boat_12_02",200,120,75],                                   	// PBR Mk2 M60 black
 	["vn_b_boat_13_02",200,120,75],                                     // PBR Mk2 Mk18 black
@@ -107,14 +107,12 @@ KPLIB_b_vehLight = [
 
 KPLIB_b_vehHeavy = [
 	["rhsgref_tla_btr60",275,180,300],                                      // BTR-60PB APC ((PKT (7.62x54mm) and KPVT (14.5x115mm))
-	["rhsgref_tla_btr60",275,180,300],                                      // BTR-60PB APC ((PKT (7.62x54mm) and KPVT (14.5x115mm))
-	["vn_b_armor_m41_01_01",300,300,250]                                // M41A3 Walker Bulldog
-	["B_LINGOR_Type_63",325,100,120]                                // Type 63
+	["vn_b_armor_m41_01_01",300,300,250],                                // M41A3 Walker Bulldog
+	["B_LINGOR_Type_63",325,100,120],                                // Type 63
 	["vn_b_armor_m132_01",325,50,275],                                 // M132A1 Flamethrower
 	["B_LINGOR_PT_76A",345,275,290],                                 // PT-76A
-	["B_LINGOR_PT_76B",345,275,290],                                 // PT-76B
     ["rhs_bmp1_vdv",600,470,420],                    			// BMP-1 (2A28 Cannon (HE-FRAG OG15V/HEAT PG15V), PKT (7.62x54mm), 9K111 (wire AT missile))
-    ["B_LINGOR_Tank_Commander",800,800,800]                                     // T-55A (D-10 Cannon (BK5M HEAT-FS), (OF416Sh HE-FRAG), BM8 APDS)
+    ["B_LINGOR_T55",800,800,800]                                     // T-55A (D-10 Cannon (BK5M HEAT-FS), (OF416Sh HE-FRAG), BM8 APDS)
 
 ];
 
@@ -126,23 +124,16 @@ KPLIB_b_vehAir = [
     ["vn_b_air_oh6a_02",150,80,100],                                     // OH-6A Cayuse (Scout MG)
 	["vn_b_air_oh6a_03",150,100,100],                                    // OH-6A Cayuse (Scout GL)
     ["vn_b_air_oh6a_06",150,200,100],                                    // OH-6A Cayuse (Gunship/APERS)
-    ["vn_b_air_oh6a_05",150,200,100],                                    // OH-6A Cayuse (Gunship/AC)
     ["vn_b_air_ch34_03_01",125,20,75],                                 // UH-34D Seahorse (M60 x2)
     ["vn_b_air_ch34_04_03",225,300,100],                                 // UH-34 Stinger (APERS)
     ["vn_b_air_ch34_04_02",225,300,100],                                 // UH-34 Stinger (CAS)
-    ["vn_b_air_ch34_04_01",225,300,100],                                 // UH-34 Stinger (FFAR)
     ["vn_b_air_uh1d_01_01",225,100,100],                                // UH-1D Iroquois (Dust Off) MedEvac
     ["vn_b_air_uh1d_02_01",225,100,100],                                // UH-1D Iroquois Slick (Army)
-    ["vn_b_air_uh1c_06_01",225,200,100],                                // UH-1C Iroquois ARA (Army)
     ["vn_b_air_uh1c_01_01",225,200,100],                                // UH-1C Iroquois Hog (Army)
     ["vn_b_air_uh1c_05_01",225,250,100],                                // UH-1C Iroquois Heavy Hog (Army)
-    ["vn_b_air_uh1c_03_01",225,250,100],                                // UH-1C Iroquois Hornet (USAF)
-    ["vn_b_air_uh1c_02_01",225,200,100],                                // UH-1C Iroquois Gunship (Army)
     ["vn_b_air_uh1e_02_04",225,250,100],                                // UH-1E Iroquois Heavy Gunship
     ["vn_b_air_ah1g_02_usmc",500,400,250],                              // AH-1G Cobra (APERS)
-    ["vn_b_air_ah1g_03",500,400,250],                                   // AH-1G Cobra (AT)
-    ["vn_b_air_ah1g_04_usmc",500,400,250],                              // AH-1G Cobra (CAS)
-    ["vn_b_air_ah1g_09",500,400,250],                                   // AH-1G Cobra (M-195, CAS)
+    ["vn_b_air_ah1g_03",500,400,250]                                   // AH-1G Cobra (AT)
 
 ];
 
@@ -155,8 +146,6 @@ KPLIB_b_vehStatic = [
 	["vn_b_army_static_m1919a4_high",25,40,0],                            // M-1919A4 .30cal (High)
     ["vn_b_army_static_m1919a4_low",25,40,0],                             // M-1919A4 .30cal (Low)
     ["vn_b_army_static_m1919a6",25,40,0],                                 // M-1919A6 .30cal
-	["vn_b_army_static_m2_high",30,40,0],                                 // M2HB .50cal (High)
-	["vn_b_army_static_m2_low",30,40,0],                                 // M2HB .50cal (Low)
     ["vn_b_army_static_m60_high",35,40,0],                               // M60 (High)
     ["vn_b_army_static_m60_low",20,40,0],                                // M60 (Low)
     ["vn_b_army_static_m2_high",35,60,0],                                // M-2HB .50cal (High)
@@ -164,12 +153,11 @@ KPLIB_b_vehStatic = [
     ["vn_b_army_static_mortar_m2",40,80,0],                              // M2 60mm Mortar
     ["vn_b_army_static_mortar_m29",50,100,0],                             // M29 81mm Mortar
     ["vn_b_army_static_m101_02",80,250,0],                               // M101 105mm Howitzer
-	["rhs_2b14_82mm_msv",100,750,0]											// 2B14 Podnos (155mm HE)
+	["rhs_2b14_82mm_msv",100,750,0],											// 2B14 Podnos (155mm HE)
 	["rhs_D30_msv",100,750,0],											// 2A18/D-30 (155mm HE)
     ["vn_b_army_static_m45",50,200,0],                                   // M-45 Quadmount
 	["RHS_ZU23_MSV",80,125,0],											// ZU-23-2 (23×152mm AA)
 	["vn_o_nva_static_zgu1_01",80,125,0],									// ZGU-1 14.5mm AA
-	["vn_o_nva_static_zpu4",80,125,0],									// ZPU-4 14.5mm AA
     ["vn_b_navy_static_l60mk3",150,100,0],                                // L60 Mk3 40 mm (BOFORS)
     ["vn_b_navy_static_l70mk2",150,100,0],                                 // L70 Mk2 20 mm (grenade)
     ["vn_b_army_static_tow",80,100,0]                                    // BGM71 TOW
@@ -515,7 +503,7 @@ KPLIB_b_squadRecon = [
 	"B_LINGOR_Marksman_01",								// "Marksman KRAG"
     "B_LINGOR_Marksman_02",								// "Marksman M1"
 	"B_LINGOR_Medic",								// "Medic"
-     "B_LINGOR_Marksman_04",								// "Marksman M24"
+    "B_LINGOR_Marksman_04"								// "Marksman M24"
 ];
 
 // Paratroopers squad (The units of this squad will automatically get parachutes on build)
@@ -535,15 +523,23 @@ KPLIB_b_squadPara = [
     Which base locks a vehicle is randomized on the first start of the campaign.
 */
 KPLIB_b_vehToUnlock = [
-	"rhs_2b14_82mm_msv",                        					 	// 2B14 Podnos. 82mm Mortar
-	"rhs_SPG9M_MSV",                        							// SPG-9M
-	"RHS_ZU23_MSV",                        								 // ZU-23-2
-	"rhs_D30_msv",                        								 // 2A18/D-30
-	"I_C_Offroad_02_AT_F",                      					  	 // Jeep Wrangler (SPG-9 with HE and HEAT)
-    "LOP_AFR_Landrover_SPG9",                        					  // Land Rover (SPG-9 PG9V HEAT)
-    "rhs_gaz66_zu23_vmf",                                    			 // GAZ-66 (ZU-23-2)
-    "rhs_bmp1_vdv",                                            		    // BMP-1
-	"rhsgref_tla_btr60",                         		  	 		   // BTR-60PB APC
-	"LOP_AFR_T55",                          			   			  // T-55A
-	"RHSGREF_A29B_HIDF"                          	    			 // A-29 Super Tucano
+	"vn_b_wheeled_m54_mg_02",                        					 	// Quad AA
+	"vn_b_army_static_m45",                        							// M-45 Quadmount AA
+	"vn_b_navy_static_l70mk2",                        								 // L70 HEI 20mm GL
+	"vn_b_navy_static_l60mk3",                      					  	 // L60 40mm BOFORS
+    "vn_b_army_static_m101_02",                        					  // M101 105mm Howitzer
+    "rhs_2b14_82mm_msv",                                    			 //2B14 Podnos (155mm HE)
+    "rhs_D30_msv",                                            		    // 2A18/D-30 (155mm HE)
+	"vn_b_air_ah1g_02_usmc",                         		  	 		   // AH-1G APERS misl
+	"vn_b_air_ah1g_03",                          			   			  // AH-1G AT
+	"vn_b_air_uh1e_02_04",                          	    			 // UH-1E heavy gunship
+	"vn_b_air_uh1c_05_01",                          	    			 // UH-1C heavy hog
+	"vn_b_boat_06_02",                          	    			 // PTF Boats
+	"vn_b_boat_05_01",                          	    			 // PTF Boats
+	"vn_b_armor_m41_01_01",                          	    			 // M41A3 Walker
+	"B_LINGOR_Type_63",                          	    			 // Type 63 Tank
+	"vn_b_armor_m132_01",                          	    			 // Flamethrower Tank
+	"B_LINGOR_PT_76A",                          	    			 // PT76A
+	"rhs_bmp1_vdv",                          	    			 // BEEG BMP with lots of shit
+	"B_LINGOR_T55"                          	    			 // T-55
 ];
