@@ -189,7 +189,8 @@ KPLIB_crates            = [KPLIB_b_crateSupply, KPLIB_b_crateAmmo, KPLIB_b_crate
 KPLIB_airSlots          = [KPLIB_b_slotHeli, KPLIB_b_slotPlane];
 KPLIB_storageBuildings  = [KPLIB_b_smallStorage, KPLIB_b_largeStorage];
 KPLIB_upgradeBuildings  = [KPLIB_b_logiStation, KPLIB_b_airControl, KPLIB_b_slotHeli, KPLIB_b_slotPlane];
-KPLIB_aiResupplySources append [KPLIB_b_mobileRespawn, KPLIB_b_potato01, KPLIB_b_arsenal];
+KPLIB_aiResupplySources append KPLIB_b_mobileRespawn;
+KPLIB_aiResupplySources append [KPLIB_b_potato01, KPLIB_b_arsenal];
 
 KPLIB_crates            = KPLIB_crates              apply {toLowerANSI _x};
 KPLIB_airSlots          = KPLIB_airSlots            apply {toLowerANSI _x};
