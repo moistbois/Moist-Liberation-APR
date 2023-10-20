@@ -456,8 +456,8 @@ KPLIB_intelObjectClasses = [
 	"Land_File1_F",
 	"Land_FilePhotos_F",
 	"Land_File2_F",
-	"UMI_Item_Weed_Bale",
-	"UMI_Item_Cocaine_Brick",
+	"vn_b_prop_cassette_01",
+	"GX_Cocaine",
 	"UMI_Item_Land_Camera_F",
     "Land_Document_01_F"
 ];
