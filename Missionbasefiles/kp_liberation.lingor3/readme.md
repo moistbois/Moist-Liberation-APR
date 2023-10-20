@@ -1,15 +1,23 @@
+
 # Lingor: Glowing in the Jungle
+<div align="center">
+    
+![A picture of a yellow smiling face with shades, wearing a military cap. There are other soldiers in the background holding weapons.](image.png)
+</div>
 
 ### About:
-The year is 1987. The country is Lingor and opportunity is ripe to a bit of political meddling. The CIA may have supplied some weapons to your group to help quell the local dissidents that subscribe to an ideology of a rival country. Use any and all resources to succeed at your mission.
+The year is 1987. Lingor is ripe for a bit of political meddling. The CIA is putting resources and support behind your group to prevent the enemies from promoting their ideology around the country. You'll have plenty of leftover from the failed Vietnam War to aid you in this mission. Let's hope it goes well this time around. Just don't mention that the CIA is helping you because they'll deny any association.
 
 ### Requirements:
-- [ARMA 3] (Size: 40.61 GBs)
+- [[ARMA] 3 (Size: 40.61 GBs)](https://store.steampowered.com/app/107410/Arma_3/)
+- S.O.G. Prairie Fire (Size: 35.7 GBs)
+	- [[Paid version]](https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/)
+	- [[Trial version]](https://steamcommunity.com/sharedfiles/filedetails/?id=2477276806)
 - A microphone
-- Teamspeak (TS3)
-- Task Force Arrowhead Radio (TS3 Plugin)
-- Pantrh Lingor Liberation Mod Preset
-- Joining Pantrh’s Discord for server info
+- [[Teamspeak (TS3)]](https://www.teamspeak.com/)
+- [[Task Force Arrowhead Radio (TS3 Plugin)]](https://cdn.discordapp.com/attachments/687630994123390986/1122243967614988308/task_force_radio.ts3_plugin)
+- [[Pantrh Lingor Liberation Mod Preset] (Size: 41.3 GBs)](https://discord.com/channels/435753869293649920/687630994123390986/1164786935764623491)
+- [[Join Pantrh’s Discord for server info]](https://discord.com/invite/FeyqxXA)
 
 ### Rules:
 - Don’t be a dick.
@@ -79,7 +87,8 @@ The year is 1987. The country is Lingor and opportunity is ripe to a bit of poli
 - Zeus Enhanced
 - Zeus Enhanced - ACE3 Compatibility
 
-### Soundtrack:
+### Soundtrack: 
+[Spotify] [YouTube]
 - ABBA - Gimme! Gimme! Gimme! (A Man After Midnight)
 - Accept - Lady Lou
 - Adolfo Echeverria Y Su Orquesta - Amanciendo
@@ -235,9 +244,9 @@ The year is 1987. The country is Lingor and opportunity is ripe to a bit of poli
 - Yaz - Situation (US 12" Mix)
 
 ### Credits:
-- GreuhZbug (original Liberation developer)
-- Killah Potatoes (developer of KP Liberation)
-- Apricot-ale (fork maintainer/developer for KP Liberation APR)
-- Doxus (Bespoke features developer)
-- Carl Mylo (Mission design and QOL fixes)
-- Pantrh (Mission design)
+- [[GreuhZbug (original Liberation developer)]](https://github.com/GreuhZbug/greuh_liberation.Altis)
+- [[Killah Potatoes (developers of KP Liberation)]](https://github.com/KillahPotatoes/KP-Liberation)
+- [[Apricot-ale (fork maintainer/developer for KP Liberation APR)]](https://github.com/Apricot-ale/KP-Liberation-APR)
+- [[Doxus (Mission design and programming)]](https://github.com/moistbois/Moist-Liberation-APR)
+- [[Carl Mylo (Mission design and programming)]](https://www.twitch.tv/carlmylo)
+- [[Pantrh (Mission design)]](https://www.twitch.tv/pantrh)
