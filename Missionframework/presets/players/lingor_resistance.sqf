@@ -167,9 +167,7 @@ KPLIB_b_objectsDeco = [
     ["Land_Slum_01_F",0,0,0],
     ["Land_Cargo_Patrol_V2_F",0,0,0],
     ["Land_GuardTower_01_F",0,0,0],
-    ["lop_Flag_afr_F",0,0,0],
     ["Flag_White_F",0,0,0],
-    ["Land_MedicalTent_01_tropic_closed_F",0,0,0],
     ["CamoNet_OPFOR_F",0,0,0],
     ["CamoNet_OPFOR_open_F",0,0,0],
     ["CamoNet_OPFOR_big_F",0,0,0],
@@ -244,7 +242,6 @@ KPLIB_b_objectsDeco = [
 	["Land_GarbageBags_F",0,0,0],
 	["Land_Garbage_square3_F",0,0,0],
 	["vn_steeldrum_bbq_02",0,0,0],
-	["vn_b_prop_cassette_01",0,0,0],				 // Cassette
 	["vn_b_prop_fmradio_01",0,0,0],
     ["vn_bar_01_campchair_01",0,0,0],
     ["vn_steeldrum_half_02",0,0,0],
