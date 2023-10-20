@@ -53,23 +53,38 @@ Therefore, adding the same value twice or three times means they are more likely
 Think of them like garrison or military police forces, which are more meant to control the local population instead of fighting enemy armies. */
 KPLIB_o_militiaInfantry = [
     "O_Lingor_Rifleman_01",                                             // Rifleman AK-47
+	"O_Lingor_Rifleman_01",                                             // Rifleman AK-47
 	"O_Lingor_Rifleman_02",                                             // Rifleman Galil
-	"O_Lingor_Rifleman_02",                                             // Rifleman M16A1
+	"O_Lingor_Rifleman_02",                                             // Rifleman Galil
+	"O_Lingor_Rifleman_03",                                             // Rifleman M16A1
+	"O_Lingor_Rifleman_03",                                             // Rifleman M16A1
     "O_Lingor_Anti_Tank_01",                                            // Anti-Tank
+	"O_Lingor_Anti_Tank_01",                                            // Anti-Tank
     "O_Lingor_Shotgun",                                                  // Shotgun
+	"O_Lingor_Shotgun",                                                  // Shotgun
+	"O_Lingor_Marksman_01",                                              // Marksman KRAG
 	"O_Lingor_Marksman_01",                                              // Marksman KRAG
     "O_Lingor_Marksman_04",                                              // Marksman SKS
+	"O_Lingor_Marksman_04",                                              // Marksman SKS
     "O_Lingor_Medic",                                                   // Machinegunner RPD
+	"O_Lingor_Medic",                                                   // Machinegunner RPD
+	"O_Lingor_Machinegunner_02",                                                    // Engineer
     "O_Lingor_Machinegunner_02"                                                    // Engineer
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
 KPLIB_o_militiaVehicles = [
     "O_Lingor_Datsun_Transport",                                                  // Datsun Transport
+	"O_Lingor_Datsun_Transport",                                                  // Datsun Transport
+	"O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
 	"O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
 	"O_Lingor_Unimog_Transport",                                                  // Unimog Transport
+	"O_Lingor_Unimog_Transport",                                                  // Unimog Transport
+	"O_Lingor_M1910LA",
 	"O_Lingor_M1910LA",
 	"O_Lingor_M1910L",
+	"O_Lingor_M1910L",
+	"O_LINGOR_Type_53_Mortar",
 	"O_LINGOR_Type_53_Mortar"
 	
 ];
@@ -94,6 +109,8 @@ KPLIB_o_armyVehicles = [
 	"O_Lingor_M45",
 	"O_LINGOR_ZU_232",
 	"O_LINGOR_Type_53_Mortar",
+	"O_LINGOR_Type_53_Mortar",
+	"O_LINGOR_Type_63_Mortar",
 	"O_LINGOR_Type_63_Mortar"
 	
 ];
@@ -105,8 +122,10 @@ KPLIB_o_armyVehiclesLight = [
 	"O_LINGOR_BTR_40_DShKM",                                                  // BTR-40 (DShKM)
 	"O_LINGOR_BTR_40_DShKM",                                                  // BTR-40 (DShKM)
 	"O_Lingor_M151A1_TOW",
+	"O_Lingor_M151A1_TOW",
 	"O_Lingor_D30",
 	"O_Lingor_D30_AT",
+	"O_LINGOR_Type_53_Mortar",
 	"O_LINGOR_Type_53_Mortar",
 	"O_LINGOR_Type_63_Mortar"
 ];
@@ -114,20 +133,36 @@ KPLIB_o_armyVehiclesLight = [
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehicles = [
     "O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
+	"O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
+	"O_LINGOR_BM_21",                                                  		// BM-21
 	"O_LINGOR_BM_21",                                                  		// BM-21
 	"O_LINGOR_BTR_40_DShKM",                                                  // BTR-40 (DShKM)
+	"O_LINGOR_BTR_40_DShKM",                                                  // BTR-40 (DShKM)
+	"O_Lingor_BRDM_2",                                                  // BRDM-2
 	"O_Lingor_BRDM_2",                                                  // BRDM-2
 	"O_Lingor_T55",                                                  // T-55A
+	"O_Lingor_T55",                                                  // T-55A
+	"O_Lingor_T34",                                                  // T34-85M
 	"O_Lingor_T34",                                                  // T34-85M
 	"O_Lingor_PT_76A",                                                  // PT-76A
+	"O_Lingor_PT_76A",                                                  // PT-76A
+	"O_Lingor_PT_76B",                                                  // PT-76B
 	"O_Lingor_PT_76B",                                                  // PT-76B
     "O_Lingor_M151A1_TOW",                                                // M151A1 TOW
+	"O_Lingor_M151A1_TOW",                                                // M151A1 TOW
+	"O_Lingor_M41",                                                			// M41A3
 	"O_Lingor_M41",                                                			// M41A3
 	"O_Lingor_Type_63_Tank",                                                // Type 63 (Tank)
+	"O_Lingor_Type_63_Tank",                                                // Type 63 (Tank)
+	"O_Lingor_M45",
 	"O_Lingor_M45",
 	"O_Lingor_D30",
+	"O_Lingor_D30",
+	"O_Lingor_D30_AT",
 	"O_Lingor_D30_AT",
 	"O_LINGOR_Type_53_Mortar",
+	"O_LINGOR_Type_53_Mortar",
+	"O_LINGOR_Type_63_Mortar",
 	"O_LINGOR_Type_63_Mortar"
 	
 ];
