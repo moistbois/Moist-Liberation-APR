@@ -6,7 +6,7 @@
 </div>
 
 ### About:
-The year is 1987. Lingor is ripe for a bit of political meddling. The CIA is putting resources and support behind your group to prevent the enemies from promoting their ideology around the country. You'll have plenty of leftover from the failed Vietnam War to aid you in this mission. Let's hope it goes well this time around. Just don't mention that the CIA is helping you because they'll deny any association.
+The year is 1987. The tropical Latin American islands of Lingor are ripe for a bit of political meddling. The CIA is putting resources and support behind your group to prevent the local dissidents from promoting their ideology around the country. You'll have plenty of leftover gear from the failed Vietnam War to aid you in this mission. Let's hope it goes well this time around. Just don't mention that the CIA is helping you because they'll deny everything. Good luck, vaya con dios, and don't forget your mirror and sun tan.
 
 ### Requirements:
 - [[ARMA] 3 (Size: 40.61 GBs)](https://store.steampowered.com/app/107410/Arma_3/)
