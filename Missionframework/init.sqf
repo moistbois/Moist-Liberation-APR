@@ -35,17 +35,10 @@ RydFFE_FOAccGain = 10;
 RydFFE_Safe = (50);
 RydFFE_FOClass = ([
 "o_lingor_squad_leader",
-"o_lingor_rifleman_01",
-"o_lingor_rifleman_02",
-"o_lingor_rifleman_03",
-"o_lingor_rifleman_04",
 "o_lingor_marksman_01",
 "o_lingor_marksman_02",
 "o_lingor_marksman_03",
 "o_lingor_marksman_04",
-"o_lingor_machinegunner_01",
-"o_lingor_machinegunner_02",
-"o_lingor_machinegunner_03",
 "o_lingor_anti_tank_01",
 "o_lingor_anti_air_01",
 "o_lingor_anti_air_02",
@@ -53,9 +46,6 @@ RydFFE_FOClass = ([
 "o_lingor_tank_crewman",
 "o_lingor_artillery_01",
 "o_lingor_artillery_02",
-"o_lingor_driver_01",
-"o_lingor_driver_02",
-"o_lingor_naval",
 "o_lingor_pilot_01",
 "o_lingor_pilot_02"
 ]);

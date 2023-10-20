@@ -951,17 +951,6 @@ RYD_CFF_FFE =
 			_finalimpactM = +_finalimpact;
 			_finalimpactM set [2,0];
 			
-			_text = getText (configFile >> "CfgVehicles" >> (typeOf (vehicle _batlead1)) >> "displayName");
-			_i = "markBat" + str (_battery1);
-			_i = createMarker [_i,_posM1];
-			_i setMarkerColor "ColorBlack";
-			_i setMarkerShape "ICON";
-			_i setMarkerType "mil_circle";
-			_i setMarkerSize [0.9,0.9];
-			_i setMarkerText ("Artillery Detected");
-			
-			_markers pushBack _i;
-			
 			_distance = _impactPosM vectorDistance _finalimpactM;
 			_distance2 = _impactPosM vectorDistance _posM1;
 			_i = "mark0" + str (_battery1);
@@ -973,58 +962,12 @@ RYD_CFF_FFE =
 			
 			_markers pushBack _i;
 
-			_dX = (_impactPosM select 0) - (_posM1 select 0);
-			_dY = (_impactPosM select 1) - (_posM1 select 1);
-			_angle = _dX atan2 _dY;
-			if (_angle >= 180) then {_angle = _angle - 180};
-			_dXb = (_distance2/2) * (sin _angle);
-			_dYb = (_distance2/2) * (cos _angle);
-			_posX = (_posM1 select 0) + _dXb;
-			_posY = (_posM1 select 1) + _dYb;
-
 			_i = "mark1" + str (_battery1);
-			_i = createMarker [_i,[_posX,_posY]];
-			_i setMarkerColor "ColorBlack";
-			_i setMarkerShape "RECTANGLE";
-			_i setMarkerSize [0.5,_distance2/2];
-			_i setMarkerBrush "Solid";
-			_i setMarkerdir _angle;
-			
-			_markers pushBack _i;
-
-			_dX = (_finalimpactM select 0) - (_impactPosM select 0);
-			_dY = (_finalimpactM select 1) - (_impactPosM select 1);
-			_angle = _dX atan2 _dY;
-			if (_angle >= 180) then {_angle = _angle - 180};
-			_dXb = (_distance/2) * (sin _angle);
-			_dYb = (_distance/2) * (cos _angle);
-			_posX2 = (_impactPosM select 0) + _dXb;
-			_posY2 = (_impactPosM select 1) + _dYb;
-
-			_i = "mark2" + str (_battery1);
-			_i = createMarker [_i,[_posX2,_posY2]];
-			_i setMarkerColor "ColorBlack";
-			_i setMarkerShape "RECTANGLE";
-			_i setMarkerSize [0.5,_distance/2];
-			_i setMarkerBrush "Solid";
-			_i setMarkerdir _angle;
-			
-			_markers pushBack _i;
-
-			_i = "mark3" + str (_battery1);
-			_i = createMarker [_i,_impactPosM];
-			_i setMarkerColor "ColorBlack";
-			_i setMarkerShape "ICON";
-			_i setMarkerType "mil_dot";
-			
-			_markers pushBack _i;
-
-			_i = "mark4" + str (_battery1);
-			_i = createMarker [_i,_finalimpactM];
+			_i = createMarker [_i,_impactPos];
 			_i setMarkerColor "ColorRed";
 			_i setMarkerShape "ICON";
 			_i setMarkerType "mil_dot";
-			_i setMarkerText (str (round _distance) + "m" + " - ETA: " + str (round _eta) + " - " + _ammoG);
+			_i setMarkerText ("Artillery Splash ETA: " + str (round _eta));
 			
 			_markers pushBack _i;
 			
@@ -1109,7 +1052,7 @@ RYD_CFF_FFE =
 				
 				if ((count _markers) > 0) then
 					{
-					_mark setMarkerText (str (round _distance) + "m" + " - ETA: " + str (round _rEta) + " - TOF: " + (str _TOF) + " - " + _ammoG);
+					_mark setMarkerText ("Artillery Splash ETA" + str (round _rEta));
 					};
 					
 				sleep 0.1
