@@ -6,7 +6,7 @@
 </div>
 
 ### About:
-The year is 1987. Lingor is ripe for a bit of political meddling. The CIA is putting resources and support behind your group to prevent the enemies from promoting their ideology around the country. You'll have plenty of leftover from the failed Vietnam War to aid you in this mission. Let's hope it goes well this time around. Just don't mention that the CIA is helping you because they'll deny any association.
+The year is 1987. The tropical Latin American islands of Lingor are ripe for a bit of political meddling. The CIA is putting resources and support behind your group to prevent the local dissidents from promoting their ideology around the country. You'll have plenty of leftover gear from the failed Vietnam War to aid you in this mission. Let's hope it goes well this time around. Just don't mention that the CIA is helping you because they'll deny everything. Good luck, vaya con dios, and don't forget your mirror and sun tan.
 
 ### Requirements:
 - [[ARMA] 3 (Size: 40.61 GBs)](https://store.steampowered.com/app/107410/Arma_3/)
@@ -15,9 +15,9 @@ The year is 1987. Lingor is ripe for a bit of political meddling. The CIA is put
 	- [[Trial version]](https://steamcommunity.com/sharedfiles/filedetails/?id=2477276806)
 - A microphone
 - [[Teamspeak (TS3)]](https://www.teamspeak.com/)
+- [[Join Pantrh’s Discord for server info]](https://discord.com/invite/FeyqxXA)
 - [[Task Force Arrowhead Radio (TS3 Plugin)]](https://cdn.discordapp.com/attachments/687630994123390986/1122243967614988308/task_force_radio.ts3_plugin)
 - [[Pantrh Lingor Liberation Mod Preset] (Size: 41.3 GBs)](https://discord.com/channels/435753869293649920/687630994123390986/1164786935764623491)
-- [[Join Pantrh’s Discord for server info]](https://discord.com/invite/FeyqxXA)
 
 ### Rules:
 - Don’t be a dick.
