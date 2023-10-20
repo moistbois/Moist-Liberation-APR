@@ -130,10 +130,10 @@ if ( isServer) then {
                 {
                     _unit linkItem _x;            //  Add and automatically equip special props
                 } foreach [
-                    //"ItemCompass",
+                    "ItemCompass",
                     //"ItemGPS",
-                    //"ItemMap",
-                    //"ItemWatch"
+                    "ItemMap",
+                    "ItemWatch"
                 ];
             }
         ] remoteExec ["call",owner _x];  // Directly specify the computer of the player who belongs to the unit to execute, avoiding unnecessary broadcast
