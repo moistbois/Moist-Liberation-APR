@@ -141,6 +141,16 @@ KPLIB_objectInits = [
             _this setVariable ["ace_isRepairFacility", 1, true];
         }
     ],
+	
+	// Add KPLQ Radio to static radios
+    [
+        ["Radio", "Radio_Old", "CUP_radio_b", "Land_vn_radio", "vn_b_prop_fmradio_01"], 
+        {
+            [_this, false] call klpq_musicRadio_fnc_addRadio;
+        }
+    ],
+	
+	
 
     // Disable autocombat (if set in parameters) and fleeing
     [
