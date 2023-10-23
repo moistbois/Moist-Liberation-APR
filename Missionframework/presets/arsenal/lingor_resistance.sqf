@@ -11,7 +11,7 @@ KPLIB_arsenalWeapons = [
     "vn_fkb1_red",
     "vn_fkb1",
 	"gst_m16a2",
-	"gst_m16a2_gl",
+	//"gst_m16a2_gl", M16A2 GL locked
 	"FHQ_arifle_Galil_black",
 	//"rhs_weap_m240B",Locked
 	"rhs_weap_pm63",
@@ -49,6 +49,7 @@ KPLIB_arsenalWeapons = [
 	"vn_m1903_gl",
 	"vn_ak_01",
     "vn_hp",
+	"rhs_weap_m14",
 	"vn_m14a1",
 	"vn_m14a1_shorty",
 	"vn_kbkg",
@@ -107,7 +108,7 @@ KPLIB_arsenalWeapons = [
     //"vn_m60_shorty_camo",Locked
     //"vn_m60_shorty",Locked
     //"vn_m60",Locked
-    //"vn_m63a",locked
+    "vn_m63a",
 	//"vn_m63a_cdo",locked
 	//"vn_m63a_lmg",locked
     "vn_m72",
@@ -129,15 +130,15 @@ KPLIB_arsenalWeapons = [
     //"vn_pk",Locked
     "vn_pm_sd",
     "vn_pm",
-    //"vn_rpd_shorty_01",locked
-    //"vn_rpd_shorty",locked
-    //"vn_rpd",locked
+    "vn_rpd_shorty_01",
+    "vn_rpd_shorty",
+    "vn_rpd",
     "vn_rpg2",
     "vn_rpg7",
 	"launch_RPG7_F",
     //"vn_sa7",locked strelas
     //"vn_sa7b",locked
-	"rhs_weap_igla",
+	//"rhs_weap_igla",
     //"vn_sks_gl",locked
     "vn_sks",
 	"vn_svd",
@@ -326,6 +327,8 @@ KPLIB_arsenalMagazines = [
     "vn_m63a_30_t_mag",
     "vn_m67_grenade_mag",
     "vn_m7_grenade_mag",
+	"Chemlight_red",
+	"ACE_Chemlight_White",
     "vn_m72_mag",
     "vn_mc10_mag",
     "vn_mc10_t_mag",
@@ -359,6 +362,8 @@ KPLIB_arsenalMagazines = [
     "vn_pk_100_mag",
     "vn_pm_mag",
     "vn_rdg2_mag",
+	"rhs_30Rnd_762x39mm_Savz58",
+	"rhs_30Rnd_762x39mm_Savz58_tracer",
     "vn_rg42_grenade_mag",
     "vn_rgd33_grenade_mag",
     "vn_rgd5_grenade_mag",
@@ -413,6 +418,7 @@ KPLIB_arsenalMagazines = [
 
 KPLIB_arsenalItems = [
 // Headgear
+	"COL_BaseballCap_FlagGreen",
     "FirstAidKit",
     "G_Aviator",
     "G_Bandanna_aviator",
@@ -521,6 +527,7 @@ KPLIB_arsenalItems = [
     "vn_b_headband_03",
     "vn_b_headband_04",
     "vn_b_headband_05",
+	"vn_b_helmet_svh4_01_05",
     "vn_b_helmet_aph6_01_01",
     "vn_b_helmet_aph6_01_02",
     "vn_b_helmet_aph6_01_03",
@@ -665,6 +672,27 @@ KPLIB_arsenalItems = [
     "vn_b_uniform_macv_06_06",
     "vn_b_uniform_macv_06_07",
     "vn_b_uniform_macv_06_08",
+	"vn_b_uniform_seal_01_06", 
+	"vn_b_uniform_seal_01_01", 
+	"vn_b_uniform_seal_01_07", 
+	"vn_b_uniform_seal_01_05", 
+	"vn_b_uniform_seal_01_02", 
+	"vn_b_uniform_seal_02_06", 
+	"vn_b_uniform_seal_02_01", 
+	"vn_b_uniform_seal_02_05", 
+	"vn_b_uniform_seal_02_02", 
+	"vn_b_uniform_seal_03_01", 
+	"vn_b_uniform_seal_04_01", 
+	"vn_b_uniform_seal_05_06", 
+	"vn_b_uniform_seal_05_01", 
+	"vn_b_uniform_seal_05_07", 
+	"vn_b_uniform_seal_05_05", 
+	"vn_b_uniform_seal_05_02", 
+	"vn_b_uniform_seal_06_06", 
+	"vn_b_uniform_seal_06_01", 
+	"vn_b_uniform_seal_06_05", 
+	"vn_b_uniform_seal_06_02", 
+	"vn_b_uniform_seal_06_07",
 	"LOP_U_PMC_shorts_blue_hi",
 	"LOP_U_PMC_shorts_red_hi",
 	"LOP_U_PMC_blue_hi",
@@ -684,6 +712,7 @@ KPLIB_arsenalItems = [
 	"U_C_Poloshirt_salmon",
 	"U_C_Poloshirt_stripped",
 	"U_C_Poloshirt_tricolour",
+	"vn_b_uniform_k2b_02_03",
 	"U_Competitor",
 	"U_BG_Guerilla1_2_F",
 	"rhsgref_uniform_TLA_2",
@@ -702,6 +731,8 @@ KPLIB_arsenalItems = [
 	"rhsgref_uniform_ERDL",
 	"rhsgref_uniform_og107_erdl",
 // Vests
+	"vn_b_vest_aircrew_01",
+	"vn_b_vest_aircrew_03",
 	"V_Pocketed_black_F",
 	"V_Pocketed_coyote_F",
 	"V_Pocketed_olive_F",
@@ -709,6 +740,12 @@ KPLIB_arsenalItems = [
 	"LOP_V_Chestrig_Black",
 	"LOP_V_Chestrig_Kamysh",
 	"LOP_V_Chestrig_VSR",
+	"vn_b_vest_seal_06", 
+	"vn_b_vest_seal_03", 
+	"vn_b_vest_seal_04", 
+	"vn_b_vest_seal_05", 
+	"vn_b_vest_seal_02", 
+	"vn_b_vest_seal_07",
 	"rhs_6b2",
 	"rhs_6b2_holster",
 	"rhs_chicom",
