@@ -85,6 +85,10 @@ KPLIB_b_vehLight = [
 	["B_LINGOR_Datsun_Transport",35,0,45],                                 // Datsun Transport
 	["B_LINGOR_M151A1_Transport",35,0,45],                                 // M151A1 Transport
 	["RHS_Ural_Open_MSV_01",50,0,75],                                 // URAL-4320 (Open)
+	["RHS_Ural_MSV_01",50,0,75],                                 // URAL-4320
+	["rhsgref_cdf_zil131",50,0,75],                                 // ZIL-131
+	["rhsgref_ins_kraz255b1_flatbed",50,0,75],                                 // KRAZ 255B1
+	["rhs_gaz66_vmf",50,0,75],                                 // GAZ66
 	["vn_b_wheeled_m54_01",50,0,75],                                   // M54 Transport
     ["vn_b_wheeled_m54_02",50,0,75],                                   // M54 Transport (Covered)
 	["vn_b_wheeled_m151_mg_04",60,40,25],                                 // M151A1 Armoured
@@ -154,7 +158,7 @@ KPLIB_b_vehStatic = [
     ["vn_b_army_static_mortar_m29",50,100,0],                             // M29 81mm Mortar
     ["vn_b_army_static_m101_02",80,250,0],                               // M101 105mm Howitzer
 	["rhs_2b14_82mm_msv",100,750,0],											// 2B14 Podnos (155mm HE)
-	["rhs_D30_msv",100,750,0],											// 2A18/D-30 (155mm HE)
+	["O_Lingor_D30",100,750,0],											// 2A18/D-30 (155mm HE)
     ["vn_b_army_static_m45",50,200,0],                                   // M-45 Quadmount
 	["RHS_ZU23_MSV",80,125,0],											// ZU-23-2 (23×152mm AA)
 	["vn_o_nva_static_zgu1_01",80,125,0],									// ZGU-1 14.5mm AA
@@ -530,7 +534,7 @@ KPLIB_b_vehToUnlock = [
 	"vn_b_navy_static_l60mk3",                      					  	 // L60 40mm BOFORS
     "vn_b_army_static_m101_02",                        					  // M101 105mm Howitzer
     "rhs_2b14_82mm_msv",                                    			 //2B14 Podnos (155mm HE)
-    "rhs_D30_msv",                                            		    // 2A18/D-30 (155mm HE)
+    "O_Lingor_D30",                                            		    // 2A18/D-30 (155mm HE)
 	"vn_b_air_ah1g_02_usmc",                         		  	 		   // AH-1G APERS misl
 	"vn_b_air_ah1g_03",                          			   			  // AH-1G AT
 	"vn_b_air_uh1e_02_04",                          	    			 // UH-1E heavy gunship
