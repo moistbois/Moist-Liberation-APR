@@ -617,6 +617,51 @@
             <Czech>Mobilní respawn</Czech>
             <Japanese>モバイルリスポーン</Japanese>
         </Key>
+		 <Key ID="STR_RESPAWN_GROUND">
+            <Original>MSP Truck</Original>
+            <French>Respawn mobile</French>
+            <German>Mobiler Respawn</German>
+            <Spanish>Respawn móvil</Spanish>
+            <Russian>Мобильная КШМ</Russian>
+            <Italian>Respawn Mobile</Italian>
+            <Chinesesimp>机动复活载具</Chinesesimp>
+            <Chinese>機動復活載具</Chinese>
+            <Turkish>Respawn Aracı</Turkish>
+            <Portuguese>Respawn móvel</Portuguese>
+            <Korean>재투입차량</Korean>
+            <Czech>Mobilní respawn</Czech>
+            <Japanese>モバイルリスポーン</Japanese>
+        </Key>
+		 <Key ID="STR_RESPAWN_SHIP">
+            <Original>MSP Ship</Original>
+            <French>Respawn mobile</French>
+            <German>Mobiler Respawn</German>
+            <Spanish>Respawn móvil</Spanish>
+            <Russian>Мобильная КШМ</Russian>
+            <Italian>Respawn Mobile</Italian>
+            <Chinesesimp>机动复活载具</Chinesesimp>
+            <Chinese>機動復活載具</Chinese>
+            <Turkish>Respawn Aracı</Turkish>
+            <Portuguese>Respawn móvel</Portuguese>
+            <Korean>재투입차량</Korean>
+            <Czech>Mobilní respawn</Czech>
+            <Japanese>モバイルリスポーン</Japanese>
+        </Key>
+		 <Key ID="STR_RESPAWN_AIR">
+            <Original>MSP Aircraft</Original>
+            <French>Respawn mobile</French>
+            <German>Mobiler Respawn</German>
+            <Spanish>Respawn móvil</Spanish>
+            <Russian>Мобильная КШМ</Russian>
+            <Italian>Respawn Mobile</Italian>
+            <Chinesesimp>机动复活载具</Chinesesimp>
+            <Chinese>機動復活載具</Chinese>
+            <Turkish>Respawn Aracı</Turkish>
+            <Portuguese>Respawn móvel</Portuguese>
+            <Korean>재투입차량</Korean>
+            <Czech>Mobilní respawn</Czech>
+            <Japanese>モバイルリスポーン</Japanese>
+        </Key>
         <Key ID="STR_ARSENAL_BOX">
             <Original>Arsenal box</Original>
             <French>Caisse à arsenal</French>
