@@ -146,7 +146,7 @@ KPLIB_objectInits = [
     [
         ["Radio", "Radio_Old", "CUP_radio_b", "Land_vn_radio", "vn_b_prop_fmradio_01"], 
         {
-            _this setVariable [[_this, false] call klpq_musicRadio_fnc_addRadio];
+            _this setVariable [[_this, true] call klpq_musicRadio_fnc_addRadio];
         }
     ],
 	
