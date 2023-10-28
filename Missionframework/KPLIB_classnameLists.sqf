@@ -532,15 +532,15 @@ KPLIB_collisionIgnoreObjects = [
     "Helipad",
     "LAND_uns_Heli_pad",
     "LAND_uns_evac_pad",
-	"Land_A_Castle_Wall2_30" 		// Lingor shit
-	"Land_A_Castle_Wall2_End_2" 		// Lingor shit
-	"Land_A_Castle_Wall2_30" 		// Lingor shit
-	"Land_A_Castle_Wall2_End" 		// Lingor shit
-	"Land_A_Castle_WallS_10" 		// Lingor shit
-	"Land_A_Castle_Wall1_20_Turn" 		// Lingor shit
-	"Land_A_Castle_Bastion" 		// Lingor shit
-	"Land_A_Castle_Bergfrit" 		// Lingor shit
-	"Land_A_Castle_WallS_5_D" 		// Lingor shit
+	"Land_A_Castle_Wall2_30", 		// Lingor shit
+	"Land_A_Castle_Wall2_End_2", 		// Lingor shit
+	"Land_A_Castle_Wall2_30", 		// Lingor shit
+	"Land_A_Castle_Wall2_End", 		// Lingor shit
+	"Land_A_Castle_WallS_10", 		// Lingor shit
+	"Land_A_Castle_Wall1_20_Turn", 		// Lingor shit
+	"Land_A_Castle_Bastion", 		// Lingor shit
+	"Land_A_Castle_Bergfrit", 		// Lingor shit
+	"Land_A_Castle_WallS_5_D", 		// Lingor shit
     "PortableHelipadLight_01_blue_F",
     "PortableHelipadLight_01_green_F",
     "PortableHelipadLight_01_red_F",
