@@ -826,6 +826,7 @@ KPLIB_arsenalItems = [
 	"ACE_Clacker",
 	"ACE_M26_Clacker",
 	"ACE_Flashlight_XL50",
+	"vn_b_item_radio_urc10",
 // ACE items
 	"ACE_artilleryTable",                                           // Artillery Rangetable
 	"ACE_RangeCard",                                                // Range Card
