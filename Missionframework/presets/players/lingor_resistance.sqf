@@ -30,8 +30,8 @@ KPLIB_b_logiStation = "Land_vn_garageoffice_01_f";           // The building def
 KPLIB_b_airControl = "Land_vn_airport_01_controltower_f";                       // The building defined to unlock FOB air vehicle functionality.
 KPLIB_b_slotHeli = "Land_HelipadCivil_F";              // The helipad used to increase the GLOBAL rotary-wing cap.
 KPLIB_b_slotPlane = "Land_vn_usaf_hangar_03";             // The hangar used to increase the GLOBAL fixed-wing cap.
-KPLIB_b_crateSupply = "CargoNet_01_box_F";                       // This defines the supply crates, as in resources.
-KPLIB_b_crateAmmo = "B_CargoNet_01_ammo_F";                      // This defines the ammunition crates.
+KPLIB_b_crateSupply = "Land_FoodSacks_01_cargo_brown_F";                       // This defines the supply crates, as in resources.
+KPLIB_b_crateAmmo = "vn_b_ammobox_supply_05";                      // This defines the ammunition crates.
 KPLIB_b_crateFuel = "CargoNet_01_barrels_F";                     // This defines the fuel crates.
 
 /*
@@ -72,7 +72,6 @@ KPLIB_b_infantry = [
 
 KPLIB_b_vehLight = [
     ["vn_c_bicycle_01",0,0,0],                                         // Bicycle
-	["RDS_MMT_Civ_01",0,0,0],                                         // Mountain Bike
 	["RDS_Old_bike_Civ_01",0,0,0],                                         // Old Bike
 	["O_Quadbike_01_F",15,0,5],                                        // Quad Bike
 	["O_Quadbike_01_F",15,0,5],                                        // Quad Bike
@@ -159,6 +158,7 @@ KPLIB_b_vehStatic = [
     ["vn_b_army_static_m101_02",80,250,0],                               // M101 105mm Howitzer
 	["rhs_2b14_82mm_msv",100,750,0],											// 2B14 Podnos (155mm HE)
 	["O_Lingor_D30",100,750,0],											// 2A18/D-30 (155mm HE)
+	["O_Lingor_D30_AT",100,750,0],											// 2A18/D-30 (155mm HE)
     ["vn_b_army_static_m45",50,200,0],                                   // M-45 Quadmount
 	["RHS_ZU23_MSV",80,125,0],											// ZU-23-2 (23×152mm AA)
 	["vn_o_nva_static_zgu1_01",80,125,0],									// ZGU-1 14.5mm AA
@@ -291,12 +291,12 @@ KPLIB_b_objectsDeco = [
 	["Land_vn_b_prop_m149_01",0,0,0], 				// M149 Water Buffalo,
 	["Land_vn_b_gunpit_01",0,0,0],
     ["Land_vn_b_mortarpit_01",0,0,0],
-    ["Land_vn_b_prop_fuelbladder_01",0,0,0],
-    ["Land_vn_b_prop_fuelbladder_02",0,0,0],
-    ["Land_vn_b_prop_fuelbladder_03",0,0,0],
-    ["Land_vn_b_prop_fuelbladder_04",0,0,0],
     ["Land_vn_b_tower_01",0,0,0],
 	["Land_vn_dyke_10",0,0,0],					 // Paddy Field Dyke 10m
+	["FootBridge_0_ACR",0,0,0], 			//Bridge
+	["Land_vn_bridgewooden_01_f",0,0,0], 			//Bridge
+	["Land_vn_bridge_rope_01",0,0,0], 			//Bridge
+	["FootBridge_30_ACR",0,0,0], 			//Bridge
 	["Land_vn_woodenwall_01_m_4m_f",0,0,0], 
 	["Land_vn_woodenwall_01_m_8m_f",0,0,0], 
 	["Land_vn_woodenwall_01_m_d_f",0,0,0],
@@ -442,8 +442,12 @@ KPLIB_b_vehSupport = [
     ["vn_b_wheeled_m54_ammo",125,200,75],                               // M54 Ammo
     ["B_Slingload_01_Repair_F",50,0,0],                                // Huron Container Repair
 	["Land_Workbench_01_F",50,0,0], 									// Workbench Repair
-    ["B_Slingload_01_Fuel_F",0,0,50],                                 // Huron Container Fuel
-    ["B_Slingload_01_Ammo_F",0,50,0]                                  // Huron Container Ammo
+    ["B_Slingload_01_Fuel_F",0,0,150],                                 // Huron Container Fuel
+	["Land_vn_b_prop_fuelbladder_01",0,0,50],
+    ["Land_vn_b_prop_fuelbladder_03",0,0,50],
+    ["B_Slingload_01_Ammo_F",0,50,0],                                  // Huron Container Ammo
+	["vn_b_ammobox_supply_01",0,50,0],
+	["vn_o_ammobox_full_06",0,50,0]
 ];
 
 /*
@@ -535,6 +539,7 @@ KPLIB_b_vehToUnlock = [
     "vn_b_army_static_m101_02",                        					  // M101 105mm Howitzer
     "rhs_2b14_82mm_msv",                                    			 //2B14 Podnos (155mm HE)
     "O_Lingor_D30",                                            		    // 2A18/D-30 (155mm HE)
+	"O_Lingor_D30_AT",                                            		    // 2A18/D-30 (155mm HE)
 	"vn_b_air_ah1g_02_usmc",                         		  	 		   // AH-1G APERS misl
 	"vn_b_air_ah1g_03",                          			   			  // AH-1G AT
 	"vn_b_air_uh1e_02_04",                          	    			 // UH-1E heavy gunship
