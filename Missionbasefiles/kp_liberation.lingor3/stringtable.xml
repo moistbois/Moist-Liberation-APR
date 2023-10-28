@@ -489,6 +489,10 @@
             <Original>-- FULL HEAL --</Original>
             <Japanese>-- 完全治療 --</Japanese>
         </Key>
+		    <Key ID="STR_HEAL_ENEMIES_NEARBY">
+            <Original>Cannot heal: hostile forces nearby.</Original>
+            <Japanese>治癒不能: 敵軍が近くにいます。</Japanese>
+        </Key>
         <Key ID="STR_FULLHEAL_DONE">
             <Original>You have fully healed injuries</Original>
             <Japanese>負傷が完全に治療されました</Japanese>
