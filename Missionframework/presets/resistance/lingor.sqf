@@ -29,7 +29,7 @@ There are 3 tiers for every category. If the strength of the guerillas will incr
 /* Weapons - You've to add the weapons as array like
 ["Weaponclassname","Magazineclassname","magazine amount","optic","tripod"]
 You can leave optic and tripod empty with "" */
-KP_liberation_guerilla_weapons_1 = [
+KPLIB_r_weapons_1 = [
     ["rhs_weap_Izh18","rhsgref_1Rnd_00Buck",5,"",""],
     ["vn_sks","vn_sks_t_mag",5,"",""],
 	["vn_m1897","rhsgref_1Rnd_00Buck",5,"",""],
@@ -37,36 +37,36 @@ KP_liberation_guerilla_weapons_1 = [
 	["vn_m1_garand","vn_m1_garand_t_mag",5,"",""]
 ];
 
-KP_liberation_guerilla_weapons_2 = [
+KPLIB_r_weapons_2 = [
     ["arifle_AKS_F","rhs_30Rnd_545x39_AK_green",3,"",""],
     ["vn_ak_01","rhs_30Rnd_762x39mm_bakelite_tracer",5,"",""],
     ["vn_sks","vn_sks_t_mag",5,"",""]
 ];
 
-KP_liberation_guerilla_weapons_3 = [
+KPLIB_r_weapons_3 = [
     ["hlc_rifle_L1A1SLR","vn_l1a1_30_t_mag",5,"",""],
     ["rhs_weap_ak74","rhs_30Rnd_545x39_AK_green",5,"",""],
 	["vn_m16","vn_m16_20_t_mag",5,"",""]
 ];
 
 // Uniforms
-KP_liberation_guerilla_uniforms_1 = [
+KPLIB_r_uniforms_1 = [
     "U_C_Poloshirt_redwhite",
     "U_C_Poloshirt_salmon"
 ];
 
-KP_liberation_guerilla_uniforms_2 = [
+KPLIB_r_uniforms_2 = [
     "U_C_Poloshirt_stripped",
     "U_C_Poloshirt_tricolour"
 ];
 
-KP_liberation_guerilla_uniforms_3 = [
+KPLIB_r_uniforms_3 = [
     "U_Competitor",
     "U_BG_Guerilla1_2_F"
 ];
 
 // Vests
-KP_liberation_guerilla_vests_1 = [
+KPLIB_r_vests_1 = [
 	"V_BandollierB_cbr",	
 	"V_BandollierB_rgr",
 	"rhs_belt_RPK",
@@ -81,7 +81,7 @@ KP_liberation_guerilla_vests_1 = [
 	"rhs_vest_commander"
 ];
 
-KP_liberation_guerilla_vests_2 = [
+KPLIB_r_vests_2 = [
 	"V_BandollierB_cbr",	
 	"V_BandollierB_rgr",
 	"rhs_belt_RPK",
@@ -96,7 +96,7 @@ KP_liberation_guerilla_vests_2 = [
 	"rhs_vest_commander"
 ];
 
-KP_liberation_guerilla_vests_3 = [
+KPLIB_r_vests_3 = [
 	"V_BandollierB_cbr",	
 	"V_BandollierB_rgr",
 	"rhs_belt_RPK",
@@ -112,7 +112,7 @@ KP_liberation_guerilla_vests_3 = [
 ];
 
 // Headgear
-KP_liberation_guerilla_headgear_1 = [
+KPLIB_r_headgear_1 = [
     "vn_b_beret_01_01",
 	"",
     "vn_b_beret_01_02",
@@ -127,7 +127,7 @@ KP_liberation_guerilla_headgear_1 = [
 
 ];
 
-KP_liberation_guerilla_headgear_2 = [
+KPLIB_r_headgear_2 = [
     "vn_b_boonie_01_01",
 	"",
     "vn_b_boonie_01_02",
@@ -151,7 +151,7 @@ KP_liberation_guerilla_headgear_2 = [
     "vn_b_boonie_02_04"
 ];
 
-KP_liberation_guerilla_headgear_3 = [
+KPLIB_r_headgear_3 = [
     "vn_b_helmet_m1_01_01",
 	"",
     "vn_b_helmet_m1_01_02",
@@ -190,7 +190,7 @@ KP_liberation_guerilla_headgear_3 = [
 ];
 
 // Facegear. Applies for tier 2 and 3.
-KP_liberation_guerilla_facegear = [
+KPLIB_r_facegear = [
     "",
     "",
     "",

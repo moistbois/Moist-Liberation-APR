@@ -18,17 +18,17 @@ KPLIB_b_fobBox = "Land_Misc_Cargo1B";                            // This is the 
 KPLIB_b_fobTruck = "vn_b_wheeled_m54_03";                              // This is the FOB as a vehicle.
 KPLIB_b_arsenal = "Land_vn_us_weapons_stack2";                                   // This is the virtual arsenal as portable supply crates.
 KPLIB_b_mobileRespawn = ["B_LINGOR_Unimog_Transport", "walker_A3_boat_f", "vn_b_air_uh1d_04_09"];                           // This is the mobile respawn (and medical) truck.
-KPLIB_b_potato01 = "vn_b_wheeled_m54_01";                                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
+KPLIB_b_potato01 = "RHS_Ural_Open_MSV_01";                                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 KPLIB_b_crewUnit = "B_LINGOR_Driver_02";                          // This defines the crew for vehicles.
 KPLIB_b_heliPilotUnit = "B_LINGOR_Pilot_01";                              // This defines the pilot for helicopters.
 KPLIB_b_addHeli = "B_LINGOR_M151A1_Transport";                  // These are the little birds which spawn on the Freedom or at Chimera base.
 KPLIB_b_addBoat = "B_LINGOR_Datsun_Transport";                 // These are the boats which spawn at the stern of the Freedom.
 KPLIB_b_logiTruck = "rhs_kamaz5350_flatbed_vdv";            // These are the trucks which are used in the logistic convoy system.
-KPLIB_b_smallStorage = "ContainmentArea_02_forest_F";   // A small storage area for resources.
-KPLIB_b_largeStorage = "ContainmentArea_01_forest_F";   // A large storage area for resources.
-KPLIB_b_logiStation = "Land_vn_garageoffice_01_f";           // The building defined to unlock FOB recycling functionality.
-KPLIB_b_airControl = "Land_vn_airport_01_controltower_f";                       // The building defined to unlock FOB air vehicle functionality.
-KPLIB_b_slotHeli = "Land_HelipadCivil_F";              // The helipad used to increase the GLOBAL rotary-wing cap.
+KPLIB_b_smallStorage = "ContainmentArea_02_black_F";   // A small storage area for resources.
+KPLIB_b_largeStorage = "ContainmentArea_01_black_F";   // A large storage area for resources.
+KPLIB_b_logiStation = "Land_Mil_Repair_center_EP1";           // The building defined to unlock FOB recycling functionality.
+KPLIB_b_airControl = "Land_vn_airport_02_controltower_f";                       // The building defined to unlock FOB air vehicle functionality.
+KPLIB_b_slotHeli = "Land_vn_b_helipad_01";              // The helipad used to increase the GLOBAL rotary-wing cap.
 KPLIB_b_slotPlane = "Land_vn_usaf_hangar_03";             // The hangar used to increase the GLOBAL fixed-wing cap.
 KPLIB_b_crateSupply = "Land_FoodSacks_01_cargo_brown_F";                       // This defines the supply crates, as in resources.
 KPLIB_b_crateAmmo = "vn_b_ammobox_supply_05";                      // This defines the ammunition crates.
@@ -83,7 +83,6 @@ KPLIB_b_vehLight = [
 	["walker_a3_landrover",35,0,45],                                 // Land Rover
 	["B_LINGOR_Datsun_Transport",35,0,45],                                 // Datsun Transport
 	["B_LINGOR_M151A1_Transport",35,0,45],                                 // M151A1 Transport
-	["RHS_Ural_Open_MSV_01",50,0,75],                                 // URAL-4320 (Open)
 	["RHS_Ural_MSV_01",50,0,75],                                 // URAL-4320
 	["rhsgref_cdf_zil131",50,0,75],                                 // ZIL-131
 	["rhsgref_ins_kraz255b1_flatbed",50,0,75],                                 // KRAZ 255B1
@@ -182,7 +181,17 @@ KPLIB_b_objectsDeco = [
     ["Land_LampStreet_small_F",0,0,0],
 	["Land_LampShabby_F",0,0,0],
     ["Land_LampAirport_F",0,0,0],
+	["Land_vn_guardbox_01_smooth_f",0,0,0],
 	["Land_vn_shower_01",0,0,0],
+	["Land_vn_latrine_01",0,0,0],
+	["Land_vn_hootch_01_12",0,0,0],
+	["Land_vn_hootch_01_02",0,0,0],
+	["Land_vn_barracks_03_02",0,0,0],
+	["Land_vn_barracks_03_01",0,0,0],
+	["Land_vn_barracks_03_03",0,0,0],
+	["Land_vn_barracks_02_01",0,0,0],
+	["Land_vn_barracks_04_01",0,0,0],
+	["Land_vn_barracks_04_02",0,0,0],
     ["Land_vn_tent_01_01",0,0,0],
     ["Land_vn_tent_01_02",0,0,0],
     ["Land_vn_tent_01_03",0,0,0],
@@ -220,7 +229,7 @@ KPLIB_b_objectsDeco = [
 	["Land_Barricade_01_4m_F",0,0,0],
 	["Land_Barricade_01_10m_F",0,0,0],
 	["Land_Posed",0,0,0],
-	["Land_Barrack2_EP1",0,0,0],
+	["Land_vn_quonset_02_01",0,0,0],
 	["Land_fort_rampart_EP1",0,0,0],
 	["Land_cargo_house_slum_F",0,0,0],
 	["Land_Misc_Well_L_EP1",0,0,0],
@@ -292,17 +301,21 @@ KPLIB_b_objectsDeco = [
 	["Land_vn_b_gunpit_01",0,0,0],
     ["Land_vn_b_mortarpit_01",0,0,0],
     ["Land_vn_b_tower_01",0,0,0],
+	["Land_vn_guardtower_01_f",0,0,0],
 	["Land_vn_dyke_10",0,0,0],					 // Paddy Field Dyke 10m
 	["FootBridge_0_ACR",0,0,0], 			//Bridge
 	["Land_vn_bridgewooden_01_f",0,0,0], 			//Bridge
 	["Land_vn_bridge_rope_01",0,0,0], 			//Bridge
 	["FootBridge_30_ACR",0,0,0], 			//Bridge
 	["Land_vn_woodenwall_01_m_4m_f",0,0,0], 
+	["Land_vn_hootch_02_wall",0,0,0], 
+	["Land_vn_hootch_01_wall",0,0,0], 
 	["Land_vn_woodenwall_01_m_8m_f",0,0,0], 
 	["Land_vn_woodenwall_01_m_d_f",0,0,0],
 	["Land_vn_usaf_revetment_1_01",0,0,0], 
 	["Land_vn_usaf_revetment_comp_01",0,0,0], 
 	["Land_vn_usaf_revetment_comp_solo_01",0,0,0], 
+	["Land_vn_usaf_revetment_8",0,0,0], 
 	["Land_vn_usaf_revetment_low_2",0,0,0], 
 	["Land_vn_usaf_revetment_low_3",0,0,0], 
 	["Land_vn_usaf_revetment_low_8",0,0,0], 
