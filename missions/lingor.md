@@ -14,7 +14,7 @@ The year is 1987. The tropical Latin American islands of Lingor are ripe for a b
 	- [[Paid version]](https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/)
 	- [[Trial version]](https://steamcommunity.com/sharedfiles/filedetails/?id=2477276806)
 - A microphone
-- [[Teamspeak (TS3)]](https://www.teamspeak.com/)
+- [[Teamspeak (TS3)]](https://files.teamspeak-services.com/releases/client/3.6.1/TeamSpeak3-Client-win64-3.6.1.exe)
 - [[Join Pantrh’s Discord for server info]](https://discord.com/invite/FeyqxXA)
 - [[Task Force Arrowhead Radio (TS3 Plugin)]](https://cdn.discordapp.com/attachments/687630994123390986/1122243967614988308/task_force_radio.ts3_plugin)
 - [[Pantrh Lingor Liberation Mod Preset] (Size: 41.3 GBs)](https://discord.com/channels/435753869293649920/687630994123390986/1164786935764623491)
