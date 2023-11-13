@@ -59,6 +59,12 @@ RydFFE_Add_Other =
 
 nul = [] execVM "RYD_FFE\FFE.sqf";
 
+// Temperature and humidity changes
+[{
+    ace_weather_humidityShift = 25;
+    ace_weather_temperatureShift = 27;
+},[], 1] call CBA_fnc_waitAndExecute;
+
 [] call compile preprocessFileLineNumbers "scripts\shared\init_shared.sqf";
 
 if (isServer) then {
