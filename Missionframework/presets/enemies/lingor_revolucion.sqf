@@ -37,7 +37,7 @@ KPLIB_o_paratrooper = "O_Lingor_Rifleman_04";                                 //
 // Enemy vehicles used by secondary objectives.
 KPLIB_o_mrap = "O_Lingor_BRDM_2";                                           // Ifrit
 KPLIB_o_mrapArmed = "O_LINGOR_BTR_40_DShKM";                                  // Ifrit (HMG)
-KPLIB_o_transportHeli = "O_Heli_Transport_04_bench_F";                  // Mi-290 Taru (Bench)
+KPLIB_o_transportHeli = "O_LINGOR_Mi_8MT_Cargo";                  // MI-8MT (Cargo)
 KPLIB_o_transportTruck = "O_Lingor_M151A1_Transport";                        // Tempest Transport (Covered)
 KPLIB_o_transportTruckAmmo = "O_Lingor_Unimog_Transport";                  // Tempest Transport (Open) -> Has to be able to transport resource crates!
 KPLIB_o_fuelTruck = "vn_o_wheeled_z157_fuel";                                // Tempest Fuel
@@ -160,6 +160,11 @@ KPLIB_o_battleGrpVehicles = [
 	"O_Lingor_D30",
 	"O_Lingor_D30_AT",
 	"O_Lingor_D30_AT",
+	"O_LINGOR_Mi_8MTV3",                                      // Mi-8MTV-3
+	"O_LINGOR_MI_24V",                                      // MI-24V
+	"O_LINGOR_MI_24VT",                                      // MI-24VT
+	"O_LINGOR_Mi_8MT",                                      // MI-8MT
+	"O_LINGOR_Mi_8MT_Cargo",                                      // MI-8MT (Cargo)
 	"O_LINGOR_Type_53_Mortar",
 	"O_LINGOR_Type_53_Mortar",
 	"O_LINGOR_Type_63_Mortar",

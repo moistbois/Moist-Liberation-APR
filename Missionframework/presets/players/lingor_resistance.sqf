@@ -205,6 +205,7 @@ KPLIB_b_objectsDeco = [
 	["Land_vn_tent_mash_02_01",0,0,0],
 	["Land_vn_tent_mash_02_03",0,0,0],
 	["Land_vn_tent_mash_01_03",0,0,0],
+	["Land_NAV_Lighthouse2",0,0,0],
 	["Land_vn_nav_boathouse",0,0,0],				 // Boathouse,
 	["Land_vn_nav_boathouse_pierl",0,0,0],				 // Pier,
     ["Land_HelipadCircle_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase helicopter cap!
