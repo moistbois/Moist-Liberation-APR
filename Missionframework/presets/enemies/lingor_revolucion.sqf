@@ -74,7 +74,7 @@ KPLIB_o_militiaInfantry = [
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
 KPLIB_o_militiaVehicles = [
-    "O_Lingor_Datsun_Transport",                                                  // Datsun Transport
+	"O_Lingor_Datsun_Transport",                                                  // Datsun Transport
 	"O_Lingor_Datsun_Transport",                                                  // Datsun Transport
 	"O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
 	"O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
@@ -92,9 +92,9 @@ KPLIB_o_militiaVehicles = [
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
 KPLIB_o_armyVehicles = [
     "O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
-	"O_LINGOR_BM_21",                                                  		// BM-21
 	"O_LINGOR_BTR_40_DShKM",                                                  // BTR-40 (DShKM)
 	"O_Lingor_BRDM_2",                                                  // BRDM-2
+	"O_LINGOR_BM_21",
 	"O_Lingor_T55",                                                  // T-55A
 	"O_Lingor_T34",                                                  // T34-85M
 	"O_Lingor_PT_76A",                                                  // PT-76A
@@ -117,7 +117,7 @@ KPLIB_o_armyVehicles = [
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
 KPLIB_o_armyVehiclesLight = [
-    "O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
+	"O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
 	"O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
 	"O_LINGOR_BTR_40_DShKM",                                                  // BTR-40 (DShKM)
 	"O_LINGOR_BTR_40_DShKM",                                                  // BTR-40 (DShKM)
@@ -134,10 +134,9 @@ KPLIB_o_armyVehiclesLight = [
 KPLIB_o_battleGrpVehicles = [
     "O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
 	"O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
-	"O_LINGOR_BM_21",                                                  		// BM-21
-	"O_LINGOR_BM_21",                                                  		// BM-21
 	"O_LINGOR_BTR_40_DShKM",                                                  // BTR-40 (DShKM)
 	"O_LINGOR_BTR_40_DShKM",                                                  // BTR-40 (DShKM)
+	"O_LINGOR_BM_21",
 	"O_Lingor_BRDM_2",                                                  // BRDM-2
 	"O_Lingor_BRDM_2",                                                  // BRDM-2
 	"O_Lingor_T55",                                                  // T-55A
@@ -237,5 +236,6 @@ KPLIB_o_turrets_MORTAR = [
 
 // Enemy SAM turrets that will be spawned in the back country
 KPLIB_o_turrets_SAM = [
+	["O_LINGOR_BM_21"],
     ["vn_sa2", "vn_sa2", "vn_sa2", "vn_o_static_rsna75"]
 ];

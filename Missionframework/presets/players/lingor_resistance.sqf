@@ -87,6 +87,8 @@ KPLIB_b_vehLight = [
 	["rhsgref_cdf_zil131",50,0,75],                                 // ZIL-131
 	["rhsgref_ins_kraz255b1_flatbed",50,0,75],                                 // KRAZ 255B1
 	["rhs_gaz66_vmf",50,0,75],                                 // GAZ66
+	["walker_a3_hiluxhmg",40,20,25],                                 // Hilux with MG
+	["vn_o_car_04_mg_01",40,10,10],                                 // Shitty SOG car with MG
 	["vn_b_wheeled_m54_01",50,0,75],                                   // M54 Transport
     ["vn_b_wheeled_m54_02",50,0,75],                                   // M54 Transport (Covered)
 	["vn_b_wheeled_m151_mg_04",60,40,25],                                 // M151A1 Armoured
