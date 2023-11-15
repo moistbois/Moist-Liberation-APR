@@ -94,7 +94,6 @@ KPLIB_o_armyVehicles = [
     "O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
 	"O_LINGOR_BTR_40_DShKM",                                                  // BTR-40 (DShKM)
 	"O_Lingor_BRDM_2",                                                  // BRDM-2
-	"O_LINGOR_BM_21",
 	"O_Lingor_T55",                                                  // T-55A
 	"O_Lingor_T34",                                                  // T34-85M
 	"O_Lingor_PT_76A",                                                  // PT-76A
