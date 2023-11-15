@@ -24,7 +24,7 @@
             "KPLIB_range_airSpawnActivation": 1000,
             "KPLIB_range_pointActivation": 675,
             "KPLIB_range_sectorCapture": 150,
-            "KPLIB_range_radioTowerScan": 600,
+            "KPLIB_range_radioTowerScan": 800,
             "KPLIB_distance_fob": 750,
             "KPLIB_cap_playerSide": 100,
             "KPLIB_cap_enemySide": 180,
