@@ -49,12 +49,13 @@ RydFFE_FOClass = ([
 "o_lingor_pilot_01",
 "o_lingor_pilot_02"
 ]);
+RydFFE_Add_Rocket = ["O_LINGOR_BM_21"];
 RydFFE_Add_Other = 
     [
-    [["O_Lingor_D30"],["rhs_mag_3of56_10","rhs_mag_3of56_10","rhs_mag_3of56_10","rhs_mag_3of69m_2","rhs_mag_d462_2"]],
-	[["O_Lingor_D30_AT"],["rhs_mag_of462_direct","rhs_mag_of462_direct","rhs_mag_bk6m",""]],
-	[["O_LINGOR_Type_53_Mortar"],["vn_mortar_type53_mag_he_x8","vn_mortar_type53_mag_wp_x8","vn_mortar_type53_mag_lume_x8",""]],
-	[["O_LINGOR_Type_63_Mortar"],["vn_mortar_type63_mag_he_x8","vn_mortar_type63_mag_wp_x8","vn_mortar_type63_mag_lume_x8",""]]
+    [["o_lingor_d30"],["rhs_mag_3of56_10","rhs_mag_3of56_10","rhs_mag_3of56_10","rhs_mag_3of69m_2","rhs_mag_d462_2"]],
+	[["o_lingor_d30_at"],["rhs_mag_of462_direct","rhs_mag_of462_direct","rhs_mag_bk6m",""]],
+	[["o_lingor_type_53_mortar"],["vn_mortar_type53_mag_he_x8","vn_mortar_type53_mag_wp_x8","vn_mortar_type53_mag_lume_x8",""]],
+	[["o_lingor_type_63_mortar"],["vn_mortar_type63_mag_he_x8","vn_mortar_type63_mag_wp_x8","vn_mortar_type63_mag_lume_x8",""]]
     ];
 
 nul = [] execVM "RYD_FFE\FFE.sqf";
