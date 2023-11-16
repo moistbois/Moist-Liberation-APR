@@ -476,7 +476,10 @@ KPLIB_b_vehSupport = [
 KPLIB_b_squadLight = [
     "B_LINGOR_Squad_Leader",								// "Squad Leader"
     "B_LINGOR_Rifleman_01",								// "Rifleman AK-47"
+	"B_LINGOR_Rifleman_02",								// "Rifleman Galil"
+	"B_LINGOR_Rifleman_03",								// "Rifleman M16A1"
 	"B_LINGOR_Rifleman_04",								// "Rifleman M16A2"
+	"B_LINGOR_Anti_Tank_01",								// "Anti-Tank"
 	"B_LINGOR_Marksman_01",								// "Marksman KRAG"
     "B_LINGOR_Marksman_02",								// "Marksman M1"
 	"B_LINGOR_Medic",								// "Medic"
@@ -487,10 +490,13 @@ KPLIB_b_squadLight = [
 KPLIB_b_squadInf = [
     "B_LINGOR_Squad_Leader",								// "Squad Leader"
     "B_LINGOR_Rifleman_01",								// "Rifleman AK-47"
-    "B_LINGOR_Rifleman_02",								// "Rifleman Galil"
+	"B_LINGOR_Rifleman_02",								// "Rifleman Galil"
+	"B_LINGOR_Rifleman_03",								// "Rifleman M16A1"
+	"B_LINGOR_Rifleman_04",								// "Rifleman M16A2"
     "B_LINGOR_Machinegunner_01",								// "Machinegunner FN MAG"
     "B_LINGOR_Machinegunner_03",								// "Machinegunner M60"
     "B_LINGOR_Anti_Tank_01",								// "Anti-Tank"
+	"B_LINGOR_Anti_Tank_01",								// "Anti-Tank"
     "B_LINGOR_Grenadier",								// "Grenadier"
     "B_LINGOR_Medic"								// "Medic"
 ];
