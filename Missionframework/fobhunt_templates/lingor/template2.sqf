@@ -39,24 +39,24 @@ private _objects_to_build = [
 
 private _objectives_to_build = [
     // Move all things which should be destroyed to accomplish the mission from the above to this array
-    [opfor_ammo_truck, [14.97, -17.82, 0.00], 42.05],
-    [opfor_ammo_truck, [-14.11, 2.04, -0.00], 17.81]
+    [KPLIB_o_ammoTruck, [14.97, -17.82, 0.00], 42.05],
+    [KPLIB_o_ammoTruck, [-14.11, 2.04, -0.00], 17.81]
 ];
 
 private _defenders_to_build = [
-    [opfor_marksman, [-0.77, 1.26, 15.14], 0.00],
-    [opfor_rifleman, [-17.67, 3.31, 0.00], 33.68],
-    [opfor_heavygunner, [20.21, -2.26, 0.00], 231.13],
-    [opfor_rifleman, [19.16, -8.03, 0.00], 322.23],
-    [opfor_rifleman, [-12.63, -18.50, 0.00], 0.00],
-    [opfor_rifleman, [11.02, -21.12, 0.00], 312.45],
-    [opfor_rifleman, [-17.95, -15.85, 0.00], 74.00],
-    [opfor_squad_leader, [-16.81, 17.70, 0.00], 170.83],
-    [opfor_engineer, [19.80, 12.89, 10.16], 75.70],
-    [opfor_marksman, [-7.04, 28.00, 4.44], 0.00],
-    [opfor_grenadier, [11.37, -26.79, 5.13], 157.30],
-    [opfor_rifleman, [-28.52, 9.88, 4.44], 0.00],
-    [opfor_marksman, [-28.22, -15.35, 4.44], 245.20]
+    [KPLIB_o_marksman, [-0.77, 1.26, 15.14], 0.00],
+    [KPLIB_o_rifleman, [-17.67, 3.31, 0.00], 33.68],
+    [KPLIB_o_heavyGunner, [20.21, -2.26, 0.00], 231.13],
+    [KPLIB_o_rifleman, [19.16, -8.03, 0.00], 322.23],
+    [KPLIB_o_rifleman, [-12.63, -18.50, 0.00], 0.00],
+    [KPLIB_o_rifleman, [11.02, -21.12, 0.00], 312.45],
+    [KPLIB_o_rifleman, [-17.95, -15.85, 0.00], 74.00],
+    [KPLIB_o_squadLeader, [-16.81, 17.70, 0.00], 170.83],
+    [KPLIB_o_engineer, [19.80, 12.89, 10.16], 75.70],
+    [KPLIB_o_marksman, [-7.04, 28.00, 4.44], 0.00],
+    [KPLIB_o_grenadier, [11.37, -26.79, 5.13], 157.30],
+    [KPLIB_o_rifleman, [-28.52, 9.88, 4.44], 0.00],
+    [KPLIB_o_marksman, [-28.22, -15.35, 4.44], 245.20]
 ];
 
 private _base_corners = [

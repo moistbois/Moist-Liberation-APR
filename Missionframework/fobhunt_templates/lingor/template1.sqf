@@ -2,7 +2,7 @@ private _objects_to_build = [
     ["Land_vn_table_ep1", [-7.31, 0.75, 0.00], 183.06],
     ["Land_vn_table_ep1", [-7.05, 2.52, 0.00], 0.00],
     ["Land_vn_woodenshelter_01_f", [-8.17, -1.25, 0.00], 1.67],
-    [opfor_flag, [-1.94, -7.42, 0.00], 0.00],
+    [KPLIB_o_flag, [-1.94, -7.42, 0.00], 0.00],
     ["Land_vn_woodenshelter_01_f", [-7.85, 3.49, 0.00], 10.28],
     ["vn_o_ammobox_full_03", [3.98, 7.81, 0.00], 211.82],
     ["vn_o_ammobox_full_01", [4.89, 7.93, -0.00], 0.00],
@@ -18,7 +18,7 @@ private _objects_to_build = [
     ["Land_vn_crateswooden_f", [-8.50, -6.01, 0.00], 58.54],
     ["Land_vn_woodenshelter_01_f", [5.30, 9.57, -0.00], 0.00],
     ["Land_vn_chair", [3.49, 12.45, -0.00], 237.44],
-    [opfor_mrap, [-8.83, -9.47, -0.00], 269.33],
+    [KPLIB_o_mrap, [-8.83, -9.47, -0.00], 269.33],
     ["Land_vn_chair", [4.76, 12.67, 0.00], 218.60],
     ["Land_vn_wf_vehicle_service_point_east", [12.03, -6.86, -0.00], 268.66],
     ["Land_vn_chair", [4.10, 13.78, 0.00], 253.54],
@@ -76,26 +76,26 @@ private _objects_to_build = [
     ["Fence_corrugated_plate_gate", [-4.48, -26.90, -0.00], 0.00],
     ["Land_vn_o_shelter_05", [-8.95, -28.07, 0.00], 271.34],
     ["Land_vn_fence_wooden_01_03", [-19.87, -21.34, 0.00], 217.44],
-    [opfor_mrap_armed, [6.47, -21.24, 0.00], 242.37]
+    [KPLIB_o_mrap_armed, [6.47, -21.24, 0.00], 242.37]
 ];
 private _objectives_to_build = [
     // Move all things which should be destroyed to accomplish the mission from the above to this array
-    [opfor_fuel_truck, [8.20, 0.85, 0.00], 267.55],
-    [opfor_ammo_truck, [6.25, -7.59, 0.00], 178.72]
+    [KPLIB_o_fuelTruck, [8.20, 0.85, 0.00], 267.55],
+    [KPLIB_o_ammoTruck, [6.25, -7.59, 0.00], 178.72]
 ];
 private _defenders_to_build = [
-    [opfor_rifleman, [-6.81, -0.71, 0.00], 144.19],
-    [opfor_rifleman, [-7.10, -2.99, 0.00], 83.87],
-    [opfor_rifleman, [7.81, -2.51, 0.00], 271.34],
-    [opfor_heavygunner, [5.29, 11.72, 0.00], 0.00],
-    [opfor_medic, [-13.97, 1.41, 0.09], 0.00],
-    [opfor_rifleman, [-15.45, -1.32, 0.10], 0.00],
-    [opfor_marksman, [13.73, -17.69, 4.44], 138.93],
-    [opfor_grenadier, [-10.22, 20.11, 4.45], 0.00],
-    [opfor_rifleman, [18.76, 16.85, 0.00], 101.13],
-    [opfor_marksman, [-19.03, -20.06, 4.44], 223.03],
-    [opfor_marksman, [13.05, 25.36, 0.00], 0.00],
-    [opfor_rifleman, [-9.07, -28.27, 0.00], 109.23]
+    [KPLIB_o_rifleman, [-6.81, -0.71, 0.00], 144.19],
+    [KPLIB_o_rifleman, [-7.10, -2.99, 0.00], 83.87],
+    [KPLIB_o_rifleman, [7.81, -2.51, 0.00], 271.34],
+    [KPLIB_o_heavyGunner, [5.29, 11.72, 0.00], 0.00],
+    [KPLIB_o_medic, [-13.97, 1.41, 0.09], 0.00],
+    [KPLIB_o_rifleman, [-15.45, -1.32, 0.10], 0.00],
+    [KPLIB_o_marksman, [13.73, -17.69, 4.44], 138.93],
+    [KPLIB_o_grenadier, [-10.22, 20.11, 4.45], 0.00],
+    [KPLIB_o_rifleman, [18.76, 16.85, 0.00], 101.13],
+    [KPLIB_o_marksman, [-19.03, -20.06, 4.44], 223.03],
+    [KPLIB_o_marksman, [13.05, 25.36, 0.00], 0.00],
+    [KPLIB_o_rifleman, [-9.07, -28.27, 0.00], 109.23]
 ];
 private _base_corners = [
     [40, 40, 0],
