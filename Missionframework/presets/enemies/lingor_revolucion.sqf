@@ -96,6 +96,7 @@ KPLIB_o_armyVehicles = [
 	"O_Lingor_BRDM_2",                                                  // BRDM-2
 	"O_Lingor_T55",                                                  // T-55A
 	"O_Lingor_T34",                                                  // T34-85M
+	"O_Lingor_Shilka",														 // Shilka
 	"O_Lingor_PT_76A",                                                  // PT-76A
     "O_Lingor_M151A1_TOW",                                                // M151A1 TOW
 	"O_Lingor_Type_63_Tank",                                                // Type 63 (Tank)
@@ -132,6 +133,7 @@ KPLIB_o_armyVehiclesLight = [
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehicles = [
     "O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
+	"O_Lingor_Shilka",														 // Shilka
 	"O_Lingor_M151A1_M1919",                                                  // M151A1 M1919
 	"O_LINGOR_BTR_40_DShKM",                                                  // BTR-40 (DShKM)
 	"O_LINGOR_BTR_40_DShKM",                                                  // BTR-40 (DShKM)
@@ -236,5 +238,6 @@ KPLIB_o_turrets_MORTAR = [
 // Enemy SAM turrets that will be spawned in the back country
 KPLIB_o_turrets_SAM = [
 	["O_LINGOR_BM_21"],
-    ["vn_sa2", "vn_sa2", "vn_sa2", "vn_o_static_rsna75"]
+	["O_Lingor_Shilka"],
+    ["O_LINGOR_ZU_232"]
 ];
