@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1331;
+		nextID=1332;
 	};
 	class MarkerIDProvider
 	{
@@ -20,7 +20,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=117;
+		nextID=121;
 	};
 	class Camera
 	{
@@ -55,13 +55,14 @@ addons[]=
 	"ace_sitting",
 	"CUP_Misc3_Config",
 	"GX_OBJECTS",
-	"modules_f_vietnam"
+	"modules_f_vietnam",
+	"ace_fortify"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=21;
+		items=22;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -201,6 +202,13 @@ class AddonsMetaData
 			author="Savage Game Design";
 			url="https://www.arma3.com";
 		};
+		class Item21
+		{
+			className="ace_fortify";
+			name="ace_fortify";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
 	};
 };
 dlcs[]=
@@ -321,7 +329,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=345;
+		items=346;
 		class Item0
 		{
 			dataType="Trigger";
@@ -7250,12 +7258,12 @@ class Mission
 				position[]={7530.6636,5.9978008,8314.8027};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=1222;
 			type="Land_vn_tabledesk_f";
-			atlOffset=0.40706015;
 		};
 		class Item330
 		{
@@ -7266,12 +7274,12 @@ class Mission
 				angles[]={0.0069225952,0,6.2766256};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=1225;
 			type="Land_Document_01_F";
-			atlOffset=0.82250643;
 		};
 		class Item331
 		{
@@ -7536,7 +7544,7 @@ class Mission
 			};
 			id=1303;
 			type="GX_Cocaine";
-			atlOffset=0.82027102;
+			atlOffset=0.82027149;
 		};
 		class Item340
 		{
@@ -7547,12 +7555,13 @@ class Mission
 				angles[]={0,0,0.011554079};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 			};
 			id=1304;
 			type="GX_Cocaine";
-			atlOffset=0.82025909;
+			atlOffset=0.00038719177;
 		};
 		class Item341
 		{
@@ -7568,7 +7577,7 @@ class Mission
 			};
 			id=1305;
 			type="GX_Cocaine";
-			atlOffset=0.82026339;
+			atlOffset=0.82026434;
 		};
 		class Item342
 		{
@@ -7601,6 +7610,73 @@ class Mission
 			id=1330;
 			type="vn_module_photo_camera_enable_screenshots";
 			atlOffset=20.09;
+		};
+		class Item345
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={11429.952,-0.053001404,6041.001};
+			};
+			id=1331;
+			type="acex_fortify_setupModule";
+			atlOffset=17.216999;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_fortify_setupModule_Budget";
+					expression="_this setVariable ['Budget',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=-1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_fortify_setupModule_AddToolItem";
+					expression="_this setVariable ['AddToolItem',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_fortify_setupModule_Preset";
+					expression="_this setVariable ['Preset',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="mediumGreen";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_fortify_setupModule_Side";
+					expression="_this setVariable ['Side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 	class Connections
