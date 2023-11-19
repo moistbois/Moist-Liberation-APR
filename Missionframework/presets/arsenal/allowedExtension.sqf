@@ -43,6 +43,7 @@ KPLIB_arsenalAllowedExtension = [
     "ACE_PreloadedMissileDummy_Strela_2_CUP",
     "ACE_ReserveParachute",
 	//ACE Start
+	"ACE_Fortify",
 	"ACE_CableTie",
 	"ToolKit",
 	"ACE_EarPlugs",
