@@ -67,6 +67,13 @@ if ((toLowerANSI _type) in KPLIB_o_allVeh_classes) then {
     _price_f = round ((_objectinfo select 3) * KPLIB_recycling_percentage * _fuelMulti);
 };
 
+if (_type in KPLIB_gear_crates) then
+{
+	_price_s = 0;
+	_price_a = 0;
+	_price_f = 0;
+};
+
 createDialog "liberation_recycle";
 waitUntil {sleep 0.1; dialog};
 

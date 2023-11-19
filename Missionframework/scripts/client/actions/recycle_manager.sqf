@@ -23,7 +23,8 @@ while {true} do {
             (toLowerANSI (typeOf _x)) in KPLIB_b_deco_classes ||
             (((toLowerANSI (typeOf _x)) in KPLIB_storageBuildings) && ((_x getVariable ["KPLIB_storage_type",-1]) == 0)) ||
             (toLowerANSI (typeOf _x)) in KPLIB_upgradeBuildings ||
-            (typeOf _x) in KPLIB_ace_crates) &&
+            (typeOf _x) in KPLIB_gear_crates ||
+			(typeOf _x) in KPLIB_ace_crates) &&
             alive _x &&
             (
                 // ignore null objects left by Advanced Towing

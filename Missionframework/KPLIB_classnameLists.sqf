@@ -106,6 +106,11 @@ KPLIB_ace_crates = [
     "ACE_medicalSupplyCrate_advanced"
 ];
 
+// Classnames of exotic crates
+KPLIB_gear_crates = [
+"B_LINGOR_IglaBox"
+];
+
 // Everything the AI troups should be able to resupply from.
 KPLIB_aiResupplySources = [
     "B_APC_Tracked_01_CRV_F",

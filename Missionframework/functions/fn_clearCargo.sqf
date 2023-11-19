@@ -24,7 +24,7 @@ params [
 
 if (isNull _obj) exitWith {["Null object given"] call BIS_fnc_error; false};
 
-if (_force || {!((typeOf _obj) in KPLIB_ace_crates) && {KPLIB_param_clearCargo || {!((typeOf _obj) isKindOf "AllVehicles")}}}) then {
+if (_force || {!((typeOf _obj) in KPLIB_ace_crates) && !((typeOf _obj) in KPLIB_gear_crates) && {KPLIB_param_clearCargo || {!((typeOf _obj) isKindOf "AllVehicles")}}}) then {
     clearWeaponCargoGlobal _obj;
     clearMagazineCargoGlobal _obj;
     clearBackpackCargoGlobal _obj;
