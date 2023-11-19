@@ -19,6 +19,8 @@ KPLIB_arsenalWeapons = [
 	"hlc_rifle_FAL5000",
 	"rhs_weap_akm",
 	"hlc_rifle_L1A1SLR",
+	"rhs_weap_l1a1",
+	"rhs_weap_l1a1_wood",
 	"vn_l1a1_03",
 	"vn_l1a1_03_camo",
 	//"vn_l1a1_xm148",Locked
@@ -28,6 +30,7 @@ KPLIB_arsenalWeapons = [
 	"rhs_weap_aks74u",
 	"rhs_weap_m92",
 	"rhs_weap_rpg26",
+	"hlc_rifle_g3a3",
 	"rhs_weap_rsp30_white",
 	"rhs_weap_rsp30_green",
 	"rhs_weap_rsp30_red",
@@ -193,10 +196,10 @@ KPLIB_arsenalMagazines = [
 	"vn_l1a1_10_t_mag",
 	"vn_l1a1_20_mag",
 	"vn_l1a1_20_t_mag",
-	"vn_l1a1_30_mag",
-	"vn_l1a1_30_t_mag",
-	"vn_l1a1_30_02_mag",
-	"vn_l1a1_30_02_t_mag",
+	"hlc_10Rnd_762x51_T_fal",
+	"hlc_20Rnd_762x51_T_fal",
+	"hlc_10Rnd_762x51_B_fal",
+	"hlc_20Rnd_762x51_B_fal",
 	"FHQ_25Rnd_762x51_Mag",
 	"FHQ_25Rnd_762x51_Green_Tracers_Mag",
 	"FHQ_25Rnd_762x51_Red_Tracers_Mag",
@@ -421,7 +424,9 @@ KPLIB_arsenalMagazines = [
 	"vn_m1a1_30_t_mag",
 	"vn_mpu_mag",
 	"vn_mpu_t_mag",
-	"vn_mk1_udg_mag"
+	"vn_mk1_udg_mag",
+	"hlc_20rnd_762x51_b_G3",
+    "hlc_20rnd_762x51_T_G3"
 ];
 
 KPLIB_arsenalItems = [

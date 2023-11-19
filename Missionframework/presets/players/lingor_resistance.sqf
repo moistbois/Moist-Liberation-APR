@@ -451,6 +451,7 @@ KPLIB_b_vehSupport = [
     ["ACE_Box_82mm_Mo_HE",50,40,0],
     ["ACE_Box_82mm_Mo_Smoke",50,10,0],
     ["ACE_Box_82mm_Mo_Illum",50,10,0],
+	["B_LINGOR_IglaBox",25,75,0],
     ["ACE_Wheel",10,0,0],
     ["ACE_Track",10,0,0],
     ["vn_b_wheeled_m54_repair",325,0,75],                               // M185 Repair
