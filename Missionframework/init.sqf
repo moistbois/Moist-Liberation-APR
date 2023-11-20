@@ -60,6 +60,8 @@ RydFFE_Add_Other =
 
 nul = [] execVM "RYD_FFE\FFE.sqf";
 
+CHVD_allowNoGrass = false; // Set 'false' if you want to disable "Low" option for terrain (default: true)
+
 // Temperature and humidity changes
 [{
     ace_weather_humidityShift = 25;
