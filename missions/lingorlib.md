@@ -1,12 +1,12 @@
 
-# Lingor: Glowing Contras
+# Lingor Liberation: Glowing Contras
 <div align="center">
     
 ![A picture of a yellow smiling face with shades, wearing a military cap. There are other soldiers in the background holding weapons.](lingor.png)
 </div>
 
 ### About:
-The year is 1987. The tropical Latin American paradise of Lingor is ripe for a bit of political meddling. The CIA is putting resources and support behind your "contra" group to prevent the local dissidents from promoting their ideology around. You'll have plenty of leftover gear from the failed Vietnam War to aid you in this mission. Let's hope it goes well this time around. Just don't mention that the CIA is helping you because they'll deny everything. Good luck, vaya con dios, and don't forget your mirror and sun tan.
+The year is 1987. The tropical Latin American paradise of Lingor is ripe for a bit of political meddling. The CIA is putting resources and support behind your little "contra" group to prevent the local dissidents from promoting their ideology in your country. You'll have plenty of leftover gear from the failed Vietnam War to aid you in this mission. Let's hope it goes well this time around. Just don't mention that the CIA is helping you because they'll deny everything. Good luck, vaya con dios, and don't forget your mirror and sun tan.
 
 ### Requirements:
 - [[ARMA] 3 (Size: 40.61 GBs)](https://store.steampowered.com/app/107410/Arma_3/)
@@ -17,7 +17,7 @@ The year is 1987. The tropical Latin American paradise of Lingor is ripe for a b
 - [[Teamspeak 3 (TS3) v3.6.1]](https://files.teamspeak-services.com/releases/client/3.6.1/TeamSpeak3-Client-win64-3.6.1.exe)
 - [[Join Pantrh’s Discord for server info]](https://discord.com/invite/FeyqxXA)
 - [[Task Force Arrowhead Radio (TS3 Plugin)]](https://cdn.discordapp.com/attachments/687630994123390986/1122243967614988308/task_force_radio.ts3_plugin)
-- [[Lingor Liberation 1987 Mods List v1.3.0] (Size: 41.3 GBs)](https://github.com/moistbois/Moist-Liberation-APR/releases/download/modlists/Arma.3.Preset.LingorLiberation1987_3.html)
+- [[Lingor Liberation 1987 Mods v1.3.0] (Size: 41.3 GBs)](https://github.com/moistbois/Moist-Liberation-APR/releases/download/modlists/Arma.3.Preset.LingorLiberation1987_3.html)
 
 ### Rules:
 - Don’t be a dick.
@@ -83,15 +83,15 @@ The year is 1987. The tropical Latin American paradise of Lingor is ripe for a b
 - Zeus Enhanced - ACE3 Compatibility
 
 ### Additional Mods:
-- [[A3 Characters 4K]](https://steamcommunity.com/sharedfiles/filedetails/?id=2965541384) - Uses more GPU Resources
-- [[Aaren's Blast Effects]](https://steamcommunity.com/sharedfiles/filedetails/?id=2424322922) - Uses more GPU Resources
-- [[Blastcore Murr Edition]](https://steamcommunity.com/sharedfiles/filedetails/?id=2257686620) - Uses more GPU Resources
-- [[Bullet Casings v1.1]](https://github.com/nicoman35/Bullet-Casings) - Uses more GPU and CPU Resources
-- [[Enhanced Soundscape]](https://steamcommunity.com/sharedfiles/filedetails/?id=825179978) - Uses more CPU Resources
-- [[Enhanced Soundscape Plus]](https://steamcommunity.com/sharedfiles/filedetails/?id=2938312887) - Uses more CPU Resources
+- [[A3 Characters 4K]](https://steamcommunity.com/sharedfiles/filedetails/?id=2965541384) - Uses more GPU resources
+- [[Aaren's Blast Effects]](https://steamcommunity.com/sharedfiles/filedetails/?id=2424322922) - Uses more GPU resources
+- [[Blastcore Murr Edition]](https://steamcommunity.com/sharedfiles/filedetails/?id=2257686620) - Uses considerably more GPU resources
+- [[Bullet Casings v1.1 (Local Mod)]](https://discord.com/channels/435753869293649920/712634879073845349/1176893790024372346) - Uses more GPU and CPU resources
+- [[Enhanced Soundscape]](https://steamcommunity.com/sharedfiles/filedetails/?id=825179978) - Uses more CPU resources
+- [[Enhanced Soundscape Plus]](https://steamcommunity.com/sharedfiles/filedetails/?id=2938312887) - Uses more CPU resources
 
 ### Soundtrack: 
-[Spotify] [YouTube]
+[[Spotify]](https://open.spotify.com/playlist/17qI9iF4z3H0jpAHQbeb5a) [[YouTube]](https://youtube.com/playlist?list=PLAcQFoGuH-azw9XQoB1m6NeAstF0yvtWx&si=8TNUAxP8eTcaPSAE) [[Pastebin]](https://pastebin.com/2XucxLJ5)
 - ABBA - Gimme! Gimme! Gimme! (A Man After Midnight)
 - Accept - Lady Lou
 - Adolfo Echeverria Y Su Orquesta - Amanciendo
