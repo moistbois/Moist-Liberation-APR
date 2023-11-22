@@ -47,7 +47,7 @@
             "KPLIB_resistance_at_chance": 20,
             "KPLIB_resistance_sector_chance": 35,
             "KPLIB_resistance_ambush_chance": 25,
-            "KPLIB_production_interval": 30,
+            "KPLIB_production_interval": 120,
             "KPLIB_defended_buildingpos_part": 0.4,
             "KPLIB_vulnerability_timer": 1200,
             "KPLIB_surrender_chance": 25
