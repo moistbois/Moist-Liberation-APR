@@ -152,6 +152,7 @@ KPLIB_b_vehStatic = [
     ["vn_b_army_static_m1919a6",25,40,0],                                 // M-1919A6 .30cal
     ["vn_b_army_static_m60_high",35,40,0],                               // M60 (High)
     ["vn_b_army_static_m60_low",20,40,0],                                // M60 (Low)
+	["vn_b_army_static_m2_high",40,60,0],                                // M-2HB .50cal (High/Scoped)
     ["vn_b_army_static_m2_high",35,60,0],                                // M-2HB .50cal (High)
     ["vn_b_army_static_m2_low",35,60,0],                                 // M-2HB .50cal (Low)
     ["vn_b_army_static_mortar_m2",40,80,0],                              // M2 60mm Mortar
@@ -458,8 +459,8 @@ KPLIB_b_vehSupport = [
     ["ACE_Box_82mm_Mo_Smoke",50,10,0],
     ["ACE_Box_82mm_Mo_Illum",50,10,0],
 	["B_LINGOR_IglaBox",25,75,0],
-    ["ACE_Wheel",10,0,0],
-    ["ACE_Track",10,0,0],
+    ["ACE_Wheel",0,0,0],
+    ["ACE_Track",25,0,0],
     ["vn_b_wheeled_m54_repair",325,0,75],                               // M185 Repair
     ["vn_b_wheeled_m54_fuel",125,0,275],                                // M49 Fuel
     ["vn_b_wheeled_m54_ammo",125,200,75],                               // M54 Ammo
