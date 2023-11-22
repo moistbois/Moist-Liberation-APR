@@ -89,6 +89,7 @@ The year is 1987. The tropical Latin American paradise of Lingor is ripe for a b
 - [[Bullet Casings v1.1 (Local Mod)]](https://discord.com/channels/435753869293649920/712634879073845349/1176893790024372346) - Uses more GPU and CPU resources
 - [[Enhanced Soundscape]](https://steamcommunity.com/sharedfiles/filedetails/?id=825179978) - Uses more CPU resources
 - [[Enhanced Soundscape Plus]](https://steamcommunity.com/sharedfiles/filedetails/?id=2938312887) - Uses more CPU resources
+- [[Salmon Quick Release Buckle]](https://steamcommunity.com/sharedfiles/filedetails/?id=1528867402)
 
 ### Soundtrack: 
 [[Spotify]](https://open.spotify.com/playlist/17qI9iF4z3H0jpAHQbeb5a) [[YouTube]](https://youtube.com/playlist?list=PLAcQFoGuH-azw9XQoB1m6NeAstF0yvtWx&si=8TNUAxP8eTcaPSAE) [[Pastebin]](https://pastebin.com/2XucxLJ5)
