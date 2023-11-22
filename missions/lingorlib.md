@@ -1,12 +1,12 @@
 
-# Lingor: Glowing in the Jungle
+# Lingor: Glowing Contras
 <div align="center">
     
 ![A picture of a yellow smiling face with shades, wearing a military cap. There are other soldiers in the background holding weapons.](lingor.png)
 </div>
 
 ### About:
-The year is 1987. The tropical Latin American islands of Lingor are ripe for a bit of political meddling. The CIA is putting resources and support behind your group to prevent the local dissidents from promoting their ideology around the country. You'll have plenty of leftover gear from the failed Vietnam War to aid you in this mission. Let's hope it goes well this time around. Just don't mention that the CIA is helping you because they'll deny everything. Good luck, vaya con dios, and don't forget your mirror and sun tan.
+The year is 1987. The tropical Latin American paradise of Lingor is ripe for a bit of political meddling. The CIA is putting resources and support behind your "contra" group to prevent the local dissidents from promoting their ideology around. You'll have plenty of leftover gear from the failed Vietnam War to aid you in this mission. Let's hope it goes well this time around. Just don't mention that the CIA is helping you because they'll deny everything. Good luck, vaya con dios, and don't forget your mirror and sun tan.
 
 ### Requirements:
 - [[ARMA] 3 (Size: 40.61 GBs)](https://store.steampowered.com/app/107410/Arma_3/)
@@ -14,10 +14,10 @@ The year is 1987. The tropical Latin American islands of Lingor are ripe for a b
 	- [[Paid version]](https://store.steampowered.com/app/1227700/Arma_3_Creator_DLC_SOG_Prairie_Fire/)
 	- [[Trial version]](https://steamcommunity.com/sharedfiles/filedetails/?id=2477276806)
 - A microphone
-- [[Teamspeak (TS3)]](https://files.teamspeak-services.com/releases/client/3.6.1/TeamSpeak3-Client-win64-3.6.1.exe)
+- [[Teamspeak 3 (TS3) v3.6.1]](https://files.teamspeak-services.com/releases/client/3.6.1/TeamSpeak3-Client-win64-3.6.1.exe)
 - [[Join Pantrh’s Discord for server info]](https://discord.com/invite/FeyqxXA)
 - [[Task Force Arrowhead Radio (TS3 Plugin)]](https://cdn.discordapp.com/attachments/687630994123390986/1122243967614988308/task_force_radio.ts3_plugin)
-- [[Pantrh Lingor Liberation Mod Preset] (Size: 41.3 GBs)](https://discord.com/channels/435753869293649920/687630994123390986/1164786935764623491)
+- [[Lingor Liberation 1987 Mods List v1.3.0] (Size: 41.3 GBs)](https://github.com/moistbois/Moist-Liberation-APR/releases/download/modlists/Arma.3.Preset.LingorLiberation1987_3.html)
 
 ### Rules:
 - Don’t be a dick.
@@ -28,14 +28,10 @@ The year is 1987. The tropical Latin American islands of Lingor are ripe for a b
 - No cheating (includes exploits and metagaming.)
 
 ### Modlist:
-- 3den Enhanced
-- [ace] Improved Arsenal Category
 - ace
-- Advanced Sling Loading
-- Advanced Towing
+- Automatic Warning Suppressor
 - Better Inventory
 - Blastcore Edited (standalone version)
-- Bullet Casings
 - cb_blood
 - CBA_A3
 - CH View Distance
@@ -43,13 +39,17 @@ The year is 1987. The tropical Latin American islands of Lingor are ripe for a b
 - Colombian Armed Forces RHS
 - DHI Uniforms and Equipment
 - DUI - Squad Radar
+- Discord Rich Presence
 - Enhanced Movement
+- Enhanced Movement Rework
 - Extra RHS Uniform Re-textures
 - GSTAVOs  M16A2
+- GX - Objects
 - Global Mobilization - Demo Vehicle
 - Gruppe Adler Trenches
 - Immerse
 - Immersion Cigs
+- Improved ACE Arsenal Category
 - Interiors for CUP
 - JSRS SOUNDMOD
 - JSRS SOUNDMOD - RHS  AFRF Mod Pack Sound Support
@@ -57,10 +57,6 @@ The year is 1987. The tropical Latin American islands of Lingor are ripe for a b
 - JSRS SOUNDMOD - RHS SAF Mod Pack Support
 - JSRS SOUNDMOD - RHS USAF Mod Pack Sound Support
 - KLPQ Music Radio
-- LAMBS_Danger.fsm (DEV)
-- LAMBS_RPG_RHS
-- LAMBS_Suppression
-- LAMBS_Turrets
 - Lingor/Dingor Island
 - Moistbois Factions - Lingor 1980s
 - Moistbois Radio - Lingor 1980s
@@ -75,17 +71,24 @@ The year is 1987. The tropical Latin American islands of Lingor are ripe for a b
 - RHSGREF
 - RHSSAF
 - RHSUSAF
+- S.O.G. Melee CBA Keybind
 - S.O.G. Prairie Fire
 - SSD Death Screams 2.1
 - Spanish Voice-Overs and Radio Protocol
 - TAC VESTS
 - Task Force Arrowhead Radio (BETA!!!)
-- Uriki's Mission Items
-- VET_Unflipping
 - Walkers A2 Vehicles
 - Window Breaker
 - Zeus Enhanced
 - Zeus Enhanced - ACE3 Compatibility
+
+### Additional Mods:
+- [[A3 Characters 4K]](https://steamcommunity.com/sharedfiles/filedetails/?id=2965541384) - Uses more GPU Resources
+- [[Aaren's Blast Effects]](https://steamcommunity.com/sharedfiles/filedetails/?id=2424322922) - Uses more GPU Resources
+- [[Blastcore Murr Edition]](https://steamcommunity.com/sharedfiles/filedetails/?id=2257686620) - Uses more GPU Resources
+- [[Bullet Casings v1.1]](https://github.com/nicoman35/Bullet-Casings) - Uses more GPU and CPU Resources
+- [[Enhanced Soundscape]](https://steamcommunity.com/sharedfiles/filedetails/?id=825179978) - Uses more CPU Resources
+- [[Enhanced Soundscape Plus]](https://steamcommunity.com/sharedfiles/filedetails/?id=2938312887) - Uses more CPU Resources
 
 ### Soundtrack: 
 [Spotify] [YouTube]
