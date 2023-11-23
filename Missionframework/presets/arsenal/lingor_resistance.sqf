@@ -23,8 +23,8 @@ KPLIB_arsenalWeapons = [
 	"rhs_weap_l1a1_wood",
 	"vn_l1a1_03",
 	"vn_l1a1_03_camo",
-	//"vn_l1a1_xm148",Locked
-	//"vn_l1a1_xm148_camo",Locked
+	"vn_l1a1_xm148",
+	"vn_l1a1_xm148_camo",
 	"rhs_weap_akm_gp25",
 	"arifle_AKM_F",
 	"rhs_weap_aks74u",
@@ -137,6 +137,10 @@ KPLIB_arsenalWeapons = [
     //"vn_pk",Locked
     "vn_pm_sd",
     "vn_pm",
+	"vn_xm16e1_xm148",
+	"vn_l34a1_xm148",
+	"vn_l34a1",
+	"vn_l34a1_f",
     "vn_rpd_shorty_01",
     "vn_rpd_shorty",
     "vn_rpd",
@@ -185,6 +189,8 @@ KPLIB_arsenalMagazines = [
 	"rhs_mag_30Rnd_556x45_M200_Stanag",
 	"rhs_mag_30Rnd_556x45_M855_Stanag",
 	"rhs_mag_30Rnd_556x45_M855A1_Stanag",
+	"vn_f1_smg_mag",
+	"vn_f1_smg_t_mag",
 	"vn_m1903_mag",
 	"vn_m1903_t_mag",
 	"vn_bipod_m63a",
