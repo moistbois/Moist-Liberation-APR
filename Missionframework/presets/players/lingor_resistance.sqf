@@ -152,7 +152,7 @@ KPLIB_b_vehStatic = [
     ["vn_b_army_static_m1919a6",25,40,0],                                 // M-1919A6 .30cal
     ["vn_b_army_static_m60_high",35,40,0],                               // M60 (High)
     ["vn_b_army_static_m60_low",20,40,0],                                // M60 (Low)
-	["vn_b_army_static_m2_high",40,60,0],                                // M-2HB .50cal (High/Scoped)
+	["vn_b_army_static_m2_scoped_high",40,60,0],                                // M-2HB .50cal (High/Scoped)
     ["vn_b_army_static_m2_high",35,60,0],                                // M-2HB .50cal (High)
     ["vn_b_army_static_m2_low",35,60,0],                                 // M-2HB .50cal (Low)
     ["vn_b_army_static_mortar_m2",40,80,0],                              // M2 60mm Mortar
