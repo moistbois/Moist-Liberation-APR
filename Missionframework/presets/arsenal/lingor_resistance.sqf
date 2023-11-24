@@ -17,6 +17,7 @@ KPLIB_arsenalWeapons = [
 	"rhs_weap_pm63",
 	//"rhs_weap_rpk74m",RPK-74M
 	"hlc_rifle_FAL5000",
+	"vn_l4",
 	"rhs_weap_akm",
 	"hlc_rifle_L1A1SLR",
 	"rhs_weap_l1a1",
@@ -63,6 +64,8 @@ KPLIB_arsenalWeapons = [
     "vn_izh54_p",
     "vn_izh54_shorty",
     "vn_izh54",
+	"vn_type64_smg",
+	"vn_type64_f_smg",
     "vn_m_axe_01",
     "vn_m_axe_fire",
 	"HLC_Charm_Teethgang",
@@ -95,6 +98,8 @@ KPLIB_arsenalWeapons = [
     "vn_m16_xm148",
     "vn_m16",
 	"vn_m16_usaf",
+	"vn_l2a3",
+	"vn_l2a3_f",
     "vn_m1891",
     "vn_m1895",
     "vn_m1897",
@@ -130,8 +135,9 @@ KPLIB_arsenalWeapons = [
     "vn_mx991_m1911",
     "vn_mx991_red",
     "vn_mx991",
-    //"vn_p38s",
-	//"vn_p38",
+    //"vn_p38s",Not in use
+	//"vn_p38",Not in use
+	//"vn_ppk",Not in use
 	//"vn_mg42",locked
 	"vn_m20a1b1_01",
     //"vn_pk",Locked
@@ -194,6 +200,8 @@ KPLIB_arsenalMagazines = [
 	"vn_m1903_mag",
 	"vn_m1903_t_mag",
 	"vn_bipod_m63a",
+	"vn_type64_smg_mag",
+	"vn_type64_smg_t_mag",
 	"vn_bipod_m16",
 	"vn_bipod_m14",
 	"rhs_10rnd_9x39mm_SP5",
