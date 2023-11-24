@@ -535,6 +535,7 @@ KPLIB_radioTowerClassnames = [
 // Classnames of objects which should be ignored when building
 KPLIB_collisionIgnoreObjects = [
     "Land_HelipadSquare_F",
+	"Land_vn_b_helipad_01",
     "Land_TentHangar_V1_F",
     "Land_runway_edgelight",
     "Land_runway_edgelight_blue_F",

@@ -134,6 +134,14 @@ KPLIB_objectInits = [
         }
     ],
 	
+	// Removes collisions from VN Helipad
+	 [
+        ["Land_vn_b_helipad_01"], 
+        {
+            _this enableSimulation false;
+        }
+    ],
+	
 	// Add Workbench compat in case it doesn't work the other way
     [
         ["Land_Workbench_01_F"], 
@@ -150,8 +158,6 @@ KPLIB_objectInits = [
         }
     ],
 	
-	
-
     // Disable autocombat (if set in parameters) and fleeing
     [
         ["CAManBase"],
