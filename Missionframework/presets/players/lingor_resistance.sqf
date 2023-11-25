@@ -127,7 +127,7 @@ KPLIB_b_vehAir = [
 	["vn_b_air_oh6a_01",80,10,50],                                         // OH-6A Cayuse
     ["vn_b_air_oh6a_02",150,80,100],                                     // OH-6A Cayuse (Scout MG)
 	["vn_b_air_oh6a_03",150,100,100],                                    // OH-6A Cayuse (Scout GL)
-    ["vn_b_air_oh6a_06",150,200,100],                                    // OH-6A Cayuse (Gunship/APERS)
+    ["vn_b_air_oh6a_05",150,200,100],                                    // OH-6A Cayuse (Gunship/ AT)
     ["vn_b_air_ch34_03_01",125,20,75],                                 // UH-34D Seahorse (M60 x2)
     ["vn_b_air_ch34_04_03",225,300,100],                                 // UH-34 Stinger (APERS)
     ["vn_b_air_ch34_04_02",225,300,100],                                 // UH-34 Stinger (CAS)
@@ -137,7 +137,9 @@ KPLIB_b_vehAir = [
     ["vn_b_air_uh1c_05_01",225,250,100],                                // UH-1C Iroquois Heavy Hog (Army)
     ["vn_b_air_uh1e_02_04",225,250,100],                                // UH-1E Iroquois Heavy Gunship
     ["vn_b_air_ah1g_02_usmc",500,400,250],                              // AH-1G Cobra (APERS)
-    ["vn_b_air_ah1g_03",500,400,250]                                   // AH-1G Cobra (AT)
+    ["vn_b_air_ah1g_03",500,400,250],                                   // AH-1G Cobra (AT)
+	["vn_b_air_ch47_04_01",325,120,250],                                   // CH-47A Chinook (Army)
+	["vn_b_air_ach47_01_01",500,400,250]                                   // ACH-47A Guns-A-Go-Go (M200)
 
 ];
 
@@ -581,5 +583,6 @@ KPLIB_b_vehToUnlock = [
 	"vn_b_armor_m132_01",                          	    			 // Flamethrower Tank
 	"B_LINGOR_PT_76A",                          	    			 // PT76A
 	"rhs_bmp1_vdv",                          	    			 // BEEG BMP with lots of shit
-	"B_LINGOR_T55"                          	    			 // T-55
+	"B_LINGOR_T55",                          	    			 // T-55
+	"vn_b_air_ach47_01_01"												// ACH-47A Guns-A-Go-Go (M200)
 ];
