@@ -252,17 +252,17 @@ class ACEX_Fortify_Presets {
     class KPLIB_Fortify {
         displayName = "KPLIB Fortify";
         objects[] = {
-			{"Land_Sleeping_bag_brown_Fz", 1},
+			{"Land_Sleeping_bag_F", 1},
 			{"Lantern_01_black_F", 1},
 			{"Land_Campfire_F", 1},
-			{"Land_tent_east", 30},
+			{"Land_tent_east", 50},
 			{"Land_ladder_half_EP1", 1},
-            {"Land_BagBunker_Small_F", 120},
-            {"Land_Barricade_01_4m_F", 65},
-			{"Land_BagFence_End_F", 40},
-			{"Land_BagFence_Corner_F", 35},
-            {"Land_BagFence_Short_F", 25},
-            {"Land_BagFence_Round_F", 35}
+            {"Land_BagBunker_Small_F", 210},
+            {"Land_Barricade_01_4m_F", 95},
+			{"Land_BagFence_End_F", 70},
+			{"Land_BagFence_Corner_F", 65},
+            {"Land_BagFence_Short_F", 55},
+            {"Land_BagFence_Round_F", 65}
         };
     };
 };
