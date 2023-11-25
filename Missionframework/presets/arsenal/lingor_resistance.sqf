@@ -19,6 +19,7 @@ KPLIB_arsenalWeapons = [
 	"hlc_rifle_FAL5000",
 	"vn_l4",
 	"rhs_weap_akm",
+	"rhs_weap_rpg7",
 	"hlc_rifle_L1A1SLR",
 	"rhs_weap_l1a1",
 	"rhs_weap_l1a1_wood",
@@ -156,7 +157,7 @@ KPLIB_arsenalWeapons = [
     //"vn_sa7",locked strelas
     //"vn_sa7b",locked
 	//"rhs_weap_igla",
-    //"vn_sks_gl",locked
+    "vn_sks_gl",
     "vn_sks",
 	"vn_svd",
     "vn_type56",
@@ -401,7 +402,6 @@ KPLIB_arsenalMagazines = [
 	"rhs_rpg7_PG7V_mag",
 	"rhs_rpg7_PG7VL_mag",
 	"rhs_rpg7_PG7VM_mag",
-	"rhs_rpg7_TBG7V_mag",
 	"rhs_rpg7_PG7VS_mag",
 	"vn_m20a1b1_heat_mag",
 	"vn_m20a1b1_wp_mag",
@@ -635,6 +635,7 @@ KPLIB_arsenalItems = [
 	"rhs_acc_dtk1983",
 	"rhs_acc_tgpa",
 	"rhs_acc_pbs1",
+	"rhs_acc_pgo7v",
 	"vn_o_1_5x_k98k",
 	"vn_o_8x_m1903",
 	"vn_o_m14_front",
@@ -653,6 +654,7 @@ KPLIB_arsenalItems = [
     "vn_o_anpvs2_m16",
     "vn_o_anpvs2_m40a1",
     "vn_rocket_m128_launcher",
+	"rhs_acc_pso1m2",
     "vn_s_m14",
 	"vn_s_hp",
     "vn_s_m16",
