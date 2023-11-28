@@ -139,7 +139,7 @@ KPLIB_arsenalWeapons = [
     //"vn_p38s",Not in use
 	//"vn_p38",Not in use
 	//"vn_ppk",Not in use
-	//"vn_mg42",locked
+	"vn_mg42",
 	"vn_m20a1b1_01",
     //"vn_pk",Locked
     "vn_pm_sd",
