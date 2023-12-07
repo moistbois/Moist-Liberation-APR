@@ -110,13 +110,13 @@ KPLIB_b_vehLight = [
 ];
 
 KPLIB_b_vehHeavy = [
-	["rhsgref_tla_btr60",275,180,300],                                      // BTR-60PB APC ((PKT (7.62x54mm) and KPVT (14.5x115mm))
+	["rhsgref_tla_btr60",275,80,200],                                      // BTR-60PB APC ((PKT (7.62x54mm) and KPVT (14.5x115mm))
 	["vn_b_armor_m41_01_01",300,300,250],                                // M41A3 Walker Bulldog
 	["B_LINGOR_Type_63",325,100,120],                                // Type 63
 	["vn_b_armor_m132_01",325,50,275],                                 // M132A1 Flamethrower
 	["B_LINGOR_PT_76A",345,275,290],                                 // PT-76A
-    ["rhs_bmp1_vdv",600,470,420],                    			// BMP-1 (2A28 Cannon (HE-FRAG OG15V/HEAT PG15V), PKT (7.62x54mm), 9K111 (wire AT missile))
-    ["B_LINGOR_T55",800,800,800]                                     // T-55A (D-10 Cannon (BK5M HEAT-FS), (OF416Sh HE-FRAG), BM8 APDS)
+    ["rhs_bmp1_vdv",500,470,420],                    			// BMP-1 (2A28 Cannon (HE-FRAG OG15V/HEAT PG15V), PKT (7.62x54mm), 9K111 (wire AT missile))
+    ["B_LINGOR_T55",600,600,600]                                     // T-55A (D-10 Cannon (BK5M HEAT-FS), (OF416Sh HE-FRAG), BM8 APDS)
 
 ];
 
@@ -473,7 +473,7 @@ KPLIB_b_vehSupport = [
     ["Land_vn_b_prop_fuelbladder_03",0,0,50],
     ["B_Slingload_01_Ammo_F",0,50,0],                                  // Huron Container Ammo
 	["vn_b_ammobox_supply_01",0,50,0],
-	["vn_o_ammobox_full_06",0,50,0]
+	["vn_o_ammobox_full_06",0,100,0]
 ];
 
 /*
