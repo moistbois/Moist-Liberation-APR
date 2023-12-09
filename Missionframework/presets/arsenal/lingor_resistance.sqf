@@ -143,6 +143,7 @@ KPLIB_arsenalWeapons = [
 	"vn_mg42",
 	"vn_m20a1b1_01",
     "vn_pk",
+	"rhs_weap_pkm",
     "vn_pm_sd",
     "vn_pm",
 	"vn_xm16e1_xm148",
@@ -304,6 +305,8 @@ KPLIB_arsenalMagazines = [
 	"vn_kbkg_t_mag",
     "vn_carbine_30_t_mag",
     "vn_chicom_grenade_mag",
+	"rhs_grenade_mkiiia1_mag",
+	"rhs_mag_mk3a2",
 	"rhs_grenade_mkii_mag",
     "vn_f1_grenade_mag",
 	"vn_20mm_dgn_wp_mag",
@@ -429,6 +432,9 @@ KPLIB_arsenalMagazines = [
 	"vn_m63a_150_t_mag",
 	"vn_m63a_100_mag",
 	"vn_m63a_100_t_mag",
+	"rhs_100Rnd_762x54mmR",
+	"rhs_100Rnd_762x54mmR_7BZ3",
+	"rhs_100Rnd_762x54mmR_green",
 	"vn_vz61_mag",
 	"vn_vz61_t_mag",
 	"rhsgref_10rnd_765x17_vz61",
@@ -860,27 +866,27 @@ KPLIB_arsenalItems = [
 	"vn_m19_binocs_grey",
 	"vn_mk21_binocs",
 // Extra
-	"ItemMap",
 	"ItemCompass",
 	"ACE_Clacker",
 	"ACE_M26_Clacker",
 	"ACE_Flashlight_XL50",
 	"vn_b_item_radio_urc10",
-	"TFAR_rf7800str", //POVERTY ALT
+	"TFAR_rf7800str", 												//POVERTY ALT
 // ACE items
-	"ACE_artilleryTable",                                           // Artillery Rangetable
-	"ACE_RangeCard",                                                // Range Card
-	"ACE_RangeTable_82mm",                                          // 82 mm Rangetable
-	"ACE_Banana",
+	"ACE_MRE_SteakVegetables",
+	"ACE_MRE_BeefStew",
+	"ACE_MRE_ChickenTikkaMasala",
+	"ACE_Can_Spirit",
+	"ACE_Can_Franta",
+	"ACE_SpraypaintBlack",                                          // Sprays
+	"ACE_SpraypaintBlue",                                           // Sprays
+	"ACE_SpraypaintGreen",                                          // Sprays
+	"ACE_SpraypaintRed",                                            // Sprays
+	"ACE_SpraypaintWhite",                                          // Sprays
+	"ACE_SpraypaintYellow",                                         // Sprays
 	"ACE_DefusalKit",
 	"ACE_Flashlight_XL50",
-	"ACE_LIB_FireCord",
-	"ACE_DeadManSwitch",
-	"ACE_WaterBottle",
-    "ACE_SpraypaintBlack",
-    "ACE_SpraypaintBlue",
-    "ACE_SpraypaintGreen",
-    "ACE_SpraypaintRed"
+	"ACE_DeadManSwitch"
 ];
 
 KPLIB_arsenalBackpacks = [
