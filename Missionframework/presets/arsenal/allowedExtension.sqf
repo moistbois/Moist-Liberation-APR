@@ -43,6 +43,11 @@ KPLIB_arsenalAllowedExtension = [
     "ACE_PreloadedMissileDummy_Strela_2_CUP",
     "ACE_ReserveParachute",
 	//ACE Start
+	"ACE_adenosine",
+	"ACE_salineIV",
+	"ACE_salineIV_250",
+	"ACE_salineIV_500",
+	"acex_intelitems_notepad",
 	"ACE_Fortify",
 	"ACE_CableTie",
 	"ToolKit",
@@ -69,8 +74,22 @@ KPLIB_arsenalAllowedExtension = [
 	"ACE_elasticBandage",
 	"ACE_packingBandage",
 	"ACE_quikclot",
+	"ItemMap",
 	"ACE_splint",
+	"ACE_Banana",
+	"ACE_Canteen_Half",
+	"ACE_Canteen_Empty",
+	"ACE_Canteen",
+	"ACE_Sunflower_Seeds",
 	"ACE_surgicalKit",
+	"ACE_artilleryTable",                                           // Artillery Rangetable
+	"ACE_RangeCard",                                                // Range Card
+	"ACE_RangeTable_82mm",                                          // 82 mm Rangetable
+	"ACE_LIB_FireCord",
+	"ACE_WaterBottle",
+	"ACE_WaterBottle_Half",
+	"ACE_WaterBottle_Empty",
+	
 	//ACE End
     "BWA3_acc_LLM01_flash_tan",
     "BWA3_acc_LLM01_flash_underbarrel",
