@@ -142,7 +142,7 @@ KPLIB_arsenalWeapons = [
 	//"vn_ppk",Not in use
 	"vn_mg42",
 	"vn_m20a1b1_01",
-    //"vn_pk",Locked
+    "vn_pk",
     "vn_pm_sd",
     "vn_pm",
 	"vn_xm16e1_xm148",
@@ -876,7 +876,11 @@ KPLIB_arsenalItems = [
 	"ACE_Flashlight_XL50",
 	"ACE_LIB_FireCord",
 	"ACE_DeadManSwitch",
-	"ACE_WaterBottle"
+	"ACE_WaterBottle",
+    "ACE_SpraypaintBlack",
+    "ACE_SpraypaintBlue",
+    "ACE_SpraypaintGreen",
+    "ACE_SpraypaintRed"
 ];
 
 KPLIB_arsenalBackpacks = [
