@@ -892,6 +892,7 @@ KPLIB_arsenalItems = [
 KPLIB_arsenalBackpacks = [
 // Backpacks
     "NonSteerable_Parachute_F",
+	"ACE_TacticalLadder_Pack",
     "Steerable_Parachute_F",
 	"B_Messenger_Black_F",
 	"B_Messenger_Coyote_F",
