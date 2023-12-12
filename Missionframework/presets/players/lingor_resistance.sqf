@@ -137,7 +137,7 @@ KPLIB_b_vehAir = [
     ["vn_b_air_uh1c_05_01",225,250,100],                                // UH-1C Iroquois Heavy Hog (Army)
     ["vn_b_air_uh1e_02_04",225,250,100],                                // UH-1E Iroquois Heavy Gunship
     ["vn_b_air_ah1g_02_usmc",500,400,250],                              // AH-1G Cobra (APERS)
-    ["vn_b_air_ah1g_03",500,400,250],                                   // AH-1G Cobra (AT)
+    ["vn_b_air_ah1g_08",500,400,250],                                   // AH-1G Cobra (M195)
 	["vn_b_air_ch47_04_01",325,120,250],                                   // CH-47A Chinook (Army)
 	["vn_b_air_ach47_01_01",500,400,250]                                   // ACH-47A Guns-A-Go-Go (M200)
 
