@@ -24,6 +24,8 @@ params [
     ["_caller", objNull, [objNull]]
 ];
 
+if (([ getpos player , 350 , KPLIB_side_enemy ] call KPLIB_fnc_getUnitsCount ) > 1 ) exitWith { hint localize "STR_HEAL_ENEMIES_NEARBY";};
+
 if (_centerPos isEqualTo [0, 0, 0]) exitWith {["Zero position given"] call BIS_fnc_error; false};
 if (_radius isEqualTo 0) exitWith {["Zero radius given"] call BIS_fnc_error; false};
 if (isNull _caller) exitWith {["Null object given"] call BIS_fnc_error; false};

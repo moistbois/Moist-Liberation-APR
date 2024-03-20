@@ -37,6 +37,8 @@ switch (KPLIB_presetPlayer) do {
     case 28: {[] call compile preprocessFileLineNumbers "presets\players\sfp_wdl.sqf";};
     case 29: {[] call compile preprocessFileLineNumbers "presets\players\sfp_des.sqf";};
     case 30: {[] call compile preprocessFileLineNumbers "presets\players\enoch.sqf";};
+	case 31: {[] call compile preprocessFileLineNumbers "presets\players\african_militia.sqf";};
+	case 32: {[] call compile preprocessFileLineNumbers "presets\players\lingor_resistance.sqf";};
     default  {[] call compile preprocessFileLineNumbers "presets\players\custom.sqf";};
 };
 
@@ -61,6 +63,8 @@ switch (KPLIB_presetEnemy) do {
     case 18: {[] call compile preprocessFileLineNumbers "presets\enemies\cup_cdf.sqf";};
     case 19: {[] call compile preprocessFileLineNumbers "presets\enemies\cup_baf_desert.sqf";};
     case 20: {[] call compile preprocessFileLineNumbers "presets\enemies\cup_baf_woodland.sqf";};
+	case 21: {[] call compile preprocessFileLineNumbers "presets\enemies\african_militia.sqf";};
+	case 22: {[] call compile preprocessFileLineNumbers "presets\enemies\lingor_revolucion.sqf";};
     default  {[] call compile preprocessFileLineNumbers "presets\enemies\custom.sqf";};
 };
 
@@ -73,6 +77,7 @@ switch (KPLIB_presetResistance) do {
     case  6: {[] call compile preprocessFileLineNumbers "presets\resistance\unsung.sqf";};
     case  7: {[] call compile preprocessFileLineNumbers "presets\resistance\cup_takistan.sqf";};
     case  8: {[] call compile preprocessFileLineNumbers "presets\resistance\cup_napa.sqf";};
+	case  9: {[] call compile preprocessFileLineNumbers "presets\resistance\lingor.sqf";};
     default  {[] call compile preprocessFileLineNumbers "presets\resistance\custom.sqf";};
 };
 
@@ -84,6 +89,7 @@ switch (KPLIB_presetCivilians) do {
     case  5: {[] call compile preprocessFileLineNumbers "presets\civilians\unsung.sqf";};
     case  6: {[] call compile preprocessFileLineNumbers "presets\civilians\cup_takistan.sqf";};
     case  7: {[] call compile preprocessFileLineNumbers "presets\civilians\cup_cherno.sqf";};
+	case  8: {[] call compile preprocessFileLineNumbers "presets\civilians\lingor.sqf";};
     default  {[] call compile preprocessFileLineNumbers "presets\civilians\custom.sqf";};
 };
 
@@ -183,7 +189,8 @@ KPLIB_crates            = [KPLIB_b_crateSupply, KPLIB_b_crateAmmo, KPLIB_b_crate
 KPLIB_airSlots          = [KPLIB_b_slotHeli, KPLIB_b_slotPlane];
 KPLIB_storageBuildings  = [KPLIB_b_smallStorage, KPLIB_b_largeStorage];
 KPLIB_upgradeBuildings  = [KPLIB_b_logiStation, KPLIB_b_airControl, KPLIB_b_slotHeli, KPLIB_b_slotPlane];
-KPLIB_aiResupplySources append [KPLIB_b_mobileRespawn, KPLIB_b_potato01, KPLIB_b_arsenal];
+KPLIB_aiResupplySources append KPLIB_b_mobileRespawn;
+KPLIB_aiResupplySources append [KPLIB_b_potato01, KPLIB_b_arsenal];
 
 KPLIB_crates            = KPLIB_crates              apply {toLowerANSI _x};
 KPLIB_airSlots          = KPLIB_airSlots            apply {toLowerANSI _x};

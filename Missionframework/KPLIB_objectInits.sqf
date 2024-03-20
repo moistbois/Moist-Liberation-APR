@@ -24,7 +24,7 @@
 */
 
 KPLIB_objectInits = [
-    // Set KP logo on white flag
+    // Set logo on white flag
     [
         ["Flag_White_F"],
         {_this setFlagTexture "res\flag_kp_co.paa";}
@@ -131,6 +131,14 @@ KPLIB_objectInits = [
                     [_arty] remoteExecCall ["KPLIB_fnc_addArtyToSupport", 0, _arty];
                 };
             };
+        }
+    ],
+
+	// Add KPLQ Radio to static radios
+    [
+        ["Radio", "Radio_Old"],
+        {
+            _this setVariable [[_this, false] call klpq_musicRadio_fnc_addRadio];
         }
     ],
 

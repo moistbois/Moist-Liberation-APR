@@ -52,6 +52,8 @@
     28 = SFP (Woodland)
     29 = SFP (Desert)
     30 = LDF (Contact DLC)
+	31 = Project OPFOR African Militia ("better equipped")
+	32 = Lingor Resistencia
 */
 KPLIB_presetPlayer = 0;
 
@@ -78,6 +80,8 @@ KPLIB_presetPlayer = 0;
     18 = CUP Chernarus Defense Force
     19 = CUP British Armed Forces (Desert)
     20 = CUP British Armed Forces (Woodland)
+	21 = Project OPFOR African Militia ("better equipped")
+	22 = Lingor Revolución
 */
 KPLIB_presetEnemy = 0;
 
@@ -92,6 +96,7 @@ KPLIB_presetEnemy = 0;
     6  = Unsung
     7  = CUP Takistani Locals
     8  = CUP National Party of Chernarus
+	9  = Lingor
 */
 KPLIB_presetResistance = 0;
 
@@ -105,6 +110,7 @@ KPLIB_presetResistance = 0;
     5  = Unsung
     6  = CUP Takistani Civilians
     7  = CUP Chernarussian Civilians
+	8  = Lingor Civilians
 */
 KPLIB_presetCivilians = 0;
 
@@ -120,6 +126,15 @@ KPLIB_presetCivilians = 0;
     7  = Unsung US arsenal preset
     8  = SFP arsenal preset
     9  = BWMod arsenal preset
+	10 = NATO MTP arsenal preset
+	11 = NATO Tropic arsenal preset
+	12 = NATO Woodland arsenal preset
+	13 = CSAT Hex arsenal preset
+	14 = CSAT Green Hex arsenal preset
+	15 = AAF arsenal preset
+	16 = LDF arsenal preset 
+	17 = Central africa (para) military
+	18 = Lingor
 */
 KPLIB_presetArsenal = 0;
 
@@ -186,7 +201,14 @@ KPLIB_range_fob = 125;
 KPLIB_height_halo = 2500;
 
 // Range to activate a sector.
-KPLIB_range_sectorActivation = 1000;
+KPLIB_range_sectorActivation   = 1000;
+KPLIB_range_capitalActivation  = 1000;
+KPLIB_range_cityActivation     = 500;
+KPLIB_range_factoryActivation  = 150;
+KPLIB_range_militaryActivation = 1200;
+KPLIB_range_towerActivation    = 250;
+KPLIB_range_airSpawnActivation = 500;
+KPLIB_range_pointActivation    = 300;
 
 // Range to capture a sector.
 KPLIB_range_sectorCapture = 175;
@@ -368,6 +390,8 @@ KPLIB_surrender_chance = 80;
 // When playing on this map, it'll create a clearance (remove terrain objects) in a 15m radius around the battlegroup/reinforcements spawnpoint.
 KPLIB_battlegroup_clearance = [
     "song_bin_tanh",
+	"khe_sanh",
+	"lingor3",
     "Cam_Lao_Nam"
 ];
 

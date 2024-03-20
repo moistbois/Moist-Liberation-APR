@@ -68,6 +68,7 @@ class KPLIB {
         class isCapitalActive           {};
         class isClassUAV                {};
         class isRadio                   {};
+		class lambs_enableReinforcements{};
         class log                       {};
         class potatoScan                {};
         class protectObject             {};

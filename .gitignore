@@ -50,6 +50,7 @@ Temporary Items
 /build/
 /_tools/build/
 /_tools/node_modules/
+/_tools/package-lock.json
 
 # KP-Steam
 steam_appid.txt

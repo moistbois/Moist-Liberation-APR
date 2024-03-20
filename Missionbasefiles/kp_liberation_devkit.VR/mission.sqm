@@ -127,7 +127,7 @@ class Mission
 				condition="true";
 				timeout[]={1.5,1.5,1.5};
 				interuptable=1;
-				effectMusic="LeadTrack01_F";
+				effectMusic="Music_Roaming_Night_Fragment_01_20s";
 			};
 			id=1;
 			type="EmptyDetector";
@@ -146,7 +146,6 @@ class Mission
 				timeout[]={0.2,0.2,0.2};
 				interuptable=1;
 				activationBy="WEST";
-				effectMusic="EventTrack01_F_Curator";
 			};
 			id=2;
 			type="EmptyDetector";

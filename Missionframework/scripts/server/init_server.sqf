@@ -92,6 +92,28 @@ switch (KPLIB_presetEnemy) do {
             "fobhunt_templates\unsung\template4.sqf",
             "fobhunt_templates\unsung\template5.sqf"
         ];
+	};
+	case 21: {
+        KPLIB_fob_templates = [
+            "fobhunt_templates\africa\template1.sqf",
+            "fobhunt_templates\africa\template2.sqf",
+            "fobhunt_templates\africa\template3.sqf",
+            "fobhunt_templates\africa\template4.sqf",
+			"fobhunt_templates\africa\template5.sqf",
+			"fobhunt_templates\africa\template6.sqf",
+			"fobhunt_templates\africa\template7.sqf",
+			"fobhunt_templates\africa\template8.sqf",
+			"fobhunt_templates\africa\template9.sqf",
+            "fobhunt_templates\africa\template10.sqf"
+        ];
+	};
+	case 22: {
+        KPLIB_fob_templates = [
+            "fobhunt_templates\lingor\template1.sqf",
+            "fobhunt_templates\lingor\template2.sqf",
+            "fobhunt_templates\lingor\template3.sqf",
+            "fobhunt_templates\lingor\template4.sqf"
+        ];
     };
     default {
         KPLIB_fob_templates = [
@@ -131,3 +153,12 @@ execVM "scripts\server\offloading\group_diag.sqf";
 if (KPLIB_param_restart > 0) then {
     execVM "scripts\server\game\server_restart.sqf";
 };
+
+
+["KPLIB_ResetBattleGroups", {
+    {
+        if (_x getVariable ["KPLIB_isBattleGroup",false]) then {
+            [_x] call battlegroup_ai;
+        }
+    } foreach allGroups;
+}] call CBA_fnc_addEventHandler;
