@@ -133,15 +133,31 @@ KPLIB_objectInits = [
             };
         }
     ],
-
+	
+	// Removes collisions from VN Helipad
+	 [
+        ["Land_vn_b_helipad_01"], 
+        {
+            _this enableSimulation false;
+        }
+    ],
+	
+	// Add Workbench compat in case it doesn't work the other way
+    [
+        ["Land_Workbench_01_F"], 
+        {
+            _this setVariable ["ace_isRepairFacility", 1, true];
+        }
+    ],
+	
 	// Add KPLQ Radio to static radios
     [
-        ["Radio", "Radio_Old"],
+        ["Radio", "Radio_Old", "CUP_radio_b", "Land_vn_radio", "vn_b_prop_fmradio_01"], 
         {
             _this setVariable [[_this, false] call klpq_musicRadio_fnc_addRadio];
         }
     ],
-
+	
     // Disable autocombat (if set in parameters) and fleeing
     [
         ["CAManBase"],
