@@ -8,7 +8,7 @@ about: 'Report a bug'
 <!-- Your issue may already be reported! -->
 <!-- Please search issue tracker before submiting your report. -->
 <!-- 
-    https://github.com/KillahPotatoes/KP-Liberation/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Abug
+    https://github.com/moistbois/Moist-Liberation-APR/issues?q=is%3Aissue+label%3Abug
  -->
  
  <!-- Otherwise use the template below. This ensures that we have all needed information for a first investigation. -->
@@ -21,18 +21,6 @@ about: 'Report a bug'
 **Map used:**
 
 **Mods used:**
-
-**Dedicated or local game:**
-
-**Source of the mission file (URL):**
-<!-- It is important for us if you are using an official realease, -->
-<!-- or some derivative version. -->
-
-### Individual Things
-**Did you edit anything within the mission files?**
-
-
-**If yes, what did you edit exactly?**
 
 
 ### Short Issue Description
