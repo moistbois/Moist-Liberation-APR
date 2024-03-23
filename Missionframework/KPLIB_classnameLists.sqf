@@ -457,14 +457,8 @@ KPLIB_param_supportModule_artyVeh = [
 
 // Objects which are spawned as intel objects for pickup
 KPLIB_intelObjectClasses = [
-    "Land_File_research_F",
-	"Land_File1_F",
-	"Land_FilePhotos_F",
-	"Land_File2_F",
-	"vn_b_prop_cassette_01",
-	"GX_Cocaine",
-	"UMI_Item_Land_Camera_F",
-    "Land_Document_01_F"
+    "Land_Document_01_F",
+    "Land_File_research_F"
 ];
 
 // Classnames of buildings inside military sectors, which are valid to hold intel items
@@ -529,7 +523,11 @@ KPLIB_intelBuildingClasses = [
 
 // Array of radio tower classnames to place at radio tower sectors. If more than one is added, it'll be selected random for each sector on campaign start.
 KPLIB_radioTowerClassnames = [
-    "TFAR_Land_Communication_F"
+    "Land_Communication_F",
+    "TFAR_Land_Communication_F",
+	"Land_TTowerBig_2_F",
+	"Land_TTowerBig_1_F",
+	"Land_Vysilac_vez"
 ];
 
 // Classnames of objects which should be ignored when building
