@@ -497,6 +497,9 @@
             <Original>You have been fully healed\nby %1</Original>
             <Japanese>%1 によって\n完全に治療されました</Japanese>
         </Key>
+        <Key ID="STR_FULLHEAL_COOLDOWN">
+            <Original>Full Heal still on cooldown</Original>
+        </Key>
         <Key ID="STR_FOB_ACTION">
             <Original>-- DEPLOY FOB --</Original>
             <French>-- DEPLOYER FOB --</French>

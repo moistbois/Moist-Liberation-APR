@@ -33,17 +33,28 @@ if (!canSuspend) exitWith {_this spawn KPLIB_fnc_fullHeal;};
 
 private _targetunits = units west select {(alive _x) and (_x distance _centerPos <= _radius)};
 private _healedunits = [];
+private  _cooldownunits = [];
 
 {
     private _target = _x;
-    if (KPLIB_ace_med) then {[_caller, _target] call ace_medical_treatment_fnc_fullHeal;} else {_target setDamage 0;};
-    if (isPlayer _target) then {
-        if (_target isNotEqualTo _caller) then {_healedunits pushBack _target;};
-    };
+    _lastHeal = _target getVariable ["lastHealTime", nil];
+    if (isNil "_lastHeal") then { _lastHeal = -6000;};
+    if (_lastHeal + (5 * 60) < time) then //hardcoded cooldown for now
+    {
+        if (KPLIB_ace_med) then {[_caller, _target] call ace_medical_treatment_fnc_fullHeal;} else {_target setDamage 0;};
+        if (isPlayer _target) then {
+           if (_target isNotEqualTo _caller) then {_healedunits pushBack _target;};
+        };
+        _target setVariable ["lastHealTime", time];
+    } else
+    {
+        _cooldownunits pushBack _target;
+    }
 } forEach _targetunits;
+if (!(_caller in _cooldownunits)) then { [localize "STR_FULLHEAL_DONE"] remoteExecCall ["hint", _caller];};
 
-[localize "STR_FULLHEAL_DONE"] remoteExecCall ["hint", _caller];
 [format [localize "STR_FULLHEAL_APPLY", name _caller]] remoteExecCall ["hint", _healedunits];
+[format [localize "STR_FULLHEAL_COOLDOWN"] remoteExecCall ["hint", _cooldownunits]];
 sleep 3;
 [""] remoteExecCall ["hintSilent", _targetunits];
 
