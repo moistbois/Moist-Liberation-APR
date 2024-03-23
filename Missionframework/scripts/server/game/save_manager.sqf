@@ -437,6 +437,9 @@ if (!isNil "_saveData") then {
             // Reposition spawned object
             _object setPosWorld _pos;
             _object setVectorDirAndUp [_vecDir, _vecUp];
+			
+			// Persistent fuel
+			_object setFuel _fuel;
 
             // Process KP object init
             [_object] call KPLIB_fnc_addObjectInit;
@@ -468,6 +471,7 @@ if (!isNil "_saveData") then {
             if ((count _inventory) == 4) then {
                 [_object, _inventory] call fnc_loadCustomCargo;
             };
+			
         };
     } forEach _objectsToSave;
 
