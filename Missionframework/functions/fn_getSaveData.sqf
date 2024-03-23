@@ -145,7 +145,7 @@ private ["_fobPos", "_fobObjects", "_grpUnits", "_fobMines"];
 } forEach KPLIB_sectors_fob;
 
 // Save all fetched objects
-private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inventory", "_fuel"];
+private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inventory", "_fuel", "_fuelCargo", "_damages"];
 {
     // Position data
     _savedPos = getPosWorld _x;
@@ -154,7 +154,6 @@ private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inv
     _class = typeOf _x;
     _hasCrew = false;
 	_inventory = [];
-	_fuel = 
 
     // Determine if vehicle is crewed
     if ((toLowerANSI _class) in KPLIB_b_allVeh_classes) then {
@@ -171,8 +170,12 @@ private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inv
         
         // Serialize inventory
         _inventory = [_x] call fnc_serializeCargo;
-
-        _objectsToSave pushBack [_class, _savedPos, _savedVecDir, _savedVecUp, _hasCrew, _inventory, _fuel];
+        
+        _fuel = fuel _x;
+        _fuelCargo = getFuelCargo _x;
+        _damages = getAllHitPointsDamage _x;
+        
+        _objectsToSave pushBack [_class, _savedPos, _savedVecDir, _savedVecUp, _hasCrew, _inventory, _fuel, _fuelCargo, _damages];
     };
 	
 	
