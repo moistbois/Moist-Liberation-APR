@@ -1,15 +1,15 @@
 [
     {
-        "sourceFolder": "kp_liberation.lingor3",
+        "sourceFolder": "kp_liberation.green_sea",
         "missionName": "kp_liberation",
-        "map": "lingor3",
+        "map": "green_sea",
         "configFile": "KPLIB_config.sqf",
         "variables": {
-            "KPLIB_presetPlayer": 32,
-            "KPLIB_presetEnemy": 22,
-            "KPLIB_presetResistance": 9,
-            "KPLIB_presetCivilians": 8,
-            "KPLIB_presetArsenal": 18,
+            "KPLIB_presetPlayer": 6,
+            "KPLIB_presetEnemy": 2,
+            "KPLIB_presetResistance": 1,
+            "KPLIB_presetCivilians": 1,
+            "KPLIB_presetArsenal": 2,
             "KPLIB_color_player": "ColorBLUFOR",
             "KPLIB_color_enemy": "ColorOPFOR",
             "KPLIB_color_enemyActive": "ColorRED",
@@ -48,7 +48,7 @@
             "KPLIB_resistance_sector_chance": 35,
             "KPLIB_resistance_ambush_chance": 25,
             "KPLIB_production_interval": 120,
-            "KPLIB_defended_buildingpos_part": 0.4,
+            "KPLIB_defended_buildingpos_part": 0.5,
             "KPLIB_vulnerability_timer": 1200,
             "KPLIB_surrender_chance": 25
 
