@@ -33,7 +33,7 @@ author = "[GREUH], [KP], Apricot-ale, Doxus, CarlMylo, TiredSloth, Pantteri";
 */
 
 // Mission name displayed in the mission selection menu.
-briefingName = $STR_MISSION_TITLE;
+briefingName = Green Sea Liberation;
 
 // Path to image which will be displayed when the mission is highlighted on the mission selection screen.
 // Image should be .paa format and in 2:1 aspect ratio – ideally 1024x512 (Arma 3).
@@ -49,7 +49,7 @@ overviewText = "";
 
 // String (usually mission name) shown during mission loading.
 // The string is shown in a slightly larger font above the loadScreen.
-onLoadName = $STR_MISSION_TITLE;
+onLoadName = Green Sea Liberation;
 
 // You can define a picture to be shown while the mission is loaded.
 // The path is relative to the mission folder.
@@ -254,6 +254,7 @@ class ACEX_Fortify_Presets {
         objects[] = {
 			{"Land_Campfire_F", 1},
 			{"CamoNet_wdl_open_F", 30},
+            {"Land_vn_sandbagbarricade_01_half_f", 130},
             {"Land_BagFence_Short_F", 50},
             {"Land_BagFence_Round_F", 60}
         };
