@@ -489,6 +489,11 @@
             <Original>-- FULL HEAL --</Original>
             <Japanese>-- 完全治療 --</Japanese>
         </Key>
+        </Key>
+            <Key ID="STR_HEAL_ENEMIES_NEARBY">
+            <Original>Cannot heal: hostile forces nearby.</Original>
+            <Japanese>治癒不能: 敵軍が近くにいます。</Japanese>
+        </Key>
         <Key ID="STR_FULLHEAL_DONE">
             <Original>You have fully healed injuries</Original>
             <Japanese>負傷が完全に治療されました</Japanese>
@@ -1279,7 +1284,7 @@
             <Japanese>敵部隊が %1 付近で発見された。</Japanese>
         </Key>
         <Key ID="STR_NOTIFICATION_INTEL_TITLE">
-            <Original>NEW INTELLIGENCE</Original>
+            <Original>NEW MESSAGE</Original>
             <French>NOUVEAUX RENSEIGNEMENTS</French>
             <German>NEUE INFORMATIONEN</German>
             <Spanish>NUEVA INTELIGENCIA</Spanish>
@@ -1393,7 +1398,7 @@
             <Japanese>捕虜の回収に成功しました。</Japanese>
         </Key>
         <Key ID="STR_NOTIFICATION_DOCUMENT_TEXT">
-            <Original>We have found secret documents.</Original>
+            <Original>We have found intel.</Original>
             <French>Nous avons trouvé des documents secrets</French>
             <German>Wir haben geheime Dokumente gefunden.</German>
             <Spanish>Hemos encontrado documentos secretos</Spanish>
@@ -3638,7 +3643,7 @@
             <Japanese>給油中</Japanese>
         </Key>
         <Key ID="STR_INTEL">
-            <Original>-- TAKE INTEL</Original>
+            <Original>-- GRAB INTEL</Original>
             <French>-- PRENDRE INTEL</French>
             <German>-- GEHEIMDIENSTINFORMATIONEN AUFNEHMEN</German>
             <Spanish>-- COGER INTELIGENCIA</Spanish>
@@ -3713,7 +3718,7 @@
             <Japanese>現在の情報: %1</Japanese>
         </Key>
         <Key ID="STR_SECONDARY_NOT_ENOUGH_INTEL">
-            <Original>Insufficient intel points</Original>
+            <Original>Insufficient intel</Original>
             <French>Points d'intel insuffisants</French>
             <German>Zu wenige Geheimdienstinformationen</German>
             <Spanish>Puntos de inteligencia insuficientes</Spanish>
