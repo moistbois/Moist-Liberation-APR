@@ -145,7 +145,7 @@ private ["_fobPos", "_fobObjects", "_grpUnits", "_fobMines"];
 } forEach KPLIB_sectors_fob;
 
 // Save all fetched objects
-private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inventory"];
+private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inventory", "_fuel", "_fuelCargo", "_damages"];
 {
     // Position data
     _savedPos = getPosWorld _x;
@@ -170,9 +170,15 @@ private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inv
         
         // Serialize inventory
         _inventory = [_x] call fnc_serializeCargo;
-
-        _objectsToSave pushBack [_class, _savedPos, _savedVecDir, _savedVecUp, _hasCrew, _inventory];
+        
+        _fuel = fuel _x;
+        _fuelCargo = _x call ace_refuel_fnc_getFuel;
+        _damages = getAllHitPointsDamage _x;
+        
+        _objectsToSave pushBack [_class, _savedPos, _savedVecDir, _savedVecUp, _hasCrew, _inventory, _fuel, _fuelCargo, _damages];
     };
+	
+	
 } forEach _allObjects;
 
 // Save all storages and resources
