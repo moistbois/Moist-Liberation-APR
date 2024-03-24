@@ -408,7 +408,7 @@ if (!isNil "_saveData") then {
     private _object = objNull;
     {
         // Fetch data of saved object
-        _x params ["_class", "_pos", "_vecDir", "_vecUp", ["_hasCrew", false], ["_inventory", []]];
+        _x params ["_class", "_pos", "_vecDir", "_vecUp", ["_hasCrew", false], ["_inventory", []], "_fuel", "_fuelCargo", "_damages"];
 
         // This will be removed if we reach a 0.96.7 due to more released Arma 3 DLCs until we finish 0.97.0
         if !(((_saveData select 0) select 0) isEqualType 0) then {
@@ -439,7 +439,30 @@ if (!isNil "_saveData") then {
             _object setVectorDirAndUp [_vecDir, _vecUp];
 			
 			// Persistent fuel
-			_object setFuel _fuel;
+            if (!isNil "_fuel") then { _object setFuel _fuel; };
+            if (!isNil "_fuelCargo") then { [_object, _fuelCargo] call ace_refuel_fnc_setFuel; };
+
+            // Persistent damage
+            if (!isNil "_damages") then
+            {
+                __cnt = count (_damages select 0);
+                if (__cnt > 0) then
+                {
+                    _object allowdamage true; // dmg enabled otherwise seHitPointDamage won't do anything
+                    
+                    for "__i" from 0 to __cnt - 1 do
+                    {
+                        __part = (_damages select 0) select __i;
+                        __hp = (_damages select 2) select __i;
+
+                        if (!isNil "__part" && !isNil "__hp") then
+                        {
+                            // [format ["Set HP %1 - %2", __part, __hp], "SAVE"] call KPLIB_fnc_log;
+                            _object setHitPointDamage [__part, __hp];
+                        };
+                    };
+                };
+            };
 
             // Process KP object init
             [_object] call KPLIB_fnc_addObjectInit;
@@ -478,7 +501,7 @@ if (!isNil "_saveData") then {
     // Re-enable physics on the spawned objects
     {
         _x enableSimulation true;
-        _x setdamage 0;
+        // _x setdamage 0;  // needs to be removed or it will overwrite damage loaded ffrom savefile
         _x allowdamage true;
     } forEach _spawnedObjects;
     ["Saved buildings and vehicles placed", "SAVE"] call KPLIB_fnc_log;
