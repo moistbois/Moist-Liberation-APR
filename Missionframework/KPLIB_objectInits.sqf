@@ -133,8 +133,16 @@ KPLIB_objectInits = [
             };
         }
     ],
+    
+    // Add Workbench compat in case it doesn't work the other way
+    [
+        ["Land_Workbench_01_F"], 
+        {
+            _this setVariable ["ace_isRepairFacility", 1, true];
+        }
+    ],
 
-	// Add KPLQ Radio to static radios
+    // Add KPLQ Radio to static radios
     [
         ["Radio", "Radio_Old"],
         {
