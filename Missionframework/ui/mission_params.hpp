@@ -423,7 +423,7 @@ class Params {
         title = $STR_PARAMS_DEBUG_CIVINFO;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED};
-        default = 0;
+        default = 1;
     };
     class DebugCivRep {
         title = $STR_PARAMS_DEBUG_CIVREP;

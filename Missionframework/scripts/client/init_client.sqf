@@ -40,10 +40,14 @@ if (KPLIB_param_fuelconsumption) then {
 };
 player addEventHandler ["GetInMan", {[_this select 2] call KPLIB_fnc_setVehicleSeized;}];
 player addEventHandler ["GetInMan", {[_this select 2] call KPLIB_fnc_setVehicleCaptured;}];
-if (KPLIB_param_permissions) then {
-    player addEventHandler ["GetInMan", {[_this select 2] call kp_vehicle_permissions;}];
-    player addEventHandler ["SeatSwitchedMan", {[_this select 2] call kp_vehicle_permissions;}];
-};
+player addEventHandler ["GetInMan", {[_this select 2] call kp_vehicle_permissions;}];
+player addEventHandler ["GetInMan", {
+    params ["_player"];
+    // prevent players from getting into vehicles while carrying
+    if (isNull (_player getVariable ["KPLIB_carriedObject", objNull])) exitWith {};
+    moveOut _player;
+}];
+player addEventHandler ["SeatSwitchedMan", {[_this select 2] call kp_vehicle_permissions;}];
 player addEventHandler ["HandleRating", {if ((_this select 1) < 0) then {0};}];
 
 // Disable stamina, if selected in parameter
