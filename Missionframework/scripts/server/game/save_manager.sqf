@@ -445,7 +445,7 @@ if (!isNil "_saveData") then {
             // Persistent damage
             if (!isNil "_damages") then
             {
-                __cnt = count (_damages select 0);
+                private __cnt = count (_damages select 0);
                 if (__cnt > 0) then
                 {
                     _object allowdamage true; // dmg enabled otherwise seHitPointDamage won't do anything
