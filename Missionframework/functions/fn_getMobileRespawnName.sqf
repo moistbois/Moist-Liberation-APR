@@ -21,11 +21,12 @@ params [
 ];
 
 private _respawn_vehicles = [] call KPLIB_fnc_getMobileRespawns;
-private _vehicle_idx = _respawn_vehicles findIf _msp;
-private _name = "VEHICLE_NOT_FUND";
+private _name = "VEHICLE_NOT_FOUND";
 
-if (_vehicle_idx != -1 && _vehicle_idx < count KPLIB_militaryAlphabet) then {
-    _name = KPLIB_militaryAlphabet select _vehicle_idx;
+if (!isNil "_msp") then {
+    private _vehicle_idx = _respawn_vehicles findIf _msp;
+    if (_vehicle_idx != -1 && _vehicle_idx < count KPLIB_militaryAlphabet) then {
+        _name = KPLIB_militaryAlphabet select _vehicle_idx;
+    };
 };
-
 _name
