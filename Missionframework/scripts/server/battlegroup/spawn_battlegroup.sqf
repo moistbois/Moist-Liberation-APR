@@ -6,7 +6,7 @@ params [
 
 if (KPLIB_endgame == 1) exitWith {};
 
-_spawn_marker = [[2000, 1000] select _infOnly, 3000, false, markerPos _spawn_marker] call KPLIB_fnc_getOpforSpawnPoint;
+_spawn_marker = [[800, 600] select _infOnly, [1600, 1000] select _infOnly, false, markerPos _spawn_marker] call KPLIB_fnc_getOpforSpawnPoint;
 
 if !(_spawn_marker isEqualTo "") then {
     KPLIB_last_battlegroup_time = diag_tickTime;
