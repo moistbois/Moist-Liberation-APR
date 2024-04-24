@@ -57,10 +57,10 @@ fnc_serializeContainerCargo = {
 
     private _target = _this select 0;
     private _containers = everyContainer _target;
-    private _containerCount = count _containers; 
+    private _containerCount = count _containers;
 
     if (_containerCount > 0) then {
-        for "_i" from 0 to _containerCount - 1 do { 
+        for "_i" from 0 to _containerCount - 1 do {
             private _container = _containers select _i;
             private _containerClass = _container select 0;
             private _containerRef = _container select 1;
@@ -164,21 +164,21 @@ private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inv
 
     // Only save player side, seized or captured objects
     if (
-        (!(_class in KPLIB_c_vehicles) || {_x getVariable ["KPLIB_seized", false]}) &&
-        (!((toLowerANSI _class) in KPLIB_o_allVeh_classes) || {_x getVariable ["KPLIB_captured", false]})
+        ((_class in KPLIB_c_vehicles) && {_x getVariable ["KPLIB_seized", false]}) ||
+        (((toLowerANSI _class) in KPLIB_o_allVeh_classes) && {_x getVariable ["KPLIB_captured", false]})
     ) then {
-        
+
         // Serialize inventory
         _inventory = [_x] call fnc_serializeCargo;
-        
+
         _fuel = fuel _x;
         _fuelCargo = _x call ace_refuel_fnc_getFuel;
         _damages = getAllHitPointsDamage _x;
-        
+
         _objectsToSave pushBack [_class, _savedPos, _savedVecDir, _savedVecUp, _hasCrew, _inventory, _fuel, _fuelCargo, _damages];
     };
-	
-	
+
+
 } forEach _allObjects;
 
 // Save all storages and resources
