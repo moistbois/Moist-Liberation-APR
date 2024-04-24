@@ -75,6 +75,7 @@ KPLIB_arsenalAllowedExtension = [
 	"ACE_packingBandage",
 	"ACE_quikclot",
 	"ItemMap",
+    "ItemCompass",
 	"ACE_splint",
 	"ACE_Banana",
 	"ACE_Canteen_Half",
@@ -86,6 +87,7 @@ KPLIB_arsenalAllowedExtension = [
 	"ACE_RangeCard",                                                // Range Card
 	"ACE_RangeTable_82mm",                                          // 82 mm Rangetable
 	"ACE_LIB_FireCord",
+    "ACE_PlottingBoard",
 	"ACE_WaterBottle",
 	"ACE_WaterBottle_Half",
 	"ACE_WaterBottle_Empty",

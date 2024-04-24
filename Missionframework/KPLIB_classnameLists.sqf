@@ -82,6 +82,7 @@ KPLIB_medical_facilities = [
 	"Land_PartyTent_01_F",
     "LAND_uns_army_med",
     "LAND_uns_tent3mash",
+    "CampEast_EP1",
     "Land_vn_tent_mash_01_01",
     "Land_vn_tent_mash_01_02",
     "Land_vn_tent_mash_01_03",
@@ -108,7 +109,14 @@ KPLIB_ace_crates = [
 
 // Classnames of exotic crates
 KPLIB_gear_crates = [
-"B_LINGOR_IglaBox"
+    "B_LINGOR_IglaBox",
+    "B_AFBiH_IglaBox",
+    "B_AFBiH_FNMagBox",
+    "B_AFBiH_SPG9Box",
+    "B_AFBiH_KORDBox",
+    "B_AFBiH_M2Box",
+    "B_AFBiH_2B14Box",
+    "B_AFBiH_M80Box"
 ];
 
 // Everything the AI troups should be able to resupply from.

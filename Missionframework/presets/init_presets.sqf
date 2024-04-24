@@ -39,6 +39,7 @@ switch (KPLIB_presetPlayer) do {
     case 30: {[] call compile preprocessFileLineNumbers "presets\players\enoch.sqf";};
 	case 31: {[] call compile preprocessFileLineNumbers "presets\players\african_militia.sqf";};
 	case 32: {[] call compile preprocessFileLineNumbers "presets\players\lingor_resistance.sqf";};
+    case 33: {[] call compile preprocessFileLineNumbers "presets\players\afc.sqf";};
     default  {[] call compile preprocessFileLineNumbers "presets\players\custom.sqf";};
 };
 
@@ -65,6 +66,7 @@ switch (KPLIB_presetEnemy) do {
     case 20: {[] call compile preprocessFileLineNumbers "presets\enemies\cup_baf_woodland.sqf";};
 	case 21: {[] call compile preprocessFileLineNumbers "presets\enemies\african_militia.sqf";};
 	case 22: {[] call compile preprocessFileLineNumbers "presets\enemies\lingor_revolucion.sqf";};
+    case 23: {[] call compile preprocessFileLineNumbers "presets\enemies\caf.sqf";};
     default  {[] call compile preprocessFileLineNumbers "presets\enemies\custom.sqf";};
 };
 
@@ -78,6 +80,7 @@ switch (KPLIB_presetResistance) do {
     case  7: {[] call compile preprocessFileLineNumbers "presets\resistance\cup_takistan.sqf";};
     case  8: {[] call compile preprocessFileLineNumbers "presets\resistance\cup_napa.sqf";};
 	case  9: {[] call compile preprocessFileLineNumbers "presets\resistance\lingor.sqf";};
+    case  10: {[] call compile preprocessFileLineNumbers "presets\resistance\lingor.sqf";};
     default  {[] call compile preprocessFileLineNumbers "presets\resistance\custom.sqf";};
 };
 
@@ -90,6 +93,7 @@ switch (KPLIB_presetCivilians) do {
     case  6: {[] call compile preprocessFileLineNumbers "presets\civilians\cup_takistan.sqf";};
     case  7: {[] call compile preprocessFileLineNumbers "presets\civilians\cup_cherno.sqf";};
 	case  8: {[] call compile preprocessFileLineNumbers "presets\civilians\lingor.sqf";};
+    case  9: {[] call compile preprocessFileLineNumbers "presets\civilians\cherno.sqf";};
     default  {[] call compile preprocessFileLineNumbers "presets\civilians\custom.sqf";};
 };
 
@@ -265,13 +269,13 @@ KPLIB_typeAirClasses   = +KPLIB_b_air_classes;
     };
 } forEach (KPLIB_b_support_classes + [toLowerANSI KPLIB_b_potato01]);
 
-// Military alphabet used for FOBs and convois
+// Military alphabet used for FOBs and convoys
 KPLIB_militaryAlphabet = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-Ray", "Yankee", "Zulu"];
 
 // Misc variables
 markers_reset = [99999,99999,0];
 zeropos = [0,0,0];
-KPLIB_sarWreck = "Land_Wreck_Heli_Attack_01_F";
+KPLIB_sarWreck = "Mi8Wreck";
 KPLIB_sarFire = "test_EmptyObjectForFireBig";
 
 if (isServer) then {[format ["----- Preset initialization finished. Time needed: %1 seconds -----", diag_ticktime - _start], "PRESETS"] call KPLIB_fnc_log;};

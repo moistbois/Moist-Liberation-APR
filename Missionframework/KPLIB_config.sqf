@@ -54,6 +54,7 @@
     30 = LDF (Contact DLC)
 	31 = Project OPFOR African Militia ("better equipped")
 	32 = Lingor Resistencia
+    33 = Armed Forces of Chernarus (BLUFOR)
 */
 KPLIB_presetPlayer = 0;
 
@@ -82,6 +83,7 @@ KPLIB_presetPlayer = 0;
     20 = CUP British Armed Forces (Woodland)
 	21 = Project OPFOR African Militia ("better equipped")
 	22 = Lingor Revolución
+    23 = Chernarus Armed Forces (OPFOR)
 */
 KPLIB_presetEnemy = 0;
 
@@ -111,6 +113,7 @@ KPLIB_presetResistance = 0;
     6  = CUP Takistani Civilians
     7  = CUP Chernarussian Civilians
 	8  = Lingor Civilians
+    9 =  Chernarus 90s
 */
 KPLIB_presetCivilians = 0;
 
@@ -135,6 +138,7 @@ KPLIB_presetCivilians = 0;
 	16 = LDF arsenal preset 
 	17 = Central africa (para) military
 	18 = Lingor
+    19 = Armed Forces of Chernarus (BLUFOR)
 */
 KPLIB_presetArsenal = 0;
 

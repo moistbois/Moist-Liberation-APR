@@ -6,7 +6,7 @@ sleep 5;
 _ownership = [ markerpos _sector ] call KPLIB_fnc_getSectorOwnership;
 if ( _ownership != KPLIB_side_enemy ) exitWith {};
 
-_squad_type = KPLIB_b_squadLight;
+_squad_type = KPLIB_b_squadInf;
 if ( _sector in KPLIB_sectors_military ) then {
     _squad_type = KPLIB_b_squadInf;
 };

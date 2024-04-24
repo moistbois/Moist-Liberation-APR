@@ -43,6 +43,7 @@ if (KPLIB_param_useArsenalPreset) then {
         case  16: {[] call compile preprocessFileLineNumbers "presets\arsenal\vanilla_ldf.sqf";};
 		case  17: {[] call compile preprocessFileLineNumbers "presets\arsenal\central_africa.sqf";};
 		case  18: {[] call compile preprocessFileLineNumbers "presets\arsenal\lingor_resistance.sqf";};
+        case  19: {[] call compile preprocessFileLineNumbers "presets\arsenal\afc.sqf";};
         default  {[] call compile preprocessFileLineNumbers "presets\arsenal\blacklist.sqf";};
     };
     [] call compile preprocessFileLineNumbers "presets\arsenal\allowedExtension.sqf";
