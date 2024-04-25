@@ -162,10 +162,11 @@ private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inv
         };
     };
 
-    // Only save player side, seized or captured objects
+    // Only save civilian seized, enemy captured or player vehicles
     if (
-        ((_class in KPLIB_c_vehicles) && {_x getVariable ["KPLIB_seized", false]}) ||
-        (((toLowerANSI _class) in KPLIB_o_allVeh_classes) && {_x getVariable ["KPLIB_captured", false]})
+        (((toLowerANSI _class) in KPLIB_c_vehicles) && {_x getVariable ["KPLIB_seized", false]}) ||
+        (((toLowerANSI _class) in KPLIB_o_allVeh_classes) && {_x getVariable ["KPLIB_captured", false]}) ||
+        ((toLowerANSI _class) in KPLIB_b_allVeh_classes)
     ) then {
 
         // Serialize inventory
