@@ -113,8 +113,8 @@ KPLIB_b_vehAir = [
 ];
 
 KPLIB_b_vehStatic = [
-	["B_AFBiH_D30",25,30,0],                                     // D-30
-    ["B_AFBiH_Podnos",25,30,0],                                     // Podnos mortar
+    ["B_AFBiH_D30",250,300,0],                                     // D-30
+    ["B_AFBiH_Podnos",100,150,0],                                     // Podnos mortar
     ["B_AFBiH_M2",25,30,0],                                     // M2 HMG
     ["B_AFBiH_M2Lo",25,30,0]                                     // M2 HMG (Low Mount)
     
@@ -266,15 +266,15 @@ KPLIB_b_objectsDeco = [
 ];
 
 KPLIB_b_vehSupport = [
-    [KPLIB_b_arsenal,100,200,0],
-    [(KPLIB_b_mobileRespawn select 0),200,0,100],
+    [KPLIB_b_arsenal,5,5,5],
+    [(KPLIB_b_mobileRespawn select 0),150,0,100],
     [(KPLIB_b_mobileRespawn select 1),200,0,100],
-	[(KPLIB_b_mobileRespawn select 2),200,0,100],
+    [(KPLIB_b_mobileRespawn select 2),300,0,100],
     [KPLIB_b_fobBox,300,500,0],
     [KPLIB_b_fobTruck,300,500,75],
     [KPLIB_b_smallStorage,0,0,0],
     [KPLIB_b_largeStorage,0,0,0],
-    [KPLIB_b_logiStation,100,0,0],
+    [KPLIB_b_logiStation,150,0,0],
     [KPLIB_b_airControl,800,0,0],
     [KPLIB_b_slotHeli,250,0,0],
     [KPLIB_b_slotPlane,500,0,0],
@@ -285,13 +285,13 @@ KPLIB_b_vehSupport = [
     ["B_AFBiH_IglaBox",10,60,0],
     ["ACE_Wheel",10,0,0],
     ["ACE_Track",25,0,0],
-    ["RHS_Ural_Repair_MSV_01",50,0,60],                                // Ural Repair
-    ["B_AFBiH_URAL_Fuel",50,0,160],                                 // Ural Fuel
-    ["B_AFBiH_GAZ66_Ammo",40,100,45],                                  // Gaz-66 Ammo
-    ["B_Slingload_01_Repair_F",50,0,0],                                // Huron Container Repair
-	["Land_Workbench_01_F",50,0,0], 									// Workbench Repair
-    ["B_Slingload_01_Fuel_F",0,0,50],                                 // Huron Container Fuel
-    ["B_Slingload_01_Ammo_F",0,50,0]                                  // Huron Container Ammo
+    ["RHS_Ural_Repair_MSV_01",150,0,60],                                // Ural Repair
+    ["B_AFBiH_URAL_Fuel",150,0,160],                                 // Ural Fuel
+    ["B_AFBiH_GAZ66_Ammo",150,150,45],                                  // Gaz-66 Ammo
+    ["B_Slingload_01_Repair_F",150,0,0],                                // Huron Container Repair
+    ["Land_Workbench_01_F",100,0,0],                                     // Workbench Repair
+    ["B_Slingload_01_Fuel_F",75,0,150],                                 // Huron Container Fuel
+    ["B_Slingload_01_Ammo_F",75,150,0]                                  // Huron Container Ammo
 ];
 
 /*
@@ -382,7 +382,9 @@ KPLIB_b_squadPara = [
     Which base locks a vehicle is randomized on the first start of the campaign.
 */
 KPLIB_b_vehToUnlock = [
-	"B_AFBiH_BRDM2",
+	"B_AFBiH_D30",
+    "B_AFBiH_Podnos",
+    "B_AFBiH_BRDM2",
     "B_AFBiH_BTR60PB",
     "B_AFBiH_BTR80",
     "B_AFBiH_BM21",
