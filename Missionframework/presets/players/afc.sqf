@@ -14,8 +14,8 @@
     Or not, just don't try!
 */
 KPLIB_b_fobBuilding = "Land_Camp_House_01_brown_F";                                    // This is the main FOB HQ building.
-KPLIB_b_fobBox = "Land_Misc_Cargo1B";                            // This is the FOB as a container.
-KPLIB_b_fobTruck = "vn_b_wheeled_m54_03";                              // This is the FOB as a vehicle.
+KPLIB_b_fobBox = "Base_WarfareBContructionSite";                            // This is the FOB as a container.
+KPLIB_b_fobTruck = "LOP_CDF_KAMAZ_Covered";                              // This is the FOB as a vehicle.
 KPLIB_b_arsenal = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
 KPLIB_b_mobileRespawn = ["B_AFBiH_GAZ66_Transport", "walker_A3_smallb_e", "B_AFBiH_Mi8MT"];                           // This is the mobile respawn (and medical) truck.
 KPLIB_b_potato01 = "B_AFBiH_KrAZ255";                                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
