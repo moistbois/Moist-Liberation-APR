@@ -34,28 +34,24 @@ RydFFE_Amount = 2;
 RydFFE_FOAccGain = 10;
 RydFFE_Safe = (50);
 RydFFE_FOClass = ([
-"o_lingor_squad_leader",
-"o_lingor_marksman_01",
-"o_lingor_marksman_02",
-"o_lingor_marksman_03",
-"o_lingor_marksman_04",
-"o_lingor_anti_tank_01",
-"o_lingor_anti_air_01",
-"o_lingor_anti_air_02",
-"o_lingor_tank_commander",
-"o_lingor_tank_crewman",
-"o_lingor_artillery_01",
-"o_lingor_artillery_02",
-"o_lingor_pilot_01",
-"o_lingor_pilot_02"
+"o_rsa90_sl",
+"o_rsa90_spotter",
+"o_rsa90_antiair",
+"o_rsa90_antitank1",
+"o_rsa90_antitank2",
+"o_rsa90_marksman1",
+"o_rsa90_marksman2",
+"o_rsa90_sniper",
+"o_rsa90_officer",
+"o_rsa90_tankcmd",
+"o_rsa90_tankcrew",
+"o_rsa90_pilot"
 ]);
-RydFFE_Add_Rocket = ["O_LINGOR_BM_21"];
+RydFFE_Add_Mortar = ["O_RSA90_Podnos"];
+RydFFE_Add_Rocket = ["O_RSA90_BM21"];
 RydFFE_Add_Other = 
     [
-    [["o_lingor_d30"],["rhs_mag_3of56_10","rhs_mag_3of56_10","rhs_mag_3of56_10","rhs_mag_3of69m_2","rhs_mag_d462_2"]],
-	[["o_lingor_d30_at"],["rhs_mag_of462_direct","rhs_mag_of462_direct","rhs_mag_bk6m",""]],
-	[["o_lingor_type_53_mortar"],["vn_mortar_type53_mag_he_x8","vn_mortar_type53_mag_wp_x8","vn_mortar_type53_mag_lume_x8",""]],
-	[["o_lingor_type_63_mortar"],["vn_mortar_type63_mag_he_x8","vn_mortar_type63_mag_wp_x8","vn_mortar_type63_mag_lume_x8",""]]
+    [["o_rsa90_d30"],["rhs_mag_3pf56_10","rhs_mag_3pf56_10","rhs_mag_3pf56_10","rhs_mag_3pf56_10","rhs_mag_3pf56_10"]]
     ];
 
 nul = [] execVM "RYD_FFE\FFE.sqf";
@@ -64,8 +60,8 @@ CHVD_allowNoGrass = false; // Set 'false' if you want to disable "Low" option fo
 
 // Temperature and humidity changes
 [{
-    ace_weather_humidityShift = 25;
-    ace_weather_temperatureShift = 27;
+    ace_weather_humidityShift = -2;
+    ace_weather_temperatureShift = -1;
 },[], 1] call CBA_fnc_waitAndExecute;
 
 [] call compile preprocessFileLineNumbers "scripts\shared\init_shared.sqf";

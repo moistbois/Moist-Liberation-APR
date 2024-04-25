@@ -7,7 +7,7 @@
         "variables": {
             "KPLIB_presetPlayer": 33,
             "KPLIB_presetEnemy": 23,
-            "KPLIB_presetResistance": 8,
+            "KPLIB_presetResistance": 10,
             "KPLIB_presetCivilians": 9,
             "KPLIB_presetArsenal": 19,
             "KPLIB_color_player": "ColorBLUFOR",

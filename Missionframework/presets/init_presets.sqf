@@ -80,7 +80,7 @@ switch (KPLIB_presetResistance) do {
     case  7: {[] call compile preprocessFileLineNumbers "presets\resistance\cup_takistan.sqf";};
     case  8: {[] call compile preprocessFileLineNumbers "presets\resistance\cup_napa.sqf";};
 	case  9: {[] call compile preprocessFileLineNumbers "presets\resistance\lingor.sqf";};
-    case  10: {[] call compile preprocessFileLineNumbers "presets\resistance\lingor.sqf";};
+    case  10: {[] call compile preprocessFileLineNumbers "presets\resistance\chernres.sqf";};
     default  {[] call compile preprocessFileLineNumbers "presets\resistance\custom.sqf";};
 };
 
@@ -99,12 +99,12 @@ switch (KPLIB_presetCivilians) do {
 
 // Prices for the blufor infantry squads (supplies, ammo, fuel)
 KPLIB_b_allSquads = [
-    [KPLIB_b_squadLight,200,0,0],
-    [KPLIB_b_squadInf,300,0,0],
-    [KPLIB_b_squadAT,200,250,0],
-    [KPLIB_b_squadAA,200,250,0],
-    [KPLIB_b_squadRecon,250,0,0],
-    [KPLIB_b_squadPara,200,0,0]
+    [KPLIB_b_squadLight,50,0,0],
+    [KPLIB_b_squadInf,75,0,0],
+    [KPLIB_b_squadAT,50,250,0],
+    [KPLIB_b_squadAA,50,250,0],
+    [KPLIB_b_squadRecon,75,0,0],
+    [KPLIB_b_squadPara,50,0,0]
 ];
 
 // Squad names for build menu

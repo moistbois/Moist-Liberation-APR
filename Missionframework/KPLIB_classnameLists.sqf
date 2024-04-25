@@ -217,7 +217,7 @@ vehicle_repair_sources = [
 vehicle_rearm_sources = [
 	"B_APC_Tracked_01_CRV_F",
 	"rhs_gaz66_ammo_vmf",
-    "B_AFBiH_GAZ66_Ammo"
+    "B_AFBiH_GAZ66_Ammo",
 	"Misc_Cargo1B_military",
     "B_Slingload_01_Ammo_F",
     "B_T_APC_Tracked_01_CRV_F",

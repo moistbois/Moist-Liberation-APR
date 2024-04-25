@@ -63,6 +63,7 @@ KPLIB_o_militiaInfantry = [
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry militia.
 KPLIB_o_militiaVehicles = [
 	"O_RSA90_M1151",
+    "O_RSA90_M1151",
     "O_RSA90_BRDM2UM",
     "O_RSA90_BTR60PB",
     "O_RSA90_M1151",
@@ -70,7 +71,6 @@ KPLIB_o_militiaVehicles = [
     "O_RSA90_T34",
     "O_RSA90_Podnos",
     "O_RSA90_M2",
-    "O_RSA90_M2Lo",
     "O_RSA90_NSV"
 ];
 
@@ -92,8 +92,6 @@ KPLIB_o_armyVehiclesLight = [
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehicles = [
     "O_RSA90_Mi8MT",
-    "O_RSA90_AN2",
-    "O_RSA90_KrAZ255",
     "O_RSA90_BM21",
     "O_RSA90_GAZ66_AA",
     "O_RSA90_URAL_AA",
@@ -111,7 +109,6 @@ KPLIB_o_battleGrpVehicles = [
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehiclesLight = [
 
-    "O_RSA90_KrAZ255",
 	"O_RSA90_M1151",
     "O_RSA90_BRDM2UM",
     "O_RSA90_BTR60PB",

@@ -43,29 +43,29 @@ KPLIB_b_crateFuel = "CargoNet_01_barrels_F";                     // This defines
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 KPLIB_b_infantry = [
-    ["B_AFBiH_Driver",10,0,0],                                     				// Driver
-	["B_AFBiH_Pilot",10,0,0],                                  				   // Pilot 01
-	["B_AFBiH_Naval",10,0,0],                                  					   // Naval Crewman
-	["B_AFBiH_Shotgun",15,0,0],                             				  	 // Shotgun
-	["B_AFBiH_Medical",30,0,0],                                        			   // Medic
-    ["B_AFBiH_Engineer",30,0,0],                                        			   // Engineer
-	["B_AFBiH_TankCmd",30,0,0],                               			    // Tank Commander
-	["B_AFBiH_TankCrew",30,0,0],                               			    // Tank Crewman
-	["B_AFBiH_Marksman1",30,0,0],                               			    // Marksman M70B1N
-	["B_AFBiH_Marksman2",30,0,0],                               			    // VSS Vintorez
-	["B_AFBiH_Sniper",30,0,0],                               			    // Sniper M76
-    ["B_AFBiH_Spotter",30,0,0],                               			    // Spotter AK74
-	["B_AFBiH_Grenadier",30,5,0],                                  			 // Grenadier AK74 GP25
-	["B_AFBiH_Rifleman1", 40,0,0],                                 			 // Rifleman 1 AK74
-	["B_AFBiH_Rifleman2", 40,0,0],                                 			 // Rifleman 2 AK47
-	["B_AFBiH_Rifleman3", 40,0,0],                                 			 // Rifleman 3 M70B1N
-	["B_AFBiH_Rifleman4", 40,0,0],                                 			 // Rifleman 4 Vz 58
-	["B_AFBiH_Machinegunner1",60,0,0],                              		     // Machinegunner RPK
-	["B_AFBiH_Machinegunner2",60,0,0],                             		      // Machinegunner RPK74
-	["B_AFBiH_HMG",60,0,0],                             		      // Heavy Machine Gunner PKM
-	["B_AFBiH_AntiTank1",70,10,0],                                             // Anti-Tank RPG
-	["B_AFBiH_AntiTank2",70,10,0],                                             // Anti-Tank RPG-18
-	["B_AFBiH_AntiAir",70,10,0]                                             // Anti-Air
+    ["B_AFBiH_Driver",1,0,0],                                     				// Driver
+	["B_AFBiH_Pilot",1,0,0],                                  				   // Pilot 01
+	["B_AFBiH_Naval",1,0,0],                                  					   // Naval Crewman
+	["B_AFBiH_Shotgun",1,0,0],                             				  	 // Shotgun
+	["B_AFBiH_Medical",1,0,0],                                        			   // Medic
+    ["B_AFBiH_Engineer",3,0,0],                                        			   // Engineer
+	["B_AFBiH_TankCmd",3,0,0],                               			    // Tank Commander
+	["B_AFBiH_TankCrew",3,0,0],                               			    // Tank Crewman
+	["B_AFBiH_Marksman1",3,0,0],                               			    // Marksman M70B1N
+	["B_AFBiH_Marksman2",3,0,0],                               			    // VSS Vintorez
+	["B_AFBiH_Sniper",3,0,0],                               			    // Sniper M76
+    ["B_AFBiH_Spotter",3,0,0],                               			    // Spotter AK74
+	["B_AFBiH_Grenadier",3,5,0],                                  			 // Grenadier AK74 GP25
+	["B_AFBiH_Rifleman1", 4,0,0],                                 			 // Rifleman 1 AK74
+	["B_AFBiH_Rifleman2", 4,0,0],                                 			 // Rifleman 2 AK47
+	["B_AFBiH_Rifleman3", 4,0,0],                                 			 // Rifleman 3 M70B1N
+	["B_AFBiH_Rifleman4", 4,0,0],                                 			 // Rifleman 4 Vz 58
+	["B_AFBiH_Machinegunner1",8,0,0],                              		     // Machinegunner RPK
+	["B_AFBiH_Machinegunner2",8,0,0],                             		      // Machinegunner RPK74
+	["B_AFBiH_HMG",8,0,0],                             		      // Heavy Machine Gunner PKM
+	["B_AFBiH_AntiTank1",10,10,0],                                             // Anti-Tank RPG
+	["B_AFBiH_AntiTank2",10,10,0],                                             // Anti-Tank RPG-18
+	["B_AFBiH_AntiAir",10,10,0]                                             // Anti-Air
 ];
 
 KPLIB_b_vehLight = [
