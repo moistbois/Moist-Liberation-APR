@@ -71,6 +71,7 @@ KPLIB_medical_vehicles = [
     "uns_M577_amb",
     "uns_uh1D_med",
     "vn_b_air_uh1d_01_01",
+    "C_Cher90s_Civ_Amb",
     "vn_b_wheeled_m54_repair_airport"
 ];
 

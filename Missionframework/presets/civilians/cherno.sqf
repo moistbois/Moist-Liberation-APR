@@ -44,6 +44,8 @@ KPLIB_c_units = [
 
 // Civilian vehicle classnames.
 KPLIB_c_vehicles = [
+    "RHS_Ural_Repair_MSV_01",
+    "RHS_Ural_Fuel_MSV_01",
     "C_Cher90s_Civ_UAZ3151",
     "C_Cher90s_Civ_UAZ3151O",
     "C_Cher90s_Civ_Ural",

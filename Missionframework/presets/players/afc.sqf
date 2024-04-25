@@ -69,91 +69,84 @@ KPLIB_b_infantry = [
 ];
 
 KPLIB_b_vehLight = [
-    ["vn_c_bicycle_01",0,0,0],                                         // Bicycle
-	["RDS_Old_bike_Civ_01",0,0,0],                                         // Old Bike
-	["O_Quadbike_01_F",15,0,5],                                        // Quad Bike
-	["O_Quadbike_01_F",15,0,5],                                        // Quad Bike
-	["RDS_JAWA353_Civ_01",15,0,5],                                        // Jawa 353
-	["walker_a3_redbike",15,0,5],                                        // TT650 MAYBE REMOVE?
-	["RDS_tt650_Civ_01",15,0,5],                                        // TT650 
-	["walker_a3_gaz",35,0,45],                                 // GAZ Limo
-	["walker_a3_hatch",35,0,45],                                 // Hatchback
-	["walker_a3_landrover",35,0,45],                                 // Land Rover
-	["B_LINGOR_Datsun_Transport",35,0,45],                                 // Datsun Transport
-	["B_LINGOR_M151A1_Transport",35,0,45],                                 // M151A1 Transport
-	["RHS_Ural_MSV_01",50,0,75],                                 // URAL-4320
-	["rhsgref_cdf_zil131",50,0,75],                                 // ZIL-131
-	["rhsgref_ins_kraz255b1_flatbed",50,0,75],                                 // KRAZ 255B1
-	["rhs_gaz66_vmf",50,0,75],                                 // GAZ66
-	["walker_a3_hiluxhmg",40,20,25],                                 // Hilux with MG
-	["B_LINGOR_M151A1_TOW",75,40,45],                                 // M151A1 TOW
-	["rhsgref_hidf_canoe",0,0,0],                                 // Canoe
-	["B_Boat_Transport_01_F",25,0,2],                                 // Dinghy
-	["C_Scooter_Transport_01_F",10,0,5],                                 // Jetski
-	["rhs_bmk_t",15,0,15],                           			      // BMK Tug
-	["I_C_Boat_Transport_02_F",45,0,40]                                 // RHIB
+    ["B_AFBiH_M1151",100,50,30],                                         // M1151
+    ["B_AFBiH_BRDM2UM",100,50,40],                                         // BRDM2UM (No cannon)
+    ["B_AFBiH_BRDM2",150,100,40],                                         // BRDM2
+    ["B_AFBiH_BTR60PB",175,150,50],                                         // BTR-60PB
+    ["B_AFBiH_BTR80",180,150,50],                                         // BTR-80
+    ["B_AFBiH_BM21",200,400,40],                                         // BM-21
+    ["B_AFBiH_GAZ66_AA",150,250,40],                                         // GAZ-66 AA
+    ["B_AFBiH_URAL_AA",175,250,40],                                         // URAL AA
+    ["C_Cher90s_Civ_Bike",20,0,0],                                         // Bicycle
+    ["C_Cher90s_Civ_JAWA",35,0,5],                                         // Jawa Motorcycle
+    ["C_Cher90s_Civ_Hatch",40,0,5],                                         // Hatch
+    ["C_Cher90s_Civ_Gaz",40,0,5],                                         // GAZ 24
+    ["C_Cher90s_Civ_GazB",40,0,5],                                         // GAZ 24B
+    ["C_Cher90s_Civ_Lada",40,0,5],                                         // Lada
+    ["C_Cher90s_Civ_Toyota",40,0,5],                                         // Toyota Sedan
+    ["C_Cher90s_Civ_Skodo",40,0,5],                                         // Skodovka
+    ["C_Cher90s_Civ_S1203",45,0,10],                                         // S1203 Van
+    ["C_Cher90s_Civ_1203B",45,0,10],                                         // S1203 Van Blue
+    ["C_Cher90s_Civ_Hilux",60,0,5],                                         // Hilux
+    ["C_Cher90s_Civ_HiluxC",60,0,5],                                         // Hilux (Covered)
+    ["C_Cher90s_Civ_UAZ3151",60,0,5],                                         // UAZ-3151
+    ["C_Cher90s_Civ_UAZ3151O",60,0,5],                                         // UAZ-3151 (Open)
+    ["C_Cher90s_Civ_Ural",70,0,10],                                         // Ural-4320
+    ["C_Cher90s_Civ_UralOpen",70,0,10]                                         // Ural-4320 (Open)
+    
 ];
 
 KPLIB_b_vehHeavy = [
-	["rhsgref_tla_btr60",275,80,200],                                      // BTR-60PB APC ((PKT (7.62x54mm) and KPVT (14.5x115mm))
-	["B_LINGOR_Type_63",325,100,120],                                // Type 63
-	["B_LINGOR_PT_76A",345,275,290],                                 // PT-76A
-    ["rhs_bmp1_vdv",500,470,420],                    			// BMP-1 (2A28 Cannon (HE-FRAG OG15V/HEAT PG15V), PKT (7.62x54mm), 9K111 (wire AT missile))
-    ["B_LINGOR_T55",600,600,600]                                     // T-55A (D-10 Cannon (BK5M HEAT-FS), (OF416Sh HE-FRAG), BM8 APDS)
+    ["B_AFBiH_BMP",400,350,250],                                         // BPM 1
+    ["B_AFBiH_T34",300,300,200],                                         // T-34
+    ["B_AFBiH_T55",400,400,250],                                         // T-55
+    ["B_AFBiH_T72",600,500,300]                                         // T-72
 
 ];
 
 KPLIB_b_vehAir = [
-	["rhs_uh1h_hidf",120,280,25],                                             // UH-1H (M240Hx2)
-	["RHS_Mi8mt_vvs",130,300,30],                                             // Mi-8MT (PKT (7.62x54mm))
-	["RHS_Mi24Vt_vvs",140,300,30]                                             // MI-24VT (YakB-12.7)
+    ["B_AFBiH_MI8MT_Cargo",200,0,150],                                      // MI-8MT (Cargo)
+    ["B_AFBiH_AN2",250,0,250],                                             // AN2
+    ["B_AFBiH_Mi24V",400,500,350],                                             // Mi24V
+    ["B_AFBiH_Mi24P",400,500,350]                                             // Mi24P
 
 ];
 
 KPLIB_b_vehStatic = [
-	["RHS_NSV_TriPod_VDV",25,30,0],                                     // NSV Low Tripod (12.7x108mm)
-	["rhs_KORD_MSV",25,30,0],											// KORD (6U16) (12.7x108mm)
-	["rhsgref_cdf_DSHKM_Mini_TriPod",25,30,0],							// DShKm Mini-Tripod (12.7x108mm)
-	["rhs_KORD_high_MSV",30,30,0],											// KORD (6U16) (12.7x108mm)
-	["LOP_AFR_Static_DSHKM",30,30,0],											// DShKm (12.7x108mm)
-	["vn_b_army_static_m1919a4_high",25,40,0],                            // M-1919A4 .30cal (High)
-    ["vn_b_army_static_m1919a4_low",25,40,0],                             // M-1919A4 .30cal (Low)
-    ["vn_b_army_static_m1919a6",25,40,0],                                 // M-1919A6 .30cal
-    ["vn_b_army_static_m60_high",35,40,0],                               // M60 (High)
-    ["vn_b_army_static_m60_low",20,40,0],                                // M60 (Low)
-	["vn_b_army_static_m2_scoped_high",40,60,0],                                // M-2HB .50cal (High/Scoped)
-    ["vn_b_army_static_m2_high",35,60,0],                                // M-2HB .50cal (High)
-    ["vn_b_army_static_m2_low",35,60,0],                                 // M-2HB .50cal (Low)
-    ["vn_b_army_static_mortar_m2",40,80,0],                              // M2 60mm Mortar
-    ["vn_b_army_static_mortar_m29",50,100,0],                             // M29 81mm Mortar
-    ["vn_b_army_static_m101_02",80,250,0],                               // M101 105mm Howitzer
-	["rhs_2b14_82mm_msv",100,750,0],											// 2B14 Podnos (155mm HE)
-	["O_Lingor_D30",100,750,0],											// 2A18/D-30 (155mm HE)
-	["O_Lingor_D30_AT",100,750,0],											// 2A18/D-30 (155mm HE)
-    ["vn_b_army_static_m45",50,200,0],                                   // M-45 Quadmount
-	["RHS_ZU23_MSV",80,125,0],											// ZU-23-2 (23×152mm AA)
-	["vn_o_nva_static_zgu1_01",80,125,0],									// ZGU-1 14.5mm AA
-    ["vn_b_navy_static_l60mk3",150,100,0],                                // L60 Mk3 40 mm (BOFORS)
-    ["vn_b_navy_static_l70mk2",150,100,0],                                 // L70 Mk2 20 mm (grenade)
-    ["vn_b_army_static_tow",80,100,0]                                    // BGM71 TOW
+	["B_AFBiH_D30",25,30,0],                                     // D-30
+    ["B_AFBiH_Podnos",25,30,0],                                     // Podnos mortar
+    ["B_AFBiH_M2",25,30,0],                                     // M2 HMG
+    ["B_AFBiH_M2Lo",25,30,0]                                     // M2 HMG (Low Mount)
+    
 ];
 
 KPLIB_b_objectsDeco = [
     ["Land_Slum_01_F",0,0,0],
     ["Land_Cargo_Patrol_V2_F",0,0,0],
     ["Land_GuardTower_01_F",0,0,0],
+    ["rhssaf_flag_yugoslavia",0,0,0],
     ["Flag_White_F",0,0,0],
+    ["Land_MedicalTent_01_tropic_closed_F",0,0,0],
     ["CamoNet_OPFOR_F",0,0,0],
     ["CamoNet_OPFOR_open_F",0,0,0],
     ["CamoNet_OPFOR_big_F",0,0,0],
+    ["Land_FirewoodPile_01_F",0,0,0],
+	["Land_Greenhouse_01_F",0,0,0],
+	["Land_Greenhouse_01_damaged_F",0,0,0],
+	["Land_Shed_11_F",0,0,0],
+	["Land_DryToilet_01_F",0,0,0],
+    ["Land_WoodenWindBreak_01_F",0,0,0],
+	["Land_Caravan_01_rust_Fa",0,0,0],
+    ["Land_Caravan_01_green_F",0,0,0],
+	["Land_Shed_12_F",0,0,0],
+	["Land_Shed_09_F",0,0,0],
+	["Land_Shed_10_F",0,0,0],
+	["Land_Shed_14_F",0,0,0],
+	["Land_ConcreteWell_02_F",0,0,0],
     ["Land_PortableLight_single_F",0,0,0],
     ["Land_PortableLight_double_F",0,0,0],
-    ["Land_LampSolar_F",0,0,0],
     ["Land_LampHalogen_F",0,0,0],
     ["Land_LampStreet_small_F",0,0,0],
-	["Land_LampShabby_F",0,0,0],
-    ["Land_LampAirport_F",0,0,0],
-	["Land_NAV_Lighthouse2",0,0,0],
     ["Land_HelipadCircle_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase helicopter cap!
     ["Land_HelipadRescue_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase helicopter cap!
     ["PortableHelipadLight_01_blue_F",0,0,0],
@@ -168,6 +161,7 @@ KPLIB_b_objectsDeco = [
 	["Land_Campfire_F",0,0,0],
 	["Land_TentA_Fd",0,0,0],
 	["Land_KBud",0,0,0],
+	["Satelit",0,0,0],
 	["Land_Bucket_F",0,0,0],
 	["Land_CanisterPlastic_F",0,0,0],
 	["Land_TinContainer_F",0,0,0],
@@ -176,10 +170,10 @@ KPLIB_b_objectsDeco = [
 	["Land_Barricade_01_4m_F",0,0,0],
 	["Land_Barricade_01_10m_F",0,0,0],
 	["Land_Posed",0,0,0],
+	["Land_Barrack2_EP1",0,0,0],
 	["Land_fort_rampart_EP1",0,0,0],
 	["Land_cargo_house_slum_F",0,0,0],
 	["Land_Misc_Well_L_EP1",0,0,0],
-	["vn_air_ah1g_01_wreck",0,0,0],
 	["Land_GarbageWashingMachine_F",0,0,0],
 	["Land_GarbageHeap_01_F",0,0,0],
 	["Land_GarbageHeap_02_F",0,0,0],
@@ -193,14 +187,6 @@ KPLIB_b_objectsDeco = [
 	["Land_Garbage_square5_F",0,0,0],
 	["Land_GarbageBags_F",0,0,0],
 	["Land_Garbage_square3_F",0,0,0],
-	["vn_steeldrum_bbq_02",0,0,0],
-	["vn_b_prop_fmradio_01",0,0,0],
-	["Radio_Old",0,0,0],
-	["CUP_radio_b",0,0,0],
-	["Radio",0,0,0],
-    ["vn_bar_01_campchair_01",0,0,0],
-    ["vn_steeldrum_half_02",0,0,0],
-    ["vn_steeldrum_trash_02",0,0,0],
 	["GunrackTK_EP1",0,0,0],
 	["Land_HumanSkull_F",0,0,0],
 	["Land_PalmTotem_02_F",0,0,0],
@@ -212,16 +198,11 @@ KPLIB_b_objectsDeco = [
 	["plp_bo_ChainOfLightsMonoShort",0,0,0],
 	["Land_Leseni4x",0,0,0],
 	["Land_Leseni2x",0,0,0],
+	["Computer",0,0,0],
 	["Land_Water_pipe_EP1",0,0,0],
 	["Misc_TyreHeapEP1",0,0,0],
 	["Misc_Wall_lamp",0,0,0],
 	["Land_Slum_02_F",0,0,0],
-	["Land_Target_Single_01_F",0,0,0],
-	["Land_Target_Pistol_01_F",0,0,0],
-	["Land_Target_Line_PaperTargets_01_F",0,0,0],
-	["TargetBootcampHumanSimple_F",0,0,0],
-	["Land_TargetPopup_ACR",0,0,0],
-	["vn_targetp_inf_f",0,0,0],
 	["CUP_case_bedroom_b",0,0,0],
 	["CUP_postel_manz_kov",0,0,0],
     ["Land_Pallet_MilBoxes_F",0,0,0],
@@ -230,7 +211,7 @@ KPLIB_b_objectsDeco = [
     ["Land_PaperBox_open_empty_F",0,0,0],
     ["Land_PaperBox_open_full_F",0,0,0],
     ["Land_PaperBox_closed_F",0,0,0],
-    ["Land_DieselGroundPowerUnit_01_F",0,0,0],
+    ["Land_Portable_generator_F",0,0,0],
     ["Land_ToolTrolley_02_F",0,0,0],
     ["Land_WeldingTrolley_01_F",0,0,0],
     ["Land_GasTank_01_blue_F",0,0,0],
@@ -241,8 +222,6 @@ KPLIB_b_objectsDeco = [
     ["Land_BarrelWater_grey_F",0,0,0],
     ["Land_WaterBarrel_F",0,0,0],
     ["Land_WaterTank_F",0,0,0],
-	["FootBridge_0_ACR",0,0,0], 			//Bridge
-	["FootBridge_30_ACR",0,0,0], 			//Bridge
     ["Land_BagFence_Round_F",0,0,0],
     ["Land_BagFence_Short_F",0,0,0],
     ["Land_BagFence_Long_F",0,0,0],
@@ -270,8 +249,6 @@ KPLIB_b_objectsDeco = [
     ["Land_HBarrierWall6_F",0,0,0],
     ["Land_HBarrierWall_corner_F",0,0,0],
     ["Land_HBarrierWall_corridor_F",0,0,0],
-	["Land_WoodenWindBreak_01_F",0,0,0],
-	["Land_Caravan_01_rust_Fa",0,0,0],
     ["Land_HBarrierTower_F",0,0,0],
     ["Land_CncBarrierMedium_F",0,0,0],
     ["Land_CncBarrierMedium4_F",0,0,0],
@@ -301,24 +278,20 @@ KPLIB_b_vehSupport = [
     [KPLIB_b_airControl,800,0,0],
     [KPLIB_b_slotHeli,250,0,0],
     [KPLIB_b_slotPlane,500,0,0],
-    ["ACE_medicalSupplyCrate_advanced",50,0,0],
-    ["ACE_Box_82mm_Mo_HE",50,40,0],
-    ["ACE_Box_82mm_Mo_Smoke",50,10,0],
-    ["ACE_Box_82mm_Mo_Illum",50,10,0],
-	["B_LINGOR_IglaBox",25,75,0],
-    ["ACE_Wheel",0,0,0],
+    ["ACE_medicalSupplyCrate_advanced",10,0,0],
+    ["B_AFBiH_KORDBox",10,40,0],
+    ["B_AFBiH_SPG9Box",10,45,0],
+    ["B_AFBiH_M80Box",10,50,0],
+    ["B_AFBiH_IglaBox",10,60,0],
+    ["ACE_Wheel",10,0,0],
     ["ACE_Track",25,0,0],
-    ["vn_b_wheeled_m54_repair",325,0,75],                               // M185 Repair
-    ["vn_b_wheeled_m54_fuel",125,0,275],                                // M49 Fuel
-    ["vn_b_wheeled_m54_ammo",125,200,75],                               // M54 Ammo
+    ["RHS_Ural_Repair_MSV_01",50,0,60],                                // Ural Repair
+    ["B_AFBiH_URAL_Fuel",50,0,160],                                 // Ural Fuel
+    ["B_AFBiH_GAZ66_Ammo",40,100,45],                                  // Gaz-66 Ammo
     ["B_Slingload_01_Repair_F",50,0,0],                                // Huron Container Repair
 	["Land_Workbench_01_F",50,0,0], 									// Workbench Repair
-    ["B_Slingload_01_Fuel_F",0,0,150],                                 // Huron Container Fuel
-	["Land_vn_b_prop_fuelbladder_01",0,0,50],
-    ["Land_vn_b_prop_fuelbladder_03",0,0,50],
-    ["B_Slingload_01_Ammo_F",0,50,0],                                  // Huron Container Ammo
-	["vn_b_ammobox_supply_01",0,50,0],
-	["vn_o_ammobox_full_06",0,100,0]
+    ["B_Slingload_01_Fuel_F",0,0,50],                                 // Huron Container Fuel
+    ["B_Slingload_01_Ammo_F",0,50,0]                                  // Huron Container Ammo
 ];
 
 /*
@@ -335,7 +308,7 @@ KPLIB_b_squadLight = [
     "B_AFBiH_Rifleman3",								// "Rifleman M70B1N"
 	"B_AFBiH_Rifleman4",								// "Rifleman Vz 58"
 	"B_AFBiH_AntiTank2",								// "Anti-Tank RPG-18"
-    "B_AFBiH_Marksman2",								// "Marksman VSS Vintorez"
+    "B_AFBiH_Marksman1",								// "Marksman M70B1N"
 	"B_AFBiH_Medical",								// "Medic"
 	"B_AFBiH_Grenadier"								// "Grenadier AK74 GP25"
 ];
@@ -363,7 +336,7 @@ KPLIB_b_squadAT = [
     "B_AFBiH_AntiTank1",								// "Anti-Tank RPG"
 	"B_AFBiH_AntiTank2",								// "Anti-Tank RPG-18"
 	"B_AFBiH_Machinegunner1",								// "Machinegunner RPK"
-	"B_AFBiH_Medical"								// "Medic"
+	"B_AFBiH_Medical",								// "Medic"
 	"B_AFBiH_Engineer"								// "Engineer"
 ];
 
@@ -409,25 +382,15 @@ KPLIB_b_squadPara = [
     Which base locks a vehicle is randomized on the first start of the campaign.
 */
 KPLIB_b_vehToUnlock = [
-	"vn_b_wheeled_m54_mg_02",                        					 	// Quad AA
-	"vn_b_army_static_m45",                        							// M-45 Quadmount AA
-	"vn_b_navy_static_l70mk2",                        								 // L70 HEI 20mm GL
-	"vn_b_navy_static_l60mk3",                      					  	 // L60 40mm BOFORS
-    "vn_b_army_static_m101_02",                        					  // M101 105mm Howitzer
-    "rhs_2b14_82mm_msv",                                    			 //2B14 Podnos (155mm HE)
-    "O_Lingor_D30",                                            		    // 2A18/D-30 (155mm HE)
-	"O_Lingor_D30_AT",                                            		    // 2A18/D-30 (155mm HE)
-	"vn_b_air_ah1g_02_usmc",                         		  	 		   // AH-1G APERS misl
-	"vn_b_air_ah1g_03",                          			   			  // AH-1G AT
-	"vn_b_air_uh1e_02_04",                          	    			 // UH-1E heavy gunship
-	"vn_b_air_uh1c_05_01",                          	    			 // UH-1C heavy hog
-	"vn_b_boat_06_02",                          	    			 // PTF Boats
-	"vn_b_boat_05_01",                          	    			 // PTF Boats
-	"vn_b_armor_m41_01_01",                          	    			 // M41A3 Walker
-	"B_LINGOR_Type_63",                          	    			 // Type 63 Tank
-	"vn_b_armor_m132_01",                          	    			 // Flamethrower Tank
-	"B_LINGOR_PT_76A",                          	    			 // PT76A
-	"rhs_bmp1_vdv",                          	    			 // BEEG BMP with lots of shit
-	"B_LINGOR_T55",                          	    			 // T-55
-	"vn_b_air_ach47_01_01"												// ACH-47A Guns-A-Go-Go (M200)
+	"B_AFBiH_BRDM2",
+    "B_AFBiH_BTR60PB",
+    "B_AFBiH_BTR80",
+    "B_AFBiH_BM21",
+    "B_AFBiH_GAZ66_AA",
+    "B_AFBiH_URAL_AA",
+    "B_AFBiH_BMP",
+    "B_AFBiH_T34",
+    "B_AFBiH_T72",
+    "B_AFBiH_Mi24V",
+    "B_AFBiH_Mi24P"
 ];
