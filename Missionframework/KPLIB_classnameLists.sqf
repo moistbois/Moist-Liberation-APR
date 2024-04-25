@@ -139,6 +139,7 @@ KPLIB_aiResupplySources = [
     "CUP_O_Ural_Reammo_SLA",
     "CUP_O_Ural_Reammo_TKA",
     "CUP_O_V3S_Rearm_TKA",
+    "B_AFBiH_GAZ66_Ammo",
     "gm_gc_army_ural4320_reammo_win",
     "gm_gc_army_ural4320_reammo",
     "gm_ge_army_kat1_451_reammo_win",
@@ -216,6 +217,7 @@ vehicle_repair_sources = [
 vehicle_rearm_sources = [
 	"B_APC_Tracked_01_CRV_F",
 	"rhs_gaz66_ammo_vmf",
+    "B_AFBiH_GAZ66_Ammo"
 	"Misc_Cargo1B_military",
     "B_Slingload_01_Ammo_F",
     "B_T_APC_Tracked_01_CRV_F",
@@ -260,6 +262,7 @@ vehicle_rearm_sources = [
 
 // Everything that can refuel other vehicles.
 vehicle_refuel_sources = [
+    "B_AFBiH_URAL_Fuel",
     "B_APC_Tracked_01_CRV_F",
     "B_Slingload_01_Fuel_F",
 	"RHS_Ural_Fuel_MSV_01",

@@ -62,34 +62,63 @@ KPLIB_o_militiaInfantry = [
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry militia.
 KPLIB_o_militiaVehicles = [
-	"O_RSA90_M1151"                                          // M1151
-
-];
-
-// All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
-KPLIB_o_battleGrpVehicles = [
-	"O_RSA90_T34",                                          // T-34
-	"O_RSA90_T55",                                          // T-55
-	"O_RSA90_T72",                                        // T-72
-	"O_RSA90_BM21"                                        // BM-21
-	
+	"O_RSA90_M1151",
+    "O_RSA90_BRDM2UM",
+    "O_RSA90_BTR60PB",
+    "O_RSA90_M1151",
+    "O_RSA90_BMP",
+    "O_RSA90_T34",
+    "O_RSA90_Podnos",
+    "O_RSA90_M2",
+    "O_RSA90_M2Lo",
+    "O_RSA90_NSV"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
 KPLIB_o_armyVehiclesLight = [
-
+	"O_RSA90_M1151",
+    "O_RSA90_BRDM2UM",
+    "O_RSA90_BTR60PB",
+    "O_RSA90_M1151",
+    "O_RSA90_BMP",
+    "O_RSA90_T34",
+    "O_RSA90_Podnos",
+    "O_RSA90_M2",
+    "O_RSA90_M2Lo",
+    "O_RSA90_NSV"
 
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehicles = [
-
+    "O_RSA90_Mi8MT",
+    "O_RSA90_AN2",
+    "O_RSA90_KrAZ255",
+    "O_RSA90_BM21",
+    "O_RSA90_GAZ66_AA",
+    "O_RSA90_URAL_AA",
+    "O_RSA90_BRDM2",
+    "O_RSA90_BTR80",
+    "O_RSA90_T72",
+    "O_RSA90_T55",
+    "O_RSA90_Mi24V",
+    "O_RSA90_Mi24P",
+    "O_RSA90_D30",
+    "O_RSA90_ZU23"
 
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehiclesLight = [
 
+    "O_RSA90_KrAZ255",
+	"O_RSA90_M1151",
+    "O_RSA90_BRDM2UM",
+    "O_RSA90_BTR60PB",
+    "O_RSA90_M1151",
+    "O_RSA90_BMP",
+    "O_RSA90_T34",
+    "O_RSA90_Podnos"
 
 ];
 
