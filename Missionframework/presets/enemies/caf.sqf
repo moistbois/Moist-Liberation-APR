@@ -29,7 +29,7 @@ KPLIB_o_paratrooper = "O_RSA90_Rifleman4";                 // Rifleman 4 (Vz 58)
 KPLIB_o_mrap = "O_RSA90_M1151";                                    // M1151
 KPLIB_o_mrapArmed = "O_RSA90_BRDM2";                                        // BRDM2
 KPLIB_o_transportHeli = "O_RSA90_MI8MT_Cargo";                           // Mi-8MT (Cargo)
-KPLIB_o_transportTruck = "O_RSA90_GAZ66_Transport";                                 // GAZ-66 (Trasport)
+KPLIB_o_transportTruck = "O_RSA90_GAZ66_Transport";                                 // GAZ-66 (Transport)
 KPLIB_o_transportTruckAmmo = "O_RSA90_KrAZ255";                          // KrAZ-255 (Open) -> Has to be able to transport resource crates!
 KPLIB_o_fuelTruck = "O_RSA90_URAL_Fuel";                              // Ural-4320 (Fuel)
 KPLIB_o_ammoTruck = "O_RSA90_URAL_Ammo";                                // GAZ-66 (Ammo)
@@ -43,30 +43,24 @@ Therefore, adding the same value twice or three times means they are more likely
 /* Militia infantry. Lightweight soldier classnames the game will pick from randomly as sector defenders.
 Think of them like garrison or military police forces, which are more meant to control the local population instead of fighting enemy armies. */
 KPLIB_o_militiaInfantry = [
-    "O_RSA90_Officer",								// "Officer"
     "O_RSA90_SL",								// "Squad Leader"
     "O_RSA90_Rifleman1",								// "Rifleman 1 AK74"
     "O_RSA90_Rifleman2",								// "Rifleman AK47"
     "O_RSA90_Rifleman3",								// "Rifleman M70B1N"
     "O_RSA90_Rifleman4",								// "Rifleman Vz 58"
     "O_RSA90_Marksman1",								// "Marksman M70B1N"
-    "O_RSA90_Marksman2",								// "Marksman VSS Vintorez"
-    "O_RSA90_Sniper",								// "Sniper M76"
     "O_RSA90_Spotter",								// "Spotter AK74"
-    "O_RSA90_AntiAir",								// "Anti-Air"
-    "O_RSA90_AntiTank1",								// "Anti-Tank RPG"
     "O_RSA90_AntiTank2",								// "Anti-Tank RPG-18"
     "O_RSA90_Machinegunner1",								// "Machinegunner RPK"
     "O_RSA90_Machinegunner2",								// "Machinegunner RPK74"
     "O_RSA90_HMG",								// "Heavy Machine Gunner PKM"
     "O_RSA90_Grenadier",								// "Grenadier AK74 GP25"
     "O_RSA90_Shotgun",								// "Shotgun"
-    "O_RSA90_Driver",								// "Driver"
     "O_RSA90_Medical",								// "Medic"
     "O_RSA90_Engineer"								// "Engineer"
 ];
 
-// Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
+// Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry militia.
 KPLIB_o_militiaVehicles = [
 	"O_RSA90_M1151"                                          // M1151
 
@@ -100,7 +94,7 @@ KPLIB_o_battleGrpVehiclesLight = [
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
-If something in this array can't hold all 8 soldiers then buggy behaviours may occur.    */
+If something in this array can't hold all 8 soldiers then buggy behaviors may occur.    */
 KPLIB_o_troopTransports = [
     "O_RSA90_Mi24V",                                                 // Mi-24V
     "O_RSA90_Mi24P",                                                 // Mi-24P
@@ -123,27 +117,27 @@ KPLIB_o_planes = [
 
 ];
 
-// Enemy defence turrets that will be spawned in sectors.
+// Enemy defense turrets that will be spawned in sectors.
 KPLIB_o_turrets_HMG = [
 
 ];
 
-// Enemy defence turrets that will be spawned in sectors.
+// Enemy defense turrets that will be spawned in sectors.
 KPLIB_o_turrets_GMG = [
 
 ];
 
-// Enemy defence turrets that will be spawned in sectors.
+// Enemy defense turrets that will be spawned in sectors.
 KPLIB_o_turrets_AT = [
 
 ];
 
-// Enemy defence turrets that will be spawned in sectors.
+// Enemy defense turrets that will be spawned in sectors.
 KPLIB_o_turrets_AA = [
 
 ];
 
-// Enemy defence turrets that will be spawned in sectors.
+// Enemy defense turrets that will be spawned in sectors.
 KPLIB_o_turrets_MORTAR = [
 
 ];
