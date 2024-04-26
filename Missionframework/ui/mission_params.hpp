@@ -57,7 +57,7 @@ class Params {
         title = $STR_PARAMS_FIRSTFOBVEHICLE;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_FIRSTFOBVEHICLE_CONTAINTER, $STR_PARAMS_FIRSTFOBVEHICLE_TRUCK};
-        default = 1;
+        default = 0;
     };
     class MaximumFobs {
         title = $STR_PARAM_FOBS_COUNT;
@@ -249,7 +249,7 @@ class Params {
         title = $STR_PARAMS_MOBILEARSENAL;
         values[] = {0, 1};
         texts[] = {$STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED};
-        default = 0;
+        default = 1;
     };
     class AttackedSectorRespawn {
         title = $STR_PARAMS_ATTACKEDSECTORRESPAWN;

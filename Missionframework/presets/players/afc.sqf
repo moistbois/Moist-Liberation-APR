@@ -14,22 +14,22 @@
     Or not, just don't try!
 */
 KPLIB_b_fobBuilding = "Land_Camp_House_01_brown_F";                                    // This is the main FOB HQ building.
-KPLIB_b_fobBox = "Base_WarfareBContructionSite";                            // This is the FOB as a container.
+KPLIB_b_fobBox = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container.
 KPLIB_b_fobTruck = "LOP_CDF_KAMAZ_Covered";                              // This is the FOB as a vehicle.
 KPLIB_b_arsenal = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
 KPLIB_b_mobileRespawn = ["B_AFBiH_GAZ66_Transport", "walker_A3_smallb_e", "B_AFBiH_Mi8MT"];                           // This is the mobile respawn (and medical) truck.
-KPLIB_b_potato01 = "B_AFBiH_KrAZ255";                                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
+KPLIB_b_potato01 = "RHS_Mi8mt_Cargo_vvs";                                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 KPLIB_b_crewUnit = "B_AFBiH_Driver";                          // This defines the crew for vehicles.
 KPLIB_b_heliPilotUnit = "B_AFBiH_Pilot";                              // This defines the pilot for helicopters.
 KPLIB_b_addHeli = "walker_a3_hiluxhmg";                  // These are the little birds which spawn on the Freedom or at Chimera base.
-KPLIB_b_addBoat = "rhsgref_cdf_b_reg_uaz_open";                 // These are the boats which spawn at the stern of the Freedom.
+KPLIB_b_addBoat = "B_Lifeboat";                 // These are the boats which spawn at the stern of the Freedom.
 KPLIB_b_logiTruck = "rhs_kamaz5350_flatbed_vdv";            // These are the trucks which are used in the logistic convoy system.
 KPLIB_b_smallStorage = "ContainmentArea_02_forest_F";   // A small storage area for resources.
 KPLIB_b_largeStorage = "ContainmentArea_01_forest_F";   // A large storage area for resources.
-KPLIB_b_logiStation = "Land_Mil_Repair_center_EP1";           // The building defined to unlock FOB recycling functionality.
+KPLIB_b_logiStation = "Land_GarageRow_01_small_F";           // The building defined to unlock FOB recycling functionality.
 KPLIB_b_airControl = "Land_ControlTower_01_F";                       // The building defined to unlock FOB air vehicle functionality.
 KPLIB_b_slotHeli = "Land_HelipadCivil_F";              // The helipad used to increase the GLOBAL rotary-wing cap.
-KPLIB_b_slotPlane = "Land_Airport_01_hangar_F";             // The hangar used to increase the GLOBAL fixed-wing cap.
+KPLIB_b_slotPlane = "Land_Hangar_F";             // The hangar used to increase the GLOBAL fixed-wing cap.
 KPLIB_b_crateSupply = "CargoNet_01_box_F";                       // This defines the supply crates, as in resources.
 KPLIB_b_crateAmmo = "B_CargoNet_01_ammo_F";                      // This defines the ammunition crates.
 KPLIB_b_crateFuel = "CargoNet_01_barrels_F";                     // This defines the fuel crates.
@@ -69,6 +69,7 @@ KPLIB_b_infantry = [
 ];
 
 KPLIB_b_vehLight = [
+    ["walker_a3_hiluxhmg",40,50,5],                                 // Hilux with MG
     ["B_AFBiH_M1151",100,50,30],                                         // M1151
     ["B_AFBiH_BRDM2UM",100,50,40],                                         // BRDM2UM (No cannon)
     ["B_AFBiH_BRDM2",150,100,40],                                         // BRDM2
@@ -92,7 +93,10 @@ KPLIB_b_vehLight = [
     ["C_Cher90s_Civ_UAZ3151",60,0,5],                                         // UAZ-3151
     ["C_Cher90s_Civ_UAZ3151O",60,0,5],                                         // UAZ-3151 (Open)
     ["C_Cher90s_Civ_Ural",70,0,10],                                         // Ural-4320
-    ["C_Cher90s_Civ_UralOpen",70,0,10]                                         // Ural-4320 (Open)
+    ["C_Cher90s_Civ_UralOpen",70,0,10],                                         // Ural-4320 (Open)
+    ["rhsgref_hidf_canoe",10,0,0],                                         // Canoe
+    ["C_Scooter_Transport_01_F",35,0,5],                                         // Water Scooter
+    ["B_Lifeboat",60,0,5]                                         // Rescue Boat
     
 ];
 
@@ -121,15 +125,14 @@ KPLIB_b_vehStatic = [
 ];
 
 KPLIB_b_objectsDeco = [
-    ["Land_Slum_01_F",0,0,0],
-    ["Land_Cargo_Patrol_V2_F",0,0,0],
-    ["Land_GuardTower_01_F",0,0,0],
     ["rhssaf_flag_yugoslavia",0,0,0],
     ["Flag_White_F",0,0,0],
-    ["Land_MedicalTent_01_tropic_closed_F",0,0,0],
-    ["CamoNet_OPFOR_F",0,0,0],
-    ["CamoNet_OPFOR_open_F",0,0,0],
-    ["CamoNet_OPFOR_big_F",0,0,0],
+    ["Radio",0,0,0],
+    ["Radio_Old",0,0,0],
+    ["Land_tent_east",0,0,0],
+    ["CamoNet_BLUFOR_F",0,0,0],
+    ["CamoNet_BLUFOR_open_F",0,0,0],
+    ["CamoNet_BLUFOR_big_F",0,0,0],
     ["Land_FirewoodPile_01_F",0,0,0],
 	["Land_Greenhouse_01_F",0,0,0],
 	["Land_Greenhouse_01_damaged_F",0,0,0],
@@ -142,11 +145,18 @@ KPLIB_b_objectsDeco = [
 	["Land_Shed_09_F",0,0,0],
 	["Land_Shed_10_F",0,0,0],
 	["Land_Shed_14_F",0,0,0],
+    ["Land_Slum_01_F",0,0,0],
+    ["Land_DeerStand_01_F",0,0,0],
+    ["Land_DeerStand_02_F",0,0,0],
+    ["Land_GuardTower_01_F",0,0,0],
 	["Land_ConcreteWell_02_F",0,0,0],
+    ["Lantern_01_red_F",0,0,0],
+    ["Lantern_01_green_F",0,0,0],
     ["Land_PortableLight_single_F",0,0,0],
     ["Land_PortableLight_double_F",0,0,0],
     ["Land_LampHalogen_F",0,0,0],
     ["Land_LampStreet_small_F",0,0,0],
+    ["Land_Airport_01_hangar_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase plane cap!
     ["Land_HelipadCircle_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase helicopter cap!
     ["Land_HelipadRescue_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase helicopter cap!
     ["PortableHelipadLight_01_blue_F",0,0,0],

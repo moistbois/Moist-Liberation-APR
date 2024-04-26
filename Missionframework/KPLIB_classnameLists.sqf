@@ -13,10 +13,12 @@
 // Vehicle classnames which should be ignored on kp_fuel_consumption.
 kp_fuel_ignore_vehicles = [
     "gm_ge_army_bicycle_01_oli",
+    "C_Cher90s_Civ_Bike",
 	"RDS_MMT_Civ_01",
 	"vn_c_bicycle_01",
 	"vn_c_bicycle_02",
 	"RDS_Old_bike_Civ_01",
+    "rhsgref_hidf_canoe",
 	"vn_b_air_f4b_navy_hcas"
 ];
 
@@ -83,6 +85,7 @@ KPLIB_medical_facilities = [
 	"Land_PartyTent_01_F",
     "LAND_uns_army_med",
     "LAND_uns_tent3mash",
+    "Land_tent_east",
     "CampEast_EP1",
     "Land_vn_tent_mash_01_01",
     "Land_vn_tent_mash_01_02",
@@ -340,6 +343,7 @@ boats_names = [
     "uns_pbr_mk18",
     "uns_pbr",
     "UNS_Zodiac_W",
+    "B_Lifeboat",
 	"vn_b_boat_05_01"
 ];
 
@@ -485,6 +489,9 @@ KPLIB_intelBuildingClasses = [
 	"Land_A_Stationhouse_ep1",
 	"Land_Bunker_01_HQ_F",
 	"Land_Bunker_01_tall_F",
+    "Land_Barrack2",
+    "Land_Barracks_02_F",
+    "Land_Barracks_06_F",
 	"Land_Cargo_House_V1_F",
 	"Land_Cargo_House_V2_F",
 	"Land_Cargo_House_V3_F",
@@ -505,6 +512,14 @@ KPLIB_intelBuildingClasses = [
 	"Land_House_C_5_V3_EP1",
 	"Land_Hut01",
 	"Land_Hut02",
+    "Land_Radar_01_HQ_F",
+    "Land_Radar_01_antenna_base_F",
+    "Land_Barracks_04_F",
+    "Land_Barracks_03_F",
+    "Land_PowerStation_01_F",
+    "Land_ControlTower_01_F",
+    "Land_GuardHouse_02_F",
+    "Land_Cargo_Tower_V2_F",
 	"Land_ibr_terminal",
 	"Land_Ind_Workshop01_01",
 	"Land_Ind_Workshop01_02",
@@ -569,6 +584,7 @@ KPLIB_collisionIgnoreObjects = [
     "PortableHelipadLight_01_blue_F",
     "PortableHelipadLight_01_green_F",
     "PortableHelipadLight_01_red_F",
+    "Land_Airport_01_hangar_F",
     "Land_BagFence_Round_F",
     "Land_BagFence_Short_F",
     "Land_BagFence_Long_F",
@@ -630,5 +646,18 @@ KPLIB_collisionIgnoreObjects = [
     "Sign_Arrow_Large_Yellow_F",
     "Sign_Arrow_Pink_F",
     "Sign_Arrow_Yellow_F",
-    "Sign_Sphere100cm_F"
+    "Sign_Sphere100cm_F",
+    "ACE_Box_82mm_Mo_Combo",
+    "ACE_Box_82mm_Mo_HE",
+    "ACE_Box_82mm_Mo_Illum",
+    "ACE_Box_82mm_Mo_Smoke",
+    "ACE_medicalSupplyCrate_advanced",
+    "B_LINGOR_IglaBox",
+    "B_AFBiH_IglaBox",
+    "B_AFBiH_FNMagBox",
+    "B_AFBiH_SPG9Box",
+    "B_AFBiH_KORDBox",
+    "B_AFBiH_M2Box",
+    "B_AFBiH_2B14Box",
+    "B_AFBiH_M80Box"
 ];

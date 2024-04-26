@@ -1,9 +1,9 @@
 private _objects_to_build = [
     [ "Land_HelipadCircle_F", [-1.31, 11.44, 0], 0 ],
     [ KPLIB_o_transportHeli, [-1.31, 11.45, 0], 134.19 ],
-    [ "Land_Cargo_Patrol_V3_F", [17.36, 1.08, 0], 269.81 ],
-    [ "Land_Cargo_House_V3_F", [15.93, -7.13, 0], 90.12 ],
-    [ "Land_Cargo_HQ_V3_F", [-11.82, -13.91, 0], 89.97 ],
+    [ "Land_Cargo_Patrol_V2_F", [17.36, 1.08, 0], 269.81 ],
+    [ "Land_Cargo_House_V2_F", [15.93, -7.13, 0], 90.12 ],
+    [ "Land_Cargo_HQ_V2_F", [-11.82, -13.91, 0], 89.97 ],
     [ KPLIB_o_transportTruck, [-17.59, 5.76, -0.03], 310.87 ],
     [ KPLIB_o_flag, [-20.4, -2.8, 0], 90 ],
     [ "Land_PaperBox_open_full_F", [12.36, -16.46, 0], 228.14 ],

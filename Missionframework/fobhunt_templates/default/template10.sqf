@@ -1,8 +1,8 @@
 private _objects_to_build = [
-    ["Land_Cargo_HQ_V3_F", [10.61, -10.99, 0.00], 0.00],
-    ["Land_Cargo_Patrol_V3_F", [-17.12, 17.91, 0.00], 90.00],
-    ["Land_Cargo_Patrol_V3_F", [-6.10, -17.32, 0.00], 0.00],
-    ["Land_Cargo_Patrol_V3_F", [16.21, 19.89, 0.00], 270.00],
+    ["Land_Cargo_HQ_V2_F", [10.61, -10.99, 0.00], 0.00],
+    ["Land_Cargo_Patrol_V2_F", [-17.12, 17.91, 0.00], 90.00],
+    ["Land_Cargo_Patrol_V2_F", [-6.10, -17.32, 0.00], 0.00],
+    ["Land_Cargo_Patrol_V2_F", [16.21, 19.89, 0.00], 270.00],
     ["Land_HBarrier_Big_F", [-0.63, 24.21, 0.00], 0.00],
     ["Land_HBarrier_Big_F", [-11.09, -16.24, 0.00], 270.00],
     ["Land_HBarrier_Big_F", [-11.31, -7.55, 0.00], 270.00],

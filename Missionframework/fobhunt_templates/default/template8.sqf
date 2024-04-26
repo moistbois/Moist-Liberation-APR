@@ -1,9 +1,9 @@
 private _objects_to_build = [
     ["Land_BarGate_F", [25.69, 12.03, 0.00], 257.61],
-    ["Land_Cargo_House_V3_F", [6.05, 17.88, 0.00], 0.00],
-    ["Land_Cargo_Patrol_V3_F", [-18.68, 18.47, 0.00], 180.00],
-    ["Land_Cargo_Patrol_V3_F", [23.76, -10.91, 0.00], 270.00],
-    ["Land_Cargo_Tower_V3_F", [-4.99, -5.71, 0.00], 180.00],
+    ["Land_Cargo_House_V2_F", [6.05, 17.88, 0.00], 0.00],
+    ["Land_Cargo_Patrol_V2_F", [-18.68, 18.47, 0.00], 180.00],
+    ["Land_Cargo_Patrol_V2_F", [23.76, -10.91, 0.00], 270.00],
+    ["Land_Cargo_Tower_V2_F", [-4.99, -5.71, 0.00], 180.00],
     ["Land_HBarrier_Big_F", [-10.92, 22.43, 0.00], 0.00],
     ["Land_HBarrier_Big_F", [-11.55, -10.66, 0.00], 270.00],
     ["Land_HBarrier_Big_F", [-11.58, -2.00, 0.00], 270.00],

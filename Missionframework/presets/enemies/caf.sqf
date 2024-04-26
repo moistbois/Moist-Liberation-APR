@@ -30,7 +30,7 @@ KPLIB_o_mrap = "O_RSA90_M1151";                                    // M1151
 KPLIB_o_mrapArmed = "O_RSA90_BRDM2";                                        // BRDM2
 KPLIB_o_transportHeli = "O_RSA90_MI8MT_Cargo";                           // Mi-8MT (Cargo)
 KPLIB_o_transportTruck = "O_RSA90_GAZ66_Transport";                                 // GAZ-66 (Transport)
-KPLIB_o_transportTruckAmmo = "O_RSA90_KrAZ255";                          // KrAZ-255 (Open) -> Has to be able to transport resource crates!
+KPLIB_o_transportTruckAmmo = "rhs_zil131_open_msv";                          // ZiL-131 (Open) -> Has to be able to transport resource crates!
 KPLIB_o_fuelTruck = "O_RSA90_URAL_Fuel";                              // Ural-4320 (Fuel)
 KPLIB_o_ammoTruck = "O_RSA90_URAL_Ammo";                                // GAZ-66 (Ammo)
 KPLIB_o_fuelContainer = "Land_Ind_TankSmall2";            				 // Cargo Container
@@ -71,6 +71,26 @@ KPLIB_o_militiaVehicles = [
     "O_RSA90_T34",
     "O_RSA90_Podnos",
     "O_RSA90_M2",
+    "O_RSA90_NSV"
+];
+
+// All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
+KPLIB_o_armyVehicles = [
+	"O_RSA90_M1151",
+    "O_RSA90_BRDM2",
+    "O_RSA90_BTR60PB",
+    "O_RSA90_BTR80",
+    "O_RSA90_GAZ66_AA",
+    "O_RSA90_URAL_AA",
+    "O_RSA90_BMP",
+    "O_RSA90_T34",
+    "O_RSA90_T72",
+    "O_RSA90_T55",
+    "O_RSA90_D30",
+    "O_RSA90_Podnos",
+    "O_RSA90_ZU23",
+    "O_RSA90_M2",
+    "O_RSA90_M2Lo",
     "O_RSA90_NSV"
 ];
 

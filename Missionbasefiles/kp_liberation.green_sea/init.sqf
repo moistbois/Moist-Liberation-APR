@@ -60,8 +60,8 @@ CHVD_allowNoGrass = false; // Set 'false' if you want to disable "Low" option fo
 
 // Temperature and humidity changes
 [{
-    ace_weather_humidityShift = -2;
-    ace_weather_temperatureShift = -1;
+    ace_weather_humidityShift = 0;
+    ace_weather_temperatureShift = 0;
 },[], 1] call CBA_fnc_waitAndExecute;
 
 [] call compile preprocessFileLineNumbers "scripts\shared\init_shared.sqf";
