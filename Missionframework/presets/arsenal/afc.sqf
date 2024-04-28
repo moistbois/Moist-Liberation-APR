@@ -123,6 +123,8 @@ KPLIB_arsenalMagazines = [
     //RG-036
     "rhs_10rnd_9x39mm_SP5",
     "rhs_10rnd_9x39mm_SP6",
+    "rhs_20rnd_9x39mm_SP5",
+    "rhs_20rnd_9x39mm_SP6",
     // AKs - Accessories
     // AKs - Ammo
     "rhs_30Rnd_762x39mm",
