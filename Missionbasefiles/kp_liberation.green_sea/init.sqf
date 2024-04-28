@@ -59,7 +59,7 @@ nul = [] execVM "RYD_FFE\FFE.sqf";
 CHVD_allowNoGrass = false; // Set 'false' if you want to disable "Low" option for terrain (default: true)
 // Brighter Nights
 CHBN_adjustBrightness = 1;
-CHBN_adjustColor = [0.5,0.7,1];
+CHBN_adjustColor = [1.0,1.2,1.4];
 
 // Temperature and humidity changes
 [{
