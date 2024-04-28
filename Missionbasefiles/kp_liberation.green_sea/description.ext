@@ -254,7 +254,7 @@ class ACEX_Fortify_Presets {
         objects[] = {
 			{"Land_Campfire_F", 1},
 			{"CamoNet_wdl_open_F", 30},
-            {"Land_vn_sandbagbarricade_01_half_f", 130},
+            {"Land_SandbagBarricade_01_hole_F", 130},
             {"Land_BagFence_Short_F", 50},
             {"Land_BagFence_Round_F", 60}
         };
