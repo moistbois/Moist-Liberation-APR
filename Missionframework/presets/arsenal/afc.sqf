@@ -465,7 +465,12 @@ KPLIB_arsenalItems = [
     "V_BandollierB_blk",
     "LOP_V_Chestrig_Black",
 // Facewear:
-	"G_Aviator",
+	"SP_Moustache",
+    "SP_Moustache_Blonde",
+    "SP_Moustache_Brown",
+    "SP_Moustache_Ginger",
+    "SP_Moustache_White",
+    "G_Aviator",
     "G_Balaclava_blk",
     "G_Balaclava_BlueStrips",
     "G_Balaclava_oli",
@@ -550,5 +555,13 @@ KPLIB_arsenalBackpacks = [
     "rhs_medic_bag",
     "rhs_sidor",
     "ACE_TacticalLadder_Pack",
+    "rhs_rpg_2",
+    "rhs_rpg_empty",
+    "rhs_rpg_6b2",
+    "rhs_rpg_6b3",
+    "rhs_rd54",
+    "rhs_rd54_flora1",
+    "rhs_rd54_vest",
+    "rhs_rd54_vest_flora1",
     "B_Parachute"                                                  // Steerable Parachute
 ];
