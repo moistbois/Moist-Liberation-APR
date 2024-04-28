@@ -8,18 +8,18 @@ class EditorData
 	toggles=577;
 	class ItemIDProvider
 	{
-		nextID=4158;
+		nextID=4159;
 	};
 	class LayerIndexProvider
 	{
-		nextID=248;
+		nextID=270;
 	};
 	class Camera
 	{
-		pos[]={15346.903,64.565063,6979.6768};
-		dir[]={-0.71018219,-0.4651691,-0.52844971};
-		up[]={-0.37319005,0.88521636,-0.27769196};
-		aside[]={-0.59696954,6.7520887e-09,0.80226773};
+		pos[]={12329.098,25.043873,6286.627};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -86,13 +86,14 @@ addons[]=
 	"us_military_uniforms",
 	"us_military_gear",
 	"ace_explosives",
-	"A3_Structures_F_Enoch_Military_Barracks"
+	"A3_Structures_F_Enoch_Military_Barracks",
+	"ace_fortify"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=31;
+		items=32;
 		class Item0
 		{
 			className="A3_Structures_F_Mil";
@@ -306,6 +307,13 @@ class AddonsMetaData
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
+		class Item31
+		{
+			className="ace_fortify";
+			name="ace_fortify";
+			author="ACE-Team";
+			url="https://ace3.acemod.org/";
+		};
 	};
 };
 dlcs[]=
@@ -347,7 +355,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=424;
+		items=425;
 		class Item0
 		{
 			dataType="Layer";
@@ -11273,6 +11281,7 @@ class Mission
 					};
 					id=4151;
 					type="CamoNet_wdl_big_F";
+					atlOffset=-7.6293945e-06;
 				};
 				class Item27
 				{
@@ -11291,11 +11300,10 @@ class Mission
 					};
 					id=4152;
 					type="CamoNet_wdl_big_F";
-					atlOffset=-7.6293945e-06;
 				};
 			};
 			id=605;
-			atlOffset=0.14655304;
+			atlOffset=0.146698;
 		};
 		class Item10
 		{
@@ -18790,7 +18798,7 @@ class Mission
 						disableSimulation=1;
 					};
 					id=1062;
-					type="CamoNet_wdl_open_F";
+					type="CamoNet_OPFOR_open_F";
 				};
 				class Item3
 				{
@@ -18897,7 +18905,7 @@ class Mission
 						disableSimulation=1;
 					};
 					id=1068;
-					type="CamoNet_wdl_open_F";
+					type="CamoNet_OPFOR_open_F";
 				};
 				class Item9
 				{
@@ -18915,7 +18923,7 @@ class Mission
 						disableSimulation=1;
 					};
 					id=1069;
-					type="CamoNet_wdl_open_F";
+					type="CamoNet_OPFOR_open_F";
 				};
 				class Item10
 				{
@@ -19677,7 +19685,7 @@ class Mission
 						disableSimulation=1;
 					};
 					id=1113;
-					type="CamoNet_wdl_open_F";
+					type="CamoNet_OPFOR_open_F";
 				};
 				class Item54
 				{
@@ -21305,7 +21313,7 @@ class Mission
 						disableSimulation=1;
 					};
 					id=1207;
-					type="CamoNet_wdl_open_F";
+					type="CamoNet_OPFOR_open_F";
 				};
 				class Item148
 				{
@@ -24189,7 +24197,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15417.848,0,7146.6934};
-				angles[]={0,3.7288306,-0};
+				angles[]={0,3.7288306,0};
 			};
 			side="Empty";
 			class Attributes
@@ -30395,6 +30403,7 @@ class Mission
 			};
 			id=4148;
 			type="Land_ClutterCutter_small_F";
+			atlOffset=-1.9073486e-06;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -30419,7 +30428,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15409.149,-0.1075666,7152.7031};
-				angles[]={0,3.7288306,-0};
+				angles[]={0,3.7288306,0};
 			};
 			side="Empty";
 			class Attributes
@@ -30436,7 +30445,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={15398.146,0.012265682,7159.4883};
-				angles[]={0,3.7288306,-0};
+				angles[]={0,3.7288306,0};
 			};
 			side="Empty";
 			class Attributes
@@ -30446,6 +30455,72 @@ class Mission
 			id=4150;
 			type="Land_ClutterCutter_small_F";
 			atlOffset=1.0501189;
+		};
+		class Item424
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7633.0078,4.3964176,-7790.6401};
+			};
+			id=4158;
+			type="acex_fortify_setupModule";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_fortify_setupModule_Budget";
+					expression="_this setVariable ['Budget',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=-1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_fortify_setupModule_AddToolItem";
+					expression="_this setVariable ['AddToolItem',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_fortify_setupModule_Preset";
+					expression="_this setVariable ['Preset',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="KPLIB_Fortify";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_fortify_setupModule_Side";
+					expression="_this setVariable ['Side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 	class Connections
