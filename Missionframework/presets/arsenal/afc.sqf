@@ -12,6 +12,7 @@ KPLIB_arsenalWeapons = [
     "rhs_weap_m38",        //Mosin Nagant
     "rhs_weap_vss",        //VSS Vintorez
     "rhs_weap_asval",        //AS VAL
+    "rhs_weap_m76",          // M76
     // SA VZ Family
     "rhs_weap_savz58p",
     "rhs_weap_savz58v",
@@ -109,7 +110,10 @@ KPLIB_arsenalWeapons = [
 ];
 
 KPLIB_arsenalMagazines = [
-	// M1 Garand
+	//M76
+    "rhsgref_10Rnd_792x57_m76",
+    "rhssaf_10Rnd_792x57_m76_tracer",
+    // M1 Garand
     "rhsgref_8Rnd_762x63_M2B_M1rifle",
     "rhsgref_8Rnd_762x63_Tracer_M1T_M1rifle",
     //M14
@@ -178,6 +182,12 @@ KPLIB_arsenalMagazines = [
     "rhsgref_25Rnd_792x33_SmE_StG",
     "rhsgref_30Rnd_792x33_SmE_StG",
     // MG42
+    "rhsgref_296Rnd_792x57_SmE_belt",
+    "rhsgref_296Rnd_792x57_SmE_notracers_belt",
+    "rhsgref_296Rnd_792x57_SmK_belt",
+    "rhsgref_296Rnd_792x57_SmK_alltracers_belt",
+    "rhsgref_50Rnd_792x57_SmE_drum",
+    "rhsgref_50Rnd_792x57_SmE_notracers_drum",
     "rhsgref_50Rnd_792x57_SmK_drum",
     "rhsgref_50Rnd_792x57_SmK_alltracers_drum",
     // Shotgun
