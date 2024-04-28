@@ -69,6 +69,7 @@ KPLIB_b_infantry = [
 ];
 
 KPLIB_b_vehLight = [
+    ["rhsgref_cdf_b_reg_uaz_dshkm",25,50,5],                                 // UAZ-3151 (DShKM)
     ["walker_a3_hiluxhmg",40,50,5],                                 // Hilux with MG
     ["B_AFBiH_M1151",100,50,30],                                         // M1151
     ["B_AFBiH_BRDM2UM",100,50,40],                                         // BRDM2UM (No cannon)
@@ -76,6 +77,7 @@ KPLIB_b_vehLight = [
     ["B_AFBiH_BTR60PB",175,150,50],                                         // BTR-60PB
     ["B_AFBiH_BTR80",180,150,50],                                         // BTR-80
     ["B_AFBiH_BM21",200,400,40],                                         // BM-21
+    ["rhsgref_cdf_b_reg_uaz_ags",125,175,25],                                         // UAZ-3151 (AGS-30)
     ["B_AFBiH_GAZ66_AA",150,250,40],                                         // GAZ-66 AA
     ["B_AFBiH_URAL_AA",175,250,40],                                         // URAL AA
     ["C_Cher90s_Civ_Bike",20,0,0],                                         // Bicycle
@@ -119,6 +121,7 @@ KPLIB_b_vehAir = [
 KPLIB_b_vehStatic = [
     ["B_AFBiH_D30",250,300,0],                                     // D-30
     ["B_AFBiH_Podnos",100,150,0],                                     // Podnos mortar
+    ["B_AFBiH_ZU23",75,250,40],                                         // ZU AA
     ["B_AFBiH_M2",25,30,0],                                     // M2 HMG
     ["B_AFBiH_M2Lo",25,30,0]                                     // M2 HMG (Low Mount)
     
@@ -134,6 +137,7 @@ KPLIB_b_objectsDeco = [
     ["CamoNet_BLUFOR_open_F",0,0,0],
     ["CamoNet_BLUFOR_big_F",0,0,0],
     ["Land_FirewoodPile_01_F",0,0,0],
+    ["Axe_woodblock",0,0,0],
 	["Land_Greenhouse_01_F",0,0,0],
 	["Land_Greenhouse_01_damaged_F",0,0,0],
 	["Land_Shed_11_F",0,0,0],
@@ -288,6 +292,7 @@ KPLIB_b_vehSupport = [
     [KPLIB_b_airControl,800,0,0],
     [KPLIB_b_slotHeli,250,0,0],
     [KPLIB_b_slotPlane,500,0,0],
+    ["Land_WoodenCrate_01_F",1,0,0],
     ["ACE_medicalSupplyCrate_advanced",10,0,0],
     ["B_AFBiH_KORDBox",10,40,0],
     ["B_AFBiH_SPG9Box",10,45,0],
@@ -404,5 +409,8 @@ KPLIB_b_vehToUnlock = [
     "B_AFBiH_T34",
     "B_AFBiH_T72",
     "B_AFBiH_Mi24V",
-    "B_AFBiH_Mi24P"
+    "B_AFBiH_Mi24P",
+    "B_AFBiH_T55",
+    "B_AFBiH_ZU23",
+    "rhsgref_cdf_b_reg_uaz_ags"
 ];
