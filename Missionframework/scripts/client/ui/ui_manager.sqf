@@ -138,40 +138,40 @@ while {true} do {
                 (_overlay displayCtrl (517)) ctrlShow false;
             };
 
-            _nearest_active_sector = [KPLIB_range_sectorActivation] call KPLIB_fnc_getNearestSector;
-            if ( _nearest_active_sector != "" ) then {
-                _zone_size = KPLIB_range_sectorCapture;
-                if ( _nearest_active_sector in KPLIB_sectors_capital ) then {
-                    _zone_size = KPLIB_range_sectorCapture * 1.4;
-                };
-
-                "zone_capture" setmarkerposlocal (markerpos _nearest_active_sector);
-                _colorzone = "ColorGrey";
-                private _sectorOwner = [markerPos _nearest_active_sector, _zone_size] call KPLIB_fnc_getSectorOwnership;
-                if ( _sectorOwner == KPLIB_side_player ) then { _colorzone = KPLIB_color_player };
-                if ( _sectorOwner == KPLIB_side_enemy ) then { _colorzone = KPLIB_color_enemy };
-                if ( _sectorOwner == KPLIB_side_resistance ) then { _colorzone = "ColorCivilian" };
-                "zone_capture" setmarkercolorlocal _colorzone;
-
-                _ratio = [_nearest_active_sector] call KPLIB_fnc_getBluforRatio;
-                _barwidth = 0.084 * safezoneW * _ratio;
-                _bar = _overlay displayCtrl (244);
-                _bar ctrlSetPosition [(ctrlPosition _bar) select 0,(ctrlPosition _bar) select 1,_barwidth,(ctrlPosition _bar) select 3];
-                _bar ctrlCommit ([0, 2] select ctrlShown _bar);
-
-                (_overlay displayCtrl (205)) ctrlSetText (markerText _nearest_active_sector);
-                {(_overlay displayCtrl (_x)) ctrlShow true;} forEach _sectorcontrols;
-                if (_nearest_active_sector in KPLIB_sectors_player) then {
-                    (_overlay displayCtrl (205)) ctrlSetTextColor [0,0.3,1.0,1];
-                } else {
-                    (_overlay displayCtrl (205)) ctrlSetTextColor [0.85,0,0,1];
-                };
-
-                "zone_capture" setMarkerSizeLocal [ _zone_size,_zone_size ];
-            } else {
-                {(_overlay displayCtrl (_x)) ctrlShow false;} forEach _sectorcontrols;
-                "zone_capture" setmarkerposlocal markers_reset;
-            };
+            //_nearest_active_sector = [KPLIB_range_sectorActivation] call KPLIB_fnc_getNearestSector;
+            //if ( _nearest_active_sector != "" ) then {
+            //    _zone_size = KPLIB_range_sectorCapture;
+            //    if ( _nearest_active_sector in KPLIB_sectors_capital ) then {
+            //        _zone_size = KPLIB_range_sectorCapture * 1.4;
+            //    };
+            //
+            //    "zone_capture" setmarkerposlocal (markerpos _nearest_active_sector);
+            //    _colorzone = "ColorGrey";
+            //    private _sectorOwner = [markerPos _nearest_active_sector, _zone_size] call KPLIB_fnc_getSectorOwnership;
+            //    if ( _sectorOwner == KPLIB_side_player ) then { _colorzone = KPLIB_color_player };
+            //    if ( _sectorOwner == KPLIB_side_enemy ) then { _colorzone = KPLIB_color_enemy };
+            //    if ( _sectorOwner == KPLIB_side_resistance ) then { _colorzone = "ColorCivilian" };
+            //    "zone_capture" setmarkercolorlocal _colorzone;
+            //
+            //    _ratio = [_nearest_active_sector] call KPLIB_fnc_getBluforRatio;
+            //    _barwidth = 0.084 * safezoneW * _ratio;
+            //    _bar = _overlay displayCtrl (244);
+            //    _bar ctrlSetPosition [(ctrlPosition _bar) select 0,(ctrlPosition _bar) select 1,_barwidth,(ctrlPosition _bar) select 3];
+            //    _bar ctrlCommit ([0, 2] select ctrlShown _bar);
+            //
+            //    (_overlay displayCtrl (205)) ctrlSetText (markerText _nearest_active_sector);
+            //    {(_overlay displayCtrl (_x)) ctrlShow true;} forEach _sectorcontrols;
+            //    if (_nearest_active_sector in KPLIB_sectors_player) then {
+            //        (_overlay displayCtrl (205)) ctrlSetTextColor [0,0.3,1.0,1];
+            //    } else {
+            //        (_overlay displayCtrl (205)) ctrlSetTextColor [0.85,0,0,1];
+            //    };
+            //
+            //    "zone_capture" setMarkerSizeLocal [ _zone_size,_zone_size ];
+            //} else {
+            //    {(_overlay displayCtrl (_x)) ctrlShow false;} forEach _sectorcontrols;
+            //    "zone_capture" setmarkerposlocal markers_reset;
+            //};
         };
     };
 
