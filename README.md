@@ -1,190 +1,38 @@
-![KP Liberation](https://www.killahpotatoes.de/images/arma/liberation.png)
+# Moistbois Liberation APR for Arma 3
 
-# KP Liberation for Arma 3
+![Moistbois' avatar, which is an old school 3D model of a yellow smiling face with sunglasses and a Vietnam War helmet.](https://avatars.githubusercontent.com/u/125743905?s=200&v=4)
 
-[![CI](https://github.com/KillahPotatoes/KP-Liberation/workflows/CI/badge.svg)](https://github.com/KillahPotatoes/KP-Liberation/actions?query=workflow%3ACI)
 [![license](https://img.shields.io/github/license/KillahPotatoes/KP-Liberation.svg)](https://github.com/KillahPotatoes/KP-Liberation/blob/master/LICENSE.md)
-[![GitHub release](https://img.shields.io/github/release/KillahPotatoes/KP-Liberation.svg)](https://github.com/KillahPotatoes/KP-Liberation/releases)
-[![GitHub Release Date](https://img.shields.io/github/release-date/KillahPotatoes/KP-Liberation.svg)](https://github.com/KillahPotatoes/KP-Liberation/releases)
+[![Last Update](https://img.shields.io/github/last-commit/moistbois/Moist-Liberation-APR/main?label=last%20updated%3A)](https://github.com/moistbois/Moist-Liberation-APR/commits/main/)
+[![GitHub issues](https://img.shields.io/github/issues-raw/moistbois/Moist-Liberation-APR.svg)](https://github.com/moistbois/Moist-Liberation-APR/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/moistbois/Moist-Liberation-APR.svg)](https://github.com/moistbois/Moist-Liberation-APR/issues?q=is%3Aissue+is%3Aclosed)
+[![GitHub contributors](https://img.shields.io/github/contributors/moistbois/Moist-Liberation-APR)](https://github.com/moistbois/Moist-Liberation-APR/graphs/contributors)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/moistbois/Moist-Liberation-APR.svg)](https://github.com/moistbois/Moist-Liberation-APR/pulls)
+[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/moistbois/Moist-Liberation-APR.svg)](https://github.com/moistbois/Moist-Liberation-APR/pulls?q=is%3Apr+is%3Aclosed)
+[![Moistbois Discord](https://img.shields.io/discord/435753869293649920?label=Discord)](https://discord.gg/FeyqxXA)
 
-[![Github All Releases](https://img.shields.io/github/downloads/KillahPotatoes/KP-Liberation/total.svg)](https://github.com/KillahPotatoes/KP-Liberation)
-[![GitHub stars](https://img.shields.io/github/stars/KillahPotatoes/KP-Liberation)](https://github.com/KillahPotatoes/KP-Liberation/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues-raw/KillahPotatoes/KP-Liberation.svg)](https://github.com/KillahPotatoes/KP-Liberation/issues)
-[![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/KillahPotatoes/KP-Liberation.svg)](https://github.com/KillahPotatoes/KP-Liberation/issues?q=is%3Aissue+is%3Aclosed)
+## About
+Moistbois Liberation APR is a fork of [a fork](https://github.com/Apricot-ale/KP-Liberation-APR) of [a fork](https://github.com/Apricot-ale/KP-Liberation-APR) of [a fork](https://github.com/GreuhZbug/greuh_liberation.Altis). We originally lightly tweaked [KP Liberation](https://github.com/moistbois/Moist-Liberation-APR) missions but decided to instead build on top of [KP Liberation APR](https://github.com/Apricot-ale/KP-Liberation-APR). Apricot's fork has many implemented features of KP Liberation stated for v0.96.8 that were never released, along with some curated PRs, and optimizations. This gave us a great base to work off of to add new features.
 
-[![GitHub contributors](https://img.shields.io/github/contributors/KillahPotatoes/KP-Liberation)](https://github.com/KillahPotatoes/KP-Liberation/graphs/contributors)
-[![GitHub forks](https://img.shields.io/github/forks/KillahPotatoes/KP-Liberation)](https://github.com/KillahPotatoes/KP-Liberation/network)
-[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/KillahPotatoes/KP-Liberation.svg)](https://github.com/KillahPotatoes/KP-Liberation/pulls)
-[![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/KillahPotatoes/KP-Liberation.svg)](https://github.com/KillahPotatoes/KP-Liberation/pulls?q=is%3Apr+is%3Aclosed)
+You can support the original developer of KP Liberation via Paypal [here](https://www.paypal.me/wyqer).
 
-[![KP Discord](https://img.shields.io/discord/154937272368758784?label=Discord)](https://discord.gg/Qk35Sw8)
+## Usage
+We forked this repo to keep commit history in case things go wrong. We will not prevent you from forking this repo as that goes against the spirit of open source. However, be warned that we commit things that are tailored for our server/community. There's no guarantee it will work well on yours, nor that it will be easy to navigate through our janky commits. You can ask for help in the Discord if needed.
 
-[BI Forum Thread](https://forums.bistudio.com/topic/202711-mpcti-coop-liberation-continued/)
-
-[Steam Workshop](http://steamcommunity.com/id/wyqer/myworkshopfiles/?appid=107410)
-
-This mission is only a continued project based on the original, but most likely abandoned, mission from [GreuhZbug](https://github.com/GreuhZbug).
-
-[Original Liberation mission v0.924](https://github.com/GreuhZbug/greuh_liberation.Altis)
-
-If you like the work and think it's worth a small donation, feel free to use the following link:
-
-[Donate via paypal.me](https://www.paypal.me/wyqer)
-
-## Overview
-The area has fallen to the enemy, and it is up to you to take it back. Embark on a persistent campaign with your teammates to liberate all the major cities of the area that will most likely span several weeks of real time.
-* Experience a massive “Capture the Island” campaign involving a large range of different settlements across the entire area.
-* Cooperate with up to 34 players, including a Commanding role, two fire-team squads, a medevac and a logistical support squad as well as AI recruits to fill the gaps.
-* Purchase both infantry and both ground and air vehicles using three different types of physical resources; supplies, ammunition and fuel.
-* Build the FOB of your dreams with an in-game "what you see is what you get" system.
-* Play within an immersive engine that not only punishes you for civilian casualty but diversely reacts in turn.
-* Combat aggressive and cunning hostile forces who react and adapt to your actions.
-* Monitor and work alongside, or against, independent guerrilla forces.
-* Learn that every window is a threat thanks to the custom urban combat AI.
-* Accomplish meaningful secondary objectives that will benefit your progression.
-* Never lose your progress with the built-in server-side save system.
-
-## Needed Mods
-These mods are needed if you want to use the prepackaged missionfiles from the release tab or Steam Workshop.
-You can play every map without any mods (only the maps themself) if you set the preset to custom in the file `kp_liberation_config`.
-* Al Rayak (pja310)
-    * [CUP Terrains - Core](http://steamcommunity.com/sharedfiles/filedetails/?id=583496184)
-    * [G.O.S Al Rayak](http://steamcommunity.com/sharedfiles/filedetails/?id=648172507)
-    * [RHS: Armed Forces of the Russian Federation](http://steamcommunity.com/sharedfiles/filedetails/?id=843425103)
-    * [RHS: United States Forces](http://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
-* Altis
-    * None
-* Chernarus
-    * [CUP Terrains - Core](http://steamcommunity.com/sharedfiles/filedetails/?id=583496184)
-    * [CUP Terrains - Maps](http://steamcommunity.com/sharedfiles/filedetails/?id=583544987)
-    * [RHS: Armed Forces of the Russian Federation](http://steamcommunity.com/sharedfiles/filedetails/?id=843425103)
-    * [RHS: United States Forces](http://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
-* Chernarus Winter
-    * [CUP Terrains - Core](http://steamcommunity.com/sharedfiles/filedetails/?id=583496184)
-    * [CUP Terrains - Maps](http://steamcommunity.com/sharedfiles/filedetails/?id=583544987)
-    * [RHS: Armed Forces of the Russian Federation](http://steamcommunity.com/sharedfiles/filedetails/?id=843425103)
-    * [RHS: United States Forces](http://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
-* Livonia
-    * Contact DLC
-* Lythium
-    * [Jbad](http://steamcommunity.com/sharedfiles/filedetails/?id=520618345)
-    * [Lythium](http://steamcommunity.com/sharedfiles/filedetails/?id=909547724)
-    * [Project OPFOR](http://steamcommunity.com/sharedfiles/filedetails/?id=735566597)
-    * [RHS: Armed Forces of the Russian Federation](http://steamcommunity.com/sharedfiles/filedetails/?id=843425103)
-    * [RHS: United States Forces](http://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
-* Malden
-    * None
-* Panthera
-    * [CUP Terrains - Core](http://steamcommunity.com/sharedfiles/filedetails/?id=583496184)
-    * [CUP Units](https://steamcommunity.com/sharedfiles/filedetails/?id=497661914)
-    * [CUP Vehicles](https://steamcommunity.com/sharedfiles/filedetails/?id=541888371)
-    * [CUP Weapons](https://steamcommunity.com/sharedfiles/filedetails/?id=497660133)
-    * [Island Panthera](https://steamcommunity.com/sharedfiles/filedetails/?id=708278910)
-* Sahrani
-    * [CUP Terrains - Core](http://steamcommunity.com/sharedfiles/filedetails/?id=583496184)
-    * [CUP Terrains - Maps](http://steamcommunity.com/sharedfiles/filedetails/?id=583544987)
-    * [RHS: Armed Forces of the Russian Federation](http://steamcommunity.com/sharedfiles/filedetails/?id=843425103)
-    * [RHS: United States Forces](http://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
-* Song Bin Tanh
-    * [The Unsung Vietnam War Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=943001311)
-* Takistan
-    * [CUP Terrains - Core](http://steamcommunity.com/sharedfiles/filedetails/?id=583496184)
-    * [CUP Terrains - Maps](http://steamcommunity.com/sharedfiles/filedetails/?id=583544987)
-    * [Project OPFOR](http://steamcommunity.com/sharedfiles/filedetails/?id=735566597)
-    * [RHS: Armed Forces of the Russian Federation](http://steamcommunity.com/sharedfiles/filedetails/?id=843425103)
-    * [RHS: United States Forces](http://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
-* Tanoa
-    * Apex DLC
-* Taunus (very resource-intensive map)
-    * [BWMod](http://steamcommunity.com/sharedfiles/filedetails/?id=1200127537)
-    * [CBA A3](http://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
-    * [CUP Terrains - Core](http://steamcommunity.com/sharedfiles/filedetails/?id=583496184)
-    * [CUP Terrains - Maps](http://steamcommunity.com/sharedfiles/filedetails/?id=583544987)
-    * [RHS: Armed Forces of the Russian Federation](http://steamcommunity.com/sharedfiles/filedetails/?id=843425103)
-    * [RHS: United States Forces](http://steamcommunity.com/sharedfiles/filedetails/?id=843577117)
-    * [X-Cam-Taunus (Version 1.1)](http://steamcommunity.com/sharedfiles/filedetails/?id=836147398)
-* Weferlingen
-    * Global Mobilization CDLC
-* Weferlingen Winter
-    * Global Mobilization CDLC
-
-## Recommended Mods
-These mods are recommended by us, as they are likely to increase your gaming experience:
-* [ACE](https://steamcommunity.com/sharedfiles/filedetails/?id=463939057)
-* [ACE Compat - RHS Armed Forces of the Russian Federation](https://steamcommunity.com/workshop/filedetails/?id=773131200)
-* [ACE Compat - RHS United States Armed Forces](https://steamcommunity.com/workshop/filedetails/?id=773125288)
-* [ACE3 - BWMOD Compatibility](https://steamcommunity.com/sharedfiles/filedetails/?id=1200145989)
-* [ACRE 2](https://steamcommunity.com/sharedfiles/filedetails/?id=751965892)
-* [Advanced Urban Rappeling](https://steamcommunity.com/sharedfiles/filedetails/?id=730310357)
-* [CBA_A3](https://steamcommunity.com/sharedfiles/filedetails/?id=450814997)
-* [Discord Rich Presence](https://steamcommunity.com/sharedfiles/filedetails/?id=1493485159)
-* [DUI - Squad Radar](https://steamcommunity.com/sharedfiles/filedetails/?id=1638341685)
-* [Enhanced Movement](https://steamcommunity.com/sharedfiles/filedetails/?id=333310405)
-* [Immerse](https://steamcommunity.com/sharedfiles/filedetails/?id=825172265)
-* [JSRS SOUNDMOD](https://steamcommunity.com/sharedfiles/filedetails/?id=861133494)
-* [JSRS SOUNDMOD - RHS AFRF Mod Pack Sound Support](https://steamcommunity.com/sharedfiles/filedetails/?id=945476727)
-* [JSRS SOUNDMOD - RHS USAF Mod Pack Sound Support](https://steamcommunity.com/sharedfiles/filedetails/?id=1180533757)
-* [KP Ranks](https://steamcommunity.com/sharedfiles/filedetails/?id=741621641)
-* [Suppress](https://steamcommunity.com/sharedfiles/filedetails/?id=825174634)
-
-Also you should think about using these mods as serverside mods:
-* [Advanced Rappeling](http://steamcommunity.com/sharedfiles/filedetails/?id=713709341)
-* [Advanced Sling Loading](http://steamcommunity.com/sharedfiles/filedetails/?id=615007497)
-* [Advanced Towing](http://steamcommunity.com/sharedfiles/filedetails/?id=639837898)
-
-## Recommended Difficulty Settings
-I recommend using the following difficulty settings for this mission (User profile of your server):
-```
-difficulty="Custom";
-class DifficultyPresets
-{
-    class CustomDifficulty
-    {
-        class Options
-        {
-            groupIndicators=0;
-            friendlyTags=0;
-            enemyTags=0;
-            detectedMines=0;
-            commands=0;
-            waypoints=0;
-            weaponInfo=1;
-            stanceIndicator=1;
-            reducedDamage=0;
-            staminaBar=0;
-            weaponCrosshair=0;
-            visionAid=0;
-            thirdPersonView=0;
-            cameraShake=1;
-            scoreTable=0;
-            deathMessages=0;
-            vonID=1;
-            mapContent=0;
-            autoReport=0;
-            multipleSaves=0;
-            squadRadar=0;
-            tacticalPing=0;
-        };
-        aiLevelPreset=3;
-    };
-    class CustomAILevel
-    {
-        skillAI=1.0;
-        precisionAI=0.15;
-    };
-};
-```
-
-In the server config file:
-```
-forcedDifficulty = "custom";
-
-class Missions
-{
-    class kp_liberation
-    {
-        template = "kp_liberation.Altis";
-        difficulty = "custom";
-    };
-};
-```
+## Features
+On top of [KP Liberation's features](https://github.com/moistbois/Moist-Liberation-APR?tab=readme-ov-file#overview) and [Apricot's fork upgrades](https://github.com/Apricot-ale/KP-Liberation-APR/commits/v0.96.8apr/), this fork has a few extra tricks up its sleeves:
+* Enemy uses artillery, powered by [Rydygier's Fire For Effect script](https://forums.bohemia.net/forums/topic/159152-fire-for-effect-the-god-of-war-smart-simple-ai-artillery/)
+* Updated build system to better implement per-mission tweaks.
+* A griefing notification system, which uses global chat to say when a player friendly fires an allied AI or civilian.
+* Persistent vehicle cargo, thanks to [Uniflare's PR](https://github.com/moistbois/Moist-Liberation-APR/pull/914)
+* Persistent vehicle damage and fuel condition. You can no longer use server restarts for free refueling and repairs.
+* Fixed boats not activating sectors.
+* Mobile Respawns have NATO Alphabet instead of grid position.
+* Multiple Mobile Respawns (Ground, Boat, Air) to have more flexible attack options.
+* New secondary objective (Humanitarian Aid), thanks to [UselessFodder](https://github.com/moistbois/Moist-Liberation-APR/pull/894)
+* Tweaked balancing, focusing on a more fun yet difficult experience along with adding immersion and promoting more cooperative gameplay.
+    * This includes disabling auto-deploying with GPS, artillery engine, squad management, current sector and sector progress UI, among other things.
+* Per-sector activation range to allow more granular optimization of missions.
+* Full Heal tweaked to have a cooldown and not work around enemies.
+* New "Gear Crates", powered by [ALiVE's Orbat Faction creator](http://alivemod.com/). Add new crates with goodies to the build list, without their goodies being wiped by the clear list. They can be locked behind military base captures.
+* CH View Distance has "Standard" as the lowest option to disallow removing grass, [thanks to champ-1](https://forums.bohemia.net/forums/topic/175757-ch-view-distance-addon/).
