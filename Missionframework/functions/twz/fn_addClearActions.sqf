@@ -11,7 +11,7 @@ if (isNull _obj || {
     !alive _obj
 }) exitwith {};
 _obj addAction [
-    "sleep",
+    "Sleep",
     {
         if !(daytime < 16 && daytime > 8) then {
             [9] remoteExecCall ["BIS_fnc_paramdaytime", 2];
