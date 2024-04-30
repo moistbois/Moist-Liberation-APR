@@ -91,7 +91,7 @@ KPLIB_arsenalWeapons = [
     "ace_csw_m3CarryTripod",
     "ace_csw_m3CarryTripodLow",
     // CSW - 2B14
-    "rhs_2b14_82mm_msv",
+    "ace_compat_rhs_afrf3_2b14_carry",
     "ace_csw_carryMortarBaseplate",
 	//Secondary
 	"rhs_weap_cz99",
