@@ -111,7 +111,6 @@ KPLIB_o_armyVehiclesLight = [
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehicles = [
-    "O_RSA90_Mi8MT",
     "O_RSA90_BM21",
     "O_RSA90_GAZ66_AA",
     "O_RSA90_URAL_AA",
@@ -119,8 +118,6 @@ KPLIB_o_battleGrpVehicles = [
     "O_RSA90_BTR80",
     "O_RSA90_T72",
     "O_RSA90_T55",
-    "O_RSA90_Mi24V",
-    "O_RSA90_Mi24P",
     "O_RSA90_D30",
     "O_RSA90_ZU23"
 
