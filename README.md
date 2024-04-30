@@ -34,5 +34,10 @@ On top of [KP Liberation's features](https://github.com/moistbois/Moist-Liberati
     * This includes disabling auto-deploying with GPS, artillery engine, squad management, current sector and sector progress UI, among other things.
 * Per-sector activation range to allow more granular optimization of missions.
 * Full Heal tweaked to have a cooldown and not work around enemies.
-* New "Gear Crates", powered by [ALiVE's Orbat Faction creator](http://alivemod.com/). Add new crates with goodies to the build list, without their goodies being wiped by the clear list. They can be locked behind military base captures.
+* New "Gear Crates", powered by [ALiVE's Orbat Faction creator](http://alivemod.com/). Add new crates with goodies to the build list, without their goodies being wiped by the clear script. They can be locked behind military base captures.
 * CH View Distance has "Standard" as the lowest option to disallow removing grass, [thanks to champ-1](https://forums.bohemia.net/forums/topic/175757-ch-view-distance-addon/).
+
+## Watch
+We regularly stream our campaigns and sometimes even development. You can watch us at:
+* [Pantteri](https://www.twitch.tv/pantrh)
+* [CarlMylo](https://www.twitch.tv/CarlMylo)
