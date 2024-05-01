@@ -36,6 +36,7 @@ On top of [KP Liberation's features](https://github.com/moistbois/Moist-Liberati
 * Full Heal tweaked to have a cooldown and not work around enemies.
 * New "Gear Crates", powered by [ALiVE's Orbat Faction creator](http://alivemod.com/). Add new crates with goodies to the build list, without their goodies being wiped by the clear script. They can be locked behind military base captures.
 * CH View Distance has "Standard" as the lowest option to disallow removing grass, [thanks to champ-1](https://forums.bohemia.net/forums/topic/175757-ch-view-distance-addon/).
+* Change vehicle camos at workbenches, thanks to Vehicle Appearance Manager GUI. Credits to [UNIT_normal](https://forums.bohemia.net/forums/topic/224041-release-vehicle-appearance-manager-gui/)
 
 ## Watch
 We regularly stream our campaigns and sometimes even development. You can watch us at:
