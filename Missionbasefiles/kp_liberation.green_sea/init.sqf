@@ -63,8 +63,8 @@ CHBN_adjustColor = [1.0,1.2,1.4];
 
 // Temperature and humidity changes
 [{
-    ace_weather_humidityShift = 0;
-    ace_weather_temperatureShift = 0;
+    ace_weather_humidityShift = -1;
+    ace_weather_temperatureShift = -1;
 },[], 1] call CBA_fnc_waitAndExecute;
 
 [] call compile preprocessFileLineNumbers "scripts\shared\init_shared.sqf";
@@ -147,3 +147,6 @@ if (isServer) then {
     KPLIB_initServerDone = true;
     publicVariable "KPLIB_initServerDone";
 };
+
+//VAM_GUI: For changing camo and vehicle appearence without Zeus:
+[] execVM "VAM_GUI\VAM_GUI_init.sqf";
