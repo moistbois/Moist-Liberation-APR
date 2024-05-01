@@ -12,7 +12,7 @@
 [![Moistbois Discord](https://img.shields.io/discord/435753869293649920?label=Discord)](https://discord.gg/FeyqxXA)
 
 ## About
-Moistbois Liberation APR is a fork of [a fork](https://github.com/Apricot-ale/KP-Liberation-APR) of [a fork](https://github.com/Apricot-ale/KP-Liberation-APR) of [a fork](https://github.com/GreuhZbug/greuh_liberation.Altis). We originally lightly tweaked [KP Liberation](https://github.com/moistbois/Moist-Liberation-APR) missions but decided to instead build on top of [KP Liberation APR](https://github.com/Apricot-ale/KP-Liberation-APR). Apricot's fork has many implemented features of KP Liberation stated for v0.96.8 that were never released, along with some curated PRs, and optimizations. This gave us a great base to work off of to add new features.
+Moistbois Liberation APR is a fork of [a fork](https://github.com/Apricot-ale/KP-Liberation-APR) of [a fork](https://github.com/KillahPotatoes/KP-Liberation) of [a fork](https://github.com/GreuhZbug/greuh_liberation.Altis). We originally lightly tweaked [KP Liberation](https://github.com/KillahPotatoes/KP-Liberation) missions but decided to instead build on top of [KP Liberation APR](https://github.com/Apricot-ale/KP-Liberation-APR). Apricot's fork has many implemented features of KP Liberation stated for v0.96.8 that were never released, along with some curated PRs, and optimizations. This gave us a great base to work off of to add new features.
 
 You can support the original developer of KP Liberation via Paypal [here](https://www.paypal.me/wyqer).
 
@@ -25,13 +25,13 @@ On top of [KP Liberation's features](https://github.com/moistbois/Moist-Liberati
 * Updated build system to better implement per-mission tweaks.
 * A griefing notification system, which uses global chat to say when a player friendly fires an allied AI or civilian.
 * Persistent vehicle cargo, thanks to [Uniflare's PR](https://github.com/moistbois/Moist-Liberation-APR/pull/914)
-* Persistent vehicle damage and fuel condition. You can no longer use server restarts for free refueling and repairs.
+* Persistent vehicle damage and fuel condition.
 * Fixed boats not activating sectors.
-* Mobile Respawns have NATO Alphabet instead of grid position.
-* Multiple Mobile Respawns (Ground, Boat, Air) to have more flexible attack options.
+* Mobile Respawns have NATO Alphabet designations instead of grid position.
+* Multiple Mobile Respawns (Ground, Boat, Air) for more flexible attack options.
 * New secondary objective (Humanitarian Aid), thanks to [UselessFodder](https://github.com/moistbois/Moist-Liberation-APR/pull/894)
-* Tweaked balancing, focusing on a more fun yet difficult experience along with adding immersion and promoting more cooperative gameplay.
-    * This includes disabling auto-deploying with GPS, artillery engine, squad management, current sector and sector progress UI, among other things.
+* Tweaked balancing, focusing creating more immersion and promoting more cooperative gameplay.
+    * This includes disabling auto-deploying with GPS, artillery engine, squad management, current sector, and sector progress UI, among other things.
 * Per-sector activation range to allow more granular optimization of missions.
 * Full Heal tweaked to have a cooldown and not work around enemies.
 * New "Gear Crates", powered by [ALiVE's Orbat Faction creator](http://alivemod.com/). Add new crates with goodies to the build list, without their goodies being wiped by the clear script. They can be locked behind military base captures.
