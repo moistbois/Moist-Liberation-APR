@@ -68,4 +68,4 @@ fnc_VAM_UGV_rcws_setup = compileFinal preprocessFileLineNumbers "VAM_GUI\vehicle
 if !(count VAM_condition_check_options isEqualTo 0) then {[] spawn fnc_VAM_condition_check;};
 [] spawn fnc_VAM_action;
 
-systemchat localize "STR_VAM_INITIALIZED";
+["----- Vehicle Appearance Manager ready -----", "VAM"] call KPLIB_fnc_log;
