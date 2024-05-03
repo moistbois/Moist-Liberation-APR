@@ -27047,7 +27047,7 @@ class Mission
 			dataType="Marker";
 			position[]={18549.367,27.000082,8779.9463};
 			name="capture_46";
-			text="Skalisty Island";
+			text="Strelka";
 			type="n_art";
 			colorName="ColorEAST";
 			id=3238;
