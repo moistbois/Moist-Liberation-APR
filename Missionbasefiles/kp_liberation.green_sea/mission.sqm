@@ -24887,7 +24887,7 @@ class Mission
 				condition="GRLIB_endgame == 1";
 				timeout[]={17,17,17};
 				interuptable=1;
-				effectMusic="LeadTrack03_F";
+				effectMusic="CUP_A2PMC_Ghosttown";
 			};
 			id=1521;
 			type="EmptyDetector";
@@ -24905,7 +24905,6 @@ class Mission
 				timeout[]={0.2,0.2,0.2};
 				interuptable=1;
 				activationBy="WEST";
-				effectMusic="EventTrack01_F_Curator";
 			};
 			id=1522;
 			type="EmptyDetector";
@@ -24919,7 +24918,7 @@ class Mission
 				condition="true";
 				timeout[]={1.5,1.5,1.5};
 				interuptable=1;
-				effectMusic="LeadTrack01_F";
+				effectMusic="Music_Roaming_Night_Fragment_01_30s";
 			};
 			id=1523;
 			type="EmptyDetector";
