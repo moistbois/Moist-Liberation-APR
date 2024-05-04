@@ -256,11 +256,11 @@ class ACEX_Fortify_Presets {
     class KPLIB_Fortify {
         displayName = "KPLIB Fortify";
         objects[] = {
-			{"Land_Campfire_F", 1},
+			{"Land_Campfire_F", 10},
 			{"CamoNet_wdl_open_F", 30},
-            {"Land_SandbagBarricade_01_hole_F", 130},
-            {"Land_BagFence_Short_F", 50},
-            {"Land_BagFence_Round_F", 60}
+            {"Land_SandbagBarricade_01_hole_F", 75},
+            {"Land_BagFence_Short_F", 35},
+            {"Land_BagFence_Round_F", 45}
         };
     };
 };
