@@ -11,7 +11,7 @@ private _objects_to_build = [
     [ "Land_PaperBox_open_empty_F", [14.86, -16.08, 0], 2.94 ],
     [ "Land_PaperBox_closed_F", [13.68, -18.27, 0], 287.62 ],
     [ "Land_HBarrierBig_F", [-22.99, -3.72, 0], 89.34 ],
-    [ "CamoNet_OPFOR_open_F", [14.88, -18.51, 0], 0 ],
+    [ "CamoNet_BLUFOR_open_F", [14.88, -18.51, 0], 0 ],
     [ "Land_HBarrierBig_F", [22.88, 3.58, 0], 89.34 ],
     [ KPLIB_o_mrap, [17.18, 16.24, 0.01], 326.13 ],
     [ "Land_HBarrierBig_F", [23.08, -5.21, 0], 89.34 ],
