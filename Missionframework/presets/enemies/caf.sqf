@@ -91,7 +91,8 @@ KPLIB_o_armyVehicles = [
     "O_RSA90_ZU23",
     "O_RSA90_M2",
     "O_RSA90_M2Lo",
-    "O_RSA90_NSV"
+    "O_RSA90_NSV",
+    "rhssaf_army_2s1"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
@@ -119,7 +120,8 @@ KPLIB_o_battleGrpVehicles = [
     "O_RSA90_T72",
     "O_RSA90_T55",
     "O_RSA90_D30",
-    "O_RSA90_ZU23"
+    "O_RSA90_ZU23",
+    "rhssaf_army_2s1"
 
 ];
 

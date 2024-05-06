@@ -104,6 +104,7 @@ KPLIB_b_vehLight = [
 
 KPLIB_b_vehHeavy = [
     ["B_AFBiH_BMP",400,350,250],                                         // BPM 1
+    ["rhsgref_cdf_b_2s1",400,600,300],                                         // BPM 1
     ["B_AFBiH_T34",300,300,200],                                         // T-34
     ["B_AFBiH_T55",400,400,250],                                         // T-55
     ["B_AFBiH_T72",600,500,300]                                         // T-72
@@ -425,5 +426,6 @@ KPLIB_b_vehToUnlock = [
     "B_AFBiH_Mi24P",
     "B_AFBiH_T55",
     "B_AFBiH_ZU23",
-    "rhsgref_cdf_b_reg_uaz_ags"
+    "rhsgref_cdf_b_reg_uaz_ags",
+    "rhsgref_cdf_b_2s1"
 ];
