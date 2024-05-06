@@ -537,6 +537,12 @@ KPLIB_arsenalItems = [
     "ACE_Clacker",
     "TFAR_anprc152",
     "ItemWatch",
+    "ACE_SpraypaintBlack",                                          // Sprays
+	"ACE_SpraypaintBlue",                                           // Sprays
+	"ACE_SpraypaintGreen",                                          // Sprays
+	"ACE_SpraypaintRed",                                            // Sprays
+	"ACE_SpraypaintWhite",                                          // Sprays
+	"ACE_SpraypaintYellow",                                         // Sprays
 // Weapon addons
     "HLC_Charm_Herstal",
     "HLC_Charm_Izhmash",
@@ -549,6 +555,7 @@ KPLIB_arsenalItems = [
     "HLC_Optic_PSO1",
     "rhs_acc_pbs1",
     "rhs_acc_dtk1983",
+    "rhs_acc_tgpa",
     "rhsusf_acc_ACOG",
     "rhsgref_acc_l1a1_anpvs2",
     "rhsgref_acc_l1a1_l2a2",
