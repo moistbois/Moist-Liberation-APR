@@ -188,6 +188,7 @@ KPLIB_arsenalAllowedExtension = [
     "rhs_m72a7_mag",
     "rhs_rpg26_mag",
     "rhs_rshg2_mag",
+    "rhs_rpg18_mag",
     //"rhs_weap_M136_used",
     "rhsusf_acc_anpeq15_bk_light_h",
     //"rhsusf_acc_g33_T1_flip",
