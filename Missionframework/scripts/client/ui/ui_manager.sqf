@@ -96,7 +96,7 @@ while {true} do {
         if ((markerPos "opfor_capture_marker") distance markers_reset > 100 ) then {
 
             private [ "_attacked_string" ];
-            _attacked_string = [markerpos "opfor_capture_marker"] call KPLIB_fnc_getLocationName;
+            _attacked_string = [markerPos "opfor_capture_marker"] call KPLIB_fnc_getLocationName;
 
             (_overlay displayCtrl (401)) ctrlShow true;
             (_overlay displayCtrl (402)) ctrlSetText _attacked_string;
