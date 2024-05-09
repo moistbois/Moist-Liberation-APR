@@ -67,6 +67,7 @@ if (KPLIB_endgame == 0) then {
         }
         && {[] call KPLIB_fnc_getOpforCap < KPLIB_cap_battlegroup}
     ) then {
+        sleep random [KPLIB_sectorRecaptureDelayMin, KPLIB_sectorRecaptureDelayMed, KPLIB_sectorRecaptureDelayMax];
         [_liberated_sector, (random 100) < 45] spawn spawn_battlegroup;
     };
 };

@@ -235,9 +235,9 @@ KPLIB_distance_sector = KPLIB_range_sectorCapture + KPLIB_range_fob;
 
 // Minimum, most probable  and maximum time after which
 // a battlegroup will spawn and attack a recently captured sector
-KPLIB_sectorRecaptureSpawnDelayMin = 600;
-KPLIB_sectorRecaptureSpawnDelayMed = 1200;
-KPLIB_sectorRecaptureSpawnDelayMax = 1800;
+KPLIB_sectorRecaptureDelayMin = 600;
+KPLIB_sectorRecaptureDelayMed = 1200;
+KPLIB_sectorRecaptureDelayMax = 1800;
 
 /*
 ------------------------------------------------------------
