@@ -15,7 +15,8 @@ while {KPLIB_param_aggressivity >= 0.9 && KPLIB_endgame == 0} do {
 
     sleep _sleeptime;
 
-    waitUntil {sleep 5;
+    waitUntil {
+        sleep 5;
         KPLIB_enemyReadiness >= 70 && {armor_weight >= 50 || air_weight >= 50}
     };
 
