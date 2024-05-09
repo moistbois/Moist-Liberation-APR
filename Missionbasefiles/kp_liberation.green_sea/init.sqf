@@ -51,7 +51,8 @@ RydFFE_Add_Mortar = ["O_RSA90_Podnos"];
 RydFFE_Add_Rocket = ["O_RSA90_BM21"];
 RydFFE_Add_Other = 
     [
-    [["o_rsa90_d30"],["rhs_mag_3pf56_10","rhs_mag_3pf56_10","rhs_mag_3pf56_10","rhs_mag_3pf56_10","rhs_mag_3pf56_10"]]
+    [["o_rsa90_d30"],["rhs_mag_3pf56_10","rhs_mag_3pf56_10","rhs_mag_3pf56_10","rhs_mag_3pf56_10","rhs_mag_3pf56_10"]],
+    [["rhssaf_army_2s1"],["rhs_mag_3pf56_10","rhs_mag_3pf56_10","rhs_mag_3pf56_10","rhs_mag_3pf56_10","rhs_mag_3pf56_10"]]
     ];
 
 nul = [] execVM "RYD_FFE\FFE.sqf";
