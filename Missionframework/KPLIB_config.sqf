@@ -226,6 +226,18 @@ KPLIB_distance_fob = 1000;
 // Minimum distance to next sector.
 KPLIB_distance_sector = KPLIB_range_sectorCapture + KPLIB_range_fob;
 
+/*
+------------------------------------------------------------
+    --- SECTOR RECAPTURE ATTEMPTS ---
+    All values in seconds
+------------------------------------------------------------
+*/
+
+// Minimum, most probable  and maximum time after which
+// a battlegroup will spawn and attack a recently captured sector
+KPLIB_sectorRecaptureSpawnDelayMin = 600;
+KPLIB_sectorRecaptureSpawnDelayMed = 1200;
+KPLIB_sectorRecaptureSpawnDelayMax = 1800;
 
 /*
 ------------------------------------------------------------
