@@ -73,6 +73,9 @@ KPLIB_arsenalWeapons = [
     "hlc_rifle_m203",
     "hlc_rifle_Colt727",
     "hlc_rifle_Colt727_GL",
+    // Bolt Action M24
+    "rhs_weap_m24sws",
+    "rhs_weap_m24sws_wd",
 	//Launchers
 	"rhs_weap_rpg18",
     "rhs_weap_m80",
@@ -190,6 +193,15 @@ KPLIB_arsenalMagazines = [
     "rhsgref_50Rnd_792x57_SmE_notracers_drum",
     "rhsgref_50Rnd_792x57_SmK_drum",
     "rhsgref_50Rnd_792x57_SmK_alltracers_drum",
+    // M24
+    "rhsusf_5Rnd_762x51_m118_special_Mag",
+    "rhsusf_5Rnd_762x51_m62_Mag",
+    "rhsusf_5Rnd_762x51_m993_Mag",
+    "rhsusf_acc_m24_muzzlehider_black",
+    "rhsusf_acc_m24_muzzlehider_wd",
+    "rhsusf_acc_m24_silencer_black",
+    "rhsusf_acc_m24_silencer_wd",
+    "rhsusf_acc_harris_swivel",
     // Shotgun
     "2Rnd_12Gauge_Pellets",
     "2Rnd_12Gauge_Slug",
@@ -549,6 +561,8 @@ KPLIB_arsenalItems = [
     "HLC_Charm_Teethgang",
 	"rhs_acc_1p29",
     "rhs_acc_1p78",
+    "rhsusf_acc_M8541_wd",
+    "rhsusf_acc_M8541",
     "rhs_acc_pso1m2",
     "rhs_acc_pso1m21",
     "rhs_acc_1pn93_2",
