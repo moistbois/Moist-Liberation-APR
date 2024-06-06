@@ -260,7 +260,10 @@ class ACEX_Fortify_Presets {
 			{"CamoNet_wdl_open_F", 30},
             {"Land_SandbagBarricade_01_hole_F", 75},
             {"Land_BagFence_Short_F", 35},
-            {"Land_BagFence_Round_F", 45}
+            {"Land_BagFence_Round_F", 45},
+            {"Land_Barricade_01_4m_F", 60},
+            {"Land_Barricade_01_10m_F", 120}
+            
         };
     };
 };
