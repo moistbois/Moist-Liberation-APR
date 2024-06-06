@@ -122,6 +122,7 @@ KPLIB_b_vehAir = [
 KPLIB_b_vehStatic = [
     ["B_AFBiH_D30",250,300,0],                                     // D-30
     ["B_AFBiH_Podnos",100,150,0],                                     // Podnos mortar
+    ["rhsgref_cdf_b_SPG9",100,150,0],                                     // Podnos mortar
     ["B_AFBiH_ZU23",75,250,40],                                         // ZU AA
     ["B_AFBiH_M2",25,30,0],                                     // M2 HMG
     ["B_AFBiH_M2Lo",25,30,0]                                     // M2 HMG (Low Mount)
@@ -427,5 +428,6 @@ KPLIB_b_vehToUnlock = [
     "B_AFBiH_T55",
     "B_AFBiH_ZU23",
     "rhsgref_cdf_b_reg_uaz_ags",
-    "rhsgref_cdf_b_2s1"
+    "rhsgref_cdf_b_2s1",
+    "rhsgref_cdf_b_SPG9"
 ];
