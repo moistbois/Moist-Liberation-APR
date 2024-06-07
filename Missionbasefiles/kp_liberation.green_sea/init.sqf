@@ -26,8 +26,8 @@ if (KPPLM_CBA && KPLIB_param_playerMenu) then {
 } else {
     [] execVM "GREUH\scripts\GREUH_activate.sqf";
 };
+RydFFE_Debug = false;
 // FFE
-RydFFE_Debug = true;
 RydFFE_ShellView = false;
 RydFFE_ArtyShells = 1;
 RydFFE_Amount = 2;

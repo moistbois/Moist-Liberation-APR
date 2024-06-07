@@ -28,7 +28,7 @@ if (KPPLM_CBA && KPLIB_param_playerMenu) then {
 };
 // FFE
 // Leaving that in as a template for now
-RydFFE_Debug = true;
+RydFFE_Debug = false;
 RydFFE_ShellView = false;
 RydFFE_ArtyShells = 5;
 RydFFE_Amount = 2;
