@@ -68,7 +68,6 @@ KPLIB_o_militiaVehicles = [
     "O_RSA90_BTR60PB",
     "O_RSA90_M1151",
     "O_RSA90_BMP",
-    "O_RSA90_T34",
     "O_RSA90_Podnos",
     "O_RSA90_M2",
     "O_RSA90_NSV"
@@ -112,24 +111,29 @@ KPLIB_o_armyVehiclesLight = [
 KPLIB_o_battleGrpVehicles = [
     "O_RSA90_GAZ66_AA",
     "O_RSA90_URAL_AA",
+    "O_RSA90_GAZ66_Transport",
     "O_RSA90_BRDM2",
     "O_RSA90_BTR80",
     "O_RSA90_T72",
+    "O_RSA90_GAZ66_Transport",
     "O_RSA90_T55",
     "O_RSA90_D30",
+    "O_RSA90_GAZ66_Transport",
     "O_RSA90_ZU23"
 
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehiclesLight = [
-
 	"O_RSA90_M1151",
     "O_RSA90_BRDM2UM",
+    "O_RSA90_GAZ66_Transport",
     "O_RSA90_BTR60PB",
+    "O_RSA90_GAZ66_Transport",
     "O_RSA90_M1151",
+    "O_RSA90_GAZ66_Transport",
     "O_RSA90_BMP",
-    "O_RSA90_T34",
+    "O_RSA90_GAZ66_Transport",
     "O_RSA90_Podnos"
 
 ];
@@ -140,7 +144,9 @@ KPLIB_o_troopTransports = [
     "O_RSA90_Mi24V",                                                 // Mi-24V
     "O_RSA90_Mi24P",                                                 // Mi-24P
     "O_RSA90_Mi8MT",                                                 // Mi-8
-    "O_RSA90_AN2"                                           //AN-2
+    "O_RSA90_BTR60PB",
+    "O_RSA90_BMP",
+    "O_RSA90_GAZ66_Transport"
 
 ];
 
@@ -154,7 +160,6 @@ KPLIB_o_helicopters = [
 
 // Enemy fixed-wings that will need to spawn in the air.
 KPLIB_o_planes = [
-    "O_RSA90_AN2"                                           // AN-2
 
 ];
 
