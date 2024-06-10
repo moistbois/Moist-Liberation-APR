@@ -62,10 +62,10 @@ KPLIB_b_infantry = [
 	["B_AFBiH_Rifleman4", 4,0,0],                                 			 // Rifleman 4 Vz 58
 	["B_AFBiH_Machinegunner1",8,0,0],                              		     // Machinegunner RPK
 	["B_AFBiH_Machinegunner2",8,0,0],                             		      // Machinegunner RPK74
-	["B_AFBiH_HMG",8,0,0],                             		      // Heavy Machine Gunner PKM
-	["B_AFBiH_AntiTank1",10,10,0],                                             // Anti-Tank RPG
+	["B_AFBiH_HMG",8,5,0],                             		      // Heavy Machine Gunner PKM
+	["B_AFBiH_AntiTank1",10,15,0],                                             // Anti-Tank RPG
 	["B_AFBiH_AntiTank2",10,10,0],                                             // Anti-Tank RPG-18
-	["B_AFBiH_AntiAir",10,10,0]                                             // Anti-Air
+	["B_AFBiH_AntiAir",10,20,0]                                             // Anti-Air
 ];
 
 KPLIB_b_vehLight = [
