@@ -46,7 +46,7 @@
             "KPLIB_resistance_tier3": 60,
             "KPLIB_resistance_at_chance": 20,
             "KPLIB_resistance_sector_chance": 40,
-            "KPLIB_resistance_ambush_chance": 80,
+            "KPLIB_resistance_ambush_chance": 50,
             "KPLIB_production_interval": 120,
             "KPLIB_defended_buildingpos_part": 0.5,
             "KPLIB_vulnerability_timer": 1200,
