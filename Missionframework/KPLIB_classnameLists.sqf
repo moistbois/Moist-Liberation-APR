@@ -603,7 +603,15 @@ KPLIB_collisionIgnoreObjects = [
     "Land_PowerLine_02_pole_junction_A_F",
     "Land_PowerLine_02_pole_small_F",
     "Land_PowerWireBig_left_F",    
-    "Land_PowerWireBig_direct_F",
+    "Land_HighVoltageColumn_F",
+    "Land_HighVoltageTower_F",
+    "Land_HighVoltageTower_dam_F",
+    "Land_HighVoltageTower_large_F",
+    "Land_HighVoltageTower_largeCorner_F",
+    "Land_sloup_vn_dratZ",
+    "Land_sloup_vn_drat_d",
+    "Land_sloup_vn_drat",
+    "Land_sloup_vn",
     "B_HMG_01_F",                                                       // Mk30A HMG .50
     "B_HMG_01_high_F",                                                  // Mk30 HMG .50 (Raised)
     "B_HMG_01_A_F",                                                     // Mk30 HMG .50 (Autonomous)
