@@ -271,6 +271,8 @@ KPLIB_typeAirClasses   = +KPLIB_b_air_classes;
 
 // Military alphabet used for FOBs and convoys
 KPLIB_militaryAlphabet = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-Ray", "Yankee", "Zulu"];
+// Russian military alphabet used for MSP naming
+KPLIB_russianAlphabet = ["Anna", "Boris", "Vasily", "Gregory", "Dmitri", "Yelena", "Zhenya", "Zinaida", "Ivan", "Konstantin", "Leonid", "Mikhail", "Nikolai", "Olga", "Pavel", "Roman", "Semyon", "Tatyana", "Ulyana", "Fyodor", "Khariton", "Shura", "Yuri", "Yakov", "Anton", "Galina", "Yolka", "Zoya", "Mariya", "Sergei", "Tamara", "Emma"];
 
 // Misc variables
 markers_reset = [99999,99999,0];
