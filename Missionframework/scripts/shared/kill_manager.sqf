@@ -27,14 +27,6 @@ if (isServer) then {
     // BLUFOR Killer handling
     if ((side _killer) == KPLIB_side_player) then {
 
-        // Increase combat readiness for kills near a capital.
-        private _nearby_bigtown = KPLIB_sectors_capital select {!(_x in KPLIB_sectors_player) && (_unit distance (markerpos _x) < 250)};
-        if (count _nearby_bigtown > 0) then {
-            KPLIB_enemyReadiness = KPLIB_enemyReadiness + (0.5 * KPLIB_param_difficulty);
-            stats_readiness_earned = stats_readiness_earned + (0.5 * KPLIB_param_difficulty);
-            if (KPLIB_enemyReadiness > 100.0 && KPLIB_param_difficulty < 2) then {KPLIB_enemyReadiness = 100.0};
-        };
-
         // Weights adjustments depending on what vehicle the BLUFOR killer used
         if (_killer isKindOf "CAManBase") then {
             infantry_weight = infantry_weight + 1;
