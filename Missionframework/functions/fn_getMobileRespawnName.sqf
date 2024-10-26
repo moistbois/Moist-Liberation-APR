@@ -24,9 +24,18 @@ private _respawn_vehicles = [] call KPLIB_fnc_getMobileRespawns;
 private _name = "VEHICLE_NOT_FOUND";
 
 if (!isNil "_msp") then {
-    private _vehicle_idx = _respawn_vehicles find _msp;
-    if (_vehicle_idx != -1 && _vehicle_idx < count KPLIB_militaryAlphabet) then {
-        _name = KPLIB_militaryAlphabet select _vehicle_idx;
+    private _msp_name = _msp getVariable ["msp_name", nil];
+
+    if (_msp_name != nil) then {
+        _name = _msp_name;
+    }
+    else {
+        //get random name from the russian alphabet
+        _name = selectRandom KPLIB_russianAlphabet + " ";
+        //add random number (3 digits)
+        _name = _name + format ["%1%2%3", random 9, random 9, random 9];
+        _msp setVariable ["msp_name", _name];
+        //use msp_name
     };
 };
 _name
