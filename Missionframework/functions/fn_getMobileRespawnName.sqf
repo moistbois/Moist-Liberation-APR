@@ -26,7 +26,7 @@ private _name = "VEHICLE_NOT_FOUND";
 if (!isNil "_msp") then {
     private _msp_name = _msp getVariable ["msp_name", nil];
 
-    if (_msp_name != nil) then {
+    if (!isNil "_msp_name") then {
         _name = _msp_name;
     }
     else {
