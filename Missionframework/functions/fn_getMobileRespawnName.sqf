@@ -33,7 +33,7 @@ if (!isNil "_msp") then {
         //get random name from the russian alphabet
         _name = selectRandom KPLIB_russianAlphabet + " ";
         //add random number (3 digits)
-        _name = _name + format ["%1%2%3", random 9, random 9, random 9];
+        _name = _name + format ["%1%2%3", floor random 9, floor random 9, floor random 9];
         _msp setVariable ["msp_name", _name];
         //use msp_name
     };

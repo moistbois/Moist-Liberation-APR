@@ -611,7 +611,7 @@
             <Japanese>FOB トラック</Japanese>
         </Key>
         <Key ID="STR_RESPAWN_TRUCK">
-            <Original>Mobile respawn</Original>
+            <Original>MSP</Original>
             <French>Respawn mobile</French>
             <German>Mobiler Respawn</German>
             <Spanish>Respawn móvil</Spanish>
