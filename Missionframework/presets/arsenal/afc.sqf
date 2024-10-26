@@ -488,6 +488,8 @@ KPLIB_arsenalItems = [
     "V_BandollierB_oli",
     "V_BandollierB_blk",
     "LOP_V_Chestrig_Black",
+    "V_SmershVest_01_F",
+    "V_SmershVest_01_radio_F",
 // Facewear:
 	"SP_Moustache",
     "SP_Moustache_Blonde",
