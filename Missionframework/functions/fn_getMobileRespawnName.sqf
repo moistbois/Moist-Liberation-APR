@@ -34,7 +34,7 @@ if (!isNil "_msp") then {
         _name = selectRandom KPLIB_russianAlphabet + " ";
         //add random number (3 digits)
         _name = _name + format ["%1%2%3", floor random 9, floor random 9, floor random 9];
-        _msp setVariable ["msp_name", _name];
+        _msp setVariable ["msp_name", _name, true];
         //use msp_name
     };
 };
