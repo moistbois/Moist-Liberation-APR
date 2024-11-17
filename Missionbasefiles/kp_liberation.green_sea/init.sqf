@@ -60,7 +60,7 @@ nul = [] execVM "RYD_FFE\FFE.sqf";
 CHVD_allowNoGrass = false; // Set 'false' if you want to disable "Low" option for terrain (default: true)
 // Brighter Nights
 CHBN_adjustBrightness = 1;
-CHBN_adjustColor = [1.0,1.2,1.4];
+CHBN_adjustColor = [1.2,1.4,1.6];
 
 // Temperature and humidity changes
 [{
@@ -149,5 +149,5 @@ if (isServer) then {
     publicVariable "KPLIB_initServerDone";
 };
 
-//VAM_GUI: For changing camo and vehicle appearence without Zeus:
+//VAM_GUI: For changing camo and vehicle appearance without Zeus:
 [] execVM "VAM_GUI\VAM_GUI_init.sqf";
