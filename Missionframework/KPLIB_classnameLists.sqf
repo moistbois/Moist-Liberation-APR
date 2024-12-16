@@ -545,7 +545,17 @@ KPLIB_intelBuildingClasses = [
 	"Land_TentHangar_V1_F",
 	"Land_tent_east",
 	"Land_u_Barracks_V2_F",
-	"Land_Warehouse_03_F"
+	"Land_Warehouse_03_F",
+	"Land_fortified_nest_big_EP1",
+	"Land_Fort_Watchtower_EP1",
+	"Land_Cargo_Tower_V2_F",
+	"Land_Cargo_Patrol_V2_F",
+	"Land_Slum_House03_F",
+	"Land_Slum_House01_F",
+	"Land_Barrack2_EP1",
+	"Land_Mil_Barracks_i_EP1",
+	"CUP_A2_tent_east_ep1",
+	"Land_BagBunker_Tower_F"
 ];
 
 // Array of radio tower classnames to place at radio tower sectors. If more than one is added, it'll be selected random for each sector on campaign start.
