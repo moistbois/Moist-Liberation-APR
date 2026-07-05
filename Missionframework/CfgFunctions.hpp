@@ -47,6 +47,7 @@ class KPLIB {
         class getNearestBluforObjective {};
         class getNearestFob             {};
         class getNearestSector          {};
+        class GetNearestPlayerSector    {};
         class getNearestTower           {};
         class getNearestViVTransport    {};
         class getOpforCap               {};
