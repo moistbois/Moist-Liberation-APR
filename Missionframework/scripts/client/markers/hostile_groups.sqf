@@ -52,7 +52,7 @@ while {true} do {
 
         // handle sector "informant" scanning
         if ((side _x == KPLIB_side_enemy) && (({!captive _x} count (units _x) ) > 0) && ([(getpos leader _x), (KPLIB_range_radioTowerScan / 2)] call KPLIB_fnc_getNearestPlayerSector != "")) then {
-            private _markerSize = selectRandom [125,250];
+            private _markerSize = 250;
             private _markerStart = 0.3;
 
             _kp_markers_pos = getPosATL leader _x;
