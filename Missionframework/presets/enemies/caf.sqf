@@ -16,7 +16,7 @@ KPLIB_o_riflemanLAT = "O_RSA90_AntiTank2";                                 // An
 KPLIB_o_grenadier = "O_RSA90_Grenadier";                           // Grenadier (AK74 GP25)
 KPLIB_o_machinegunner = "O_RSA90_Machinegunner2";                  // Machinegunner 2 (RPK74)
 KPLIB_o_heavyGunner = "O_RSA90_HMG";                         // HMG (PKM)
-KPLIB_o_marksman = "O_RSA90_Marksman2";                    // Marksman (VSS Vintorez)
+KPLIB_o_marksman = "O_RSA90_Marksman1";                    // Marksman 1 (M70B1N)
 KPLIB_o_sharpshooter = "O_RSA90_Marksman2";                  // Marksman 2 (VSS Vintorez)
 KPLIB_o_sniper = "O_RSA90_Sniper";                        // Sniper (M76)
 KPLIB_o_atSpecialist = "O_RSA90_AntiTank1";                                  // AT Specialist (RPG-7)
@@ -30,7 +30,7 @@ KPLIB_o_mrap = "O_RSA90_M1151";                                    // M1151
 KPLIB_o_mrapArmed = "O_RSA90_BRDM2";                                        // BRDM2
 KPLIB_o_transportHeli = "O_RSA90_MI8MT_Cargo";                           // Mi-8MT (Cargo)
 KPLIB_o_transportTruck = "O_RSA90_GAZ66_Transport";                                 // GAZ-66 (Transport)
-KPLIB_o_transportTruckAmmo = "O_RSA90_KrAZ255";                          // KrAZ-255 (Open) -> Has to be able to transport resource crates!
+KPLIB_o_transportTruckAmmo = "rhs_zil131_open_msv";                          // ZiL-131 (Open) -> Has to be able to transport resource crates!
 KPLIB_o_fuelTruck = "O_RSA90_URAL_Fuel";                              // Ural-4320 (Fuel)
 KPLIB_o_ammoTruck = "O_RSA90_URAL_Ammo";                                // GAZ-66 (Ammo)
 KPLIB_o_fuelContainer = "Land_Ind_TankSmall2";            				 // Cargo Container
@@ -63,12 +63,31 @@ KPLIB_o_militiaInfantry = [
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry militia.
 KPLIB_o_militiaVehicles = [
 	"O_RSA90_M1151",
+    "O_RSA90_M1151",
     "O_RSA90_BRDM2UM",
     "O_RSA90_BTR60PB",
     "O_RSA90_M1151",
     "O_RSA90_BMP",
-    "O_RSA90_T34",
     "O_RSA90_Podnos",
+    "O_RSA90_M2",
+    "O_RSA90_NSV"
+];
+
+// All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
+KPLIB_o_armyVehicles = [
+	"O_RSA90_M1151",
+    "O_RSA90_BRDM2",
+    "O_RSA90_BTR60PB",
+    "O_RSA90_BTR80",
+    "O_RSA90_GAZ66_AA",
+    "O_RSA90_URAL_AA",
+    "O_RSA90_BMP",
+    "O_RSA90_T34",
+    "O_RSA90_T72",
+    "O_RSA90_T55",
+    "O_RSA90_D30",
+    "O_RSA90_Podnos",
+    "O_RSA90_ZU23",
     "O_RSA90_M2",
     "O_RSA90_M2Lo",
     "O_RSA90_NSV"
@@ -79,7 +98,6 @@ KPLIB_o_armyVehiclesLight = [
 	"O_RSA90_M1151",
     "O_RSA90_BRDM2UM",
     "O_RSA90_BTR60PB",
-    "O_RSA90_M1151",
     "O_RSA90_BMP",
     "O_RSA90_T34",
     "O_RSA90_Podnos",
@@ -91,33 +109,33 @@ KPLIB_o_armyVehiclesLight = [
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehicles = [
-    "O_RSA90_Mi8MT",
-    "O_RSA90_AN2",
-    "O_RSA90_KrAZ255",
-    "O_RSA90_BM21",
     "O_RSA90_GAZ66_AA",
     "O_RSA90_URAL_AA",
+    "O_RSA90_GAZ66_Transport",
     "O_RSA90_BRDM2",
     "O_RSA90_BTR80",
     "O_RSA90_T72",
+    "O_RSA90_GAZ66_Transport",
     "O_RSA90_T55",
-    "O_RSA90_Mi24V",
-    "O_RSA90_Mi24P",
     "O_RSA90_D30",
-    "O_RSA90_ZU23"
-
+    "O_RSA90_GAZ66_Transport",
+    "O_RSA90_ZU23",
+    "O_RSA90_Mi24V",                                                 // Mi-24V
+    "O_RSA90_Mi24P",                                                 // Mi-24P
+    "O_RSA90_Mi8MT"                                                  // Mi-8
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehiclesLight = [
-
-    "O_RSA90_KrAZ255",
 	"O_RSA90_M1151",
     "O_RSA90_BRDM2UM",
+    "O_RSA90_GAZ66_Transport",
     "O_RSA90_BTR60PB",
+    "O_RSA90_GAZ66_Transport",
     "O_RSA90_M1151",
+    "O_RSA90_GAZ66_Transport",
     "O_RSA90_BMP",
-    "O_RSA90_T34",
+    "O_RSA90_GAZ66_Transport",
     "O_RSA90_Podnos"
 
 ];
@@ -128,7 +146,9 @@ KPLIB_o_troopTransports = [
     "O_RSA90_Mi24V",                                                 // Mi-24V
     "O_RSA90_Mi24P",                                                 // Mi-24P
     "O_RSA90_Mi8MT",                                                 // Mi-8
-    "O_RSA90_AN2"                                           //AN-2
+    "O_RSA90_BTR60PB",
+    "O_RSA90_BMP",
+    "O_RSA90_GAZ66_Transport"
 
 ];
 
@@ -142,7 +162,6 @@ KPLIB_o_helicopters = [
 
 // Enemy fixed-wings that will need to spawn in the air.
 KPLIB_o_planes = [
-    "O_RSA90_AN2"                                           // AN-2
 
 ];
 
@@ -176,5 +195,6 @@ KPLIB_o_turrets_SAM = [
     ["O_RSA90_BM21"],
     ["O_RSA90_GAZ66_AA"],
     ["O_RSA90_URAL_AA"],
-    ["O_RSA90_ZU23"]
+    ["O_RSA90_ZU23"],
+    ["rhssaf_army_2s1"]
 ];

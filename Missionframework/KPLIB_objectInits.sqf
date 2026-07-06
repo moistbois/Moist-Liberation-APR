@@ -62,6 +62,7 @@ KPLIB_objectInits = [
                 params ["_fob"];
                 waitUntil {sleep 0.1; time > 0};
                 [_fob] remoteExecCall ["KPLIB_fnc_addActionsFob", 0, _fob];
+                [_fob] remoteExecCall ["TWZ_fnc_addClearActions", 0, _fob];
             };
         }
     ],
@@ -146,7 +147,7 @@ KPLIB_objectInits = [
     [
         ["Radio", "Radio_Old"],
         {
-            _this setVariable [[_this, false] call klpq_musicRadio_fnc_addRadio];
+            [[_this, false] call klpq_musicRadio_fnc_addRadio];
         }
     ],
 

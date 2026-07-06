@@ -49,7 +49,7 @@
 <Project name="Liberation">
     <Package name="Liberation">
         <Key ID="STR_MISSION_TITLE">
-            <Original>Liberation</Original>
+            <Original>CTI 34 KP Liberation green_sea v0.96.8apr</Original>
         </Key>
         <Key ID="STR_MISSION_VERSION">
             <Original>v0.96.8apr</Original>
@@ -611,7 +611,7 @@
             <Japanese>FOB トラック</Japanese>
         </Key>
         <Key ID="STR_RESPAWN_TRUCK">
-            <Original>Mobile respawn</Original>
+            <Original>MSP</Original>
             <French>Respawn mobile</French>
             <German>Mobiler Respawn</German>
             <Spanish>Respawn móvil</Spanish>
@@ -4054,8 +4054,8 @@
             <Original>Outpost Rearming</Original>
         </Key>
         <Key ID="STR_SECONDARY_BRIEFING5">
-            <Japanese>&lt;t size='1.3' color='#ffa000'&gt;前哨基地補給&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;友軍の軍事基地が弾薬を要請している。弾薬があれば敵軍の注意や戦力を分散し、敵の警戒度を減少させることが出来るかもしれない。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;諸君の任務は要請のあった軍事基地に我々の弾薬を輸送し、譲渡することだ。資源は200弾薬 (最低2箱) 必要となる。車両に物資を積み込み目標地点に向かい到着したら荷下ろしするだけでいい。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;費用: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;br/&gt;200 弾薬(最低2箱)&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;報酬: 敵部隊警戒度が 10%低下。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\humaid_obj.jpg'/&gt;&lt;/t&gt;</Japanese>
-            <Original>&lt;t size='1.3' color='#ffa000'&gt;OUTPOST REARMING&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Friendly military outpost request ammunition. Ammunition may help to disperse the attention and forces of OPFOR and reduce the OPFOR alert level.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Your mission is to transport and deliver our ammunition to the requested sector. Resources required are 200 ammunition (2 crates). Load the ammunitions onto the vehicle, head to the target location, and unload upon arrival.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cost: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;br/&gt;200 Ammunition (2 crates)&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Reward: OPFOR alert level reduced by 10%&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\humaid_obj.jpg'/&gt;&lt;/t&gt;</Original>
+            <Japanese>&lt;t size='1.3' color='#ffa000'&gt;前哨基地補給&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;友軍の軍事基地が弾薬を要請している。弾薬があれば敵軍の注意や戦力を分散し、敵の警戒度を減少させることが出来るかもしれない。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;諸君の任務は要請のあった軍事基地に我々の弾薬を輸送し、譲渡することだ。資源は200弾薬 (最低2箱) 必要となる。車両に物資を積み込み目標地点に向かい到着したら荷下ろしするだけでいい。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;費用: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;br/&gt;200 弾薬(最低2箱)&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;報酬: 敵部隊警戒度が 8%低下。&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\humaid_obj.jpg'/&gt;&lt;/t&gt;</Japanese>
+            <Original>&lt;t size='1.3' color='#ffa000'&gt;OUTPOST REARMING&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Friendly military outpost request ammunition. Ammunition may help to disperse the attention and forces of OPFOR and reduce the OPFOR alert level.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1'&gt;Your mission is to transport and deliver our ammunition to the requested sector. Resources required are 200 ammunition (2 crates). Load the ammunitions onto the vehicle, head to the target location, and unload upon arrival.&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='1.15' color='#00a0ff'&gt;Cost: 8&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;br/&gt;200 Ammunition (2 crates)&lt;/t&gt;&lt;br/&gt;&lt;t size='1.15' color='#ffa000'&gt;Reward: OPFOR alert level reduced by 8%&lt;/t&gt;&lt;br/&gt;&lt;br/&gt;&lt;t size='10'&gt;&lt;img image='res\secondary\humaid_obj.jpg'/&gt;&lt;/t&gt;</Original>
         </Key>
         <!-- Added in v0.924 -->
         <Key ID="STR_PARAM_SQUAD_SIZE">
@@ -8169,5 +8169,77 @@
             <Original>KP Player Menu v1.0.2\nby Wyqer</Original>
             <Japanese>KP プレイヤー メニュー v1.0.2\nby Wyqer</Japanese>
         </Key>
+<!-- VAM LINE START -->
+<!-- Function/기능부 -->
+			<Key ID="STR_VAM_INITIALIZED">
+				<Original>Vehicle Appearance Manager initialized</Original>
+				<Korean>차량 형상 관리자 불러오기 및 초기화 완료</Korean>
+			</Key>
+			<Key ID="STR_VAM_MAIN_MENU_NAME">
+				<Original>Vehicle Appearance Manager</Original>
+				<Korean>차량 형상 관리자</Korean>
+			</Key>
+			<Key ID="STR_VAM_RESET_VEHICLE">
+				<Original>Reset</Original>
+				<Korean>초기화</Korean>
+			</Key>
+			<Key ID="STR_VAM_CONFIRM_MENU">
+				<Original>Confirm</Original>
+				<Korean>확인</Korean>
+			</Key>
+			<Key ID="STR_VAM_CURRENT_VEHICLE">
+				<Original>Current Vehicle :</Original>
+				<Korean>현  재    차  량 :</Korean>
+			</Key>
+			<Key ID="STR_VAM_FOB_CONDITION_CHECK_FAILED">
+				<Original>You should be in %1m from FOB.)</Original>
+				<Korean>FOB에서 %1m 안에 있어야 합니다.</Korean>
+			</Key>
+			<Key ID="STR_VAM_COMPLETE_RESET">
+				<Original>Reset complete</Original>
+				<Korean>초기화 완료</Korean>
+			</Key>
+			<Key ID="STR_VAM_CAMOUFLAGE">
+				<Original>Camoufluge</Original>
+				<Korean>위장</Korean>
+			</Key>
+			<Key ID="STR_VAM_COMPONENT">
+				<Original>Component</Original>
+				<Korean>구성품</Korean>
+			</Key>
+			<Key ID="STR_VAM_NO_CAMOUFLAGE">
+				<Original>There is no camouflage.</Original>
+				<Korean>위장이 없습니다.</Korean>
+			</Key>
+			<Key ID="STR_VAM_NO_COMPONENT">
+				<Original>There is no component.</Original>
+				<Korean>구성품이 없습니다.</Korean>
+			</Key>
+			<Key ID="STR_VAM_MARID_V1_NOTICE">
+				<Original>Your Marid is outdated one.\nVehicle component setup may not be loaded next time.\nPlease contact with your server admin.</Original>
+				<Korean>당신의 마리드는 오래된 것입니다.\n다음 번에 차량 구성품 설정을 불러올 수 없을 것입니다.\n해당 서버 관리자와 연락을 취해보십시오.</Korean>
+			</Key>
+<!-- Camouflage/위장 -->
+			<Key ID="STR_VAM_BLUFOR_CAMO">
+				<Original>BLUFOR</Original>
+				<Korean>청군</Korean>
+			</Key>
+			<Key ID="STR_VAM_GREEN_CAMO">
+				<Original>Green</Original>
+				<Korean>녹색</Korean>
+			</Key>
+			<Key ID="STR_VAM_BLACK_CAMO">
+				<Original>Black</Original>
+				<Korean>검정색</Korean>
+			</Key>
+			<Key ID="STR_VAM_AAF_CAMO">
+				<Original>AAF</Original>
+				<Korean>AAF</Korean>
+			</Key>
+			<Key ID="STR_VAM_DARK_GREEN_CAMO">
+				<Original>Dark Green</Original>
+				<Korean>어두운 녹색</Korean>
+			</Key>
+<!-- VAM LINE END -->
     </Package>
 </Project>

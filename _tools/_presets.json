@@ -7,7 +7,7 @@
         "variables": {
             "KPLIB_presetPlayer": 33,
             "KPLIB_presetEnemy": 23,
-            "KPLIB_presetResistance": 8,
+            "KPLIB_presetResistance": 10,
             "KPLIB_presetCivilians": 9,
             "KPLIB_presetArsenal": 19,
             "KPLIB_color_player": "ColorBLUFOR",
@@ -24,7 +24,7 @@
             "KPLIB_range_airSpawnActivation": 1000,
             "KPLIB_range_pointActivation": 675,
             "KPLIB_range_sectorCapture": 150,
-            "KPLIB_range_radioTowerScan": 800,
+            "KPLIB_range_radioTowerScan": 1000,
             "KPLIB_distance_fob": 750,
             "KPLIB_cap_playerSide": 100,
             "KPLIB_cap_enemySide": 180,
@@ -45,11 +45,11 @@
             "KPLIB_resistance_tier2": 40,
             "KPLIB_resistance_tier3": 60,
             "KPLIB_resistance_at_chance": 20,
-            "KPLIB_resistance_sector_chance": 35,
-            "KPLIB_resistance_ambush_chance": 25,
+            "KPLIB_resistance_sector_chance": 40,
+            "KPLIB_resistance_ambush_chance": 55,
             "KPLIB_production_interval": 120,
             "KPLIB_defended_buildingpos_part": 0.5,
-            "KPLIB_vulnerability_timer": 1200,
+            "KPLIB_vulnerability_timer": 1800,
             "KPLIB_surrender_chance": 25
 
         },

@@ -14,22 +14,22 @@
     Or not, just don't try!
 */
 KPLIB_b_fobBuilding = "Land_Camp_House_01_brown_F";                                    // This is the main FOB HQ building.
-KPLIB_b_fobBox = "Base_WarfareBContructionSite";                            // This is the FOB as a container.
+KPLIB_b_fobBox = "B_Slingload_01_Cargo_F";                            // This is the FOB as a container.
 KPLIB_b_fobTruck = "LOP_CDF_KAMAZ_Covered";                              // This is the FOB as a vehicle.
-KPLIB_b_arsenal = "B_supplyCrate_F";                                   // This is the virtual arsenal as portable supply crates.
+KPLIB_b_arsenal = "B_AFBiH_Arsenal";                                   // This is the virtual arsenal as portable supply crates.
 KPLIB_b_mobileRespawn = ["B_AFBiH_GAZ66_Transport", "walker_A3_smallb_e", "B_AFBiH_Mi8MT"];                           // This is the mobile respawn (and medical) truck.
-KPLIB_b_potato01 = "B_AFBiH_KrAZ255";                                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
+KPLIB_b_potato01 = "RHS_Mi8mt_Cargo_vvs";                                       // This is Spartan 01, a multipurpose mobile respawn as a helicopter.
 KPLIB_b_crewUnit = "B_AFBiH_Driver";                          // This defines the crew for vehicles.
 KPLIB_b_heliPilotUnit = "B_AFBiH_Pilot";                              // This defines the pilot for helicopters.
 KPLIB_b_addHeli = "walker_a3_hiluxhmg";                  // These are the little birds which spawn on the Freedom or at Chimera base.
-KPLIB_b_addBoat = "rhsgref_cdf_b_reg_uaz_open";                 // These are the boats which spawn at the stern of the Freedom.
+KPLIB_b_addBoat = "B_Lifeboat";                 // These are the boats which spawn at the stern of the Freedom.
 KPLIB_b_logiTruck = "rhs_kamaz5350_flatbed_vdv";            // These are the trucks which are used in the logistic convoy system.
 KPLIB_b_smallStorage = "ContainmentArea_02_forest_F";   // A small storage area for resources.
 KPLIB_b_largeStorage = "ContainmentArea_01_forest_F";   // A large storage area for resources.
-KPLIB_b_logiStation = "Land_Mil_Repair_center_EP1";           // The building defined to unlock FOB recycling functionality.
+KPLIB_b_logiStation = "Land_GarageRow_01_small_F";           // The building defined to unlock FOB recycling functionality.
 KPLIB_b_airControl = "Land_ControlTower_01_F";                       // The building defined to unlock FOB air vehicle functionality.
 KPLIB_b_slotHeli = "Land_HelipadCivil_F";              // The helipad used to increase the GLOBAL rotary-wing cap.
-KPLIB_b_slotPlane = "Land_Airport_01_hangar_F";             // The hangar used to increase the GLOBAL fixed-wing cap.
+KPLIB_b_slotPlane = "Land_Hangar_F";             // The hangar used to increase the GLOBAL fixed-wing cap.
 KPLIB_b_crateSupply = "CargoNet_01_box_F";                       // This defines the supply crates, as in resources.
 KPLIB_b_crateAmmo = "B_CargoNet_01_ammo_F";                      // This defines the ammunition crates.
 KPLIB_b_crateFuel = "CargoNet_01_barrels_F";                     // This defines the fuel crates.
@@ -43,61 +43,69 @@ KPLIB_b_crateFuel = "CargoNet_01_barrels_F";                     // This defines
     IMPORTANT: The last element inside each array must have no comma at the end!
 */
 KPLIB_b_infantry = [
-    ["B_AFBiH_Driver",10,0,0],                                     				// Driver
-	["B_AFBiH_Pilot",10,0,0],                                  				   // Pilot 01
-	["B_AFBiH_Naval",10,0,0],                                  					   // Naval Crewman
-	["B_AFBiH_Shotgun",15,0,0],                             				  	 // Shotgun
-	["B_AFBiH_Medical",30,0,0],                                        			   // Medic
-    ["B_AFBiH_Engineer",30,0,0],                                        			   // Engineer
-	["B_AFBiH_TankCmd",30,0,0],                               			    // Tank Commander
-	["B_AFBiH_TankCrew",30,0,0],                               			    // Tank Crewman
-	["B_AFBiH_Marksman1",30,0,0],                               			    // Marksman M70B1N
-	["B_AFBiH_Marksman2",30,0,0],                               			    // VSS Vintorez
-	["B_AFBiH_Sniper",30,0,0],                               			    // Sniper M76
-    ["B_AFBiH_Spotter",30,0,0],                               			    // Spotter AK74
-	["B_AFBiH_Grenadier",30,5,0],                                  			 // Grenadier AK74 GP25
-	["B_AFBiH_Rifleman1", 40,0,0],                                 			 // Rifleman 1 AK74
-	["B_AFBiH_Rifleman2", 40,0,0],                                 			 // Rifleman 2 AK47
-	["B_AFBiH_Rifleman3", 40,0,0],                                 			 // Rifleman 3 M70B1N
-	["B_AFBiH_Rifleman4", 40,0,0],                                 			 // Rifleman 4 Vz 58
-	["B_AFBiH_Machinegunner1",60,0,0],                              		     // Machinegunner RPK
-	["B_AFBiH_Machinegunner2",60,0,0],                             		      // Machinegunner RPK74
-	["B_AFBiH_HMG",60,0,0],                             		      // Heavy Machine Gunner PKM
-	["B_AFBiH_AntiTank1",70,10,0],                                             // Anti-Tank RPG
-	["B_AFBiH_AntiTank2",70,10,0],                                             // Anti-Tank RPG-18
-	["B_AFBiH_AntiAir",70,10,0]                                             // Anti-Air
+    ["B_AFBiH_Driver",1,0,0],                                     				// Driver
+	["B_AFBiH_Pilot",1,0,0],                                  				   // Pilot 01
+	["B_AFBiH_Naval",1,0,0],                                  					   // Naval Crewman
+	["B_AFBiH_Shotgun",1,0,0],                             				  	 // Shotgun
+	["B_AFBiH_Medical",1,0,0],                                        			   // Medic
+    ["B_AFBiH_Engineer",3,0,0],                                        			   // Engineer
+	["B_AFBiH_TankCmd",3,0,0],                               			    // Tank Commander
+	["B_AFBiH_TankCrew",3,0,0],                               			    // Tank Crewman
+	["B_AFBiH_Marksman1",3,0,0],                               			    // Marksman M70B1N
+	["B_AFBiH_Marksman2",3,0,0],                               			    // VSS Vintorez
+	["B_AFBiH_Sniper",3,0,0],                               			    // Sniper M76
+    ["B_AFBiH_Spotter",3,0,0],                               			    // Spotter AK74
+	["B_AFBiH_Grenadier",3,5,0],                                  			 // Grenadier AK74 GP25
+	["B_AFBiH_Rifleman1", 4,0,0],                                 			 // Rifleman 1 AK74
+	["B_AFBiH_Rifleman2", 4,0,0],                                 			 // Rifleman 2 AK47
+	["B_AFBiH_Rifleman3", 4,0,0],                                 			 // Rifleman 3 M70B1N
+	["B_AFBiH_Rifleman4", 4,0,0],                                 			 // Rifleman 4 Vz 58
+	["B_AFBiH_Machinegunner1",8,0,0],                              		     // Machinegunner RPK
+	["B_AFBiH_Machinegunner2",8,0,0],                             		      // Machinegunner RPK74
+	["B_AFBiH_HMG",8,5,0],                             		      // Heavy Machine Gunner PKM
+	["B_AFBiH_AntiTank1",10,15,0],                                             // Anti-Tank RPG
+	["B_AFBiH_AntiTank2",10,10,0],                                             // Anti-Tank RPG-18
+	["B_AFBiH_AntiAir",10,20,0]                                             // Anti-Air
 ];
 
 KPLIB_b_vehLight = [
+    ["rhsgref_cdf_b_reg_uaz_dshkm",30,50,5],                                 // UAZ-3151 (DShKM)
+    ["walker_a3_hiluxhmg",30,50,5],                                 // Hilux with MG
     ["B_AFBiH_M1151",100,50,30],                                         // M1151
     ["B_AFBiH_BRDM2UM",100,50,40],                                         // BRDM2UM (No cannon)
     ["B_AFBiH_BRDM2",150,100,40],                                         // BRDM2
     ["B_AFBiH_BTR60PB",175,150,50],                                         // BTR-60PB
     ["B_AFBiH_BTR80",180,150,50],                                         // BTR-80
     ["B_AFBiH_BM21",200,400,40],                                         // BM-21
+    ["rhsgref_cdf_b_reg_uaz_ags",30,100,5],                                         // UAZ-3151 (AGS-30)
+	["rhsgref_cdf_b_reg_uaz_spg9",30,150,5],                                         // UAZ-3151 (spg-9)
     ["B_AFBiH_GAZ66_AA",150,250,40],                                         // GAZ-66 AA
     ["B_AFBiH_URAL_AA",175,250,40],                                         // URAL AA
-    ["C_Cher90s_Civ_Bike",20,0,0],                                         // Bicycle
-    ["C_Cher90s_Civ_JAWA",35,0,5],                                         // Jawa Motorcycle
-    ["C_Cher90s_Civ_Hatch",40,0,5],                                         // Hatch
-    ["C_Cher90s_Civ_Gaz",40,0,5],                                         // GAZ 24
-    ["C_Cher90s_Civ_GazB",40,0,5],                                         // GAZ 24B
-    ["C_Cher90s_Civ_Lada",40,0,5],                                         // Lada
-    ["C_Cher90s_Civ_Toyota",40,0,5],                                         // Toyota Sedan
-    ["C_Cher90s_Civ_Skodo",40,0,5],                                         // Skodovka
-    ["C_Cher90s_Civ_S1203",45,0,10],                                         // S1203 Van
-    ["C_Cher90s_Civ_1203B",45,0,10],                                         // S1203 Van Blue
-    ["C_Cher90s_Civ_Hilux",60,0,5],                                         // Hilux
-    ["C_Cher90s_Civ_HiluxC",60,0,5],                                         // Hilux (Covered)
-    ["C_Cher90s_Civ_UAZ3151",60,0,5],                                         // UAZ-3151
-    ["C_Cher90s_Civ_UAZ3151O",60,0,5],                                         // UAZ-3151 (Open)
-    ["C_Cher90s_Civ_Ural",70,0,10],                                         // Ural-4320
-    ["C_Cher90s_Civ_UralOpen",70,0,10]                                         // Ural-4320 (Open)
+    ["C_Cher90s_Civ_Bike",5,0,0],                                         // Bicycle
+    ["C_Cher90s_Civ_JAWA",10,0,5],                                         // Jawa Motorcycle
+    ["C_Cher90s_Civ_Hatch",20,0,5],                                         // Hatch
+    ["C_Cher90s_Civ_Gaz",20,0,5],                                         // GAZ 24
+    ["C_Cher90s_Civ_GazB",20,0,5],                                         // GAZ 24B
+    ["C_Cher90s_Civ_Lada",20,0,5],                                         // Lada
+    ["C_Cher90s_Civ_Toyota",20,0,5],                                         // Toyota Sedan
+    ["C_Cher90s_Civ_Skodo",20,0,5],                                         // Skodovka
+    ["C_Cher90s_Civ_S1203",25,0,10],                                         // S1203 Van
+    ["C_Cher90s_Civ_1203B",25,0,10],                                         // S1203 Van Blue
+    ["C_Cher90s_Civ_Hilux",30,0,5],                                         // Hilux
+    ["C_Cher90s_Civ_HiluxC",30,0,5],                                         // Hilux (Covered)
+    ["C_Cher90s_Civ_UAZ3151",30,0,5],                                         // UAZ-3151
+    ["C_Cher90s_Civ_UAZ3151O",30,0,5],                                         // UAZ-3151 (Open)
+    ["C_Cher90s_Civ_Ural",40,0,10],                                         // Ural-4320
+    ["C_Cher90s_Civ_UralOpen",40,0,10],                                         // Ural-4320 (Open)
+    ["rhsgref_hidf_canoe",5,0,0],                                         // Canoe
+    ["C_Scooter_Transport_01_F",25,0,5],                                         // Water Scooter
+    ["B_Lifeboat",30,0,5]                                         // Rescue Boat
     
 ];
 
 KPLIB_b_vehHeavy = [
     ["B_AFBiH_BMP",400,350,250],                                         // BPM 1
+    ["rhsgref_cdf_b_2s1",400,600,300],                                         // BPM 1
     ["B_AFBiH_T34",300,300,200],                                         // T-34
     ["B_AFBiH_T55",400,400,250],                                         // T-55
     ["B_AFBiH_T72",600,500,300]                                         // T-72
@@ -115,22 +123,24 @@ KPLIB_b_vehAir = [
 KPLIB_b_vehStatic = [
     ["B_AFBiH_D30",250,300,0],                                     // D-30
     ["B_AFBiH_Podnos",100,150,0],                                     // Podnos mortar
+    ["rhsgref_cdf_b_SPG9",100,150,0],                                     // spg-9
+    ["B_AFBiH_ZU23",75,250,40],                                         // ZU AA
     ["B_AFBiH_M2",25,30,0],                                     // M2 HMG
     ["B_AFBiH_M2Lo",25,30,0]                                     // M2 HMG (Low Mount)
     
 ];
 
 KPLIB_b_objectsDeco = [
-    ["Land_Slum_01_F",0,0,0],
-    ["Land_Cargo_Patrol_V2_F",0,0,0],
-    ["Land_GuardTower_01_F",0,0,0],
     ["rhssaf_flag_yugoslavia",0,0,0],
     ["Flag_White_F",0,0,0],
-    ["Land_MedicalTent_01_tropic_closed_F",0,0,0],
-    ["CamoNet_OPFOR_F",0,0,0],
-    ["CamoNet_OPFOR_open_F",0,0,0],
-    ["CamoNet_OPFOR_big_F",0,0,0],
+    ["Radio",0,0,0],
+    ["Radio_Old",0,0,0],
+    ["Land_tent_east",0,0,0],
+    ["CamoNet_BLUFOR_F",0,0,0],
+    ["CamoNet_BLUFOR_open_F",0,0,0],
+    ["CamoNet_BLUFOR_big_F",0,0,0],
     ["Land_FirewoodPile_01_F",0,0,0],
+    ["Axe_woodblock",0,0,0],
 	["Land_Greenhouse_01_F",0,0,0],
 	["Land_Greenhouse_01_damaged_F",0,0,0],
 	["Land_Shed_11_F",0,0,0],
@@ -142,11 +152,18 @@ KPLIB_b_objectsDeco = [
 	["Land_Shed_09_F",0,0,0],
 	["Land_Shed_10_F",0,0,0],
 	["Land_Shed_14_F",0,0,0],
+    ["Land_Slum_01_F",0,0,0],
+    ["Land_DeerStand_01_F",0,0,0],
+    ["Land_DeerStand_02_F",0,0,0],
+    ["Land_GuardTower_01_F",0,0,0],
 	["Land_ConcreteWell_02_F",0,0,0],
+    ["Lantern_01_red_F",0,0,0],
+    ["Lantern_01_green_F",0,0,0],
     ["Land_PortableLight_single_F",0,0,0],
     ["Land_PortableLight_double_F",0,0,0],
     ["Land_LampHalogen_F",0,0,0],
     ["Land_LampStreet_small_F",0,0,0],
+    ["Land_Airport_01_hangar_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase plane cap!
     ["Land_HelipadCircle_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase helicopter cap!
     ["Land_HelipadRescue_F",0,0,0],                                     // Strictly aesthetic - as in it does not increase helicopter cap!
     ["PortableHelipadLight_01_blue_F",0,0,0],
@@ -206,6 +223,13 @@ KPLIB_b_objectsDeco = [
 	["CUP_case_bedroom_b",0,0,0],
 	["CUP_postel_manz_kov",0,0,0],
     ["Land_Pallet_MilBoxes_F",0,0,0],
+    //Target Practice
+    ["Land_Target_Single_01_F",0,0,0],
+    ["Land_Target_Pistol_01_F",0,0,0],
+    ["Land_Target_Line_01_F",0,0,0],
+    ["Hostage_PopUp_Moving_90deg_F",0,0,0],
+    ["TargetP_Inf2_Acc2_F",0,0,0],
+    //Target Practice End
 	["Land_WoodenTable_large_F",0,0,0],
 	["Land_WoodenTable_small_F",0,0,0],
     ["Land_PaperBox_open_empty_F",0,0,0],
@@ -222,11 +246,6 @@ KPLIB_b_objectsDeco = [
     ["Land_BarrelWater_grey_F",0,0,0],
     ["Land_WaterBarrel_F",0,0,0],
     ["Land_WaterTank_F",0,0,0],
-    ["Land_BagFence_Round_F",0,0,0],
-    ["Land_BagFence_Short_F",0,0,0],
-    ["Land_BagFence_Long_F",0,0,0],
-    ["Land_BagFence_Corner_F",0,0,0],
-    ["Land_BagFence_End_F",0,0,0],
 	["Wall_FenW2_6_EP1",0,0,0],
 	["Fence_corrugated_plate",0,0,0],
 	["Fence_Ind_long",0,0,0],
@@ -250,6 +269,17 @@ KPLIB_b_objectsDeco = [
     ["Land_HBarrierWall_corner_F",0,0,0],
     ["Land_HBarrierWall_corridor_F",0,0,0],
     ["Land_HBarrierTower_F",0,0,0],
+    // Sandbags
+    ["Land_SandbagBarricade_01_half_F",0,0,0],
+    ["Land_SandbagBarricade_01_F",0,0,0],
+    ["Land_SandbagBarricade_01_hole_F",0,0,0],
+    ["Fence",0,0,0],
+    ["Land_BagFence_Short_F",0,0,0],
+    ["Land_BagFence_Round_F",0,0,0],
+    ["Land_BagFence_Long_F",0,0,0],
+    ["Land_BagFence_End_F",0,0,0],
+    ["Land_BagFence_Corner_F",0,0,0],
+    // Sandbags End
     ["Land_CncBarrierMedium_F",0,0,0],
     ["Land_CncBarrierMedium4_F",0,0,0],
     ["Land_Concrete_SmallWall_4m_F",0,0,0],
@@ -266,25 +296,26 @@ KPLIB_b_objectsDeco = [
 ];
 
 KPLIB_b_vehSupport = [
-    [KPLIB_b_arsenal,5,5,5],
+    [KPLIB_b_arsenal,25,50,0],
     [(KPLIB_b_mobileRespawn select 0),150,0,100],
     [(KPLIB_b_mobileRespawn select 1),200,0,100],
     [(KPLIB_b_mobileRespawn select 2),300,0,100],
-    [KPLIB_b_fobBox,300,500,0],
-    [KPLIB_b_fobTruck,300,500,75],
+    [KPLIB_b_fobBox,1200,1000,600],
+    [KPLIB_b_fobTruck,1200,1000,600],
     [KPLIB_b_smallStorage,0,0,0],
     [KPLIB_b_largeStorage,0,0,0],
     [KPLIB_b_logiStation,150,0,0],
     [KPLIB_b_airControl,800,0,0],
     [KPLIB_b_slotHeli,250,0,0],
     [KPLIB_b_slotPlane,500,0,0],
-    ["ACE_medicalSupplyCrate_advanced",10,0,0],
-    ["B_AFBiH_KORDBox",10,40,0],
-    ["B_AFBiH_SPG9Box",10,45,0],
-    ["B_AFBiH_M80Box",10,50,0],
-    ["B_AFBiH_IglaBox",10,60,0],
-    ["ACE_Wheel",10,0,0],
-    ["ACE_Track",25,0,0],
+    ["B_AFBiH_EmptyBox",1,0,0],
+    ["ACE_medicalSupplyCrate_advanced",1,0,0],
+    ["B_AFBiH_KORDBox",1,1,0],
+    ["B_AFBiH_SPG9Box",1,1,0],
+    ["B_AFBiH_M80Box",1,1,0],
+    ["B_AFBiH_IglaBox",1,60,0],
+    ["ACE_Wheel",1,0,0],
+    ["ACE_Track",2,0,0],
     ["RHS_Ural_Repair_MSV_01",150,0,60],                                // Ural Repair
     ["B_AFBiH_URAL_Fuel",150,0,160],                                 // Ural Fuel
     ["B_AFBiH_GAZ66_Ammo",150,150,45],                                  // Gaz-66 Ammo
@@ -394,5 +425,11 @@ KPLIB_b_vehToUnlock = [
     "B_AFBiH_T34",
     "B_AFBiH_T72",
     "B_AFBiH_Mi24V",
-    "B_AFBiH_Mi24P"
+    "B_AFBiH_Mi24P",
+    "B_AFBiH_T55",
+    "B_AFBiH_ZU23",
+    "rhsgref_cdf_b_reg_uaz_ags",
+    "rhsgref_cdf_b_2s1",
+	"rhsgref_cdf_b_reg_uaz_spg9",
+    "rhsgref_cdf_b_SPG9"
 ];

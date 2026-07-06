@@ -56,7 +56,7 @@
 	32 = Lingor Resistencia
     33 = Armed Forces of Chernarus (BLUFOR)
 */
-KPLIB_presetPlayer = 0;
+KPLIB_presetPlayer = 33;
 
 /*
     ----- Enemy preset -----
@@ -85,7 +85,7 @@ KPLIB_presetPlayer = 0;
 	22 = Lingor Revolución
     23 = Chernarus Armed Forces (OPFOR)
 */
-KPLIB_presetEnemy = 0;
+KPLIB_presetEnemy = 23;
 
 /*
     ----- Resistance preset -----
@@ -100,7 +100,7 @@ KPLIB_presetEnemy = 0;
     8  = CUP National Party of Chernarus
 	9  = Lingor
 */
-KPLIB_presetResistance = 0;
+KPLIB_presetResistance = 10;
 
 /*
     ----- Civilians preset -----
@@ -115,7 +115,7 @@ KPLIB_presetResistance = 0;
 	8  = Lingor Civilians
     9 =  Chernarus 90s
 */
-KPLIB_presetCivilians = 0;
+KPLIB_presetCivilians = 9;
 
 /*
     ----- Arsenal preset -----
@@ -140,7 +140,7 @@ KPLIB_presetCivilians = 0;
 	18 = Lingor
     19 = Armed Forces of Chernarus (BLUFOR)
 */
-KPLIB_presetArsenal = 0;
+KPLIB_presetArsenal = 19;
 
 
 /*
@@ -188,7 +188,7 @@ KPLIB_save_key = "KP_LIBERATION_" + (toUpperANSI worldName) + "_SAVEGAME";
 KPLIB_save_paramKey = "KP_LIBERATION_" + (toUpperANSI worldName) + "_SAVE_PARAMS";
 
 // Interval in seconds for automatic save.
-KPLIB_save_interval = 60;
+KPLIB_save_interval = 120;
 
 
 /*
@@ -199,33 +199,33 @@ KPLIB_save_interval = 60;
 */
 
 // Build range around the main FOB building.
-KPLIB_range_fob = 125;
+KPLIB_range_fob = 250;
 
 // Altitude in metres for the HALO jump.
 KPLIB_height_halo = 2500;
 
 // Range to activate a sector.
-KPLIB_range_sectorActivation   = 1000;
-KPLIB_range_capitalActivation  = 1000;
-KPLIB_range_cityActivation     = 500;
-KPLIB_range_factoryActivation  = 150;
-KPLIB_range_militaryActivation = 1200;
-KPLIB_range_towerActivation    = 250;
-KPLIB_range_airSpawnActivation = 500;
-KPLIB_range_pointActivation    = 300;
+KPLIB_range_sectorActivation   = 750;
+KPLIB_range_capitalActivation  = 1200;
+KPLIB_range_cityActivation     = 750;
+KPLIB_range_factoryActivation  = 750;
+KPLIB_range_militaryActivation = 750;
+KPLIB_range_towerActivation    = 850;
+KPLIB_range_airSpawnActivation = 1200;
+KPLIB_range_pointActivation    = 750;
 
 // Range to capture a sector.
-KPLIB_range_sectorCapture = 175;
+KPLIB_range_sectorCapture = 150;
 
 // Radio Tower scanning range.
-KPLIB_range_radioTowerScan = 2500;
+KPLIB_range_radioTowerScan = 1000;
 
 // Minimum distance to next FOB.
-KPLIB_distance_fob = 1000;
+KPLIB_distance_fob = 750;
 
 // Minimum distance to next sector.
-KPLIB_distance_sector = KPLIB_range_sectorCapture + KPLIB_range_fob;
-
+// KPLIB_distance_sector = KPLIB_range_sectorCapture + KPLIB_range_fob;
+KPLIB_distance_sector = 100;
 
 /*
 ------------------------------------------------------------
@@ -261,13 +261,13 @@ KPLIB_civilians_amount = 10;
 */
 
 // Civil Reputation penalty for killing a civilian.
-KPLIB_cr_kill_penalty = 5;
+KPLIB_cr_kill_penalty = 3;
 
 // Civil Reputation penalty for destroying/damaging a building.
-KPLIB_cr_building_penalty = 3;
+KPLIB_cr_building_penalty = 2;
 
 // Civil Reputation penalty for stealing a civilian vehicle.
-KPLIB_cr_vehicle_penalty = 2;
+KPLIB_cr_vehicle_penalty = 1;
 
 // Civil Reputation penalty for killing a friendly resistance soldier.
 KPLIB_cr_resistance_penalty = 3;
@@ -276,10 +276,10 @@ KPLIB_cr_resistance_penalty = 3;
 KPLIB_cr_sector_gain = 5;
 
 // Chance (0-100) that there are wounded civilians right after capturing a sector.
-KPLIB_cr_wounded_chance = 35;
+KPLIB_cr_wounded_chance = 10;
 
 // Civil Reputation gain for providing medical assistance for wounded civilians.
-KPLIB_cr_wounded_gain = 2;
+KPLIB_cr_wounded_gain = 8;
 
 
 /*
@@ -331,13 +331,13 @@ KPLIB_civinfo_task_duration = 900;
 */
 
 // Time in minutes till a full tank depletes whilst the vehicle is standing still with a running engine.
-KPLIB_fuel_neutral = 180;
+KPLIB_fuel_neutral = 200;
 
 // Time in minutes till a full tank depletes whilst the vehicle is driving below max speed.
-KPLIB_fuel_normal = 90;
+KPLIB_fuel_normal = 100;
 
 // Time in minutes till a full tank depletes whilst the vehicle is driving at max speed.
-KPLIB_fuel_max = 45;
+KPLIB_fuel_max = 50;
 
 
 /*
@@ -354,19 +354,19 @@ KPLIB_convoy_ambush_chance = 2;
 KPLIB_convoy_ambush_duration = 1200;
 
 // Resistance strength (0-100) needed for tier 2 equipment.
-KPLIB_resistance_tier2 = 30;
+KPLIB_resistance_tier2 = 40;
 
 // Resistance strength (0-100) needed for tier 3 equipment.
-KPLIB_resistance_tier3 = 70;
+KPLIB_resistance_tier3 = 60;
 
 // Chance (0-100) that a resistance unit has a RPG. (tier 2 and 3)
 KPLIB_resistance_at_chance = 20;
 
 // Chance (0-100) that a resistance squad will join an ongoing sector attack.
-KPLIB_resistance_sector_chance = 35;
+KPLIB_resistance_sector_chance = 40;
 
 // Chance that some resistance units will spawn in blufor sectors for an ambush, if reputation is low.
-KPLIB_resistance_ambush_chance = 25;
+KPLIB_resistance_ambush_chance = 55;
 
 
 /*
@@ -377,19 +377,19 @@ KPLIB_resistance_ambush_chance = 25;
 */
 
 // Time in minutes until a resource crate is produced, when resources multiplier is set to 1.
-KPLIB_production_interval = 30;
+KPLIB_production_interval = 120;
 
 // Percentage of resources you get back from recycling.
 KPLIB_recycling_percentage = 0.5;
 
 // Multiplier for defenders in buildings.
-KPLIB_defended_buildingpos_part = 0.4;
+KPLIB_defended_buildingpos_part = 0.5;
 
 // Time in seconds how long a captured sector is vulnerable to enemy troops.
-KPLIB_vulnerability_timer = 1200;
+KPLIB_vulnerability_timer = 2700;
 
 // Chance that enemy infantry will surrender after heavy losses are encountered.
-KPLIB_surrender_chance = 80;
+KPLIB_surrender_chance = 25;
 
 // When playing on this map, it'll create a clearance (remove terrain objects) in a 15m radius around the battlegroup/reinforcements spawnpoint.
 KPLIB_battlegroup_clearance = [

@@ -46,6 +46,7 @@ class KPLIB {
         class getNearestBluforObjective {};
         class getNearestFob             {};
         class getNearestSector          {};
+        class GetNearestPlayerSector    {};
         class getNearestTower           {};
         class getNearestViVTransport    {};
         class getOpforCap               {};
@@ -105,4 +106,11 @@ class KPLIB {
     };
     #include "scripts\client\CfgFunctions.hpp"
     #include "scripts\server\CfgFunctions.hpp"
+};
+class TWZ {
+    class functions {
+        file = "functions\twz";
+        class tiwazSmoothFog {};
+        class addClearActions {};
+    };
 };

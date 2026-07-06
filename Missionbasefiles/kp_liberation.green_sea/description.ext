@@ -111,7 +111,7 @@ respawnOnStart = 0;
 corpseManagerMode = 1;
 
 // Corpse limit before which (<=) corpseRemovalMaxTime applies and after which (>) corpseRemovalMinTime applies.
-corpseLimit = 50;
+corpseLimit = 35;
 
 // Remove all bodies that have been dead longer than corpseRemovalMinTime when corpseLimit is reached.
 corpseRemovalMinTime = 600;
@@ -127,7 +127,7 @@ corpseRemovalMaxTime = 3600;
 wreckManagerMode = 1;
 
 // Vehicle wreck limit before which (<=) wreckRemovalMaxTime applies and after which (>) wreckRemovalMinTime applies.
-wreckLimit = 20;
+wreckLimit = 15;
 
 // Remove all wrecks that have existed longer than wreckRemovalMinTime when wreckLimit is breached.
 wreckRemovalMinTime = 1200;
@@ -136,7 +136,7 @@ wreckRemovalMinTime = 1200;
 wreckRemovalMaxTime = 7200;
 
 // The minimum distance between corpse or wreck and nearest player before the corpse or wreck is allowed to be removed by the garbage collector.
-minPlayerDistance = 1000;
+minPlayerDistance = 800;
 
 
 /*
@@ -248,15 +248,22 @@ class CfgTaskDescriptions {
 #include "KP\KPGUI\KPGUI_defines.hpp"
 #include "KP\KPPLM\ui\KPPLM_dialog.hpp"
 
+#include "VAM_GUI\defines.hpp"
+#include "VAM_GUI\VAM_GUI_controls.hpp"
+#include "VAM_GUI\VAM_GUI_classes.hpp" 
+
 class ACEX_Fortify_Presets {
     class KPLIB_Fortify {
         displayName = "KPLIB Fortify";
         objects[] = {
-			{"Land_Campfire_F", 1},
+			{"Land_Campfire_F", 10},
 			{"CamoNet_wdl_open_F", 30},
-            {"Land_vn_sandbagbarricade_01_half_f", 130},
-            {"Land_BagFence_Short_F", 50},
-            {"Land_BagFence_Round_F", 60}
+            {"Land_SandbagBarricade_01_hole_F", 75},
+            {"Land_BagFence_Short_F", 35},
+            {"Land_BagFence_Round_F", 45},
+            {"Land_Barricade_01_4m_F", 60},
+            {"Land_Barricade_01_10m_F", 120}
+            
         };
     };
 };

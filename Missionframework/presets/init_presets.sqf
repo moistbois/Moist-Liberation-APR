@@ -80,7 +80,7 @@ switch (KPLIB_presetResistance) do {
     case  7: {[] call compile preprocessFileLineNumbers "presets\resistance\cup_takistan.sqf";};
     case  8: {[] call compile preprocessFileLineNumbers "presets\resistance\cup_napa.sqf";};
 	case  9: {[] call compile preprocessFileLineNumbers "presets\resistance\lingor.sqf";};
-    case  10: {[] call compile preprocessFileLineNumbers "presets\resistance\lingor.sqf";};
+    case  10: {[] call compile preprocessFileLineNumbers "presets\resistance\chernres.sqf";};
     default  {[] call compile preprocessFileLineNumbers "presets\resistance\custom.sqf";};
 };
 
@@ -99,12 +99,12 @@ switch (KPLIB_presetCivilians) do {
 
 // Prices for the blufor infantry squads (supplies, ammo, fuel)
 KPLIB_b_allSquads = [
-    [KPLIB_b_squadLight,200,0,0],
-    [KPLIB_b_squadInf,300,0,0],
-    [KPLIB_b_squadAT,200,250,0],
-    [KPLIB_b_squadAA,200,250,0],
-    [KPLIB_b_squadRecon,250,0,0],
-    [KPLIB_b_squadPara,200,0,0]
+    [KPLIB_b_squadLight,50,0,0],
+    [KPLIB_b_squadInf,75,25,0],
+    [KPLIB_b_squadAT,50,50,0],
+    [KPLIB_b_squadAA,50,50,0],
+    [KPLIB_b_squadRecon,75,0,0],
+    [KPLIB_b_squadPara,50,0,0]
 ];
 
 // Squad names for build menu
@@ -271,6 +271,8 @@ KPLIB_typeAirClasses   = +KPLIB_b_air_classes;
 
 // Military alphabet used for FOBs and convoys
 KPLIB_militaryAlphabet = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-Ray", "Yankee", "Zulu"];
+// Russian military alphabet used for MSP naming
+KPLIB_russianAlphabet = ["Anna", "Boris", "Vasily", "Gregory", "Dmitri", "Yelena", "Zhenya", "Zinaida", "Ivan", "Konstantin", "Leonid", "Mikhail", "Nikolai", "Olga", "Pavel", "Roman", "Semyon", "Tatyana", "Ulyana", "Fyodor", "Khariton", "Shura", "Yuri", "Yakov", "Anton", "Galina", "Yolka", "Zoya", "Mariya", "Sergei", "Tamara", "Emma"];
 
 // Misc variables
 markers_reset = [99999,99999,0];

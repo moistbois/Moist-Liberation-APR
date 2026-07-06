@@ -149,10 +149,10 @@ class RscTitles {
         };
         class BGPictureSector: BGPicture {
             idc = 201;
-            x = 0.9 * safezoneW + safezoneX;
-            w = 0.15 * safezoneW;
-            y = 0.33 * safezoneH + safezoneY;
-            h = 0.05 * safezoneH;
+            x = 0 * safezoneW + safezoneX;
+            w = 0 * safezoneW;
+            y = 0 * safezoneH + safezoneY;
+            h = 0 * safezoneH;
         };
         class GenericLabel69 {
             idc = -1;
@@ -377,32 +377,32 @@ class RscTitles {
         class CaptureFrame: CaptureFrameStandard {
             idc = 202;
             style = ST_FRAME;
-            colorText[] = COLOR_BLACK;
-            colorBackground[] = COLOR_OPFOR_NOALPHA;
-            x = 0.9125 * safezoneW + safezoneX;
-            w = 0.085 * safezoneW;
-            y = 0.358 * safezoneH + safezoneY;
-            h = 0.012 * safezoneH;
+            colorText[] = {0.0, 0, 0, 0};
+            colorBackground[] = {0, 0, 0, 0};
+            x = 0;
+            w = 0;
+            y = 0;
+            h = 0;
         };
         class CaptureFrame_OPFOR: CaptureFrameStandard{
             idc = 203;
             style = ST_TYPE;
-            colorText[] = {0.6, 0, 0, 1};
-            colorBackground[] = {0.6, 0, 0, 1};
-            x = 0.9125 * safezoneW + safezoneX;
-            w = 0.084 * safezoneW;
-            y = 0.358 * safezoneH + safezoneY;
-            h = 0.011 * safezoneH;
+            colorText[] = {0.0, 0, 0, 0};
+            colorBackground[] = {0, 0, 0, 0};
+            x = 0;
+            w = 0;
+            y = 0;
+            h = 0;
         };
         class CaptureFrame_BLUFOR: CaptureFrameStandard{
             idc = 244;
             style = ST_TYPE;
-            colorText[] = {0, 0.2, 0.6, 1};
-            colorBackground[] = {0, 0.2, 0.6, 1};
-            x = 0.9125 * safezoneW + safezoneX;
-            w = 0.084 * safezoneW;
-            y = 0.358 * safezoneH + safezoneY;
-            h = 0.011 * safezoneH;
+            colorText[] = {0, 0, 0, 0};
+            colorBackground[] = {0, 0, 0, 0};
+            x = 0;
+            w = 0;
+            y = 0;
+            h = 0;
         };
         class LabelPoint: GenericLabel69 {
             idc = 205;

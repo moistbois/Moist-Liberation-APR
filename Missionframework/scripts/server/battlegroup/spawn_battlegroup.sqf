@@ -6,7 +6,7 @@ params [
 
 if (KPLIB_endgame == 1) exitWith {};
 
-_spawn_marker = [[800, 600] select _infOnly, [1600, 1000] select _infOnly, false, markerPos _spawn_marker] call KPLIB_fnc_getOpforSpawnPoint;
+_spawn_marker = [[1000, 800] select _infOnly, [2200, 1600] select _infOnly, false, markerPos _spawn_marker] call KPLIB_fnc_getOpforSpawnPoint;
 
 if !(_spawn_marker isEqualTo "") then {
     KPLIB_last_battlegroup_time = diag_tickTime;
@@ -74,7 +74,8 @@ if !(_spawn_marker isEqualTo "") then {
 
     sleep 3;
 
-    KPLIB_enemyReadiness = (KPLIB_enemyReadiness - (round ((count _bg_groups) + (random (count _bg_groups))))) max 0;
+    //KPLIB_enemyReadiness = (KPLIB_enemyReadiness - (round ((count _bg_groups) + (random (count _bg_groups))))) max 0;
+    KPLIB_enemyReadiness = (KPLIB_enemyReadiness - (_target_size / 2)) max 0;
     stats_hostile_battlegroups = stats_hostile_battlegroups + 1;
 
     {

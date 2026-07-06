@@ -15,11 +15,14 @@
         Mobile respawns [ARRAY]
 */
 
-private _respawn_trucks = vehicles select {
-    (typeOf _x) in (KPLIB_b_mobileRespawn + [KPLIB_b_potato01]) &&
-    {alive _x} &&
-    {_x distance2d startbase > 500} &&
-    {abs (speed _x) < 5}
+private _respawn_trucks = vehicles select { 
+	(typeOf _x) in (KPLIB_b_mobileRespawn + [KPLIB_b_potato01]) && 
+	{alive _x} && 
+	{ 
+	(_x distance2d startbase > 300) 
+	&& {(_x distance2d ([getPos _x] call KPLIB_fnc_getNearestFob)) > 100} 
+	} && 
+	{abs (speed _x) < 5} 
 };
 
 [_respawn_trucks, [], {(getPos _x) select 0}, 'ASCEND'] call BIS_fnc_sortBy
