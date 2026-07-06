@@ -17,15 +17,11 @@
 */
 
 params [
-    ["_radius", 1000, [0]],
-    ["_pos", getPos player, [[]], [2, 3]]
+    ["_pos", [0, 0, 0], [[]], [2, 3]],
+    ["_radius", 1000, [0]]
 ];
 
-private _sectors = KPLIB_sectors_player select {((markerPos _x) distance2d _pos) < _radius};
-
-if (_sectors isEqualTo []) exitWith {""};
-
-_sectors = _sectors apply {[(markerPos _x) distance2d _pos, _x]};
+private _sectors = (KPLIB_sectors_player apply {[(markerPos _x) distance2d _pos, _x]}) select {(_x select 0) <= _radius};
 _sectors sort true;
 
 (_sectors select 0) select 1
