@@ -12,7 +12,7 @@ while {KPLIB_param_aggressivity > 0.9 && KPLIB_endgame == 0} do {
     if (!isNil "KPLIB_last_battlegroup_time") then {
         waitUntil {
             sleep 5;
-            diag_tickTime > (KPLIB_last_battlegroup_time + (2100 / KPLIB_param_aggressivity))
+            diag_tickTime > (KPLIB_last_battlegroup_time + (3600 / KPLIB_param_aggressivity))
         };
     };
 
