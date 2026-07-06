@@ -69,36 +69,37 @@ KPLIB_b_infantry = [
 ];
 
 KPLIB_b_vehLight = [
-    ["rhsgref_cdf_b_reg_uaz_dshkm",25,50,5],                                 // UAZ-3151 (DShKM)
-    ["walker_a3_hiluxhmg",40,50,5],                                 // Hilux with MG
+    ["rhsgref_cdf_b_reg_uaz_dshkm",30,50,5],                                 // UAZ-3151 (DShKM)
+    ["walker_a3_hiluxhmg",30,50,5],                                 // Hilux with MG
     ["B_AFBiH_M1151",100,50,30],                                         // M1151
     ["B_AFBiH_BRDM2UM",100,50,40],                                         // BRDM2UM (No cannon)
     ["B_AFBiH_BRDM2",150,100,40],                                         // BRDM2
     ["B_AFBiH_BTR60PB",175,150,50],                                         // BTR-60PB
     ["B_AFBiH_BTR80",180,150,50],                                         // BTR-80
     ["B_AFBiH_BM21",200,400,40],                                         // BM-21
-    ["rhsgref_cdf_b_reg_uaz_ags",125,175,25],                                         // UAZ-3151 (AGS-30)
+    ["rhsgref_cdf_b_reg_uaz_ags",30,100,5],                                         // UAZ-3151 (AGS-30)
+	["rhsgref_cdf_b_reg_uaz_spg9",30,150,5],                                         // UAZ-3151 (spg-9)
     ["B_AFBiH_GAZ66_AA",150,250,40],                                         // GAZ-66 AA
     ["B_AFBiH_URAL_AA",175,250,40],                                         // URAL AA
-    ["C_Cher90s_Civ_Bike",20,0,0],                                         // Bicycle
-    ["C_Cher90s_Civ_JAWA",35,0,5],                                         // Jawa Motorcycle
-    ["C_Cher90s_Civ_Hatch",40,0,5],                                         // Hatch
-    ["C_Cher90s_Civ_Gaz",40,0,5],                                         // GAZ 24
-    ["C_Cher90s_Civ_GazB",40,0,5],                                         // GAZ 24B
-    ["C_Cher90s_Civ_Lada",40,0,5],                                         // Lada
-    ["C_Cher90s_Civ_Toyota",40,0,5],                                         // Toyota Sedan
-    ["C_Cher90s_Civ_Skodo",40,0,5],                                         // Skodovka
-    ["C_Cher90s_Civ_S1203",45,0,10],                                         // S1203 Van
-    ["C_Cher90s_Civ_1203B",45,0,10],                                         // S1203 Van Blue
-    ["C_Cher90s_Civ_Hilux",60,0,5],                                         // Hilux
-    ["C_Cher90s_Civ_HiluxC",60,0,5],                                         // Hilux (Covered)
-    ["C_Cher90s_Civ_UAZ3151",60,0,5],                                         // UAZ-3151
-    ["C_Cher90s_Civ_UAZ3151O",60,0,5],                                         // UAZ-3151 (Open)
-    ["C_Cher90s_Civ_Ural",70,0,10],                                         // Ural-4320
-    ["C_Cher90s_Civ_UralOpen",70,0,10],                                         // Ural-4320 (Open)
-    ["rhsgref_hidf_canoe",10,0,0],                                         // Canoe
-    ["C_Scooter_Transport_01_F",35,0,5],                                         // Water Scooter
-    ["B_Lifeboat",60,0,5]                                         // Rescue Boat
+    ["C_Cher90s_Civ_Bike",5,0,0],                                         // Bicycle
+    ["C_Cher90s_Civ_JAWA",10,0,5],                                         // Jawa Motorcycle
+    ["C_Cher90s_Civ_Hatch",20,0,5],                                         // Hatch
+    ["C_Cher90s_Civ_Gaz",20,0,5],                                         // GAZ 24
+    ["C_Cher90s_Civ_GazB",20,0,5],                                         // GAZ 24B
+    ["C_Cher90s_Civ_Lada",20,0,5],                                         // Lada
+    ["C_Cher90s_Civ_Toyota",20,0,5],                                         // Toyota Sedan
+    ["C_Cher90s_Civ_Skodo",20,0,5],                                         // Skodovka
+    ["C_Cher90s_Civ_S1203",25,0,10],                                         // S1203 Van
+    ["C_Cher90s_Civ_1203B",25,0,10],                                         // S1203 Van Blue
+    ["C_Cher90s_Civ_Hilux",30,0,5],                                         // Hilux
+    ["C_Cher90s_Civ_HiluxC",30,0,5],                                         // Hilux (Covered)
+    ["C_Cher90s_Civ_UAZ3151",30,0,5],                                         // UAZ-3151
+    ["C_Cher90s_Civ_UAZ3151O",30,0,5],                                         // UAZ-3151 (Open)
+    ["C_Cher90s_Civ_Ural",40,0,10],                                         // Ural-4320
+    ["C_Cher90s_Civ_UralOpen",40,0,10],                                         // Ural-4320 (Open)
+    ["rhsgref_hidf_canoe",5,0,0],                                         // Canoe
+    ["C_Scooter_Transport_01_F",25,0,5],                                         // Water Scooter
+    ["B_Lifeboat",30,0,5]                                         // Rescue Boat
     
 ];
 
@@ -122,7 +123,7 @@ KPLIB_b_vehAir = [
 KPLIB_b_vehStatic = [
     ["B_AFBiH_D30",250,300,0],                                     // D-30
     ["B_AFBiH_Podnos",100,150,0],                                     // Podnos mortar
-    ["rhsgref_cdf_b_SPG9",100,150,0],                                     // Podnos mortar
+    ["rhsgref_cdf_b_SPG9",100,150,0],                                     // spg-9
     ["B_AFBiH_ZU23",75,250,40],                                         // ZU AA
     ["B_AFBiH_M2",25,30,0],                                     // M2 HMG
     ["B_AFBiH_M2Lo",25,30,0]                                     // M2 HMG (Low Mount)
@@ -295,12 +296,12 @@ KPLIB_b_objectsDeco = [
 ];
 
 KPLIB_b_vehSupport = [
-    [KPLIB_b_arsenal,25,25,0],
+    [KPLIB_b_arsenal,25,50,0],
     [(KPLIB_b_mobileRespawn select 0),150,0,100],
     [(KPLIB_b_mobileRespawn select 1),200,0,100],
     [(KPLIB_b_mobileRespawn select 2),300,0,100],
-    [KPLIB_b_fobBox,300,500,0],
-    [KPLIB_b_fobTruck,300,500,75],
+    [KPLIB_b_fobBox,1200,1000,600],
+    [KPLIB_b_fobTruck,1200,1000,600],
     [KPLIB_b_smallStorage,0,0,0],
     [KPLIB_b_largeStorage,0,0,0],
     [KPLIB_b_logiStation,150,0,0],
@@ -308,13 +309,13 @@ KPLIB_b_vehSupport = [
     [KPLIB_b_slotHeli,250,0,0],
     [KPLIB_b_slotPlane,500,0,0],
     ["B_AFBiH_EmptyBox",1,0,0],
-    ["ACE_medicalSupplyCrate_advanced",10,0,0],
-    ["B_AFBiH_KORDBox",10,20,0],
-    ["B_AFBiH_SPG9Box",10,20,0],
-    ["B_AFBiH_M80Box",10,30,0],
-    ["B_AFBiH_IglaBox",10,60,0],
-    ["ACE_Wheel",10,0,0],
-    ["ACE_Track",25,0,0],
+    ["ACE_medicalSupplyCrate_advanced",1,0,0],
+    ["B_AFBiH_KORDBox",1,1,0],
+    ["B_AFBiH_SPG9Box",1,1,0],
+    ["B_AFBiH_M80Box",1,1,0],
+    ["B_AFBiH_IglaBox",1,60,0],
+    ["ACE_Wheel",1,0,0],
+    ["ACE_Track",2,0,0],
     ["RHS_Ural_Repair_MSV_01",150,0,60],                                // Ural Repair
     ["B_AFBiH_URAL_Fuel",150,0,160],                                 // Ural Fuel
     ["B_AFBiH_GAZ66_Ammo",150,150,45],                                  // Gaz-66 Ammo
@@ -429,5 +430,6 @@ KPLIB_b_vehToUnlock = [
     "B_AFBiH_ZU23",
     "rhsgref_cdf_b_reg_uaz_ags",
     "rhsgref_cdf_b_2s1",
+	"rhsgref_cdf_b_reg_uaz_spg9",
     "rhsgref_cdf_b_SPG9"
 ];

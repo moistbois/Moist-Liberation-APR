@@ -1,4 +1,4 @@
-﻿Vehicle Appearance Manager (GUI) by UNIT_normal
+Vehicle Appearance Manager (GUI) by UNIT_normal
 This allows you to change camouflage and component via GUI.
 VAM supports most of vanilla vehicles even mod vehicles.
 You can apply custom textures by making exceptions.
