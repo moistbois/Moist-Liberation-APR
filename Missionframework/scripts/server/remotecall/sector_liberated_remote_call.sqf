@@ -59,6 +59,11 @@ sleep 1;
 sleep 45;
 
 if (KPLIB_endgame == 0) then {
+    if ((random (150 / (KPLIB_param_difficulty * KPLIB_param_aggressivity))) < (KPLIB_enemyReadiness - 15) || _liberated_sector in KPLIB_sectors_capital)
+    then {
+        [_liberated_sector] spawn send_paratroopers;
+    };
+
     if (
         !(_liberated_sector in KPLIB_sectors_tower)
         && {

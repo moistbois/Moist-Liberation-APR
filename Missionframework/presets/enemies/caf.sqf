@@ -119,8 +119,10 @@ KPLIB_o_battleGrpVehicles = [
     "O_RSA90_T55",
     "O_RSA90_D30",
     "O_RSA90_GAZ66_Transport",
-    "O_RSA90_ZU23"
-
+    "O_RSA90_ZU23",
+    "O_RSA90_Mi24V",                                                 // Mi-24V
+    "O_RSA90_Mi24P",                                                 // Mi-24P
+    "O_RSA90_Mi8MT"                                                  // Mi-8
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).

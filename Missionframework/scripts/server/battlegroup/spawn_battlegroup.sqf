@@ -74,7 +74,8 @@ if !(_spawn_marker isEqualTo "") then {
 
     sleep 3;
 
-    KPLIB_enemyReadiness = (KPLIB_enemyReadiness - (round ((count _bg_groups) + (random (count _bg_groups))))) max 0;
+    //KPLIB_enemyReadiness = (KPLIB_enemyReadiness - (round ((count _bg_groups) + (random (count _bg_groups))))) max 0;
+    KPLIB_enemyReadiness = (KPLIB_enemyReadiness - (_target_size / 2)) max 0;
     stats_hostile_battlegroups = stats_hostile_battlegroups + 1;
 
     {
