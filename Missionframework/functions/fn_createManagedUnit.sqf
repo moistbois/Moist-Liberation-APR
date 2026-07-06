@@ -37,6 +37,11 @@ isNil {
     _unit addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
     _unit setRank _rank;
 
+    // Remove certain items from unit loadout depending on unit type
+    if !(_type in [KPLIB_o_officer, KPLIB_o_squadLeader, KPLIB_o_teamLeader, KPLIB_o_medic]) then {
+        _unit removeMagazines "rhs_mag_rdg2_white"; // white smokes
+    };
+
     // Set unit traits here because they are not properly configured in all faction mods.
     switch _type do {
         case KPLIB_o_engineer: {_unit setUnitTrait ["Engineer", true]; _unit setUnitTrait ["explosiveSpecialist", true]};
