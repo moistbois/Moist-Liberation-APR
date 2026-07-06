@@ -6,6 +6,12 @@
 */
 KPLIB_arsenalWeapons = [
 	//Primary
+	"rhs_weap_m92",			//Zastava m92
+	"rhs_weap_m70ab2",			//Zastava m70
+	"rhs_weap_m3a1_specops",			//Grease gun SD
+	"rhs_weap_m3a1",			//Grease gun
+	//"rhs_weap_M82a1",			// Barret
+	"rhs_weap_fnmag",			//FN MAG
 	"rhs_weap_m1garand_sa43",        //M1 Garand
     "rhs_weap_m14",        //M14
     "rhs_weap_kar98k",        //Karabiner Kurz
@@ -57,12 +63,12 @@ KPLIB_arsenalWeapons = [
     "hlc_rifle_rpk",
     // AKs - GLs
     "rhs_weap_m70b3n_pbg40",
-    "hlc_rifle_aks74_GL",
+    //"hlc_rifle_aks74_GL",
     "rhs_weap_ak74_gp25",
     "rhs_weap_ak74n_gp25",
     "rhs_weap_aks74_gp25",
     "rhs_weap_aks74n_gp25",
-    "hlc_rifle_akmgl",
+    //"hlc_rifle_akmgl",
     "rhs_weap_akm_gp25",
     "rhs_weap_akmn_gp25",
     "rhs_weap_akms_gp25",
@@ -113,6 +119,34 @@ KPLIB_arsenalWeapons = [
 ];
 
 KPLIB_arsenalMagazines = [
+	//Cigarettes
+	"cigs_voron_cigpack",
+	"cigs_crayons_crayonpack",
+	"cigs_nil_cigpack",
+	"cigs_baja_blast_cigpack",
+	"cigs_morley_cigpack",
+	"cigs_matches",
+	"cigs_lucky_strike_cigpack",
+	"cigs_pops_poppack",
+	"cigs_lighter",
+	"cigs_kosmos_cigpack",
+	"cigs_eckstein_cigpack",
+	"cigs_craven_cigpack",
+	"cigs_cigars_cigarbox_5",
+	"cigs_black_devil_cigpack",
+	"cigs_apollo_cigpack",
+	//M3A1 Grease gun
+	"rhsgref_30rnd_1143x23_M1911B_SMG",
+	"rhsgref_30rnd_1143x23_M1T_SMG",
+	//M107 Barrett
+	//"rhsusf_mag_10Rnd_STD_50BMG_M33",
+	//M240B
+	"rhsusf_100Rnd_762x51_m61_ap",
+	"rhsusf_100Rnd_762x51_m62_tracer",
+	"rhsusf_100Rnd_762x51",
+	"rhsusf_50Rnd_762x51_m61_ap",
+	"rhsusf_50Rnd_762x51_m62_tracer",
+	"rhsusf_50Rnd_762x51",
 	//M76
     "rhsgref_10Rnd_792x57_m76",
     "rhssaf_10Rnd_792x57_m76_tracer",
@@ -134,6 +168,13 @@ KPLIB_arsenalMagazines = [
     "rhs_20rnd_9x39mm_SP6",
     // AKs - Accessories
     // AKs - Ammo
+	"rhs_30Rnd_545x39_AK_green",
+	"rhs_30Rnd_545x39_7N6_AK",
+	"rhs_30Rnd_545x39_7N6M_AK",
+	"rhs_45Rnd_545x39_7N6M_AK",
+	"hlc_40Rnd_762x39_b_rpk",
+	"hlc_45Rnd_762x39_t_rpk",
+	"hlc_45Rnd_762x39_m_rpk",
     "rhs_30Rnd_762x39mm",
     "rhs_30Rnd_762x39mm_tracer",
     "rhssaf_30Rnd_762x39mm_M67",
@@ -269,6 +310,9 @@ KPLIB_arsenalMagazines = [
 
 KPLIB_arsenalItems = [
 // Headgear
+	"rhsgref_un_beret",
+	"rhssaf_helmet_m59_85_nocamo",
+	"rhssaf_helmet_m59_85_oakleaf",
 	"rhs_beanie_green",
     "rhs_beanie",
     "rds_worker_cap1",
@@ -543,6 +587,10 @@ KPLIB_arsenalItems = [
     "usm_nvg_scarf",
     "usm_nvg_giscarf2",
 // ACE items
+	"ACE_painkillers",
+	"ACE_SpottingScope",
+	"ACE_Flashlight_KSF1",
+	"ACE_Flashlight_MX991",
 	"ACE_DefusalKit",
 	"ACE_Flashlight_XL50",
 	"ACE_Cellphone",
@@ -558,6 +606,7 @@ KPLIB_arsenalItems = [
 	"ACE_SpraypaintWhite",                                          // Sprays
 	"ACE_SpraypaintYellow",                                         // Sprays
 // Weapon addons
+	"rhsusf_acc_ELCAN",
     "HLC_Charm_Herstal",
     "HLC_Charm_Izhmash",
     "HLC_Charm_Teethgang",
@@ -578,6 +627,7 @@ KPLIB_arsenalItems = [
     "rhsgref_acc_falMuzzle_l1a1",
     "HLC_Optic_ZFSG1",    
     "rhsgref_mg42_acc_AAsight",
+	"rhs_acc_pgo7v3",
     "rhs_acc_pgo7v2"
 ];
 
