@@ -86,6 +86,7 @@ KPLIB_arsenalWeapons = [
 	"rhs_weap_rpg18",
     "rhs_weap_m80",
     "rhs_weap_rpg7",
+	"rhs_weap_rshg2",
     // CSW - SPG
     "ace_compat_rhs_afrf3_spg9_carry",
     "ace_csw_spg9CarryTripod",
