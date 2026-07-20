@@ -628,6 +628,7 @@ KPLIB_arsenalItems = [
     "HLC_Optic_ZFSG1",    
     "rhsgref_mg42_acc_AAsight",
 	"rhs_acc_pgo7v3",
+	"hlc_muzzle_A1_FlashHider",
     "rhs_acc_pgo7v2"
 ];
 
