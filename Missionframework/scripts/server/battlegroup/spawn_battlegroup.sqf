@@ -1,7 +1,8 @@
 // TODO Refactor and create function
 params [
     ["_spawn_marker", "", [""]],
-    ["_infOnly", false, [false]]
+    ["_infOnly", false, [false]],
+    ["_reduceAggro", false, [false]]
 ];
 
 if (KPLIB_endgame == 1) exitWith {};
@@ -41,7 +42,7 @@ if !(_spawn_marker isEqualTo "") then {
         _grp setVariable ["KPLIB_isBattleGroup",true];
         };
     } else {
-        private _vehicle_pool = [KPLIB_o_battleGrpVehicles, KPLIB_o_battleGrpVehiclesLight] select (KPLIB_enemyReadiness < 50);
+        private _vehicle_pool = [KPLIB_o_battleGrpVehicles, KPLIB_o_battleGrpVehiclesLight] select (KPLIB_enemyReadiness < 55);
 
         while {count _selected_opfor_battlegroup < _target_size} do {
             _selected_opfor_battlegroup pushback (selectRandom _vehicle_pool);
@@ -75,7 +76,9 @@ if !(_spawn_marker isEqualTo "") then {
     sleep 3;
 
     //KPLIB_enemyReadiness = (KPLIB_enemyReadiness - (round ((count _bg_groups) + (random (count _bg_groups))))) max 0;
-    KPLIB_enemyReadiness = (KPLIB_enemyReadiness - (_target_size / 2)) max 0;
+    if (_reduceAggro) then {
+        KPLIB_enemyReadiness = (KPLIB_enemyReadiness - (_target_size / 3)) max 35;
+    };
     stats_hostile_battlegroups = stats_hostile_battlegroups + 1;
 
     {

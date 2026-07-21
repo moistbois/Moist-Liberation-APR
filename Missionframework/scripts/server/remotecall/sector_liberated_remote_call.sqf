@@ -72,6 +72,6 @@ if (KPLIB_endgame == 0) then {
         }
         && {[] call KPLIB_fnc_getOpforCap < KPLIB_cap_battlegroup}
     ) then {
-        [_liberated_sector, (random 100) < 45] spawn spawn_battlegroup;
+        [_liberated_sector, (random 100) < 45, false] spawn spawn_battlegroup;
     };
 };
