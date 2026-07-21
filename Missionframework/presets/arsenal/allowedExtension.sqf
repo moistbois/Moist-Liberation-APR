@@ -31,6 +31,12 @@ KPLIB_arsenalAllowedExtension = [
 	"murshun_cigs_lighter",
 	"murshun_cigs_cigpack",
 	"immersion_pops_poppack",
+	//Looted equipment
+	"rhssaf_vest_md99_woodland_rifleman_radio",
+	"rhssaf_vest_md99_woodland_rifleman",
+	"rhssaf_vest_md98_woodland",
+	"rhssaf_vest_md98_rifleman",
+	"rhssaf_vest_md99_md2camo_rifleman",
     //"ACE_launch_NLAW_Used_F",
     "ACE_PreloadedMissileDummy_CUP",
     "ACE_PreloadedMissileDummy_Igla_CUP",

@@ -49,7 +49,7 @@
 <Project name="Liberation">
     <Package name="Liberation">
         <Key ID="STR_MISSION_TITLE">
-            <Original>Liberation</Original>
+            <Original>CTI 34 KP Liberation green_sea v0.96.8apr</Original>
         </Key>
         <Key ID="STR_MISSION_VERSION">
             <Original>v0.96.8apr</Original>
