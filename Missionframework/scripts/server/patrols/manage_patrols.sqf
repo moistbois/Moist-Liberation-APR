@@ -19,6 +19,6 @@ if !(worldName in KPLIB_battlegroup_clearance) then {
 };
 
 {
-    [_x, true] spawn manage_one_patrol;
+    [_x, false] spawn manage_one_patrol;
     sleep 1;
 } foreach _combat_triggers_infantry;

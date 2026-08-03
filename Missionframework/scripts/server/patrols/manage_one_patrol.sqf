@@ -18,13 +18,13 @@ while { KPLIB_endgame == 0 } do {
 
     _spawn_marker = "";
     while { _spawn_marker == "" } do {
-        _spawn_marker = [1500,4000,true] call KPLIB_fnc_getOpforSpawnPoint;
+        _spawn_marker = [1000,3000,true] call KPLIB_fnc_getOpforSpawnPoint;
         if ( _spawn_marker == "" ) then {
             sleep (150 + (random 150));
         };
     };
 
-    _sector_spawn_pos = [(((markerpos _spawn_marker) select 0) - 500) + (random 1000),(((markerpos _spawn_marker) select 1) - 500) + (random 1000),0];
+    _sector_spawn_pos = [(((markerpos _spawn_marker) select 0) - 500) + (random 500),(((markerpos _spawn_marker) select 1) - 500) + (random 500),0];
 
     if (_is_infantry) then {
 
