@@ -16,27 +16,50 @@ while { KPLIB_endgame == 0 } do {
 
     _grp = grpNull;
 
-    _spawn_marker = "";
-    while { _spawn_marker == "" } do {
-        _spawn_marker = [1000,3000,true] call KPLIB_fnc_getOpforSpawnPoint;
-        if ( _spawn_marker == "" ) then {
-            sleep (150 + (random 150));
+    private _activeEnemySectors =
+        KPLIB_sectors_active select {
+            !(_x in KPLIB_sectors_player)
+        };
+
+    if (_activeEnemySectors isEqualTo []) then {
+        sleep 60;
+        continue;
+    };
+
+    private _sector_spawn = selectRandom _activeEnemySectors;
+    private _sectorPos = markerPos _sector_spawn;
+
+    private _sector_spawn_pos = [];
+
+    /*
+        Find a patrol spawn point:
+        - 300m to 1000m from the active sector
+        - At least 500m from any BLUFOR unit
+    */
+    for "_i" from 1 to 25 do {
+
+        private _candidate = _sectorPos getPos [
+            300 + random 700,
+            random 360
+        ];
+
+        if (
+            ([_candidate, 750, KPLIB_side_player]
+                call KPLIB_fnc_getUnitsCount) == 0
+        ) exitWith {
+            _sector_spawn_pos = _candidate;
         };
     };
 
-    _sector_spawn_pos = [(((markerpos _spawn_marker) select 0) - 500) + (random 500),(((markerpos _spawn_marker) select 1) - 500) + (random 500),0];
+    if (_sector_spawn_pos isEqualTo []) then {
+        diag_log format [
+            "PATROL DEBUG: No valid spawn position found near %1",
+            _sector_spawn
+        ];
+        continue;
+    };
 
     if (_is_infantry) then {
-
-        private _sectors_spawn = [];
-        {
-            if ( _sector_spawn_pos distance (markerpos _x) < 2500) then {
-                _sectors_spawn pushBack _x;
-            };
-        } foreach (KPLIB_sectors_all - KPLIB_sectors_player);
-        private _sector_spawn = selectRandom _sectors_spawn;
-        if (!isNil "_sector_spawn") then {_sector_spawn_pos = markerPos _sector_spawn};
-
         _grp = createGroup [KPLIB_side_enemy, true];
         _squad = [] call KPLIB_fnc_getSquadComp;
         {

@@ -70,5 +70,5 @@ if ((alive _transVeh) && (alive (driver _transVeh))) then {
 
     sleep 10;
 
-    [_infGrp] spawn battlegroup_ai;
+    [_infGrp, ""] spawn battlegroup_ai;
 };

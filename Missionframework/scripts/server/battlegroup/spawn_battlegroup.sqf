@@ -7,6 +7,7 @@ params [
 
 if (KPLIB_endgame == 1) exitWith {};
 
+private _targetSector = _spawn_marker;
 _spawn_marker = [[800, 500] select _infOnly, [3000, 1500] select _infOnly, false, markerPos _spawn_marker] call KPLIB_fnc_getOpforSpawnPoint;
 
 if !(_spawn_marker isEqualTo "") then {
@@ -38,7 +39,11 @@ if !(_spawn_marker isEqualTo "") then {
             [selectRandom _infClasses, markerPos _spawn_marker, _grp] call KPLIB_fnc_createManagedUnit;
         };
         [_grp] call KPLIB_fnc_LAMBS_enableReinforcements;
-        [_grp] call battlegroup_ai;
+        if (_targetSector in KPLIB_sectors_player) then {
+            [_grp, markerPos _targetSector] call battlegroup_ai;
+        } else {
+            [_grp, ""] call battlegroup_ai;
+        };
         _grp setVariable ["KPLIB_isBattleGroup",true];
         };
     } else {
@@ -56,12 +61,18 @@ if !(_spawn_marker isEqualTo "") then {
             sleep 0.5;
 
             (crew _vehicle) joinSilent _nextgrp;
-            [_nextgrp] call battlegroup_ai;
+
+            if (_targetSector in KPLIB_sectors_player) then {
+                [_nextgrp, markerPos _targetSector] call battlegroup_ai;
+            } else {
+                [_nextgrp, ""] call battlegroup_ai;
+            };
+
             _nextgrp setVariable ["KPLIB_isBattleGroup",true];
 
             if ((_x in KPLIB_o_troopTransports) && ([] call KPLIB_fnc_getOpforCap < KPLIB_cap_battlegroup)) then {
                 if (_vehicle isKindOf "Air") then {
-                    [[markerPos _spawn_marker] call KPLIB_fnc_getNearestBluforObjective, _vehicle] spawn send_paratroopers;
+                    [[markerPos _targetSector] call KPLIB_fnc_getNearestBluforObjective, _vehicle] spawn send_paratroopers;
                 } else {
                     [_vehicle] spawn troup_transport;
                 };
@@ -69,7 +80,7 @@ if !(_spawn_marker isEqualTo "") then {
         } forEach _selected_opfor_battlegroup;
 
         if (KPLIB_param_aggressivity > 0.9) then {
-            [[markerPos _spawn_marker] call KPLIB_fnc_getNearestBluforObjective] spawn spawn_air;
+            [[markerPos _targetSector] call KPLIB_fnc_getNearestBluforObjective] spawn spawn_air;
         };
     };
 
