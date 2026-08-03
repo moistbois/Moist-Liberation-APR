@@ -1448,11 +1448,27 @@ RYD_CFF_Fire =
 												}
 											foreach (units (group _vh))
 											}
-										else
-											{
-											_vh doArtilleryFire [_pos, _ammo,(_vh getVariable ["RydFFE_ShotsToFire",1])]
-											};
-										
+										else {
+												private _markerName = format [
+													"EnemyArty_%1",
+													floor (diag_tickTime)
+												];
+
+												private _fakePos = (getPos _vh) getPos [250 + random 500, random 360];
+												createMarker [_markerName, _fakePos];
+
+												_markerName setMarkerColor "ColorRed";
+												_markerName setMarkerText "Enemy Artillery";
+
+												[_markerName] spawn {
+													params ["_m"];
+													sleep 900;
+													deleteMarker _m;
+												};
+
+												_vh doArtilleryFire [_pos, _ammo, (_vh getVariable ["RydFFE_ShotsToFire",1])];
+											};			
+	
 										_ct = time;
 										
 										waitUntil

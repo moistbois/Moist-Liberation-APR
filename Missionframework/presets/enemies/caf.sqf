@@ -68,9 +68,6 @@ KPLIB_o_militiaVehicles = [
     "O_RSA90_BTR60PB",
     "O_RSA90_M1151",
     "O_RSA90_BMP",
-    "O_RSA90_Podnos",
-    "O_RSA90_M2",
-    "O_RSA90_NSV"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
@@ -85,12 +82,7 @@ KPLIB_o_armyVehicles = [
     "O_RSA90_T34",
     "O_RSA90_T72",
     "O_RSA90_T55",
-    "O_RSA90_D30",
-    "O_RSA90_Podnos",
     "O_RSA90_ZU23",
-    "O_RSA90_M2",
-    "O_RSA90_M2Lo",
-    "O_RSA90_NSV"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
@@ -100,11 +92,6 @@ KPLIB_o_armyVehiclesLight = [
     "O_RSA90_BTR60PB",
     "O_RSA90_BMP",
     "O_RSA90_T34",
-    "O_RSA90_Podnos",
-    "O_RSA90_M2",
-    "O_RSA90_M2Lo",
-    "O_RSA90_NSV"
-
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
@@ -117,7 +104,6 @@ KPLIB_o_battleGrpVehicles = [
     "O_RSA90_T72",
     "O_RSA90_GAZ66_Transport",
     "O_RSA90_T55",
-    "O_RSA90_D30",
     "O_RSA90_GAZ66_Transport",
     "O_RSA90_ZU23",
     "O_RSA90_Mi24V",                                                 // Mi-24V
@@ -136,7 +122,6 @@ KPLIB_o_battleGrpVehiclesLight = [
     "O_RSA90_GAZ66_Transport",
     "O_RSA90_BMP",
     "O_RSA90_GAZ66_Transport",
-    "O_RSA90_Podnos"
 
 ];
 
@@ -156,8 +141,8 @@ KPLIB_o_troopTransports = [
 KPLIB_o_helicopters = [
     "O_RSA90_Mi24V",                                                 // Mi-24V
     "O_RSA90_Mi24P",                                                 // Mi-24P
+    "O_RSA90_Mi8MT",
     "O_RSA90_Mi8MT"                                                 // Mi-8
-
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
@@ -167,7 +152,9 @@ KPLIB_o_planes = [
 
 // Enemy defense turrets that will be spawned in sectors.
 KPLIB_o_turrets_HMG = [
-
+    "O_RSA90_M2",
+    "O_RSA90_M2Lo",
+    "O_RSA90_NSV"
 ];
 
 // Enemy defense turrets that will be spawned in sectors.
@@ -187,14 +174,16 @@ KPLIB_o_turrets_AA = [
 
 // Enemy defense turrets that will be spawned in sectors.
 KPLIB_o_turrets_MORTAR = [
-
+    "O_RSA90_Podnos"
 ];
 
 // Enemy SAM turrets that will be spawned in the back country
 KPLIB_o_turrets_SAM = [
+    ["O_RSA90_D30","O_RSA90_D30"],
+    ["O_RSA90_D30","O_RSA90_D30"],
+    ["rhssaf_army_2s1","rhssaf_army_2s1"],
     ["O_RSA90_BM21"],
     ["O_RSA90_GAZ66_AA"],
     ["O_RSA90_URAL_AA"],
-    ["O_RSA90_ZU23"],
-    ["rhssaf_army_2s1"]
+    ["O_RSA90_ZU23"]
 ];
