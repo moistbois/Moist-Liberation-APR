@@ -9,7 +9,8 @@ if (!hasInterface) exitWith {};
 //3 : Activate when player is near KP Liberation FOB
 VAM_condition_check_options = [1];
 VAM_repair_vehicle_list = [
-    "Land_Workbench_01_F"
+    "Land_Workbench_01_F",
+    "RHS_Ural_Repair_MSV_01"
 ];
 
 //Exception for bug fix and additional cosmetic change. Check out fnc_VAM_GUI_check.sqf.
