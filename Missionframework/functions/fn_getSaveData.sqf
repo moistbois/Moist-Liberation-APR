@@ -134,8 +134,8 @@ private ["_fobPos", "_fobObjects", "_grpUnits", "_fobMines"];
         _aiGroups pushBack [getPosATL (leader _x), (_grpUnits apply {typeOf _x})];
     } forEach (_allBlueGroups select {(_fobPos distance2D (leader _x)) < (KPLIB_range_fob * 1.2)});
 
-    // Save all mines around FOB
-    _fobMines = allMines inAreaArray [_fobPos, KPLIB_range_fob * 1.2, KPLIB_range_fob * 1.2];
+    // Save all mines
+    _fobMines = allMines;
     _allMines append (_fobMines apply {[
         getPosWorld _x,
         [vectorDirVisual _x, vectorUpVisual _x],
