@@ -28,7 +28,8 @@
 "76561198264938295", 	//jinx
 "76561199815502433",	//allu
 "76561198119992791",	//maahi
-"76561198294706943"	//jeuse
+"76561198294706943",	//jeuse
+"76561198084717039" 	//adexa
 */
 
 // Access to the commander slot.
@@ -43,7 +44,8 @@ KPLIB_whitelist_cmdrSlot = [
 "76561198264938295", 	//jinx
 "76561199815502433",	//allu
 "76561198119992791",	//maahi
-"76561198294706943"	//jeuse	 
+"76561198294706943",	//jeuse
+"76561198084717039" 	//adexa
 ];
 
 // Access the commander actions (rights, production, etc.), even if the corresponding player is not in the commander slot.
@@ -58,7 +60,8 @@ KPLIB_whitelist_cmdrActions = [
 "76561198264938295", 	//jinx
 "76561199815502433",	//allu
 "76561198119992791",	//maahi
-"76561198294706943"	//jeuse
+"76561198294706943",	//jeuse
+"76561198084717039"	    //adexa
 ];
 
 // Whitelist for BI support framework access.
@@ -73,5 +76,6 @@ KPLIB_whitelist_supportModule = [
 "76561198264938295", 	//jinx
 "76561199815502433",	//allu
 "76561198119992791",	//maahi
-"76561198294706943"	//jeuse
+"76561198294706943",	//jeuse
+"76561198084717039"     //adexa
 ];
