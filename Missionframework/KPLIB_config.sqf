@@ -386,7 +386,7 @@ KPLIB_recycling_percentage = 0.5;
 KPLIB_defended_buildingpos_part = 0.5;
 
 // Time in seconds how long a captured sector is vulnerable to enemy troops.
-KPLIB_vulnerability_timer = 2700;
+KPLIB_vulnerability_timer = 1800;
 
 // Chance that enemy infantry will surrender after heavy losses are encountered.
 KPLIB_surrender_chance = 25;
