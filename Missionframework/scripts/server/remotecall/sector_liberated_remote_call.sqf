@@ -15,6 +15,7 @@ stats_readiness_earned = stats_readiness_earned + _KPLIB_enemyReadiness_increase
 
 [_liberated_sector, 0] remoteExecCall ["remote_call_sector"];
 KPLIB_sectors_player pushback _liberated_sector; publicVariable "KPLIB_sectors_player";
+latest_liberated_sector = _liberated_sector; publicVariable "latest_liberated_sector";
 stats_sectors_liberated = stats_sectors_liberated + 1;
 
 ["KPLIB_ResetBattleGroups"] call CBA_fnc_serverEvent;
@@ -64,14 +65,15 @@ if (KPLIB_endgame == 0) then {
         [_liberated_sector] spawn send_paratroopers;
     };
 
-    if (
-        !(_liberated_sector in KPLIB_sectors_tower)
-        && {
+    if (/*{
             (random (150 / (KPLIB_param_difficulty * KPLIB_param_aggressivity))) < (KPLIB_enemyReadiness - 15)
             || _liberated_sector in KPLIB_sectors_capital
         }
-        && {[] call KPLIB_fnc_getOpforCap < KPLIB_cap_battlegroup}
+        && */{[] call KPLIB_fnc_getOpforCap < KPLIB_cap_battlegroup}
     ) then {
-        [_liberated_sector, (random 100) < 45, false] spawn spawn_battlegroup;
+        if ((_liberated_sector in KPLIB_sectors_tower)) then {
+            [_liberated_sector, true, false] spawn spawn_battlegroup; // only spawn infantry battlegroup for towers
+        };
+        [_liberated_sector, false, false] spawn spawn_battlegroup;
     };
 };

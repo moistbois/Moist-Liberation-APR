@@ -22,6 +22,10 @@ while {KPLIB_param_aggressivity > 0.9 && KPLIB_endgame == 0} do {
         && {[] call KPLIB_fnc_getOpforCap < KPLIB_cap_battlegroup}
         && {diag_fps > 15.0}
     ) then {
-        ["", (random 100) < 33, true] spawn spawn_battlegroup;
+        if (!isNil "latest_liberated_sector") then {
+            [markerPos latest_liberated_sector, (random 100) < 20, true] spawn spawn_battlegroup;
+        } else {
+            ["", (random 100) < 20, false] spawn spawn_battlegroup;
+        }
     };
 };
