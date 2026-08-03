@@ -15,4 +15,4 @@
         Vehicle classname [STRING]
 */
 
-selectRandom ([KPLIB_o_armyVehicles, KPLIB_o_armyVehiclesLight] select (KPLIB_enemyReadiness < 40))
+selectRandom ([KPLIB_o_armyVehicles, KPLIB_o_armyVehiclesLight] select (KPLIB_enemyReadiness < 55))
