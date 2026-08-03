@@ -72,14 +72,14 @@ private ["_valid", "_current", "_distances"];
 
     // Make sure that there is an opfor sector in sensible range to spawn
     if (_valid) then {
-        if ((KPLIB_sectors_all - KPLIB_sectors_player) findIf {((markerPos _current) distance2D (markerPos _x)) < 2000} < 0) then {
+        if ((KPLIB_sectors_all - KPLIB_sectors_player) findIf {((markerPos _current) distance2D (markerPos _x)) < 4000} < 0) then {
             _valid = false;
         };
     };
 
     // Make sure that there is no blufor unit inside min dist to spawn
     if (_valid) then {
-        if (([markerpos _current, _min, KPLIB_side_player] call KPLIB_fnc_getUnitsCount) > 0) then {
+        if (([markerpos _current, _min * 0.5, KPLIB_side_player] call KPLIB_fnc_getUnitsCount) > 0) then {
             _valid = false;
         };
     };

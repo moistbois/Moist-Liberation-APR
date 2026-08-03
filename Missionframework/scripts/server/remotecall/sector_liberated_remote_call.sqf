@@ -65,12 +65,7 @@ if (KPLIB_endgame == 0) then {
         [_liberated_sector] spawn send_paratroopers;
     };
 
-    if (/*{
-            (random (150 / (KPLIB_param_difficulty * KPLIB_param_aggressivity))) < (KPLIB_enemyReadiness - 15)
-            || _liberated_sector in KPLIB_sectors_capital
-        }
-        && */{[] call KPLIB_fnc_getOpforCap < KPLIB_cap_battlegroup}
-    ) then {
+    if (([] call KPLIB_fnc_getOpforCap) < KPLIB_cap_battlegroup) then {
         if ((_liberated_sector in KPLIB_sectors_tower)) then {
             [_liberated_sector, true, false] spawn spawn_battlegroup; // only spawn infantry battlegroup for towers
         };

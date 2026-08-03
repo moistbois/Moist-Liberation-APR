@@ -25,7 +25,7 @@ while {KPLIB_param_aggressivity > 0.9 && KPLIB_endgame == 0} do {
         if (!isNil "latest_liberated_sector") then {
             [markerPos latest_liberated_sector, (random 100) < 20, true] spawn spawn_battlegroup;
         } else {
-            ["", (random 100) < 20, false] spawn spawn_battlegroup;
+            ["", (random 100) < 20, true] spawn spawn_battlegroup;
         }
     };
 };
