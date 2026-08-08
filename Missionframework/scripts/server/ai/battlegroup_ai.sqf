@@ -1,13 +1,13 @@
 params [
     ["_grp", grpNull, [grpNull]],
-    ["_target", "", [""]]
+    ["_target", [], [[]]]
 ];
 
 if (isNull _grp) exitWith {};
 
 private _objPos = [];
 
-if (_target isEqualTo "") then {
+if (_target isEqualTo []) then {
     _objPos = [getPos (leader _grp)] call KPLIB_fnc_getNearestBluforObjective;
 } else {
     _objPos = _target;

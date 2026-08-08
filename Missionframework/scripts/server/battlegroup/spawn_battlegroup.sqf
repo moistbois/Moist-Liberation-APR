@@ -42,7 +42,7 @@ if !(_spawn_marker isEqualTo "") then {
         if (_targetSector in KPLIB_sectors_player) then {
             [_grp, markerPos _targetSector] call battlegroup_ai;
         } else {
-            [_grp, ""] call battlegroup_ai;
+            [_grp] call battlegroup_ai;
         };
         _grp setVariable ["KPLIB_isBattleGroup",true];
         };
@@ -65,7 +65,7 @@ if !(_spawn_marker isEqualTo "") then {
             if (_targetSector in KPLIB_sectors_player) then {
                 [_nextgrp, markerPos _targetSector] call battlegroup_ai;
             } else {
-                [_nextgrp, ""] call battlegroup_ai;
+                [_nextgrp] call battlegroup_ai;
             };
 
             _nextgrp setVariable ["KPLIB_isBattleGroup",true];
