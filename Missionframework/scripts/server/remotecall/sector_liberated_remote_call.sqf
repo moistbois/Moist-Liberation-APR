@@ -101,34 +101,33 @@ if (KPLIB_endgame == 0) then {
         };
     };
 
-    if (([] call KPLIB_fnc_getOpforCap) < KPLIB_cap_battlegroup) then {
         private _battlegroup_delay = (1800 * (1 - ((min [KPLIB_enemyReadiness, 100]) / 100)));
         if (_battlegroup_delay < 0) then {_battlegroup_delay = 0;};
         private _battlegroup_delay_minutes = ceil (_battlegroup_delay / 60);
         private _battlegroup_delay_estimate = _battlegroup_delay_minutes + floor (random 7) - 3;
         if (_battlegroup_delay_estimate < 1) then {_battlegroup_delay_estimate = 1;};
 
-        if (_battlegroup_delay > 0) then {
-            [_liberated_sector, _battlegroup_delay_estimate] remoteExecCall ["remote_call_battlegroup_delayed"];
+        if (([] call KPLIB_fnc_getOpforCap) < KPLIB_cap_battlegroup) then {
+            if (_battlegroup_delay > 0) then {
+                [_liberated_sector, _battlegroup_delay_estimate] remoteExec ["remote_call_battlegroup_delayed"];
 
-            if ((_liberated_sector in KPLIB_sectors_tower)) then {
-                [_liberated_sector, true, false, _battlegroup_delay] spawn {
+                if ((_liberated_sector in KPLIB_sectors_tower)) then {
+                    [_liberated_sector, true, false, _battlegroup_delay] spawn {
+                        private ["_sector", "_infOnly", "_reduceAggro", "_delay"] = _this; // only spawn infantry battlegroup for towers
+                        sleep _delay;
+                        [_sector, _infOnly, _reduceAggro] call spawn_battlegroup;
+                    };
+                };
+
+                [_liberated_sector, false, false, _battlegroup_delay] spawn {
                     private ["_sector", "_infOnly", "_reduceAggro", "_delay"] = _this;
                     sleep _delay;
                     [_sector, _infOnly, _reduceAggro] call spawn_battlegroup;
                 };
+            } else {
+                if ((_liberated_sector in KPLIB_sectors_tower)) then {
+                    [_liberated_sector, true, false] spawn spawn_battlegroup; // only spawn infantry battlegroup for towers
+                };
+                [_liberated_sector, false, false] spawn spawn_battlegroup;
             };
-
-            [_liberated_sector, false, false, _battlegroup_delay] spawn {
-                private ["_sector", "_infOnly", "_reduceAggro", "_delay"] = _this;
-                sleep _delay;
-                [_sector, _infOnly, _reduceAggro] call spawn_battlegroup;
-            };
-        } else {
-            if ((_liberated_sector in KPLIB_sectors_tower)) then {
-                [_liberated_sector, true, false] spawn spawn_battlegroup; // only spawn infantry battlegroup for towers
-            };
-            [_liberated_sector, false, false] spawn spawn_battlegroup;
         };
-    };
-};
