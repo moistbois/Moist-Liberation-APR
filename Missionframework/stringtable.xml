@@ -1283,6 +1283,12 @@
             <Czech>Nepřátelské jednotky spatřeny poblíž %1</Czech>
             <Japanese>敵部隊が %1 付近で発見された。</Japanese>
         </Key>
+        <Key ID="STR_NOTIFICATION_BATTLEGROUP_DELAYED_TITLE">
+            <Original>COUNTER ATTACK APPROACHING</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_BATTLEGROUP_DELAYED_TEXT">
+            <Original>Hostile forces will storm %1 in ~ %2 minutes.</Original>
+        </Key>
         <Key ID="STR_NOTIFICATION_INTEL_TITLE">
             <Original>NEW MESSAGE</Original>
             <French>NOUVEAUX RENSEIGNEMENTS</French>

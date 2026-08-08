@@ -71,6 +71,13 @@ class CfgNotifications {
         color[] = { 1, 0, 0, 1 };
         sound = "taskFailed";
     };
+    class lib_battlegroup_delayed: lib_default_notification {
+        title = $STR_NOTIFICATION_BATTLEGROUP_DELAYED_TITLE;
+        description = $STR_NOTIFICATION_BATTLEGROUP_DELAYED_TEXT;
+        iconPicture = "res\notif\ui_notif_bgp.paa";
+        color[] = { 1, 0.5, 0, 1 };
+        sound = "taskCanceled";
+    };
     class lib_incoming: lib_battlegroup {
         description = $STR_NOTIFICATION_INCOMING_TEXT;
     };

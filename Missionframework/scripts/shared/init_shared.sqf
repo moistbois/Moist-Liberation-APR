@@ -23,6 +23,7 @@ if (KPLIB_param_logistic) then {
 remote_call_sector = compile preprocessFileLineNumbers "scripts\client\remotecall\remote_call_sector.sqf";
 remote_call_fob = compile preprocessFileLineNumbers "scripts\client\remotecall\remote_call_fob.sqf";
 remote_call_battlegroup = compile preprocessFileLineNumbers "scripts\client\remotecall\remote_call_battlegroup.sqf";
+remote_call_battlegroup_delayed = compile preprocessFileLineNumbers "scripts\client\remotecall\remote_call_battlegroup_delayed.sqf";
 remote_call_endgame = compile preprocessFileLineNumbers "scripts\client\remotecall\remote_call_endgame.sqf";
 remote_call_prisonner = compile preprocessFileLineNumbers "scripts\client\remotecall\remote_call_prisonner.sqf";
 remote_call_intel = compile preprocessFileLineNumbers "scripts\client\remotecall\remote_call_intel.sqf";

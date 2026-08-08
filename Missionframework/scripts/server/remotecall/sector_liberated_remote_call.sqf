@@ -62,13 +62,73 @@ sleep 45;
 if (KPLIB_endgame == 0) then {
     if ((random (150 / (KPLIB_param_difficulty * KPLIB_param_aggressivity))) < (KPLIB_enemyReadiness - 15) || _liberated_sector in KPLIB_sectors_capital)
     then {
-        [_liberated_sector] spawn send_paratroopers;
+        // readiness curve for helos:
+        // 35-45 -> mostly 1
+        // 45-60 -> mostly 2
+        // 60+   -> mostly 3
+        private _roll = random 100;
+        private _paratrooper_helos = 1;
+
+        if (KPLIB_enemyReadiness < 45) then {
+            // low readiness should mainly spawn 1, rarely 2 and extremely rarely 3
+            if (_roll < 10) then {
+                _paratrooper_helos = 2;
+            } else if (_roll < 12) then {
+                _paratrooper_helos = 3;
+            };
+        } else if (KPLIB_enemyReadiness < 60) then {
+            // middle readiness should favour 2
+            if (_roll < 20) then {
+                _paratrooper_helos = 1;
+            } else if (_roll < 80) then {
+                _paratrooper_helos = 2;
+            } else {
+                _paratrooper_helos = 3;
+            };
+        } else {
+            // high readiness should almost always spawn 3
+            if (_roll < 70) then {
+                _paratrooper_helos = 3;
+            } else if (_roll < 95) then {
+                _paratrooper_helos = 2;
+            } else {
+                _paratrooper_helos = 1;
+            };
+        };
+
+        for "_i" from 1 to _paratrooper_helos do {
+            [_liberated_sector] spawn send_paratroopers;
+        };
     };
 
     if (([] call KPLIB_fnc_getOpforCap) < KPLIB_cap_battlegroup) then {
-        if ((_liberated_sector in KPLIB_sectors_tower)) then {
-            [_liberated_sector, true, false] spawn spawn_battlegroup; // only spawn infantry battlegroup for towers
+        private _battlegroup_delay = (1800 * (1 - ((min [KPLIB_enemyReadiness, 100]) / 100)));
+        if (_battlegroup_delay < 0) then {_battlegroup_delay = 0;};
+        private _battlegroup_delay_minutes = ceil (_battlegroup_delay / 60);
+        private _battlegroup_delay_estimate = _battlegroup_delay_minutes + floor (random 7) - 3;
+        if (_battlegroup_delay_estimate < 1) then {_battlegroup_delay_estimate = 1;};
+
+        if (_battlegroup_delay > 0) then {
+            [_liberated_sector, _battlegroup_delay_estimate] remoteExecCall ["remote_call_battlegroup_delayed"];
+
+            if ((_liberated_sector in KPLIB_sectors_tower)) then {
+                [_liberated_sector, true, false, _battlegroup_delay] spawn {
+                    private ["_sector", "_infOnly", "_reduceAggro", "_delay"] = _this;
+                    sleep _delay;
+                    [_sector, _infOnly, _reduceAggro] call spawn_battlegroup;
+                };
+            };
+
+            [_liberated_sector, false, false, _battlegroup_delay] spawn {
+                private ["_sector", "_infOnly", "_reduceAggro", "_delay"] = _this;
+                sleep _delay;
+                [_sector, _infOnly, _reduceAggro] call spawn_battlegroup;
+            };
+        } else {
+            if ((_liberated_sector in KPLIB_sectors_tower)) then {
+                [_liberated_sector, true, false] spawn spawn_battlegroup; // only spawn infantry battlegroup for towers
+            };
+            [_liberated_sector, false, false] spawn spawn_battlegroup;
         };
-        [_liberated_sector, false, false] spawn spawn_battlegroup;
     };
 };
