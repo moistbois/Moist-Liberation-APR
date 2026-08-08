@@ -67,15 +67,34 @@ while { KPLIB_endgame == 0 } do {
         } foreach _squad;
     } else {
 
-        private [ "_vehicle_object" ];
-        if ((KPLIB_enemyReadiness > 75) && ((random 100) > 85) && !(KPLIB_o_helicopters isEqualTo [])) then {
-            _vehicle_object = [_sector_spawn_pos, selectRandom KPLIB_o_helicopters] call KPLIB_fnc_spawnVehicle;
+        private ["_vehicle_object", "_classname", "_spawnposVeh", "_crewmens"];
+
+        if ((KPLIB_enemyReadiness > 65) && ((random 100) > 85) && !(KPLIB_o_helicopters isEqualTo [])) then {
+            _classname = selectRandom KPLIB_o_helicopters;
         } else {
-            _vehicle_object = [_sector_spawn_pos, [] call KPLIB_fnc_getAdaptiveVehicle] call KPLIB_fnc_spawnVehicle;
+            _classname = [] call KPLIB_fnc_getAdaptiveVehicle;
+        };
+
+        // Try several attempts to find a clearer spawn position (higher min clearance first)
+        _spawnposVeh = [];
+        private _clearAttempts = [30, 20, 10, 5];
+        private _i = 0;
+        while {_i < (count _clearAttempts)} do {
+            private _minClear = _clearAttempts select _i;
+            private _tryPos = (_sector_spawn_pos getPos [random 150, random 360]) findEmptyPosition [_minClear, 150, _classname];
+            if (!(_tryPos isEqualTo [])) exitWith { _spawnposVeh = _tryPos; };
+            _i = _i + 1;
+        };
+
+        if (_spawnposVeh isEqualTo []) then {
+            // fallback to default spawn behaviour
+            _vehicle_object = [_sector_spawn_pos, _classname] call KPLIB_fnc_spawnVehicle;
+        } else {
+            _vehicle_object = [_spawnposVeh, _classname, true] call KPLIB_fnc_spawnVehicle;
         };
 
         sleep 0.5;
-        private _crewmens = (crew _vehicle_object);
+        _crewmens = (crew _vehicle_object);
         // wait leader and he is alive in vehicle
         waitUntil {
             sleep 1;
