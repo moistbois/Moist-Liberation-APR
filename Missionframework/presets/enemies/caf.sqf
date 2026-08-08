@@ -67,7 +67,7 @@ KPLIB_o_militiaVehicles = [
     "O_RSA90_BRDM2UM",
     "O_RSA90_BTR60PB",
     "O_RSA90_M1151",
-    "O_RSA90_BMP",
+    "O_RSA90_BMP"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
@@ -82,7 +82,7 @@ KPLIB_o_armyVehicles = [
     "O_RSA90_T34",
     "O_RSA90_T72",
     "O_RSA90_T55",
-    "O_RSA90_ZU23",
+    "O_RSA90_ZU23"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
@@ -91,7 +91,7 @@ KPLIB_o_armyVehiclesLight = [
     "O_RSA90_BRDM2UM",
     "O_RSA90_BTR60PB",
     "O_RSA90_BMP",
-    "O_RSA90_T34",
+    "O_RSA90_T34"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
@@ -121,8 +121,7 @@ KPLIB_o_battleGrpVehiclesLight = [
     "O_RSA90_M1151",
     "O_RSA90_GAZ66_Transport",
     "O_RSA90_BMP",
-    "O_RSA90_GAZ66_Transport",
-
+    "O_RSA90_GAZ66_Transport"
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
@@ -134,7 +133,6 @@ KPLIB_o_troopTransports = [
     "O_RSA90_BTR60PB",
     "O_RSA90_BMP",
     "O_RSA90_GAZ66_Transport"
-
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
