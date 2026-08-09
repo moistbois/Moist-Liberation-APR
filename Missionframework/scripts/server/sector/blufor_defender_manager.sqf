@@ -16,13 +16,28 @@ waitUntil { !isNil "KPLIB_b_squadInf" };
 
 // Map of [sector, group, lastEnemySeenTime]
 if (isNil "KPLIB_sectors_blufor_defenders") then { KPLIB_sectors_blufor_defenders = []; publicVariable "KPLIB_sectors_blufor_defenders"; };
+if (isNil "KPLIB_sector_liberation_times") then { KPLIB_sector_liberation_times = []; publicVariable "KPLIB_sector_liberation_times"; };
 
 private _gracePeriod = 60; // seconds to wait after last enemy seen before despawning
 private _scanSleep = 30; // how often to scan sectors
+private _liberationHoldoff = 7200; // seconds to wait after a sector is liberated before spawning defenders
 
 while { KPLIB_endgame == 0 } do {
     private _now = time;
     private _sectors = KPLIB_sectors_player;
+
+    // remove stale defender entries if the group has no alive units
+    private _validDefenders = [];
+    {
+        private _entry = _x;
+        private _grp = _entry select 1;
+        private _aliveUnits = if (isNull _grp) then { [] } else { (units _grp) select { alive _x } };
+        if ((count _aliveUnits) > 0) then { _validDefenders pushBack _entry; };
+    } forEach KPLIB_sectors_blufor_defenders;
+    if ((count _validDefenders) != (count KPLIB_sectors_blufor_defenders)) then {
+        KPLIB_sectors_blufor_defenders = _validDefenders;
+        publicVariable "KPLIB_sectors_blufor_defenders";
+    };
 
     {
         private _sector = _x;
@@ -38,6 +53,15 @@ while { KPLIB_endgame == 0 } do {
 
         if (_enemyCount > 0) then {
             if (_foundIndex == -1) then {
+                private _libFoundIndex = -1;
+                for "_j" from 0 to ((count KPLIB_sector_liberation_times) - 1) do {
+                    if (((KPLIB_sector_liberation_times select _j) select 0) == _sector) exitWith { _libFoundIndex = _j };
+                };
+                if (_libFoundIndex != -1) then {
+                    private _libTime = (KPLIB_sector_liberation_times select _libFoundIndex) select 1;
+                    if ((_now - _libTime) < _liberationHoldoff) exitWith {};
+                };
+
                 // spawn defender group near sector
                 private _spawnPos = [];
                 private _try = 0;

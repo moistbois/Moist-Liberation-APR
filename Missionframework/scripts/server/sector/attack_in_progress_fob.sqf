@@ -14,6 +14,18 @@ if ( KPLIB_param_bluforDefenders ) then {
         if (((KPLIB_sectors_blufor_defenders select _i) select 0) == _thispos) exitWith { _foundIndex = _i };
     };
 
+    if (_foundIndex != -1) then {
+        private _entry = KPLIB_sectors_blufor_defenders select _foundIndex;
+        private _grp = _entry select 1;
+        private _aliveUnits = if (isNull _grp) then { [] } else { (units _grp) select { alive _x } };
+        if ((count _aliveUnits) == 0) then {
+            KPLIB_sectors_blufor_defenders set [_foundIndex, []];
+            KPLIB_sectors_blufor_defenders = KPLIB_sectors_blufor_defenders select { _x != [] };
+            publicVariable "KPLIB_sectors_blufor_defenders";
+            _foundIndex = -1;
+        };
+    };
+
     private _spawnedByHandler = false;
     if (_foundIndex == -1) then {
         _grp = creategroup [KPLIB_side_player, true];

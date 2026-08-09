@@ -15,6 +15,17 @@ stats_readiness_earned = stats_readiness_earned + _KPLIB_enemyReadiness_increase
 
 [_liberated_sector, 0] remoteExecCall ["remote_call_sector"];
 KPLIB_sectors_player pushback _liberated_sector; publicVariable "KPLIB_sectors_player";
+if (isNil "KPLIB_sector_liberation_times") then { KPLIB_sector_liberation_times = []; publicVariable "KPLIB_sector_liberation_times"; };
+private _libIndex = -1;
+for "_i" from 0 to ((count KPLIB_sector_liberation_times) - 1) do {
+    if (((KPLIB_sector_liberation_times select _i) select 0) == _liberated_sector) exitWith { _libIndex = _i };
+};
+if (_libIndex == -1) then {
+    KPLIB_sector_liberation_times pushBack [_liberated_sector, time];
+} else {
+    KPLIB_sector_liberation_times set [_libIndex, [_liberated_sector, time]];
+};
+publicVariable "KPLIB_sector_liberation_times";
 latest_liberated_sector = _liberated_sector; publicVariable "latest_liberated_sector";
 stats_sectors_liberated = stats_sectors_liberated + 1;
 
