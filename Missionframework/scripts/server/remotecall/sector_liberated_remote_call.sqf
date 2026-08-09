@@ -131,3 +131,4 @@ if (KPLIB_endgame == 0) then {
                 [_liberated_sector, false, false] spawn spawn_battlegroup;
             };
         };
+    };
