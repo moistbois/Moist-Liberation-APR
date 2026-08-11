@@ -81,8 +81,7 @@ KPLIB_o_armyVehicles = [
     "O_RSA90_BMP",
     "O_RSA90_T34",
     "O_RSA90_T72",
-    "O_RSA90_T55",
-    "O_RSA90_ZU23"
+    "O_RSA90_T55"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
@@ -104,7 +103,6 @@ KPLIB_o_battleGrpVehicles = [
     "O_RSA90_GAZ66_Transport",
     "O_RSA90_T55",
     "O_RSA90_GAZ66_Transport",
-    "O_RSA90_ZU23",
     "O_RSA90_Mi24V",                                                 // Mi-24V
     "O_RSA90_Mi24P",                                                 // Mi-24P
     "O_RSA90_Mi8MT"                                                  // Mi-8
@@ -166,7 +164,7 @@ KPLIB_o_turrets_AT = [
 
 // Enemy defense turrets that will be spawned in sectors.
 KPLIB_o_turrets_AA = [
-
+    ["O_RSA90_ZU23"]
 ];
 
 // Enemy defense turrets that will be spawned in sectors.
@@ -181,6 +179,5 @@ KPLIB_o_turrets_SAM = [
     ["rhssaf_army_2s1","rhssaf_army_2s1"],
     ["O_RSA90_BM21"],
     ["O_RSA90_GAZ66_AA"],
-    ["O_RSA90_URAL_AA"],
-    ["O_RSA90_ZU23"]
+    ["O_RSA90_URAL_AA"]
 ];
