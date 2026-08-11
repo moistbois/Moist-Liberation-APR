@@ -8,9 +8,11 @@ params [
 if (KPLIB_endgame == 1) exitWith {};
 
 private _targetSector = _spawn_marker;
+if (KPLIB_asymmetric_debug > 0) then {[format ["spawn_battlegroup requested: targetSector=%1 infOnly=%2 reduceAggro=%3", _targetSector, _infOnly, _reduceAggro], "BATTLEGROUP"] call KPLIB_fnc_log;};
 _spawn_marker = [[800, 500] select _infOnly, [3000, 1500] select _infOnly, false, markerPos _spawn_marker] call KPLIB_fnc_getOpforSpawnPoint;
 
 if !(_spawn_marker isEqualTo "") then {
+    if (KPLIB_asymmetric_debug > 0) then {[format ["spawn_battlegroup: spawn point selected %1", _spawn_marker], "BATTLEGROUP"] call KPLIB_fnc_log;};
     KPLIB_last_battlegroup_time = diag_tickTime;
 
     private _bg_groups = [];
@@ -31,6 +33,7 @@ if !(_spawn_marker isEqualTo "") then {
         // Adjust target size for infantry
         _target_size = 12 max (_target_size * 4);
         private _squadNumber = round (_target_size/8);
+        if (KPLIB_asymmetric_debug > 0) then {[format ["spawn_battlegroup infantry: target_size=%1 squadNumber=%2 infClasses=%3", _target_size, _squadNumber, _infClasses], "BATTLEGROUP"] call KPLIB_fnc_log;};
 
         for "_i" from 1 to _squadNumber do {
         // Create infantry groups with up to 8 units per squad
@@ -48,6 +51,7 @@ if !(_spawn_marker isEqualTo "") then {
         };
     } else {
         private _vehicle_pool = [KPLIB_o_battleGrpVehicles, KPLIB_o_battleGrpVehiclesLight] select (KPLIB_enemyReadiness < 55);
+        if (KPLIB_asymmetric_debug > 0) then {[format ["spawn_battlegroup vehicles: target_size=%1 vehiclePoolSize=%2 pool=%3", _target_size, count _vehicle_pool, _vehicle_pool], "BATTLEGROUP"] call KPLIB_fnc_log;};
 
         while {count _selected_opfor_battlegroup < _target_size} do {
             _selected_opfor_battlegroup pushback (selectRandom _vehicle_pool);
@@ -58,6 +62,7 @@ if !(_spawn_marker isEqualTo "") then {
             _nextgrp = createGroup [KPLIB_side_enemy, true];
             _vehicle = [markerpos _spawn_marker, _x] call KPLIB_fnc_spawnVehicle;
 
+            if (KPLIB_asymmetric_debug > 0) then {[format ["spawn_battlegroup vehicle group created: type=%1 vehicle=%2 targetSector=%3", _x, _vehicle, _targetSector], "BATTLEGROUP"] call KPLIB_fnc_log;};
             sleep 0.5;
 
             (crew _vehicle) joinSilent _nextgrp;
@@ -73,8 +78,10 @@ if !(_spawn_marker isEqualTo "") then {
             if ((_x in KPLIB_o_troopTransports) && ([] call KPLIB_fnc_getOpforCap < KPLIB_cap_battlegroup)) then {
                 if (_vehicle isKindOf "Air") then {
                     [[markerPos _targetSector] call KPLIB_fnc_getNearestBluforObjective, _vehicle, true] spawn send_paratroopers;
+                    if (KPLIB_asymmetric_debug > 0) then {[format ["spawn_battlegroup transport: air transport %1 will send paratroopers", _vehicle], "BATTLEGROUP"] call KPLIB_fnc_log;};
                 } else {
                     [_vehicle] spawn troup_transport;
+                    if (KPLIB_asymmetric_debug > 0) then {[format ["spawn_battlegroup transport: ground transport %1 will move troops", _vehicle], "BATTLEGROUP"] call KPLIB_fnc_log;};
                 };
             };
         } forEach _selected_opfor_battlegroup;
@@ -91,6 +98,7 @@ if !(_spawn_marker isEqualTo "") then {
         KPLIB_enemyReadiness = (KPLIB_enemyReadiness - (_target_size / 4)) max 35;
     };
     stats_hostile_battlegroups = stats_hostile_battlegroups + 1;
+    if (KPLIB_asymmetric_debug > 0) then {[format ["spawn_battlegroup complete: target_size=%1 reduceAggro=%2 enemyReadiness=%3 hostileBattlegroups=%4", _target_size, _reduceAggro, KPLIB_enemyReadiness, stats_hostile_battlegroups], "BATTLEGROUP"] call KPLIB_fnc_log;};
 
     {
         if (local _x) then {
