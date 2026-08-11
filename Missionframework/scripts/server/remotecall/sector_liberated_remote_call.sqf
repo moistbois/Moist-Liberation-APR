@@ -14,18 +14,7 @@ if (KPLIB_enemyReadiness > 100.0 && KPLIB_param_difficulty <= 2.0) then {KPLIB_e
 stats_readiness_earned = stats_readiness_earned + _KPLIB_enemyReadiness_increase;
 
 [_liberated_sector, 0] remoteExecCall ["remote_call_sector"];
-KPLIB_sectors_player pushback _liberated_sector; publicVariable "KPLIB_sectors_player";
-if (isNil "KPLIB_sector_liberation_times") then { KPLIB_sector_liberation_times = []; publicVariable "KPLIB_sector_liberation_times"; };
-private _libIndex = -1;
-for "_i" from 0 to ((count KPLIB_sector_liberation_times) - 1) do {
-    if (((KPLIB_sector_liberation_times select _i) select 0) == _liberated_sector) exitWith { _libIndex = _i };
-};
-if (_libIndex == -1) then {
-    KPLIB_sector_liberation_times pushBack [_liberated_sector, time];
-} else {
-    KPLIB_sector_liberation_times set [_libIndex, [_liberated_sector, time]];
-};
-publicVariable "KPLIB_sector_liberation_times";
+KPLIB_sectors_player pushBack _liberated_sector; publicVariable "KPLIB_sectors_player";
 latest_liberated_sector = _liberated_sector; publicVariable "latest_liberated_sector";
 stats_sectors_liberated = stats_sectors_liberated + 1;
 
@@ -68,11 +57,10 @@ sleep 1;
 
 [] spawn KPLIB_fnc_doSave;
 
-sleep 45;
+sleep 10;
 
 if (KPLIB_endgame == 0) then {
-    if ((random (150 / (KPLIB_param_difficulty * KPLIB_param_aggressivity))) < (KPLIB_enemyReadiness - 15) || _liberated_sector in KPLIB_sectors_capital)
-    then {
+    if ((random (150 / (KPLIB_param_difficulty * KPLIB_param_aggressivity))) < (KPLIB_enemyReadiness - 15) || _liberated_sector in KPLIB_sectors_capital) then {
         // readiness curve for helos:
         // 35-45 -> mostly 1
         // 45-60 -> mostly 2
@@ -84,35 +72,92 @@ if (KPLIB_endgame == 0) then {
             // low readiness should mainly spawn 1, rarely 2 and extremely rarely 3
             if (_roll < 10) then {
                 _paratrooper_helos = 2;
-            } else if (_roll < 12) then {
-                _paratrooper_helos = 3;
-            };
-        } else if (KPLIB_enemyReadiness < 60) then {
-            // middle readiness should favour 2
-            if (_roll < 20) then {
-                _paratrooper_helos = 1;
-            } else if (_roll < 80) then {
-                _paratrooper_helos = 2;
             } else {
-                _paratrooper_helos = 3;
+                if (_roll < 12) then {
+                    _paratrooper_helos = 3;
+                } else {
+                    _paratrooper_helos = 1;
+                };
             };
         } else {
-            // high readiness should almost always spawn 3
-            if (_roll < 70) then {
-                _paratrooper_helos = 3;
-            } else if (_roll < 95) then {
-                _paratrooper_helos = 2;
+            if (KPLIB_enemyReadiness < 60) then {
+                // middle readiness should favour 2
+                if (_roll < 20) then {
+                    _paratrooper_helos = 1;
+                } else {
+                    if (_roll < 80) then {
+                        _paratrooper_helos = 2;
+                    } else {
+                        _paratrooper_helos = 3;
+                    };
+                };
             } else {
-                _paratrooper_helos = 1;
+                // high readiness should almost always spawn 3
+                if (_roll < 70) then {
+                    _paratrooper_helos = 3;
+                } else {
+                    if (_roll < 95) then {
+                        _paratrooper_helos = 2;
+                    } else {
+                        _paratrooper_helos = 1;
+                    };
+                };
             };
         };
 
-        for "_i" from 1 to _paratrooper_helos do {
-            [_liberated_sector] spawn send_paratroopers;
-        };
+		for "_i" from 1 to _paratrooper_helos do {
+
+			private _spawnMarker = [
+				3000,
+				1500,
+				false,
+				markerPos _liberated_sector
+			] call KPLIB_fnc_getOpforSpawnPoint;
+
+			if !(_spawnMarker isEqualTo "") then {
+
+				private _chopperType = selectRandom (
+					KPLIB_o_helicopters select {
+						_x in KPLIB_o_troopTransports
+					}
+				);
+
+				private _heli = [
+					markerPos _spawnMarker,
+					_chopperType
+				] call KPLIB_fnc_spawnVehicle;
+
+				if (!isNull _heli) then {
+
+					private _target = markerPos _liberated_sector;
+
+					[
+						_target,
+						_heli,
+						true
+					] spawn send_paratroopers;
+
+					if (KPLIB_asymmetric_debug > 0) then {
+						[
+							format [
+								"PARA: spawned battlegroup-style helicopter %1 at %2 for target %3",
+								_heli,
+								_spawnMarker,
+								_target
+							],
+							"PARA"
+						] call KPLIB_fnc_log;
+					};
+				};
+			};
+		};
     };
 
-        private _battlegroup_delay = (1800 * (1 - ((min [KPLIB_enemyReadiness, 100]) / 100)));
+		sleep 35;
+
+        private _enemyReadinessClamped = KPLIB_enemyReadiness;
+        if (_enemyReadinessClamped > 100) then {_enemyReadinessClamped = 100;};
+        private _battlegroup_delay = 1800 * (1 - (_enemyReadinessClamped / 100));
         if (_battlegroup_delay < 0) then {_battlegroup_delay = 0;};
         private _battlegroup_delay_minutes = ceil (_battlegroup_delay / 60);
         private _battlegroup_delay_estimate = _battlegroup_delay_minutes + floor (random 7) - 3;
@@ -124,14 +169,14 @@ if (KPLIB_endgame == 0) then {
 
                 if ((_liberated_sector in KPLIB_sectors_tower)) then {
                     [_liberated_sector, true, false, _battlegroup_delay] spawn {
-                        private ["_sector", "_infOnly", "_reduceAggro", "_delay"] = _this; // only spawn infantry battlegroup for towers
+                        params ["_sector", "_infOnly", "_reduceAggro", "_delay"];
                         sleep _delay;
                         [_sector, _infOnly, _reduceAggro] call spawn_battlegroup;
                     };
                 };
 
                 [_liberated_sector, false, false, _battlegroup_delay] spawn {
-                    private ["_sector", "_infOnly", "_reduceAggro", "_delay"] = _this;
+                    params ["_sector", "_infOnly", "_reduceAggro", "_delay"];
                     sleep _delay;
                     [_sector, _infOnly, _reduceAggro] call spawn_battlegroup;
                 };

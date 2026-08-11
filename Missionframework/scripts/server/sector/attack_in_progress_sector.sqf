@@ -1,5 +1,5 @@
 params [ "_sector" ];
-private [ "_attacktime", "_ownership", "_grp", "_squad_type", "_spawnedByHandler" ];
+private [ "_attacktime", "_ownership", "_grp", "_squad_type" ];
 
 sleep 5;
 
@@ -12,45 +12,12 @@ if ( _sector in KPLIB_sectors_military ) then {
 };
 
 if ( KPLIB_param_bluforDefenders ) then {
-    // If proactive manager already spawned defenders for this sector, skip spawning here
-    if (isNil "KPLIB_sectors_blufor_defenders") then { KPLIB_sectors_blufor_defenders = []; publicVariable "KPLIB_sectors_blufor_defenders"; };
-
-    private _foundIndex = -1;
-    for "_i" from 0 to ((count KPLIB_sectors_blufor_defenders) - 1) do {
-        if (((KPLIB_sectors_blufor_defenders select _i) select 0) == _sector) exitWith { _foundIndex = _i };
-    };
-
-    if (_foundIndex != -1) then {
-        private _entry = KPLIB_sectors_blufor_defenders select _foundIndex;
-        private _grp = _entry select 1;
-        private _aliveUnits = if (isNull _grp) then { [] } else { (units _grp) select { alive _x } };
-        if ((count _aliveUnits) == 0) then {
-            KPLIB_sectors_blufor_defenders set [_foundIndex, []];
-            KPLIB_sectors_blufor_defenders = KPLIB_sectors_blufor_defenders select { _x != [] };
-            publicVariable "KPLIB_sectors_blufor_defenders";
-            _foundIndex = -1;
-        };
-    };
-
-    private _spawnedByHandler = false;
-    if (_foundIndex == -1) then {
-        _grp = creategroup [KPLIB_side_player, true];
-        {
-            [_x, markerPos _sector, _grp] call KPLIB_fnc_createManagedUnit;
-        } foreach _squad_type;
-        sleep 3;
-        _grp setBehaviour "COMBAT";
-
-        // register so manager knows about this group (backup behavior)
-        KPLIB_sectors_blufor_defenders pushBack [_sector, _grp, time];
-        publicVariable "KPLIB_sectors_blufor_defenders";
-        _spawnedByHandler = true;
-    } else {
-        // update last seen time so manager won't despawn them immediately
-        private _entry = KPLIB_sectors_blufor_defenders select _foundIndex;
-        KPLIB_sectors_blufor_defenders set [_foundIndex, [_sector, (_entry select 1), time]];
-        publicVariable "KPLIB_sectors_blufor_defenders";
-    };
+    _grp = creategroup [KPLIB_side_player, true];
+    {
+        [_x, markerPos _sector, _grp] call KPLIB_fnc_createManagedUnit;
+    } foreach _squad_type;
+    sleep 3;
+    _grp setBehaviour "COMBAT";
 };
 
 sleep 60;
@@ -114,21 +81,7 @@ if ( KPLIB_endgame == 0 ) then {
 sleep 60;
 
 if ( KPLIB_param_bluforDefenders ) then {
-        if (_spawnedByHandler) then {
-            {
-                if ( alive _x ) then { if (isNull objectParent _x) then {deleteVehicle _x} else {(objectParent _x) deleteVehicleCrew _x}; };
-            } foreach units _grp;
-            // also remove entry from manager list if present
-            if (!isNil "KPLIB_sectors_blufor_defenders") then {
-                private _remIdx = -1;
-                for "_i" from 0 to ((count KPLIB_sectors_blufor_defenders) - 1) do {
-                    if (((KPLIB_sectors_blufor_defenders select _i) select 0) == _sector) exitWith { _remIdx = _i };
-                };
-                if (_remIdx != -1) then {
-                    KPLIB_sectors_blufor_defenders set [ _remIdx, [] ];
-                    KPLIB_sectors_blufor_defenders = KPLIB_sectors_blufor_defenders select { _x != [] };
-                    publicVariable "KPLIB_sectors_blufor_defenders";
-                };
-            };
-        };
+    {
+        if ( alive _x ) then { if (isNull objectParent _x) then {deleteVehicle _x} else {(objectParent _x) deleteVehicleCrew _x}; };
+    } foreach units _grp;
 };
