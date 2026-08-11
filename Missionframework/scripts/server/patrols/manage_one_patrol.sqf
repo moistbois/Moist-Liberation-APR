@@ -31,33 +31,52 @@ while { KPLIB_endgame == 0 } do {
 
     private _sector_spawn_pos = [];
 
-    /*
-        Find a patrol spawn point:
-        - 300m to 1000m from the active sector
-        - At least 500m from any BLUFOR unit
-    */
-    for "_i" from 1 to 25 do {
 
-        private _candidate = _sectorPos getPos [
-            300 + random 700,
-            random 360
-        ];
+	private _minDistanceToSector = 500;
+	private _maxDistanceToSector = 2000;
+	private _minDistanceToBluforUnits = 750;
+	private _minDistanceToBluforSector = 1000;
 
-        if (
-            ([_candidate, 750, KPLIB_side_player]
-                call KPLIB_fnc_getUnitsCount) == 0
-        ) exitWith {
-            _sector_spawn_pos = _candidate;
-        };
-    };
+	/*
+    Find a patrol spawn point:
+    - Between _minDistanceToSector and _maxDistanceToSector from active enemy sector
+    - At least _minDistanceToBluforUnits from any BLUFOR unit
+    - At least _minDistanceToBluforSector from any BLUFOR sector
+	*/
 
-    if (_sector_spawn_pos isEqualTo []) then {
-        diag_log format [
-            "PATROL DEBUG: No valid spawn position found near %1",
-            _sector_spawn
-        ];
-        continue;
-    };
+	for "_i" from 1 to 25 do {
+
+		private _distanceToSector =
+			_minDistanceToSector +
+			random (_maxDistanceToSector - _minDistanceToSector);
+
+		private _candidate = _sectorPos getPos [
+			_distanceToSector,
+			random 360
+		];
+
+		private _nearbyBluforUnits = [
+			_candidate,
+			_minDistanceToBluforUnits,
+			KPLIB_side_player
+		] call KPLIB_fnc_getUnitsCount;
+
+		private _tooCloseToBluforSector = false;
+
+		{
+			if (_candidate distance2D (markerPos _x) < _minDistanceToBluforSector) exitWith {
+				_tooCloseToBluforSector = true;
+			};
+		} forEach KPLIB_sectors_player;
+
+		if (
+			(_nearbyBluforUnits == 0)
+			&& {!_tooCloseToBluforSector}
+		) exitWith {
+			_sector_spawn_pos = _candidate;
+		};
+	};
+
 
     if (_is_infantry) then {
         _grp = createGroup [KPLIB_side_enemy, true];
