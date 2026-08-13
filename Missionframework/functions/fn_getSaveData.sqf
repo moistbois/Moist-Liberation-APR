@@ -133,16 +133,15 @@ private ["_fobPos", "_fobObjects", "_grpUnits", "_fobMines"];
         // Add to save array
         _aiGroups pushBack [getPosATL (leader _x), (_grpUnits apply {typeOf _x})];
     } forEach (_allBlueGroups select {(_fobPos distance2D (leader _x)) < (KPLIB_range_fob * 1.2)});
-
-    // Save all mines
-    _fobMines = allMines;
-    _allMines append (_fobMines apply {[
-        getPosWorld _x,
-        [vectorDirVisual _x, vectorUpVisual _x],
-        typeOf _x,
-        _x mineDetectedBy KPLIB_side_player
-    ]});
 } forEach KPLIB_sectors_fob;
+
+// Save all mines
+_allMines append (allMines apply {[
+	getPosWorld _x,
+	[vectorDirVisual _x, vectorUpVisual _x],
+	typeOf _x,
+	_x mineDetectedBy KPLIB_side_player
+]});
 
 // Save all fetched objects
 private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inventory", "_fuel", "_fuelCargo", "_damages"];
