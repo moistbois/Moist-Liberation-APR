@@ -40,5 +40,5 @@ On top of [KP Liberation's features](https://github.com/moistbois/Moist-Liberati
 
 ## Watch
 We regularly stream our campaigns and sometimes even development. You can watch us at:
-* [Pantteri](https://www.twitch.tv/pantrh)
+* [Pantteri](https://www.twitch.tv/pantherblep)
 * [CarlMylo](https://www.twitch.tv/CarlMylo)
