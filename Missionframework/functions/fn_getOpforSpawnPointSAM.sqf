@@ -22,9 +22,9 @@
 */
 
 params [
-    ["_min", 1500, [0]],
+    ["_min", 2000, [0]],
     ["_max", 100000, [0]],
-    ["_nearest", false, [false]],
+    ["_nearest", true, [true]],
     ["_pos", [0, 0, 0], [[]], [2, 3]]
 ];
 

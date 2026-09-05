@@ -31,6 +31,7 @@ while { KPLIB_endgame == 0 } do {
 
     private _sector_spawn_pos = [];
 
+	private _despawnDistance = 1500;
 
 	private _minDistanceToSector = 500;
 	private _maxDistanceToSector = 2000;
@@ -69,11 +70,16 @@ while { KPLIB_endgame == 0 } do {
 			};
 		} forEach KPLIB_sectors_player;
 
-		if (
-			(_nearbyBluforUnits == 0)
-			&& {!_tooCloseToBluforSector}
-		) exitWith {
-			_sector_spawn_pos = _candidate;
+		if ((_nearbyBluforUnits == 0) && {!_tooCloseToBluforSector}) exitWith {
+
+			private _roads = _candidate nearRoads 200;
+
+			if !(_roads isEqualTo []) then {
+				_sector_spawn_pos = getPosATL (selectRandom _roads);
+			} else {
+				_sector_spawn_pos = _candidate;
+			};
+
 		};
 	};
 
@@ -136,11 +142,11 @@ while { KPLIB_endgame == 0 } do {
 
     while { _patrol_continue } do {
         sleep 60;
-        if ( count (units _grp) == 0  ) then {
+        if ( ({alive _x} count units _grp) == 0 ) then {
             _patrol_continue = false;
         } else {
             if ( time - _started_time > 900 ) then {
-                if ( [ getpos (leader _grp) , 4000 , KPLIB_side_player ] call KPLIB_fnc_getUnitsCount == 0 ) then {
+                if ( [ getpos (leader _grp) , _despawnDistance , KPLIB_side_player ] call KPLIB_fnc_getUnitsCount == 0 ) then {
                     _patrol_continue = false;
                     {
                         if ( vehicle _x != _x ) then {
@@ -148,6 +154,7 @@ while { KPLIB_endgame == 0 } do {
                         };
                         deleteVehicle _x;
                     } foreach (units _grp);
+					deleteGroup _grp;
                 };
             };
         };

@@ -36,7 +36,7 @@ _killedTurretsSAM = 0;
 
 while {KPLIB_endgame == 0} do {
 
-    _sleepTime =  (1800 + (random 1800)) / (([] call KPLIB_fnc_getOpforFactor) * KPLIB_param_aggressivity); // sleep time is 30 to 60 minutes
+    _sleepTime = (900 + (random 1800)) / (([] call KPLIB_fnc_getOpforFactor) * KPLIB_param_aggressivity); // sleep time is 15 to 45 minutes
     if (KPLIB_enemyReadiness >= 80) then {_sleepTime = _sleepTime * 0.75};  // when enemy readiness gets above 80, reduce sleep time to 0.75
     if (KPLIB_enemyReadiness >= 90) then {_sleepTime = _sleepTime * 0.75};  // when enemy readiness gets above 90, reduce sleep time to 0.5625 (0.75 * 0.75)
     if (KPLIB_enemyReadiness >= 100) then {_sleepTime = _sleepTime * 0.75}; // when enemy readiness gets above 100, reduce sleep time to 0.42 (0.75 * 0.75 * 0.75)    
@@ -65,6 +65,17 @@ while {KPLIB_endgame == 0} do {
                 _killedTurretsSAM = _killedTurretsSAM + 1;
                 _groupDestroyed = false;
             };
+
+			// Rearm all current SAM turrets
+			{
+				_turret = _x;
+				if (alive _turret) then {
+					if (count (weapons _turret) > 0) then {
+						_turret setVehicleAmmo 1;
+					};
+				};
+			} forEach _groupVehicles;
+
         } forEach KPLIB_backCountryTurrets_SAM;
 
         while {_SAMdeleteTargetArray isNotEqualTo []} do {
