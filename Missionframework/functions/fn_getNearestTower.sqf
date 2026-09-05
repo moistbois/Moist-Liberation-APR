@@ -27,4 +27,6 @@ private _towers = [KPLIB_sectors_tower select {_x in KPLIB_sectors_player}, KPLI
 _towers = (_towers apply {[(markerPos _x) distance2d _pos, _x]}) select {(_x select 0) <= _radius};
 _towers sort true;
 
+if (_towers isEqualTo []) exitWith {nil};
+
 (_towers select 0) select 1

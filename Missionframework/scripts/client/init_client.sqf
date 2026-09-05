@@ -58,6 +58,8 @@ if (!KPLIB_param_weaponSway) then {
     player addEventHandler ["Respawn", {player setCustomAimCoef 0.1;}];
 };
 
+execVM "scripts\client\misc\radio_jammer.sqf";
+
 execVM "scripts\client\ui\intro.sqf";
 
 [player] joinSilent (createGroup [KPLIB_side_player, true]);
