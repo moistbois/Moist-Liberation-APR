@@ -496,6 +496,14 @@ if (!isNil "_saveData") then {
                 [_object, _inventory] call fnc_loadCustomCargo;
             };
 			
+			// Set respawn tickets correctly
+			if (_respawnTickets > 0) then {
+				_object setVariable [
+					"KPLIB_respawnTickets",
+					_respawnTickets,
+					true
+				];
+			};
         };
     } forEach _objectsToSave;
 

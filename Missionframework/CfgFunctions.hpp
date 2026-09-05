@@ -42,6 +42,7 @@ class KPLIB {
         class getMilitaryId             {};
         class getMobileRespawns         {};
         class getMobileRespawnName      {};
+        class getMobileRespawnAvailability {};
         class getNearbyPlayers          {};
         class getNearestBluforObjective {};
         class getNearestFob             {};

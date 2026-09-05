@@ -159,6 +159,11 @@ private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inv
         if (({!isPlayer _x} count (crew _x) ) > 0) then {
             _hasCrew = true;
         };
+		
+		// disable crews from mobile respawns
+		if (_class in (KPLIB_b_mobileRespawn + [KPLIB_b_potato01])) then {
+            _hasCrew = false;
+        };
     };
 
     // Only save player side, seized or captured objects
@@ -174,7 +179,9 @@ private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inv
         _fuelCargo = _x call ace_refuel_fnc_getFuel;
         _damages = getAllHitPointsDamage _x;
         
-        _objectsToSave pushBack [_class, _savedPos, _savedVecDir, _savedVecUp, _hasCrew, _inventory, _fuel, _fuelCargo, _damages];
+		private _respawnTickets = _x getVariable ["KPLIB_respawnTickets", 0];
+
+        _objectsToSave pushBack [_class, _savedPos, _savedVecDir, _savedVecUp, _hasCrew, _inventory, _fuel, _fuelCargo, _damages, _respawnTickets];
     };
 	
 	

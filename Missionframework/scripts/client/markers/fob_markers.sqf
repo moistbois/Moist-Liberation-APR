@@ -26,12 +26,22 @@ while {true} do {
     if (KPLIB_param_mobileRespawn) then {
         private _respawn_trucks = [] call KPLIB_fnc_getMobileRespawns;
 
+		{
+			private _available =
+				[_x] call KPLIB_fnc_getMobileRespawnAvailability;
+
+			_x setVariable [
+				"KPLIB_respawnAvailable",
+				_available
+			];
+		} forEach _respawn_trucks;
+
         if (count _markers_mobilespawns != count _respawn_trucks) then {
             {deleteMarkerLocal _x;} forEach _markers_mobilespawns;
             _markers_mobilespawns = [];
 
             for "_idx" from 0 to ((count _respawn_trucks) - 1) do {
-                _marker = createMarkerLocal [format ["mobilespawn%1", _idx], markers_reset];
+                private _marker = createMarkerLocal [format ["mobilespawn%1", _idx], markers_reset];
                 _marker setMarkerTypeLocal "mil_end";
                 _marker setMarkerColorLocal "ColorYellow";
                 _markers_mobilespawns pushback _marker;
@@ -41,10 +51,24 @@ while {true} do {
         if (count _respawn_trucks == count _markers_mobilespawns) then {
             for "_idx" from 0 to ((count _markers_mobilespawns) - 1) do {
                 (_markers_mobilespawns select _idx) setMarkerPosLocal getPos (_respawn_trucks select _idx);
-                (_markers_mobilespawns select _idx) setMarkerTextLocal format ["%1 %2", localize "STR_RESPAWN_TRUCK", [_respawn_trucks select _idx] call KPLIB_fnc_getMobileRespawnName];
+                (_markers_mobilespawns select _idx) setMarkerTextLocal format ["%1 %2 [ %3 ]", localize "STR_RESPAWN_TRUCK", [_respawn_trucks select _idx] call KPLIB_fnc_getMobileRespawnName,
+				(_respawn_trucks select _idx) getVariable ["KPLIB_respawnTickets", 0]];
+
+				if !( (_respawn_trucks select _idx) getVariable ["KPLIB_respawnAvailable", true]) then {
+					(_markers_mobilespawns select _idx) setMarkerTypeLocal "mil_objective";
+					(_markers_mobilespawns select _idx) setMarkerColorLocal KPLIB_color_enemyActive;
+					
+				} else {
+					(_markers_mobilespawns select _idx) setMarkerTypeLocal "mil_end"; // backup marker if the next checks all fail
+					
+					if ((_respawn_trucks select _idx) isKindOf "LandVehicle") then {(_markers_mobilespawns select _idx) setMarkerTypeLocal "loc_Truck";};
+					if ((_respawn_trucks select _idx) isKindOf "Air") then {(_markers_mobilespawns select _idx) setMarkerTypeLocal "loc_heli";};
+					if ((_respawn_trucks select _idx) isKindOf "Ship") then {(_markers_mobilespawns select _idx) setMarkerTypeLocal "loc_boat";};
+
+					(_markers_mobilespawns select _idx) setMarkerColorLocal "ColorYellow";
+				}
             };
         };
     };
-
     sleep 5;
-};
+}; 

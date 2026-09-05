@@ -6592,6 +6592,9 @@
             <Czech>Mobilní respawn cooldown (minuty)</Czech>
             <Japanese>モバイルリスポーンのクールダウン(分)</Japanese>
         </Key>
+        <Key ID="STR_NO_TICKETS">
+            <Original>No respawn tickets!</Original>
+        </Key>
         <Key ID="STR_RESPAWN_COOLDOWN_HINT">
             <Original>%1 minutes mobile respawn cooldown left.</Original>
             <German>%1 Minuten Mobiler Respawn Cooldown übrig.</German>

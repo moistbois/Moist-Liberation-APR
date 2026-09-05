@@ -88,33 +88,76 @@ while {true} do {
     lbSetCurSel [203, 0];
 
     while {dialog && alive player && deploy == 0} do {
-        // ARRAY - [[NAME, POSITION(, OBJECT)], ...]
-        KPLIB_respawnPositionsList = [[_basenamestr, getposATL startbase]];
+        // ARRAY - [[NAME, POSITION, AVAILABLE, (OBJECT)], ...]
+        KPLIB_respawnPositionsList = [[_basenamestr, getposATL startbase, true, objNull]];
 
         {
+			private _available = KPLIB_param_attackedFobRespawn || !( _x in KPLIB_sectorsUnderAttack);
             KPLIB_respawnPositionsList pushBack [
-                format ["FOB - %1", (KPLIB_militaryAlphabet select _forEachIndex), mapGridPosition _x],
-                _x
+                format ["FOB - %1", (KPLIB_militaryAlphabet select _forEachIndex)],
+                _x,
+				_available,
+				objNull
             ];
         } forEach KPLIB_sectors_fob;
 
-        if (KPLIB_param_mobileRespawn) then {
-            if (KPLIB_respawn_time <= time) then {
-                private _respawn_trucks = [] call KPLIB_fnc_getMobileRespawns;
+		if (KPLIB_param_mobileRespawn) then {
+			private _respawn_trucks = [] call KPLIB_fnc_getMobileRespawns;
 
-                {
-                    KPLIB_respawnPositionsList pushBack [
-                       format ["%1 - %2", localize "STR_RESPAWN_TRUCK",  [_x] call KPLIB_fnc_getMobileRespawnName],
-                        getPosATL _x,
-                        _x
-                    ];
-                } forEach _respawn_trucks
-            };
-        };
+			{
+				private _available = _x getVariable ["KPLIB_respawnAvailable", true];
+				private _cooldown = KPLIB_respawn_time > time;
+				private _tickets = _x getVariable ["KPLIB_respawnTickets",0];
+				private _enabled = _available && !_cooldown && (_tickets > 0);
+				private _truckName = [_x] call KPLIB_fnc_getMobileRespawnName;
+
+				private _name =
+					if (_enabled) then {
+						format ["%1 - %2",
+							localize "STR_RESPAWN_TRUCK",
+							_truckName
+						]
+					} else {
+						if (_cooldown) then {
+							format ["%1 - %2 : %3",
+								localize "STR_RESPAWN_TRUCK",
+								_truckName,
+								format [
+									localize "STR_RESPAWN_COOLDOWN_HINT",
+									ceil ((KPLIB_respawn_time - time) / 60)
+								]
+							]
+						} else { if (_tickets < 1) then {
+								format ["%1 - %2 : %3",
+									localize "STR_RESPAWN_TRUCK",
+									_truckName,
+									localize "STR_NO_TICKETS"
+								]
+							} else {
+								format ["%1 - %2 : %3",
+									localize "STR_RESPAWN_TRUCK",
+									_truckName,
+									localize "STR_DEPLOY_UNDERATTACK"
+								]
+							}
+						}
+					};
+
+				KPLIB_respawnPositionsList pushBack [
+					_name,
+					getPosATL _x,
+					_enabled,
+					_x
+				];
+			} forEach _respawn_trucks;
+		};
 
         lbClear DEPLOY_LIST_IDC;
         {
-            lbAdd [DEPLOY_LIST_IDC, (_x select 0)];
+            private _idx = lbAdd [DEPLOY_LIST_IDC, (_x select 0)];
+			if !(_x select 2) then {
+				lbSetColor [DEPLOY_LIST_IDC, _idx, [0.5,0.5,0.5,1]];
+			};
         } foreach KPLIB_respawnPositionsList;
 
         if (lbCurSel DEPLOY_LIST_IDC == -1) then {
@@ -137,6 +180,7 @@ while {true} do {
                     _enddist = 300;
                     _alti = 30;
                 };
+
                 // Disable if sector is under attack
                 if (!KPLIB_param_attackedFobRespawn && {_objectpos in KPLIB_sectorsUnderAttack}) then {
                     (DEPLOY_DISPLAY displayCtrl DEPLOY_BUTTON_IDC) ctrlSetText localize "STR_DEPLOY_UNDERATTACK";
@@ -145,6 +189,17 @@ while {true} do {
                     (DEPLOY_DISPLAY displayCtrl DEPLOY_BUTTON_IDC) ctrlSetText localize "STR_DEPLOY_BUTTON";
                     (DEPLOY_DISPLAY displayCtrl DEPLOY_BUTTON_IDC) ctrlEnable true;
                 };
+
+				private _selected = KPLIB_respawnPositionsList select _oldsel;
+				private _enabled = _selected select 2;
+
+				if (!_enabled) then {
+					(DEPLOY_DISPLAY displayCtrl DEPLOY_BUTTON_IDC) ctrlSetText "UNAVAILABLE";
+					(DEPLOY_DISPLAY displayCtrl DEPLOY_BUTTON_IDC) ctrlEnable false;
+				} else {
+					(DEPLOY_DISPLAY displayCtrl DEPLOY_BUTTON_IDC) ctrlSetText localize "STR_DEPLOY_BUTTON";
+					(DEPLOY_DISPLAY displayCtrl DEPLOY_BUTTON_IDC) ctrlEnable true;
+				};
             };
 
             "spawn_marker" setMarkerPosLocal (getpos respawn_object);
@@ -173,23 +228,39 @@ while {true} do {
             (DEPLOY_DISPLAY displayCtrl 251) ctrlCommit 0.2;
             _oldsel = -1;
         };
-        uiSleep 0.1;
+        uiSleep 1;
     };
 
     if (dialog && deploy == 1) then {
         private _idxchoice = lbCurSel DEPLOY_LIST_IDC;
-        _spawn_str = (KPLIB_respawnPositionsList select _idxchoice) select 0;
 
-        if (count (KPLIB_respawnPositionsList select _idxchoice) == 3) then {
-            private _truck = (KPLIB_respawnPositionsList select _idxchoice) select 2;
-            player setposATL (_truck getPos [5 + (random 3), random 360]);
-            player setDir (random 360);
-            KPLIB_respawn_mobile_done = true;
-        } else {
-            private _destpos = ((KPLIB_respawnPositionsList select _idxchoice) select 1);
-            player setposATL [((_destpos select 0) + 5) - (random 10),((_destpos select 1) + 5) - (random 10),(_destpos select 2)];
-            player setDir (random 360);
-        };
+		_spawn_str = (KPLIB_respawnPositionsList select _idxchoice) select 0;
+
+		private _entry = KPLIB_respawnPositionsList select _idxchoice;
+		private _truck = _entry select 3;
+
+		if !(_entry select 2) exitWith {
+			hint "Respawn unavailable";
+		};
+
+		if (!isNull _truck) then {
+			player setPosATL (_truck getPos [5 + (random 3), random 360]);
+			// spend respawn ticket
+			_truck setVariable [
+				"KPLIB_respawnTickets",
+				((_truck getVariable ["KPLIB_respawnTickets", 0]) - 1) max 0,
+				true
+			];
+
+			KPLIB_respawn_mobile_done = true;
+		} else {
+			private _destpos = _entry select 1;
+			player setPosATL [
+				((_destpos select 0) + 5) - (random 10),
+				((_destpos select 1) + 5) - (random 10),
+				(_destpos select 2)
+			];
+		};
 
         if ((lbCurSel 203) > 0) then {
             private _selectedLoadout = _loadouts_data select ((lbCurSel 203) - 1);
@@ -225,7 +296,7 @@ while {true} do {
 
     if (KPLIB_param_mobileRespawn && (KPLIB_respawn_time > time)) then {
         hint format [localize "STR_RESPAWN_COOLDOWN_HINT", ceil ((KPLIB_respawn_time - time) / 60)];
-        uiSleep 12;
+        uiSleep 5;
         hint "";
     };
 };

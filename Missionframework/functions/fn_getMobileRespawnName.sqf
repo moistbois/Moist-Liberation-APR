@@ -20,7 +20,6 @@ params [
     ["_msp", nil]
 ];
 
-private _respawn_vehicles = [] call KPLIB_fnc_getMobileRespawns;
 private _name = "VEHICLE_NOT_FOUND";
 
 if (!isNil "_msp") then {
@@ -30,10 +29,13 @@ if (!isNil "_msp") then {
         _name = _msp_name;
     }
     else {
+		// find used names
+		private _respawns = [] call KPLIB_fnc_getMobileRespawns;
+		private _used = _respawns apply {_x getVariable ["msp_name", ""]};
+
         //get random name from the russian alphabet
-        _name = selectRandom KPLIB_russianAlphabet + " ";
-        //add random number (3 digits)
-        _name = _name + format ["%1%2%3", floor random 9, floor random 9, floor random 9];
+        _name = selectRandom (KPLIB_russianAlphabet select {!(_x in _used)});
+
         _msp setVariable ["msp_name", _name, true];
         //use msp_name
     };

@@ -7,6 +7,7 @@ KPLIB_potato01 = objNull;
 private _savedPotato = vehicles select {(toLowerANSI (typeOf _x)) isEqualTo (toLowerANSI KPLIB_b_potato01)};
 if !(_savedPotato isEqualTo []) then {
     KPLIB_potato01 = _savedPotato select 0;
+	KPLIB_potato01 setVariable ["KPLIB_respawnTickets", 100];
 };
 
 while {true} do {
@@ -26,6 +27,9 @@ while {true} do {
     };
     [KPLIB_potato01] call KPLIB_fnc_clearCargo;
     KPLIB_potato01 setVariable ["ace_medical_isMedicalVehicle", true, true];
+
+	KPLIB_potato01 setVariable ["KPLIB_respawnTickets", 100];
+
     publicVariable "KPLIB_potato01";
 
     // Wait until huron is destroyed to respawn it
