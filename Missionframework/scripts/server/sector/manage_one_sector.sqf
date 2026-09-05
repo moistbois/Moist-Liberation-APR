@@ -32,6 +32,7 @@ private _maximum_additional_tickets = (KPLIB_param_maxDespawnDelay * 60 / SECTOR
 private _popfactor = 1;
 private _guerilla = false;
 private _lambsEnable = false;
+private _lastReload = time;
 
 if (isNil "KPLIB_o_turrets_HMG") then {KPLIB_o_turrets_HMG = ["Turret_Array_Empty"];};
 if (isNil "KPLIB_o_turrets_GMG") then {KPLIB_o_turrets_GMG = ["Turret_Array_Empty"];};
@@ -70,6 +71,7 @@ if ((!(_sector in KPLIB_sectors_player)) && (([markerPos _sector, [_opforcount, 
             if ((random 100) > (33 / KPLIB_param_difficulty)) then {_vehtospawn pushback ([] call KPLIB_fnc_getAdaptiveVehicle);};
             if ((random 100) > (33 / KPLIB_param_difficulty)) then {_vehtospawn pushback (selectRandom KPLIB_o_turrets_AA);};
             if ((random 100) > (33 / KPLIB_param_difficulty)) then {_vehtospawn pushback (selectRandom KPLIB_o_turrets_GMG);};
+			if ((random 100) > (33 / KPLIB_param_difficulty)) then {_vehtospawn pushback (selectRandom KPLIB_o_turrets_MORTAR);};
         };
 
         _spawncivs = true;
@@ -79,7 +81,7 @@ if ((!(_sector in KPLIB_sectors_player)) && (([markerPos _sector, [_opforcount, 
         };
 
         _building_ai_max = round (50 * _popfactor);
-        _building_range = 200;
+        _building_range = 500;
         _local_capture_size = _local_capture_size * 1.4;
 
         if (KPLIB_civ_rep < 0) then {
@@ -117,7 +119,7 @@ if ((!(_sector in KPLIB_sectors_player)) && (([markerPos _sector, [_opforcount, 
         };
 
         _building_ai_max = round ((floor (18 + (round (KPLIB_enemyReadiness / 10 )))) * _popfactor);
-        _building_range = 120;
+        _building_range = 300;
 
         if (KPLIB_civ_rep < 0) then {
             _iedcount = round ((ceil (random 4)) * (round ((KPLIB_civ_rep * -1) / 33)) * KPLIB_param_difficulty);
@@ -161,6 +163,7 @@ if ((!(_sector in KPLIB_sectors_player)) && (([markerPos _sector, [_opforcount, 
         if ((random 100) > 66) then {_vehtospawn pushback ([] call KPLIB_fnc_getAdaptiveVehicle);};
         if ((random 100) > 33) then {_vehtospawn pushback (selectRandom KPLIB_o_militiaVehicles);};
         if ((random 100) > 33) then {_vehtospawn pushback (selectRandom KPLIB_o_turrets_HMG);};
+		if ((random 100) > 33) then {_vehtospawn pushback (selectRandom KPLIB_o_turrets_MORTAR);};
         if (KPLIB_enemyReadiness > 50) then {_vehtospawn pushback (selectRandom KPLIB_o_turrets_HMG);};
 
         _spawncivs = false;
@@ -170,7 +173,7 @@ if ((!(_sector in KPLIB_sectors_player)) && (([markerPos _sector, [_opforcount, 
         };
 
         _building_ai_max = round ((floor (18 + (round (KPLIB_enemyReadiness / 10 )))) * _popfactor);
-        _building_range = 120;
+        _building_range = 150;
 
         if (KPLIB_civ_rep < 0) then {
             _iedcount = round ((ceil (random 3)) * (round ((KPLIB_civ_rep * -1) / 33)) * KPLIB_param_difficulty);
@@ -197,28 +200,89 @@ if ((!(_sector in KPLIB_sectors_player)) && (([markerPos _sector, [_opforcount, 
 
     if (KPLIB_sectorspawn_debug > 0) then {[format ["Sector %1 (%2) - manage_one_sector calculated -> _infsquad: %3 - _squad1: %4 - _squad2: %5 - _squad3: %6 - _squad4: %7 - _vehtospawn: %8 - _building_ai_max: %9", (markerText _sector), _sector, _infsquad, (count _squad1), (count _squad2), (count _squad3), (count _squad4), (count _vehtospawn), _building_ai_max], "SECTORSPAWN"] remoteExecCall ["KPLIB_fnc_log", 2];};
 
-    if (_building_ai_max > 0 && KPLIB_param_adaptive) then {
-        _building_ai_max = round (_building_ai_max * ([] call KPLIB_fnc_getOpforFactor));
-    };
+    //if (_building_ai_max > 0 && KPLIB_param_adaptive) then {
+    //    _building_ai_max = round (_building_ai_max * ([] call KPLIB_fnc_getOpforFactor));
+    //};
+
+	private _allbuildings = (nearestObjects [_sectorpos, ["House"], _building_range]) select {alive _x};
+
+
+	// spread out squads to sector "bounds"
+
+	private _minSpawnDist = [50, 80] select !(_sector in KPLIB_sectors_capital);
+	private _availableBuildings = +_allbuildings;
+	private _spawnPoints = [];
+
+	while {
+		(count _availableBuildings > 0)
+	} do {
+
+		private _chosen = selectRandom _availableBuildings;
+
+		// check validity (not a lonely shack in the middle of nowhere)
+		private _neighbors = _allbuildings select {_x != _chosen && {_x distance2D _chosen < _minSpawnDist}};
+
+		if ((count _neighbors) > 0) then {
+			_spawnPoints pushBack (getPosATL _chosen);
+
+			_availableBuildings = _availableBuildings select {
+				(_x distance2D _chosen) > _minSpawnDist
+			};
+		} else {
+			_availableBuildings = _availableBuildings - [_chosen];
+		}
+	};
+
+	if (_spawnPoints isEqualTo []) then {
+		_spawnPoints = [_sectorpos];
+	};
+
+	_spawnPoints = _spawnPoints call BIS_fnc_arrayShuffle;
 
     {
         if (_x isEqualTo "Turret_Array_Empty") exitWith {};
-        _vehicle = [_sectorpos, _x] call KPLIB_fnc_spawnVehicle;
+
+		private _spawnPos = _spawnPoints deleteAt 0;
+		_spawnPoints pushBack _spawnPos;
+
+		if (_x isKindOf "StaticWeapon") then {
+				private _roads = _spawnPos nearRoads 100;
+
+				if !(_roads isEqualTo []) then {
+
+					private _road = selectRandom _roads;
+
+					_spawnPos = getPosATL _road;
+				};
+			};
+
+		_vehicle = [_spawnPos, _x] call KPLIB_fnc_spawnVehicle;
+
         if ((_x in KPLIB_o_turrets_MORTAR) && _lambsEnable) then {
             [group ((crew _vehicle) select 0)] call lambs_wp_fnc_taskArtilleryRegister;
         };
-        [group ((crew _vehicle) select 0),_sectorpos] spawn add_defense_waypoints;
+		if !(_x isKindOf "StaticWeapon") then {
+        	[group ((crew _vehicle) select 0),_spawnPos] spawn add_defense_waypoints
+		};
         _managed_units pushback _vehicle;
         {_managed_units pushback _x;} foreach (crew _vehicle);
         sleep 0.25;
     } forEach _vehtospawn;
 
     if (_building_ai_max > 0) then {
-        _allbuildings = (nearestObjects [_sectorpos, ["House"], _building_range]) select {alive _x};
         _buildingpositions = [];
         {
-            _buildingpositions = _buildingpositions + ([_x] call BIS_fnc_buildingPositions);
+			// limit spawning positions per house
+			private _validPositions = [_x] call BIS_fnc_buildingPositions;
+
+			_validPositions = _validPositions call BIS_fnc_arrayShuffle;
+
+			if !(_validPositions isEqualTo []) then {
+				_buildingpositions pushBack (_validPositions select 0);
+			};
+
         } forEach _allbuildings;
+
         if (KPLIB_sectorspawn_debug > 0) then {[format ["Sector %1 (%2) - manage_one_sector found %3 building positions", (markerText _sector), _sector, (count _buildingpositions)], "SECTORSPAWN"] remoteExecCall ["KPLIB_fnc_log", 2];};
         if (count _buildingpositions > _minimum_building_positions) then {
             _managed_units = _managed_units + ([_infsquad, _building_ai_max, _buildingpositions, _sector] call KPLIB_fnc_spawnBuildingSquad);
@@ -228,26 +292,38 @@ if ((!(_sector in KPLIB_sectors_player)) && (([markerPos _sector, [_opforcount, 
     _managed_units = _managed_units + ([_sectorpos] call KPLIB_fnc_spawnMilitaryPostSquad);
 
     if (count _squad1 > 0) then {
-        _grp = [_sector, _squad1] call KPLIB_fnc_spawnRegularSquad;
-        [_grp, _sectorpos] spawn add_defense_waypoints;
+		private _spawnPos = _spawnPoints deleteAt 0;
+		_spawnPoints pushBack _spawnPos;
+
+        _grp = [_spawnPos, _squad1] call KPLIB_fnc_spawnRegularSquad;
+        [_grp, _spawnPos] spawn add_defense_waypoints;
         _managed_units = _managed_units + (units _grp);
     };
 
     if (count _squad2 > 0) then {
-        _grp = [_sector, _squad2] call KPLIB_fnc_spawnRegularSquad;
-        [_grp, _sectorpos] spawn add_defense_waypoints;
+		private _spawnPos = _spawnPoints deleteAt 0;
+		_spawnPoints pushBack _spawnPos;
+
+        _grp = [_spawnPos, _squad2] call KPLIB_fnc_spawnRegularSquad;
+        [_grp, _spawnPos] spawn add_defense_waypoints;
         _managed_units = _managed_units + (units _grp);
     };
 
     if (count _squad3 > 0) then {
-        _grp = [_sector, _squad3] call KPLIB_fnc_spawnRegularSquad;
-        [_grp, _sectorpos] spawn add_defense_waypoints;
+		private _spawnPos = _spawnPoints deleteAt 0;
+		_spawnPoints pushBack _spawnPos;
+
+        _grp = [_spawnPos, _squad3] call KPLIB_fnc_spawnRegularSquad;
+        [_grp, _spawnPos] spawn add_defense_waypoints;
         _managed_units = _managed_units + (units _grp);
     };
 
     if (count _squad4 > 0) then {
-        _grp = [_sector, _squad4] call KPLIB_fnc_spawnRegularSquad;
-        [_grp, _sectorpos] spawn add_defense_waypoints;
+		private _spawnPos = _spawnPoints deleteAt 0;
+		_spawnPoints pushBack _spawnPos;
+
+        _grp = [_spawnPos, _squad4] call KPLIB_fnc_spawnRegularSquad;
+        [_grp, _spawnPos] spawn add_defense_waypoints;
         _managed_units = _managed_units + (units _grp);
     };
 
@@ -273,6 +349,22 @@ if ((!(_sector in KPLIB_sectors_player)) && (([markerPos _sector, [_opforcount, 
     private _activationTime = time;
     // sector lifetime loop
     while {!_stopit} do {
+
+		// Reload all active sector statics every 3 minutes
+		if ((time - _lastReload) > 180) then {
+			{
+				if (
+					!isNull _x &&
+					{_x isKindOf "StaticWeapon"} &&
+					{side _x == KPLIB_side_enemy}
+				) then {
+					_x setVehicleAmmo 1;
+				};
+			} forEach _managed_units;
+
+			_lastReload = time;
+		};
+
         // sector was captured
         if (([_sectorpos, _local_capture_size] call KPLIB_fnc_getSectorOwnership == KPLIB_side_player) && (KPLIB_endgame == 0)) then {
             if (isServer) then {

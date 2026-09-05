@@ -41,14 +41,14 @@ private _pos = markerPos _sector;
 private _unit = objNull;
 private _units = [];
 for "_i" from 1 to _amount do {
-    // Create new group, if current group has 10 units
-    if (count (units _grp) >= 10) then {
+    // Create new group, if current group has N units
+    if (count (units _grp) >= 3) then {
         _grp = createGroup [KPLIB_side_enemy, true];
     };
 
     _unit = [selectRandom _classnames, _pos, _grp] call KPLIB_fnc_createManagedUnit;
     _unit setDir (random 360);
-    _unit setPos (_positions deleteAt (random (floor (count _positions) - 1)));
+    _unit setPos (_positions deleteAt (floor (random ((count _positions) - 1))));
     [_unit, _sector] spawn building_defence_ai;
     _units pushBack _unit;
 };
