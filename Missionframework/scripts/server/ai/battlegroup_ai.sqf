@@ -1,6 +1,7 @@
 params [
     ["_grp", grpNull, [grpNull]],
-    ["_target", [], [[]]]
+    ["_target", [], [[]]],
+	["_announce", true, [true]]
 ];
 
 if (isNull _grp) exitWith {};
@@ -13,7 +14,9 @@ if (_target isEqualTo []) then {
     _objPos = _target;
 };
 
-[_objPos] remoteExec ["remote_call_incoming"];
+if (_announce) then {
+	[_objPos] remoteExec ["remote_call_incoming"];
+};
 
 private _waypoint = [];
 

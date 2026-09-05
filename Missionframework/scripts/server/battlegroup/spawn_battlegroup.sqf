@@ -53,6 +53,11 @@ if !(_spawn_marker isEqualTo "") then {
         private _vehicle_pool = [KPLIB_o_battleGrpVehicles, KPLIB_o_battleGrpVehiclesLight] select (KPLIB_enemyReadiness < 55);
         if (KPLIB_asymmetric_debug > 0) then {[format ["spawn_battlegroup vehicles: target_size=%1 vehiclePoolSize=%2 pool=%3", _target_size, count _vehicle_pool, _vehicle_pool], "BATTLEGROUP"] call KPLIB_fnc_log;};
 
+		// spawn supportive air
+		if (random 100 < (KPLIB_enemyReadiness - 20) max 0) then {
+			[[markerPos _targetSector] call KPLIB_fnc_getNearestBluforObjective, objNull, true] spawn send_paratroopers;
+		};
+
         while {count _selected_opfor_battlegroup < _target_size} do {
             _selected_opfor_battlegroup pushback (selectRandom _vehicle_pool);
         };
@@ -76,13 +81,8 @@ if !(_spawn_marker isEqualTo "") then {
             _nextgrp setVariable ["KPLIB_isBattleGroup",true];
 
             if ((_x in KPLIB_o_troopTransports) && ([] call KPLIB_fnc_getOpforCap < KPLIB_cap_battlegroup)) then {
-                if (_vehicle isKindOf "Air") then {
-                    [[markerPos _targetSector] call KPLIB_fnc_getNearestBluforObjective, _vehicle, true] spawn send_paratroopers;
-                    if (KPLIB_asymmetric_debug > 0) then {[format ["spawn_battlegroup transport: air transport %1 will send paratroopers", _vehicle], "BATTLEGROUP"] call KPLIB_fnc_log;};
-                } else {
-                    [_vehicle] spawn troup_transport;
-                    if (KPLIB_asymmetric_debug > 0) then {[format ["spawn_battlegroup transport: ground transport %1 will move troops", _vehicle], "BATTLEGROUP"] call KPLIB_fnc_log;};
-                };
+                [_vehicle] spawn troup_transport;
+				if (KPLIB_asymmetric_debug > 0) then {[format ["spawn_battlegroup transport: ground transport %1 will move troops", _vehicle], "BATTLEGROUP"] call KPLIB_fnc_log;};
             };
         } forEach _selected_opfor_battlegroup;
 

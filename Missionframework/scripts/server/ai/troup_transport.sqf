@@ -8,14 +8,14 @@ sleep 1;
 private _transGrp = (group (driver _transVeh));
 private _start_pos = getpos _transVeh;
 private _objPos =  [getpos _transVeh] call KPLIB_fnc_getNearestBluforObjective;
-private _unload_distance = 500;
+private _unload_distance = 250;
 private _crewcount = count crew _transVeh;
 
 waitUntil {
     sleep 0.2;
     !(alive _transVeh) ||
     !(alive (driver _transVeh)) ||
-    (((_transVeh distance _objPos) < _unload_distance) && !(surfaceIsWater (getpos _transVeh)))
+    (((_transVeh distance _objPos) < _unload_distance + 100) && !(surfaceIsWater (getpos _transVeh)))
 };
 
 if ((alive _transVeh) && (alive (driver _transVeh))) then {
@@ -31,13 +31,13 @@ if ((alive _transVeh) && (alive (driver _transVeh))) then {
 
     sleep 3;
 
-    private _transVehWp =  _transGrp addWaypoint [getpos _transVeh, 0,0];
-    _transVehWp setWaypointType "TR UNLOAD";
-    _transVehWp setWaypointCompletionRadius 200;
+	private _transVehWp = _transGrp addWaypoint [_objPos, 10];
+	_transVehWp setWaypointType "TR UNLOAD";
+	_transVehWp setWaypointCompletionRadius _unload_distance;
 
-    private _infWp = _infGrp addWaypoint [getpos _transVeh, 0];
-    _infWp setWaypointType "GETOUT";
-    _infWp setWaypointCompletionRadius 200;
+	private _infWp = _infGrp addWaypoint [_objPos, 10];
+	_infWp setWaypointType "GETOUT";
+	_infWp setWaypointCompletionRadius _unload_distance;
 
     _infWp synchronizeWaypoint [_transVehWp];
 
@@ -45,7 +45,7 @@ if ((alive _transVeh) && (alive (driver _transVeh))) then {
     _infGrp leaveVehicle _transVeh;
     (units _infGrp) allowGetIn false;
 
-    private _infWp_2 = _infGrp addWaypoint [getpos _transVeh, 250];
+    private _infWp_2 = _infGrp addWaypoint [_objPos, 100];
     _infWp_2 setWaypointType "MOVE";
     _infWp_2 setWaypointCompletionRadius 5;
 

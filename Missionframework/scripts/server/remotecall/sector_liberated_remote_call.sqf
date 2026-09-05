@@ -1,12 +1,14 @@
 params ["_liberated_sector"];
 
+if !(_liberated_sector in KPLIB_sectors_all) exitWith{};
+
 private _KPLIB_enemyReadiness_increase = 0;
 switch (true) do {
-    case (_liberated_sector in KPLIB_sectors_capital):    {_KPLIB_enemyReadiness_increase = 6 + (floor (random 6)) * KPLIB_param_difficulty;};
-    case (_liberated_sector in KPLIB_sectors_city):    {_KPLIB_enemyReadiness_increase = 6 + (floor (random 4)) * KPLIB_param_difficulty;};
-    case (_liberated_sector in KPLIB_sectors_military):   {_KPLIB_enemyReadiness_increase = 5 + (floor (random 12)) * KPLIB_param_difficulty;};
-    case (_liberated_sector in KPLIB_sectors_factory):    {_KPLIB_enemyReadiness_increase = 3 + (floor (random 7)) * KPLIB_param_difficulty;};
-    case (_liberated_sector in KPLIB_sectors_tower):      {_KPLIB_enemyReadiness_increase = 3 + (floor (random 3)) * KPLIB_param_difficulty;};
+    case (_liberated_sector in KPLIB_sectors_capital):    {_KPLIB_enemyReadiness_increase = 16 + (floor (random 3)) * KPLIB_param_difficulty;};
+    case (_liberated_sector in KPLIB_sectors_city):    {_KPLIB_enemyReadiness_increase = 8 + (floor (random 3)) * KPLIB_param_difficulty;};
+    case (_liberated_sector in KPLIB_sectors_military):   {_KPLIB_enemyReadiness_increase = 21 + (floor (random 2)) * KPLIB_param_difficulty;};
+    case (_liberated_sector in KPLIB_sectors_factory):    {_KPLIB_enemyReadiness_increase = 8 + (floor (random 2)) * KPLIB_param_difficulty;};
+    case (_liberated_sector in KPLIB_sectors_tower):      {_KPLIB_enemyReadiness_increase = 6 + (floor (random 2)) * KPLIB_param_difficulty;};
 };
 
 KPLIB_enemyReadiness = KPLIB_enemyReadiness + _KPLIB_enemyReadiness_increase;
@@ -60,96 +62,16 @@ sleep 1;
 sleep 10;
 
 if (KPLIB_endgame == 0) then {
-    if ((random (150 / (KPLIB_param_difficulty * KPLIB_param_aggressivity))) < (KPLIB_enemyReadiness - 15) || _liberated_sector in KPLIB_sectors_capital) then {
-        // readiness curve for helos:
-        // 35-45 -> mostly 1
-        // 45-60 -> mostly 2
-        // 60+   -> mostly 3
+    if (random (100) < (KPLIB_enemyReadiness - 15) || _liberated_sector in KPLIB_sectors_capital) then {
         private _roll = random 100;
         private _paratrooper_helos = 1;
 
-        if (KPLIB_enemyReadiness < 45) then {
-            // low readiness should mainly spawn 1, rarely 2 and extremely rarely 3
-            if (_roll < 10) then {
-                _paratrooper_helos = 2;
-            } else {
-                if (_roll < 12) then {
-                    _paratrooper_helos = 3;
-                } else {
-                    _paratrooper_helos = 1;
-                };
-            };
-        } else {
-            if (KPLIB_enemyReadiness < 60) then {
-                // middle readiness should favour 2
-                if (_roll < 20) then {
-                    _paratrooper_helos = 1;
-                } else {
-                    if (_roll < 80) then {
-                        _paratrooper_helos = 2;
-                    } else {
-                        _paratrooper_helos = 3;
-                    };
-                };
-            } else {
-                // high readiness should almost always spawn 3
-                if (_roll < 70) then {
-                    _paratrooper_helos = 3;
-                } else {
-                    if (_roll < 95) then {
-                        _paratrooper_helos = 2;
-                    } else {
-                        _paratrooper_helos = 1;
-                    };
-                };
-            };
+        if (KPLIB_enemyReadiness < 50 && _roll < 33) then {
+            _paratrooper_helos = 2;
         };
 
 		for "_i" from 1 to _paratrooper_helos do {
-
-			private _spawnMarker = [
-				3000,
-				1500,
-				false,
-				markerPos _liberated_sector
-			] call KPLIB_fnc_getOpforSpawnPoint;
-
-			if !(_spawnMarker isEqualTo "") then {
-
-				private _chopperType = selectRandom (
-					KPLIB_o_helicopters select {
-						_x in KPLIB_o_troopTransports
-					}
-				);
-
-				private _heli = [
-					markerPos _spawnMarker,
-					_chopperType
-				] call KPLIB_fnc_spawnVehicle;
-
-				if (!isNull _heli) then {
-
-					private _target = markerPos _liberated_sector;
-
-					[
-						_target,
-						_heli,
-						true
-					] spawn send_paratroopers;
-
-					if (KPLIB_asymmetric_debug > 0) then {
-						[
-							format [
-								"PARA: spawned battlegroup-style helicopter %1 at %2 for target %3",
-								_heli,
-								_spawnMarker,
-								_target
-							],
-							"PARA"
-						] call KPLIB_fnc_log;
-					};
-				};
-			};
+			[_liberated_sector] spawn send_paratroopers;
 		};
     };
 
@@ -157,8 +79,8 @@ if (KPLIB_endgame == 0) then {
 
         private _enemyReadinessClamped = KPLIB_enemyReadiness;
         if (_enemyReadinessClamped > 100) then {_enemyReadinessClamped = 100;};
-        private _battlegroup_delay = 1800 * (1 - (_enemyReadinessClamped / 100));
-        if (_battlegroup_delay < 0) then {_battlegroup_delay = 0;};
+        private _battlegroup_delay = 900 * (1 - (_enemyReadinessClamped / 100)); // battlegroup is delayed by 15 minutes decreased by readiness percentage
+        if (_battlegroup_delay < 5) then {_battlegroup_delay = 5;};
         private _battlegroup_delay_minutes = ceil (_battlegroup_delay / 60);
         private _battlegroup_delay_estimate = _battlegroup_delay_minutes + floor (random 7) - 3;
         if (_battlegroup_delay_estimate < 1) then {_battlegroup_delay_estimate = 1;};
