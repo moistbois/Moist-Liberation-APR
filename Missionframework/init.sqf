@@ -30,9 +30,11 @@ RydFFE_Debug = false;
 // FFE
 RydFFE_ShellView = false;
 RydFFE_ArtyShells = 1;
-RydFFE_Amount = 2;
-RydFFE_FOAccGain = 10;
-RydFFE_Safe = (50);
+RydFFE_Amount = 3;
+RydFFE_Interval = 60;
+RydFFE_FOAccGain = 5;
+RydFFE_Safe = 100;
+RydFFE_Acc = 3;
 RydFFE_FOClass = ([
 "o_rsa90_sl",
 "o_rsa90_spotter",

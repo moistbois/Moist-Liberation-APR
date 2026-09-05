@@ -1,6 +1,6 @@
 /*
     File: fn_getNearestPlayerSector.sqf
-    Author: Valo Maahinen
+    Author: Maahi
     Date: 2026-07-05
     Last Update: 2026-07-05
     License: MIT License - http://www.opensource.org/licenses/MIT

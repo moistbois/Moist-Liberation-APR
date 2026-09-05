@@ -25,6 +25,14 @@ params [
     ["_rndDir", true, [false]]
 ];
 
+if !(_classname isEqualType "") then {
+    diag_log format [
+        "[BAD VEHICLE CLASS] type=%1 value=%2",
+        typeName _classname,
+        _classname
+    ];
+};
+
 if (_pos isEqualTo [0, 0, 0]) exitWith {["No or zero pos given"] call BIS_fnc_error; objNull};
 if (_classname isEqualTo "") exitWith {["Empty string given"] call BIS_fnc_error; objNull};
 //if (!canSuspend) exitWith {_this spawn KPLIB_fnc_spawnVehicle};
@@ -75,7 +83,7 @@ if (_classname in KPLIB_o_helicopters) then {
 _newvehicle addItemCargoGlobal ["toolkit", 1];
 // Process KP object init
 [_newvehicle] call KPLIB_fnc_addObjectInit;
-
+ 
 // Spawn crew of vehicle
 if (_classname in KPLIB_o_militiaVehicles) then {
     [_newvehicle] call KPLIB_fnc_spawnMilitiaCrew;
@@ -92,5 +100,10 @@ _newvehicle addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
 sleep 0.1;
 _newvehicle allowDamage true;
 _newvehicle setDamage 0;
+
+// Ensure all spawned combat vehicles/turrets start with full ammo
+if (count (weapons _newvehicle) > 0) then {
+    _newvehicle setVehicleAmmo 1;
+};
 
 _newvehicle

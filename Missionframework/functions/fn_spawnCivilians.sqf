@@ -25,7 +25,7 @@ private _civs = [];
 private _sPos = markerPos _sector;
 
 // Amount and spread depending if capital or city/factory
-private _amount = round ((3 + (floor (random 7))) * KPLIB_param_civActivity);
+private _amount = round ((3 + (floor (random 3))) * KPLIB_param_civActivity);
 private _spread = 1;
 if (_sector in KPLIB_sectors_capital) then {
     _amount = _amount + 10;

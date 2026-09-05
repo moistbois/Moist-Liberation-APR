@@ -51,22 +51,27 @@ KPLIB_o_militiaInfantry = [
     "O_RSA90_Marksman1",								// "Marksman M70B1N"
     "O_RSA90_Spotter",								// "Spotter AK74"
     "O_RSA90_AntiTank2",								// "Anti-Tank RPG-18"
+	"O_RSA90_AntiTank2",								// "Anti-Tank RPG-18"
     "O_RSA90_Machinegunner1",								// "Machinegunner RPK"
     "O_RSA90_Machinegunner2",								// "Machinegunner RPK74"
     "O_RSA90_HMG",								// "Heavy Machine Gunner PKM"
     "O_RSA90_Grenadier",								// "Grenadier AK74 GP25"
+	"O_RSA90_Grenadier",								// "Grenadier AK74 GP25"
     "O_RSA90_Shotgun",								// "Shotgun"
     "O_RSA90_Medical",								// "Medic"
+	"O_RSA90_AntiAir",                                  // AA Specialist
     "O_RSA90_Engineer"								// "Engineer"
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry militia.
 KPLIB_o_militiaVehicles = [
+	"rhsgref_cdf_b_reg_uaz_dshkm",
+	"rhsgref_cdf_b_reg_uaz_dshkm",
+	"rhsgref_cdf_b_reg_uaz_spg9",
 	"O_RSA90_M1151",
     "O_RSA90_M1151",
     "O_RSA90_BRDM2UM",
     "O_RSA90_BTR60PB",
-    "O_RSA90_M1151",
     "O_RSA90_BMP"
 ];
 
@@ -97,28 +102,32 @@ KPLIB_o_battleGrpVehicles = [
     "O_RSA90_GAZ66_AA",
     "O_RSA90_URAL_AA",
     "O_RSA90_GAZ66_Transport",
+	"O_RSA90_GAZ66_Transport",
+	"O_RSA90_GAZ66_Transport",
     "O_RSA90_BRDM2",
+	"O_RSA90_BRDM2",
     "O_RSA90_BTR80",
+    "O_RSA90_BTR80",
+	"O_RSA90_BMP",
+	"O_RSA90_BMP",
     "O_RSA90_T72",
-    "O_RSA90_GAZ66_Transport",
+	"O_RSA90_T72",
     "O_RSA90_T55",
-    "O_RSA90_GAZ66_Transport",
-    "O_RSA90_Mi24V",                                                 // Mi-24V
-    "O_RSA90_Mi24P",                                                 // Mi-24P
-    "O_RSA90_Mi8MT"                                                  // Mi-8
+	"O_RSA90_T55"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehiclesLight = [
 	"O_RSA90_M1151",
-    "O_RSA90_BRDM2UM",
+	"O_RSA90_M1151",
     "O_RSA90_GAZ66_Transport",
+	"O_RSA90_GAZ66_Transport",
+	"O_RSA90_GAZ66_Transport",
+	"O_RSA90_GAZ66_Transport",
+	"O_RSA90_BRDM2UM",
+	"O_RSA90_BRDM2",
     "O_RSA90_BTR60PB",
-    "O_RSA90_GAZ66_Transport",
-    "O_RSA90_M1151",
-    "O_RSA90_GAZ66_Transport",
-    "O_RSA90_BMP",
-    "O_RSA90_GAZ66_Transport"
+    "O_RSA90_BMP"
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
@@ -148,7 +157,8 @@ KPLIB_o_planes = [
 // Enemy defense turrets that will be spawned in sectors.
 KPLIB_o_turrets_HMG = [
     "O_RSA90_M2",
-    "O_RSA90_M2Lo",
+    "O_RSA90_M2",
+	"O_RSA90_M2Lo",
     "O_RSA90_NSV"
 ];
 
@@ -159,12 +169,12 @@ KPLIB_o_turrets_GMG = [
 
 // Enemy defense turrets that will be spawned in sectors.
 KPLIB_o_turrets_AT = [
-
+	"rhsgref_cdf_b_SPG9"
 ];
 
 // Enemy defense turrets that will be spawned in sectors.
 KPLIB_o_turrets_AA = [
-    ["O_RSA90_ZU23"]
+    "O_RSA90_ZU23"
 ];
 
 // Enemy defense turrets that will be spawned in sectors.
