@@ -5,7 +5,7 @@ sleep 5;
 
 attack_in_progress = false;
 
-while { KPLIB_endgame == 0 } do {
+while { KPLIB_endgame == 0 && {count (allPlayers - entities "HeadlessClient_F") > 0}} do {
 
     {
         _ownership = [ markerpos _x ] call KPLIB_fnc_getSectorOwnership;
@@ -23,6 +23,5 @@ while { KPLIB_endgame == 0 } do {
         sleep 0.5;
     } foreach KPLIB_sectors_fob;
 
-    sleep 1;
-
+    sleep 10;
 };
