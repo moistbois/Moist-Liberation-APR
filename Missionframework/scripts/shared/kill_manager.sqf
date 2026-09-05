@@ -29,26 +29,26 @@ if (isServer) then {
 
         // Weights adjustments depending on what vehicle the BLUFOR killer used
         if (_killer isKindOf "CAManBase") then {
-            infantry_weight = infantry_weight + 1;
-            armor_weight = armor_weight - 0.66;
-            air_weight = air_weight - 0.66;
+            infantry_weight = infantry_weight + 0.5;
+            armor_weight = armor_weight - 0.10;
+            air_weight = air_weight - 0.10;
         } else {
             if ((toLowerANSI (typeOf (vehicle _killer))) in KPLIB_allLandVeh_classes) then  {
-                infantry_weight = infantry_weight - 0.66;
-                armor_weight = armor_weight + 1;
-                air_weight = air_weight - 0.66;
+                infantry_weight = infantry_weight - 2;
+                armor_weight = armor_weight + 2;
+                air_weight = air_weight - 0.20;
             };
             if ((toLowerANSI (typeOf (vehicle _killer))) in KPLIB_allAirVeh_classes) then  {
-                infantry_weight = infantry_weight - 0.66;
-                armor_weight = armor_weight - 0.66;
-                air_weight = air_weight + 1;
+                infantry_weight = infantry_weight - 2;
+                armor_weight = armor_weight - 0.20;
+                air_weight = air_weight + 2;
             };
         };
 
         // Keep within ranges
-        infantry_weight = 0 max (infantry_weight min 100);
-        armor_weight = 0 max (armor_weight min 100);
-        air_weight = 0 max (air_weight min 100);
+        infantry_weight = 20 max (infantry_weight min 100);
+        armor_weight = 20 max (armor_weight min 100);
+        air_weight = 20 max (air_weight min 100);
     };
 
     // Player was killed
@@ -62,6 +62,15 @@ if (isServer) then {
 
     // Check for Man or Vehicle
     if (_unit isKindOf "CAManBase") then {
+
+		diag_log format [
+			"[KILL DEBUG] Unit=%1 Uniform=%2 Vest=%3 Backpack=%4 Weapons=%5",
+			typeOf _unit,
+			uniform _unit,
+			vest _unit,
+			backpack _unit,
+			weapons _unit
+			];
 
         // OPFOR casualty
         if (side (group _unit) == KPLIB_side_enemy) then {
