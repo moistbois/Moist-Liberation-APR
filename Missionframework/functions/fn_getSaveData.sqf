@@ -100,6 +100,9 @@ private _allStorages = [];
 private _allMines = [];
 private _allCrates = [];
 
+// remove malformed sectors
+KPLIB_sectors_player = KPLIB_sectors_player select { _x in KPLIB_sectors_all};
+
 // Get all blufor groups
 private _allBlueGroups = allGroups select {
     (side _x == KPLIB_side_player) &&                 // Only blufor groups
@@ -143,6 +146,23 @@ _allMines append (allMines apply {[
 	_x mineDetectedBy KPLIB_side_player
 ]});
 
+
+// append all viable vehicles outside FOBs
+{
+    if (
+        alive _x &&
+        (
+            _x getVariable ["KPLIB_seized", false] ||
+            _x getVariable ["KPLIB_captured", false] ||
+			_x getVariable ["KPLIB_playerBuilt", false] ||
+			(typeOf _x) in (KPLIB_b_mobileRespawn + [KPLIB_b_potato01])
+        )
+    ) then {
+        _allObjects pushBackUnique _x;
+    };
+} forEach vehicles;
+
+
 // Save all fetched objects
 private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inventory", "_fuel", "_fuelCargo", "_damages"];
 {
@@ -166,7 +186,7 @@ private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inv
         };
     };
 
-    // Only save player side, seized or captured objects
+    // Prevent unseized and uncaptured civilian and opfor vehicles from getting saved
     if (
         (!(_class in KPLIB_c_vehicles) || {_x getVariable ["KPLIB_seized", false]}) &&
         (!((toLowerANSI _class) in KPLIB_o_allVeh_classes) || {_x getVariable ["KPLIB_captured", false]})
@@ -183,7 +203,6 @@ private ["_savedPos", "_savedVecDir", "_savedVecUp", "_class", "_hasCrew", "_inv
 
         _objectsToSave pushBack [_class, _savedPos, _savedVecDir, _savedVecUp, _hasCrew, _inventory, _fuel, _fuelCargo, _damages, _respawnTickets];
     };
-	
 	
 } forEach _allObjects;
 

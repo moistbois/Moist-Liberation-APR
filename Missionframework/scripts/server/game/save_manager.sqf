@@ -373,6 +373,9 @@ if (!isNil "_saveData") then {
         stats_readiness_earned                      = _stats select 27;
     };
 
+	// remove malformed sectors
+	KPLIB_sectors_player = KPLIB_sectors_player select { _x in KPLIB_sectors_all};
+
     // Extract weigths from collection array
     infantry_weight = _weights select 0;
     armor_weight = _weights select 1;
@@ -408,7 +411,7 @@ if (!isNil "_saveData") then {
     private _object = objNull;
     {
         // Fetch data of saved object
-        _x params ["_class", "_pos", "_vecDir", "_vecUp", ["_hasCrew", false], ["_inventory", []], "_fuel", "_fuelCargo", "_damages"];
+        _x params ["_class", "_pos", "_vecDir", "_vecUp", ["_hasCrew", false], ["_inventory", []], "_fuel", "_fuelCargo", "_damages", ["_respawnTickets", 0]];
 
         // This will be removed if we reach a 0.96.7 due to more released Arma 3 DLCs until we finish 0.97.0
         if !(((_saveData select 0) select 0) isEqualType 0) then {
@@ -482,6 +485,11 @@ if (!isNil "_saveData") then {
             if (_class in KPLIB_c_vehicles) then {
                 _object setVariable ["KPLIB_seized", true, true];
             };
+
+			// Set built vehicles as built
+			if (toLowerANSI _class in KPLIB_buildClasses) then {
+				_object setVariable ["KPLIB_playerBuilt", true, true];
+			};
 
             // Determine if cargo should be cleared
             [_object] call KPLIB_fnc_clearCargo;

@@ -336,6 +336,8 @@ while { true } do {
                 if (_classname in KPLIB_c_vehicles) then {
                     _vehicle setVariable ["KPLIB_seized", true, true];
                 };
+				
+				_vehicle setVariable ["KPLIB_playerBuilt", true, true];
 
                 if(buildtype != 6) then {
                     _vehicle addMPEventHandler ["MPKilled", {_this spawn kill_manager}];

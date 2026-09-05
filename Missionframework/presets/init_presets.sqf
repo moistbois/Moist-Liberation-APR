@@ -234,6 +234,21 @@ KPLIB_b_allVeh_classes = [];
     KPLIB_b_allVeh_classes append _x;
 } forEach [KPLIB_b_light_classes, KPLIB_b_heavy_classes, KPLIB_b_air_classes, KPLIB_b_static_classes, KPLIB_b_support_classes];
 
+// All buildable blufor vehicles classnames
+KPLIB_buildClasses = [];
+{
+    {
+        if (_x isEqualType [] && {count _x > 0}) then {
+            private _class = _x select 0;
+
+            if (_class isEqualType "") then {
+                KPLIB_buildClasses pushBackUnique (toLowerANSI _class);
+            };
+        };
+    } forEach _x;
+} forEach KPLIB_buildList;
+
+
 // All opfor vehicle (land and air) classnames
 KPLIB_o_allVeh_classes  = [];
 {
@@ -248,6 +263,12 @@ KPLIB_o_allVeh_classes  = [];
     KPLIB_o_helicopters,
     KPLIB_o_planes
 ];
+
+// Add opfor SAM vehicles
+{
+	KPLIB_o_allVeh_classes append (_x apply {toLowerANSI _x});
+} forEach KPLIB_o_turrets_SAM;
+
 KPLIB_o_allVeh_classes = KPLIB_o_allVeh_classes apply {toLowerANSI _x};
 KPLIB_o_allVeh_classes = KPLIB_o_allVeh_classes arrayIntersect KPLIB_o_allVeh_classes;
 
