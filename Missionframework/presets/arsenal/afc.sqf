@@ -34,6 +34,8 @@ KPLIB_arsenalWeapons = [
     // Shotgun
     "sgun_HunterShotgun_01_F",
     "sgun_HunterShotgun_01_sawedoff_F",
+    "rhs_weap_M590_5RD",
+    "rhs_weap_M590_8RD",
     // Battlerifles
     "rhs_weap_l1a1_wood",
     "hlc_rifle_g3a3",
@@ -63,12 +65,12 @@ KPLIB_arsenalWeapons = [
     "hlc_rifle_rpk",
     // AKs - GLs
     "rhs_weap_m70b3n_pbg40",
-    "hlc_rifle_aks74_GL",
+    //"hlc_rifle_aks74_GL",
     "rhs_weap_ak74_gp25",
     "rhs_weap_ak74n_gp25",
     "rhs_weap_aks74_gp25",
     "rhs_weap_aks74n_gp25",
-    "hlc_rifle_akmgl",
+    //"hlc_rifle_akmgl",
     "rhs_weap_akm_gp25",
     "rhs_weap_akmn_gp25",
     "rhs_weap_akms_gp25",
@@ -247,6 +249,10 @@ KPLIB_arsenalMagazines = [
     // Shotgun
     "2Rnd_12Gauge_Pellets",
     "2Rnd_12Gauge_Slug",
+    "rhsusf_5Rnd_00Buck",
+    "rhsusf_5Rnd_Slug",
+    "rhsusf_8Rnd_00Buck",
+    "rhsusf_8Rnd_Slug",
     // Secondaries
     "rhssaf_mag_15Rnd_9x19_FMJ",
     "rhssaf_mag_15Rnd_9x19_JHP",
